@@ -23,19 +23,4 @@
     <ProjectReference Include="..\Wq\Wq.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="SharedResources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>SharedResources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="SharedResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>SharedResources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-
 </Project>
