@@ -99,9 +99,6 @@
     <EmbeddedResource Update="Account\PlayerInfoForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Update="Account\PlayerInfoForm.zh.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Update="Database\ItemInfoForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
