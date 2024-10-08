@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using Server.Library;
 using Server.MirEnvir;
 
 namespace Server.MirDatabase
@@ -137,7 +138,11 @@ namespace Server.MirDatabase
 
         public string GameName
         {
-            get { return Regex.Replace(Name, @"[\d-]", string.Empty); }
+            get {
+                //return Regex.Replace(Name, @"[\d-]", string.Empty); 
+                string Wq_Name = Wq.LanMgr.Ins.ToCN((uint)Index, Wq.TYPE.MONSTER);
+                return Regex.Replace(Wq_Name, @"[\d-]", string.Empty);
+            }
         }
 
         public void Save(BinaryWriter writer)
@@ -352,7 +357,7 @@ namespace Server.MirDatabase
 
                 if (drop == null)
                 {
-                    MessageQueue.Enqueue(string.Format("Could not load Drop: {0}, Line {1}", name, lines[i]));
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.CouldNotLoadDrop, name, lines[i])); 
                     continue;
                 }
 
@@ -408,7 +413,7 @@ namespace Server.MirDatabase
 
                 if (drop == null)
                 {
-                    MessageQueue.Enqueue(string.Format("Could not load Drop: {0}, Line {1}", name, line));
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.CouldNotLoadDrop, name, lines));
                     continue;
                 }
 

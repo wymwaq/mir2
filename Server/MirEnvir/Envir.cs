@@ -1,4 +1,5 @@
 ﻿using ClientPackets;
+using Server.Library;
 using Server.Library.Utils;
 using Server.MirDatabase;
 using Server.MirNetwork;
@@ -676,7 +677,7 @@ namespace Server.MirEnvir
                     // Get the line number from the stack frame
                     var line = frame.GetFileLineNumber();
 
-                    MessageQueue.Enqueue($"[inner workloop error. Line {line}]" + ex);
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.WorkloopError_Inner, line, ex));
                 }
 
                 StopNetwork();
@@ -694,7 +695,7 @@ namespace Server.MirEnvir
                 // Get the line number from the stack frame
                 var line = frame.GetFileLineNumber();
 
-                MessageQueue.Enqueue($"[outer workloop error. Line {line}]" + ex);
+                MessageQueue.Enqueue(string.Format(ServerLibraryResources.WorkloopError_Outer, line, ex));
             }
 
             _thread = null;
@@ -767,7 +768,7 @@ namespace Server.MirEnvir
             {
                 if (ex is ThreadInterruptedException) return;
 
-                MessageQueue.Enqueue($"[threadloop error]" + ex);
+                MessageQueue.Enqueue(string.Format(ServerLibraryResources.ThreadloopError, ex));
             }
         }
 
@@ -1285,12 +1286,12 @@ namespace Server.MirEnvir
 
                     if (LoadVersion < MinVersion)
                     {
-                        MessageQueue.Enqueue($"Cannot load a database version {LoadVersion}. Mininum supported is {MinVersion}.");
+                        MessageQueue.Enqueue(string.Format(ServerLibraryResources.CannotLoadDatabaseMinVersion, LoadVersion, MinVersion));
                         return false;
                     }
                     else if (LoadVersion > Version)
                     {
-                        MessageQueue.Enqueue($"Cannot load a database version {LoadVersion}. Maximum supported is {Version}.");
+                        MessageQueue.Enqueue(string.Format(ServerLibraryResources.CannotLoadDatabaseMaxVersion, LoadVersion, Version));
                         return false;
 
                     }
@@ -1732,7 +1733,7 @@ namespace Server.MirEnvir
         {
             new Thread(() =>
             {
-                MessageQueue.Enqueue("Server rebooting...");
+                MessageQueue.Enqueue(ServerLibraryResources.ServerRebooting);
                 Stop();
                 Start();
             }).Start();
@@ -1762,7 +1763,7 @@ namespace Server.MirEnvir
                 BuffInfoList.Add(buff);
             }
 
-            MessageQueue.Enqueue($"{BuffInfoList.Count} Buffs Loaded.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.BuffsLoaded, BuffInfoList.Count));
 
             RecipeInfoList.Clear();
             foreach (var recipe in Directory.GetFiles(Settings.RecipePath, "*.txt")
@@ -1772,13 +1773,13 @@ namespace Server.MirEnvir
                 RecipeInfoList.Add(new RecipeInfo(recipe));
             }
 
-            MessageQueue.Enqueue($"{RecipeInfoList.Count} Recipes Loaded.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.RecipesLoaded, RecipeInfoList.Count));
 
             for (var i = 0; i < MapInfoList.Count; i++)
             {
                 MapInfoList[i].CreateMap();
             }
-            MessageQueue.Enqueue($"{MapInfoList.Count} Maps Loaded.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.MapsLoaded, MapInfoList.Count));
 
             for (var i = 0; i < ItemInfoList.Count; i++)
             {
@@ -1801,14 +1802,14 @@ namespace Server.MirEnvir
                     if (DragonSystem.Load()) DragonSystem.Info.LoadDrops();
                 }
 
-                MessageQueue.Enqueue("Dragon Loaded.");
+                MessageQueue.Enqueue(ServerLibraryResources.DragonLoaded);
             }
 
             DefaultNPC = NPCScript.GetOrAdd((uint)Random.Next(1000000, 1999999), Settings.DefaultNPCFilename, NPCScriptType.AutoPlayer);
             MonsterNPC = NPCScript.GetOrAdd((uint)Random.Next(2000000, 2999999), Settings.MonsterNPCFilename, NPCScriptType.AutoMonster);
             RobotNPC = NPCScript.GetOrAdd((uint)Random.Next(3000000, 3999999), Settings.RobotNPCFilename, NPCScriptType.Robot);
 
-            MessageQueue.Enqueue("Envir Started.");
+            MessageQueue.Enqueue(ServerLibraryResources.EnvirStarted);
         }
         private void StartNetwork()
         {
@@ -1831,7 +1832,7 @@ namespace Server.MirEnvir
                 _StatusPort.BeginAcceptTcpClient(StatusConnection, null);
             }
 
-            MessageQueue.Enqueue("Network Started.");
+            MessageQueue.Enqueue(ServerLibraryResources.NetworkStarted);
         }
 
         private void StopEnvir()
@@ -1849,7 +1850,7 @@ namespace Server.MirEnvir
 
             GC.Collect();
 
-            MessageQueue.Enqueue("Envir Stopped.");
+            MessageQueue.Enqueue(ServerLibraryResources.EnvirStopped);
         }
         private void StopNetwork()
         {
@@ -1895,7 +1896,7 @@ namespace Server.MirEnvir
 
 
             StatusConnections.Clear();
-            MessageQueue.Enqueue("Network Stopped.");
+            MessageQueue.Enqueue(ServerLibraryResources.NetworkStopped);
         }
 
         private void CleanUp()
@@ -1989,7 +1990,7 @@ namespace Server.MirEnvir
                     {
                         UpdateIPBlock(ipAddress, TimeSpan.FromSeconds(Settings.IPBlockSeconds));
 
-                        MessageQueue.Enqueue(ipAddress + " Disconnected, Too many connections.");
+                        MessageQueue.Enqueue(string.Format(ServerLibraryResources.TooManyConnections, ipAddress));
                     }
                     else
                     {
@@ -2319,7 +2320,7 @@ namespace Server.MirEnvir
             account.LastDate = Now;
             account.LastIP = c.IPAddress;
 
-            MessageQueue.Enqueue(account.Connection.SessionID + ", " + account.Connection.IPAddress + ", User logged in.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.UserLoggedIn, account.Connection.SessionID, account.Connection.IPAddress));
             c.Enqueue(new ServerPackets.LoginSuccess { Characters = account.GetSelectInfo() });
         }
 
@@ -3415,7 +3416,7 @@ namespace Server.MirEnvir
             }
 
             ResetGS = false;
-            MessageQueue.Enqueue("Gameshop Purchase Logs Cleared.");
+            MessageQueue.Enqueue(ServerLibraryResources.GameshopPurchaseLogsCleared);
         }
 
         public void Inspect(MirConnection con, uint id)
@@ -3767,7 +3768,7 @@ namespace Server.MirEnvir
                 Scripts[key].Load();
             }
 
-            MessageQueue.Enqueue("NPC Scripts reloaded...");
+            MessageQueue.Enqueue(ServerLibraryResources.NPCScriptsReloaded);
         }
 
         public void ReloadDrops()
@@ -3804,7 +3805,7 @@ namespace Server.MirEnvir
             BlackstoneDrops.Clear();
             DropInfo.Load(BlackstoneDrops, "Blackstone", Path.Combine(Settings.DropPath, Settings.BlackstoneDropFilename + ".txt"));
 
-            MessageQueue.Enqueue("Drops Loaded.");
+            MessageQueue.Enqueue(ServerLibraryResources.DropsLoaded);
         }
 
         public void ReloadLineMessages()
@@ -3826,7 +3827,7 @@ namespace Server.MirEnvir
                     if (lines[i].StartsWith(";") || string.IsNullOrWhiteSpace(lines[i])) continue;
                     LineMessages.Add(lines[i]);
                 }
-                MessageQueue.Enqueue("LineMessages reloaded.");
+                MessageQueue.Enqueue(ServerLibraryResources.LineMessagesReloaded);
             }
         }
 
@@ -3848,7 +3849,7 @@ namespace Server.MirEnvir
             GuildList.Remove(guild.Info);
 
             GuildRefreshNeeded = true;
-            MessageQueue.Enqueue(guild.Info.Name + " guild will be deleted from the server.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.GuildWillBeDeleted, guild.Info.Name));
         }
     }
 }

@@ -49,7 +49,8 @@ namespace Client.MirObjects
 
         public void Load(S.ObjectNPC info)
         {
-            Name = info.Name;
+            //Name = info.Name;
+            Name =Wq.LanMgr.Ins.ToCN(info.Name, Wq.TYPE.NPC);
             NameColour = info.NameColour;
             CurrentLocation = info.Location;
             Direction = info.Direction;

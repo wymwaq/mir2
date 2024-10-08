@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema 
+    Microsoft ResX Schema
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -117,4 +117,801 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RecipeList.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RecipeList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 14</value>
+  </data>
+  <data name="RecipeList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 361</value>
+  </data>
+  <data name="RecipeList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RecipeList.Name" xml:space="preserve">
+    <value>RecipeList</value>
+  </data>
+  <data name="&gt;&gt;RecipeList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RecipeList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RecipeList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Craft Amount : </value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 80</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Chance % : </value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 112</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Gold Cost : </value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Tool : </value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>ToolsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GoldTextBox.Name" xml:space="preserve">
+    <value>GoldTextBox</value>
+  </data>
+  <data name="&gt;&gt;GoldTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GoldTextBox.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;GoldTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ChanceTextBox.Name" xml:space="preserve">
+    <value>ChanceTextBox</value>
+  </data>
+  <data name="&gt;&gt;ChanceTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChanceTextBox.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ChanceTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CraftAmountTextBox.Name" xml:space="preserve">
+    <value>CraftAmountTextBox</value>
+  </data>
+  <data name="&gt;&gt;CraftAmountTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CraftAmountTextBox.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CraftAmountTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ItemTextBox.Name" xml:space="preserve">
+    <value>ItemTextBox</value>
+  </data>
+  <data name="&gt;&gt;ItemTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ItemTextBox.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ItemTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RecipeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 14</value>
+  </data>
+  <data name="RecipeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 148</value>
+  </data>
+  <data name="RecipeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="RecipeGroupBox.Text" xml:space="preserve">
+    <value>Recipe (Required)</value>
+  </data>
+  <data name="&gt;&gt;RecipeGroupBox.Name" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RecipeGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RecipeGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RecipeGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="GoldTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 112</value>
+  </data>
+  <data name="GoldTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 23</value>
+  </data>
+  <data name="GoldTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;GoldTextBox.Name" xml:space="preserve">
+    <value>GoldTextBox</value>
+  </data>
+  <data name="&gt;&gt;GoldTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GoldTextBox.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;GoldTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ChanceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 77</value>
+  </data>
+  <data name="ChanceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 23</value>
+  </data>
+  <data name="ChanceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ChanceTextBox.Name" xml:space="preserve">
+    <value>ChanceTextBox</value>
+  </data>
+  <data name="&gt;&gt;ChanceTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChanceTextBox.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ChanceTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CraftAmountTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 48</value>
+  </data>
+  <data name="CraftAmountTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 23</value>
+  </data>
+  <data name="CraftAmountTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;CraftAmountTextBox.Name" xml:space="preserve">
+    <value>CraftAmountTextBox</value>
+  </data>
+  <data name="&gt;&gt;CraftAmountTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CraftAmountTextBox.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CraftAmountTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ItemTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 18</value>
+  </data>
+  <data name="ItemTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="ItemTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ItemTextBox.Name" xml:space="preserve">
+    <value>ItemTextBox</value>
+  </data>
+  <data name="&gt;&gt;ItemTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ItemTextBox.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ItemTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Item : </value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>RecipeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ToolTextBox.Name" xml:space="preserve">
+    <value>ToolTextBox</value>
+  </data>
+  <data name="&gt;&gt;ToolTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTextBox.Parent" xml:space="preserve">
+    <value>ToolsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ToolTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToolsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 169</value>
+  </data>
+  <data name="ToolsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 53</value>
+  </data>
+  <data name="ToolsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ToolsGroupBox.Text" xml:space="preserve">
+    <value>Tools (Optional)</value>
+  </data>
+  <data name="&gt;&gt;ToolsGroupBox.Name" xml:space="preserve">
+    <value>ToolsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ToolsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ToolsGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ToolTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="ToolTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="ToolTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;ToolTextBox.Name" xml:space="preserve">
+    <value>ToolTextBox</value>
+  </data>
+  <data name="&gt;&gt;ToolTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolTextBox.Parent" xml:space="preserve">
+    <value>ToolsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ToolTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;IngredientName4TextBox.Name" xml:space="preserve">
+    <value>IngredientName4TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName4TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientName4TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName4TextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;IngredientName3TextBox.Name" xml:space="preserve">
+    <value>IngredientName3TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName3TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientName3TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName3TextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;IngredientName2TextBox.Name" xml:space="preserve">
+    <value>IngredientName2TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName2TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientName2TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName2TextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;IngredientName1TextBox.Name" xml:space="preserve">
+    <value>IngredientName1TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName1TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientName1TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName1TextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount4TextBox.Name" xml:space="preserve">
+    <value>IngredientAmount4TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount4TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount4TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount4TextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount3TextBox.Name" xml:space="preserve">
+    <value>IngredientAmount3TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount3TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount3TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount3TextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount2TextBox.Name" xml:space="preserve">
+    <value>IngredientAmount2TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount2TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount2TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount2TextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount1TextBox.Name" xml:space="preserve">
+    <value>IngredientAmount1TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount1TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount1TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount1TextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="IngredientsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 229</value>
+  </data>
+  <data name="IngredientsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 181</value>
+  </data>
+  <data name="IngredientsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="IngredientsGroupBox.Text" xml:space="preserve">
+    <value>Ingredients (Required)</value>
+  </data>
+  <data name="&gt;&gt;IngredientsGroupBox.Name" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;IngredientsGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="IngredientName4TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 150</value>
+  </data>
+  <data name="IngredientName4TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="IngredientName4TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;IngredientName4TextBox.Name" xml:space="preserve">
+    <value>IngredientName4TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName4TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientName4TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName4TextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="IngredientName3TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 117</value>
+  </data>
+  <data name="IngredientName3TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="IngredientName3TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;IngredientName3TextBox.Name" xml:space="preserve">
+    <value>IngredientName3TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName3TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientName3TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName3TextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="IngredientName2TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 84</value>
+  </data>
+  <data name="IngredientName2TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="IngredientName2TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;IngredientName2TextBox.Name" xml:space="preserve">
+    <value>IngredientName2TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName2TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientName2TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName2TextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="IngredientName1TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
+  </data>
+  <data name="IngredientName1TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="IngredientName1TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;IngredientName1TextBox.Name" xml:space="preserve">
+    <value>IngredientName1TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName1TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientName1TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientName1TextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 22</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 17</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Ingredient Name</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 22</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="IngredientAmount4TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 150</value>
+  </data>
+  <data name="IngredientAmount4TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="IngredientAmount4TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount4TextBox.Name" xml:space="preserve">
+    <value>IngredientAmount4TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount4TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount4TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount4TextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="IngredientAmount3TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 117</value>
+  </data>
+  <data name="IngredientAmount3TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="IngredientAmount3TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount3TextBox.Name" xml:space="preserve">
+    <value>IngredientAmount3TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount3TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount3TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount3TextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="IngredientAmount2TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 84</value>
+  </data>
+  <data name="IngredientAmount2TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="IngredientAmount2TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount2TextBox.Name" xml:space="preserve">
+    <value>IngredientAmount2TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount2TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount2TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount2TextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="IngredientAmount1TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 51</value>
+  </data>
+  <data name="IngredientAmount1TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="IngredientAmount1TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount1TextBox.Name" xml:space="preserve">
+    <value>IngredientAmount1TextBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount1TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount1TextBox.Parent" xml:space="preserve">
+    <value>IngredientsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;IngredientAmount1TextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="NewRecipeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 382</value>
+  </data>
+  <data name="NewRecipeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 26</value>
+  </data>
+  <data name="NewRecipeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="NewRecipeButton.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="&gt;&gt;NewRecipeButton.Name" xml:space="preserve">
+    <value>NewRecipeButton</value>
+  </data>
+  <data name="&gt;&gt;NewRecipeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NewRecipeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NewRecipeButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>zh</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>360, 418</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>RecipeInfoForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RecipeInfoForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -53,7 +53,8 @@ public class ItemInfo
     {
         get
         {
-            string temp = Name;
+            //string temp = Name;
+            string temp = Wq.LanMgr.Ins.ToCN((uint)Index, Wq.TYPE.ITEM);
             temp = Regex.Replace(temp, @"\d+$", string.Empty); //hides end numbers
             temp = Regex.Replace(temp, @"\[[^]]*\]", string.Empty); //hides square brackets
 

@@ -29,51 +29,41 @@ namespace Server
         /// </summary>
         private void InitializeComponent()
         {
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
-            this.okButton = new System.Windows.Forms.Button();
-            this.cancelButton = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePasswordDialog));
+            PasswordTextBox = new TextBox();
+            okButton = new Button();
+            cancelButton = new Button();
+            SuspendLayout();
             // 
             // PasswordTextBox
             // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(12, 12);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(183, 20);
-            this.PasswordTextBox.TabIndex = 0;
+            resources.ApplyResources(PasswordTextBox, "PasswordTextBox");
+            PasswordTextBox.Name = "PasswordTextBox";
             // 
             // okButton
             // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.Location = new System.Drawing.Point(12, 38);
-            this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
-            this.okButton.TabIndex = 1;
-            this.okButton.Text = "OK";
-            this.okButton.UseVisualStyleBackColor = true;
+            okButton.DialogResult = DialogResult.OK;
+            resources.ApplyResources(okButton, "okButton");
+            okButton.Name = "okButton";
+            okButton.UseVisualStyleBackColor = true;
             // 
             // cancelButton
             // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(120, 38);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 2;
-            this.cancelButton.Text = "Cancel";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            cancelButton.DialogResult = DialogResult.Cancel;
+            resources.ApplyResources(cancelButton, "cancelButton");
+            cancelButton.Name = "cancelButton";
+            cancelButton.UseVisualStyleBackColor = true;
             // 
             // ChangePasswordDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(207, 70);
-            this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.okButton);
-            this.Controls.Add(this.PasswordTextBox);
-            this.Name = "ChangePasswordDialog";
-            this.Text = "Set Password";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            resources.ApplyResources(this, "$this");
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(cancelButton);
+            Controls.Add(okButton);
+            Controls.Add(PasswordTextBox);
+            Name = "ChangePasswordDialog";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

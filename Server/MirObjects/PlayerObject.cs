@@ -8,6 +8,8 @@ using System.Text.RegularExpressions;
 using Timer = Server.MirEnvir.Timer;
 using Server.MirObjects.Monsters;
 using System.Threading;
+using Server.Library;
+using WqSr = Server.Library.ServerLibraryResources;
 
 namespace Server.MirObjects
 {
@@ -219,7 +221,7 @@ namespace Server.MirObjects
             if (Account.AdminAccount)
             {
                 IsGM = true;
-                MessageQueue.Enqueue(string.Format("{0} is now a GM", Name));
+                MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerIsNowAGM, Name));
             }
 
             if (Level == 0) NewCharacter();
@@ -412,33 +414,33 @@ namespace Server.MirObjects
             {
                 //0-10 are 'senddisconnect to client'
                 case 0:
-                    return string.Format("{0} Has logged out. Reason: Server closed", Name);
+                    return string.Format(WqSr.LoggedOutServerClosed, Name);
                 case 1:
-                    return string.Format("{0} Has logged out. Reason: Double login", Name);
+                    return string.Format(WqSr.LoggedOutDoubleLogin, Name);
                 case 2:
-                    return string.Format("{0} Has logged out. Reason: Chat message too long", Name);
+                    return string.Format(WqSr.LoggedOutChatMesLong, Name);
                 case 3:
-                    return string.Format("{0} Has logged out. Reason: Server crashed", Name);
+                    return string.Format(WqSr.LoggedOutServerCrashed, Name);
                 case 4:
-                    return string.Format("{0} Has logged out. Reason: Kicked by admin", Name);
+                    return string.Format(WqSr.LoggedOutKickedByAdmin, Name);
                 case 5:
-                    return string.Format("{0} Has logged out. Reason: Maximum connections reached", Name);
+                    return string.Format(WqSr.LoggedOutMaxConnect, Name);
                 case 6:
-                    return string.Format("{0} Has logged out. Reason: Account has been Banned!", Name);
+                    return string.Format(WqSr.LoggedOutAccountBanned, Name);
                 case 10:
-                    return string.Format("{0} Has logged out. Reason: Wrong client version", Name);
+                    return string.Format(WqSr.LoggedOutWrongClientVers, Name);
                 case 20:
-                    return string.Format("{0} Has logged out. Reason: User gone missing / disconnected", Name);
+                    return string.Format(WqSr.LoggedOutUserDisConnect, Name);
                 case 21:
-                    return string.Format("{0} Has logged out. Reason: Connection timed out", Name);
+                    return string.Format(WqSr.LoggedOutConnectTimeOut, Name);
                 case 22:
-                    return string.Format("{0} Has logged out. Reason: User closed game", Name);
+                    return string.Format(WqSr.LoggedOutUserClose, Name);
                 case 23:
-                    return string.Format("{0} Has logged out. Reason: User returned to select char", Name);
+                    return string.Format(WqSr.LoggedOutUserSelectChar, Name);
                 case 24:
-                    return string.Format("{0} Has logged out. Reason: Began observing", Name);
+                    return string.Format(WqSr.LoggedOutBeganObserving, Name);
                 default:
-                    return string.Format("{0} Has logged out. Reason: Unknown", Name);
+                    return string.Format(WqSr.LoggeedOutUnknown, Name);
             }
         }
         protected override void NewCharacter()
@@ -556,7 +558,7 @@ namespace Server.MirObjects
                     item.CurrentDura = (ushort)(item.CurrentDura - 1000);
                     Enqueue(new S.DuraChanged { UniqueID = item.UniqueID, CurrentDura = item.CurrentDura });
                     RefreshStats();
-                    ReceiveChat("You have been given a second chance at life", ChatType.System);
+                    ReceiveChat(WqSr.YouGetSecondLife, ChatType.System);
                     return;
                 }
             }
@@ -567,20 +569,20 @@ namespace Server.MirObjects
 
                 if (AtWar(hitter) || WarZone)
                 {
-                    hitter.ReceiveChat(string.Format("You've been protected by the law"), ChatType.System);
+                    hitter.ReceiveChat(string.Format(WqSr.YouProtectedByLaw), ChatType.System);
                 }
                 else if (Envir.Time > BrownTime && PKPoints < 200)
                 {
                     UserItem weapon = hitter.Info.Equipment[(byte)EquipmentSlot.Weapon];
 
                     hitter.PKPoints = Math.Min(int.MaxValue, LastHitter.PKPoints + 100);
-                    hitter.ReceiveChat(string.Format("You have murdered {0}", Name), ChatType.System);
-                    ReceiveChat(string.Format("You have been murdered by {0}", LastHitter.Name), ChatType.System);
+                    hitter.ReceiveChat(string.Format(WqSr.YouHaveMurdered, Name), ChatType.System);
+                    ReceiveChat(string.Format(WqSr.YouHaveBeenMurderedBy, LastHitter.Name), ChatType.System);
 
                     if (weapon != null && weapon.AddedStats[Stat.Luck] > (Settings.MaxLuck * -1) && Envir.Random.Next(4) == 0)
                     {
                         weapon.AddedStats[Stat.Luck]--;
-                        hitter.ReceiveChat("Your weapon has been cursed.", ChatType.System);
+                        hitter.ReceiveChat(WqSr.YourWeaponCursed, ChatType.System);
                         hitter.Enqueue(new S.RefreshItem { Item = weapon });
                     }
                 }
@@ -655,7 +657,7 @@ namespace Server.MirObjects
                     {
                         Info.Equipment[i] = null;
                         Enqueue(new S.DeleteItem { UniqueID = item.UniqueID, Count = item.Count });
-                        ReceiveChat($"Your {item.FriendlyName} shattered upon death.", ChatType.System2);
+                        ReceiveChat(string.Format(WqSr.ShatteredUponDeath, item.FriendlyName), ChatType.System2);
                         Report.ItemChanged(item, item.Count, 1, "RedDeathDrop");
                     }
 
@@ -688,7 +690,7 @@ namespace Server.MirObjects
                             Info.Equipment[i] = null;
                             Enqueue(new S.DeleteItem { UniqueID = item.UniqueID, Count = item.Count });
 
-                            ReceiveChat($"You died and {item.Info.FriendlyName} has been returned to it's owner.", ChatType.Hint);
+                            ReceiveChat(string.Format(WqSr.YouDiedAndReturn, item.Info.FriendlyName), ChatType.Hint);
                             Report.ItemMailed(item, 1, 1, "Death Dropped Rental Item");
 
                             continue;
@@ -700,7 +702,7 @@ namespace Server.MirObjects
                         if (item.Info.GlobalDropNotify)
                             foreach (var player in Envir.Players)
                             {
-                                player.ReceiveChat($"{Name} has dropped {item.FriendlyName}.", ChatType.System2);
+                                player.ReceiveChat(string.Format(WqSr.HasDropped, Name, item.FriendlyName), ChatType.System2);
                             }
 
                         Info.Equipment[i] = null;
@@ -733,7 +735,7 @@ namespace Server.MirObjects
                     Info.Inventory[i] = null;
                     Enqueue(new S.DeleteItem { UniqueID = item.UniqueID, Count = item.Count });
 
-                    ReceiveChat($"You died and {item.Info.FriendlyName} has been returned to it's owner.", ChatType.Hint);
+                    ReceiveChat(string.Format(WqSr.YouDiedAndReturn, item.Info.FriendlyName), ChatType.Hint);
                     Report.ItemMailed(item, 1, 1, "Death Dropped Rental Item");
 
                     continue;
@@ -745,7 +747,7 @@ namespace Server.MirObjects
                 if (item.Info.GlobalDropNotify)
                     foreach (var player in Envir.Players)
                     {
-                        player.ReceiveChat($"{Name} has dropped {item.FriendlyName}.", ChatType.System2);
+                        player.ReceiveChat(string.Format(WqSr.HasDropped, Name, item.FriendlyName), ChatType.System2);
                     }
 
                 Info.Inventory[i] = null;
@@ -1086,7 +1088,7 @@ namespace Server.MirObjects
 
             if (Settings.TestServer)
             {
-                ReceiveChat("Game is currently in test mode.", ChatType.Hint);
+                ReceiveChat(WqSr.GameCurTest, ChatType.Hint);
                 Chat("@GAMEMASTER");
             }
 
@@ -1106,7 +1108,7 @@ namespace Server.MirObjects
                 if (MyGuild == null)
                 {
                     Info.GuildIndex = -1;
-                    ReceiveChat("You have been removed from the guild.", ChatType.System);
+                    ReceiveChat(WqSr.YourBeenRemoveFromGuild, ChatType.System);
                 }
                 else
                 {
@@ -1115,7 +1117,7 @@ namespace Server.MirObjects
                     {
                         MyGuild = null;
                         Info.GuildIndex = -1;
-                        ReceiveChat("You have been removed from the guild.", ChatType.System);
+                        ReceiveChat(WqSr.YourBeenRemoveFromGuild, ChatType.System);
                     }
                 }
             }
@@ -1280,12 +1282,12 @@ namespace Server.MirObjects
 
             if (Info.Mail.Count > Settings.MailCapacity)
             {
-                ReceiveChat("Your mailbox is overflowing.", ChatType.System);
+                ReceiveChat(WqSr.MailboxOverflowing, ChatType.System);
             }
 
             Report.Connected(Connection.IPAddress);
 
-            MessageQueue.Enqueue(string.Format("{0} has connected.", Info.Name));
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.UserConnected, Info.Name));
 
             if (IsGM)
             {
@@ -1755,14 +1757,14 @@ namespace Server.MirObjects
                 {
                     IsGM = true;
                     UpdateGMBuff();
-                    MessageQueue.Enqueue(string.Format("{0} is now a GM", Name));
-                    ReceiveChat("You have been made a GM", ChatType.System);
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerIsNowAGM, Name));
+                    ReceiveChat(WqSr.YouMadeGM, ChatType.System);
                     Envir.RemoveRank(Info);//remove gm chars from ranking to avoid causing bugs in rank list
                 }
                 else
                 {
-                    MessageQueue.Enqueue(string.Format("{0} attempted a GM login", Name));
-                    ReceiveChat("Incorrect login password", ChatType.System);
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.GMAttempt, Name));
+                    ReceiveChat(WqSr.IncorrectLoginPassword, ChatType.System);
                 }
                 GMLogin = false;
                 return;
@@ -1772,7 +1774,7 @@ namespace Server.MirObjects
             {
                 if (Info.ChatBanExpiryDate > Envir.Now)
                 {
-                    ReceiveChat("You are currently banned from chatting.", ChatType.System);
+                    ReceiveChat(WqSr.YouCurChatBanned, ChatType.System);
                     return;
                 }
 
@@ -1786,7 +1788,7 @@ namespace Server.MirObjects
                     {
                         Info.ChatBanned = true;
                         Info.ChatBanExpiryDate = Envir.Now.AddMinutes(5);
-                        ReceiveChat("You have been banned from chatting for 5 minutes.", ChatType.System);
+                        ReceiveChat(WqSr.YouChatBanned5Min, ChatType.System);
                         return;
                     }
 
@@ -1822,19 +1824,19 @@ namespace Server.MirObjects
                         creature.ReceiveChat(message.Remove(0, parts[0].Length), ChatType.WhisperIn);
                         return;
                     }
-                    ReceiveChat(string.Format("Could not find {0}.", parts[0]), ChatType.System);
+                    ReceiveChat(string.Format(WqSr.CouldNotFind, parts[0]), ChatType.System);
                     return;
                 }
 
                 if (player.Info.Friends.Any(e => e.Info == Info && e.Blocked))
                 {
-                    ReceiveChat("Player is not accepting your messages.", ChatType.System);
+                    ReceiveChat(WqSr.PlayerNotAcceptYourMes, ChatType.System);
                     return;
                 }
 
                 if (Info.Friends.Any(e => e.Info == player.Info && e.Blocked))
                 {
-                    ReceiveChat("Cannot message player whilst they are on your blacklist.", ChatType.System);
+                    ReceiveChat(WqSr.CannotMesBlacklist, ChatType.System);
                     return;
                 }
 
@@ -1897,12 +1899,12 @@ namespace Server.MirObjects
                 //Shout
                 if (Envir.Time < ShoutTime)
                 {
-                    ReceiveChat(string.Format("You cannot shout for another {0} seconds.", Math.Ceiling((ShoutTime - Envir.Time) / 1000D)), ChatType.System);
+                    ReceiveChat(string.Format(WqSr.YouCannotShoutSeconds, Math.Ceiling((ShoutTime - Envir.Time) / 1000D)), ChatType.System);
                     return;
                 }
                 if (Level < 8 && (!HasMapShout && !HasServerShout))
                 {
-                    ReceiveChat("You need to be level 8 before you can shout.", ChatType.System);
+                    ReceiveChat(WqSr.YouLevel8Shout, ChatType.System);
                     return;
                 }
 
@@ -1973,7 +1975,7 @@ namespace Server.MirObjects
             
                 if (player == null)
                 {
-                    ReceiveChat(string.Format("{0} isn't online.", Lover.Name), ChatType.System);
+                    ReceiveChat(string.Format(WqSr.IsntOnline, Lover.Name), ChatType.System);
                     return;
                 }
 
@@ -2021,7 +2023,7 @@ namespace Server.MirObjects
                 {
                     case "LOGIN":
                         GMLogin = true;
-                        ReceiveChat("Please type the GM Password", ChatType.Hint);
+                        ReceiveChat(WqSr.PleaseTypeGMPassword, ChatType.Hint);
                         return;
 
                     case "KILL":
@@ -2033,7 +2035,7 @@ namespace Server.MirObjects
 
                             if (player == null)
                             {
-                                ReceiveChat(string.Format("Could not find {0}", parts[0]), ChatType.System);
+                                ReceiveChat(string.Format(WqSr.CouldNotFind, parts[0]), ChatType.System);
                                 return;
                             }
 
@@ -2041,7 +2043,7 @@ namespace Server.MirObjects
                             {
                                 player.Die();
 
-                                Helpers.ChatSystem.SystemMessage(chatMessage: $"{player} was totally killed by GM: {Name}");
+                                Helpers.ChatSystem.SystemMessage(chatMessage: string.Format(WqSr.KilledByGM, player, Name));
                             }
                         }
                         else
@@ -2089,10 +2091,10 @@ namespace Server.MirObjects
                                 break;
                         }
 
-                        ReceiveChat(string.Format("Player {0} has been changed to {1}", data.Name, data.Gender), ChatType.System);
-                        MessageQueue.Enqueue(string.Format("Player {0} has been changed to {1} by {2}", data.Name, data.Gender, Name));
+                        ReceiveChat(string.Format(WqSr.PlayerBeenChangedTo, data.Name, data.Gender), ChatType.System);
+                        MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerChangedGender, data.Name, data.Gender, Name));
 
-                        Helpers.ChatSystem.SystemMessage(chatMessage: $"{data.Player.Name} had gender change to {data.Gender.ToString()} by GM: {Name}");
+                        Helpers.ChatSystem.SystemMessage(chatMessage: string.Format(WqSr.GenderChangeByGM, data.Player.Name, data.Gender.ToString(), Name));
 
                         if (data.Player != null)
                             data.Player.Connection.LogOut();
@@ -2117,9 +2119,9 @@ namespace Server.MirObjects
                                 player.Level = level;
                                 player.LevelUp();
 
-                                ReceiveChat(string.Format("Player {0} has been Levelled {1} -> {2}.", player.Name, old, player.Level), ChatType.System);
-                                MessageQueue.Enqueue(string.Format("Player {0} has been Levelled {1} -> {2} by {3}", player.Name, old, player.Level, Name));
-                                Helpers.ChatSystem.SystemMessage(chatMessage: $"Player {player.Name} has been Levelled: {old} -> {player.Level} by GM: {Name}");
+                                ReceiveChat(string.Format(WqSr.PlayerHasBeenLevelled, player.Name, old, player.Level), ChatType.System);
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerLevelChanged, player.Name, old, player.Level, Name));
+                                Helpers.ChatSystem.SystemMessage(chatMessage: string.Format(WqSr.PlayerHasBeenLevelledByGM, player.Name, old, player.Level, Name));
 
                                 return;
                             }
@@ -2139,12 +2141,12 @@ namespace Server.MirObjects
                                 LevelUp();
 
                                 ReceiveChat(string.Format("{0} {1} -> {2}.", GameLanguage.LevelUp, old, Level), ChatType.System);
-                                MessageQueue.Enqueue(string.Format("Player {0} has been Leveled {1} -> {2} by {3}", Name, old, Level, Name));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerLevelChangedCurrent, Name, old, Level, Name));
                                 return;
                             }
                         }
 
-                        ReceiveChat("Could not level player", ChatType.System);
+                        ReceiveChat(WqSr.CouldNotLevelPlayer, ChatType.System);
                         break;
 
                     case "LEVELHERO":
@@ -2166,7 +2168,7 @@ namespace Server.MirObjects
                                 hero.LevelUp();
 
                                 ReceiveChat(string.Format("Player {0}'s hero has been Levelled {1} -> {2}.", player.Name, old, hero.Level), ChatType.System);
-                                MessageQueue.Enqueue(string.Format("Player {0}'s hero has been Levelled {1} -> {2} by {3}", player.Name, old, hero.Level, Name));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerHeroLevelChanged, player.Name, old, hero.Level, Name));
                                 Helpers.ChatSystem.SystemMessage(chatMessage: $"Player {player.Name}'s hero has been Levelled: {old} -> {hero.Level} by GM: {Name}");
                                 return;
                             }
@@ -2189,7 +2191,7 @@ namespace Server.MirObjects
                                 hero.LevelUp();
 
                                 ReceiveChat(string.Format("{0} {1} -> {2}.", GameLanguage.LevelUp, old, hero.Level), ChatType.System);
-                                MessageQueue.Enqueue(string.Format("Player {0}'s hero has been Leveled {1} -> {2} by {3}", Name, old, hero.Level, Name));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerHeroLevelChangedCurrent, Name, old, hero.Level, Name));
                                 return;
                             }
                         }
@@ -2243,7 +2245,7 @@ namespace Server.MirObjects
                             }
 
                             ReceiveChat(string.Format("{0} x{1} has been created.", iInfo.FriendlyName, tempCount), ChatType.System);
-                            MessageQueue.Enqueue(string.Format("Player {0} has attempted to Create {1} x{2}", Name, iInfo.Name, tempCount));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerCreateAttempt, Name, iInfo.Name, tempCount));
                         }
                         break;
                     case "CLEARBUFFS":
@@ -2542,7 +2544,7 @@ namespace Server.MirObjects
                             Envir.SaveArchivedCharacter(info);
 
                             ReceiveChat(string.Format("Player {0} has been backed up", info.Name), ChatType.System);
-                            MessageQueue.Enqueue(string.Format("Player {0} has been backed up by {1}", info.Name, Name));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerBackedUp, info.Name, Name));
                         }
                         break;
 
@@ -2578,7 +2580,7 @@ namespace Server.MirObjects
                             account.Characters.Remove(data);
 
                             ReceiveChat(string.Format("Player {0} has been archived", data.Name), ChatType.System);
-                            MessageQueue.Enqueue(string.Format("Player {0} has been archived by {1}", data.Name, Name));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerArchived, data.Name, Name));
                         }
                         break;
 
@@ -2613,7 +2615,7 @@ namespace Server.MirObjects
                             info = bak;
 
                             ReceiveChat(string.Format("Player {0} has been loaded", info.Name), ChatType.System);
-                            MessageQueue.Enqueue(string.Format("Player {0} has been loaded by {1}", info.Name, Name));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerLoaded, info.Name, Name));
                         }
                         break;
 
@@ -2678,7 +2680,7 @@ namespace Server.MirObjects
                             }
 
                             ReceiveChat(string.Format("Player {0} has been restored by", data.Name), ChatType.System);
-                            MessageQueue.Enqueue(string.Format("Player {0} has been restored by {1}", data.Name, Name));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerRestored, data.Name, Name));
                         }
                         break;
 
@@ -3001,7 +3003,7 @@ namespace Server.MirObjects
 
                         string creditMsg = $"Player {player.Name} has been given {count} credit by GM: {Name}";
 
-                        MessageQueue.Enqueue(string.Format("Player {0} has been given {1} credit", player.Name, count));
+                        MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerGivenCredit, player.Name, count));
                         Helpers.ChatSystem.SystemMessage(chatMessage: creditMsg);
 
                         break;
@@ -3282,7 +3284,7 @@ namespace Server.MirObjects
                         data.Class = mirClass;
 
                         ReceiveChat(string.Format("Player {0} has been changed to {1}", data.Name, data.Class), ChatType.System);
-                        MessageQueue.Enqueue(string.Format("Player {0} has been changed to {1} by {2}", data.Name, data.Class, Name));
+                        MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerChangedClass, data.Name, data.Class, Name));
 
                         Helpers.ChatSystem.SystemMessage(chatMessage: $"{data.Player.Name} class changed to {data.Class.ToString()} by GM: {Name}");
 
@@ -3709,7 +3711,7 @@ namespace Server.MirObjects
                             }
                             else return;
                             ReceiveChat(string.Format("{0} War Started.", tempConq.Info.Name), ChatType.System);
-                            MessageQueue.Enqueue(string.Format("{0} War Started.", tempConq.Info.Name));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.WarStarted, tempConq.Info.Name));
 
                             foreach (var pl in Envir.Players)
                             {
@@ -8157,7 +8159,7 @@ namespace Server.MirObjects
 
                     if (auction.Sold && auction.Expired)
                     {
-                        MessageQueue.Enqueue(string.Format("Auction both sold and Expired {0}", Account.AccountID));
+                        MessageQueue.Enqueue(string.Format(ServerLibraryResources.AuctionSoldExpired, Account.AccountID));
                         return;
                     }
 
@@ -8223,7 +8225,7 @@ namespace Server.MirObjects
 
                     if (auction.Sold && auction.Expired)
                     {
-                        MessageQueue.Enqueue(string.Format("Auction both sold and Expired {0}", Account.AccountID));
+                        MessageQueue.Enqueue(string.Format(ServerLibraryResources.AuctionSoldExpired, Account.AccountID));
                         return;
                     }
 

@@ -28,2086 +28,1452 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DamageReductiontextBox = new System.Windows.Forms.TextBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.GoldRatetextBox = new System.Windows.Forms.TextBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.DropRatetextBox = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.ExpRatetextBox = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.MaxSCRatetextBox = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.MaxMCRatetextBox = new System.Windows.Forms.TextBox();
-            this.label59 = new System.Windows.Forms.Label();
-            this.MaxDCRatetextBox = new System.Windows.Forms.TextBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.ItemInfoPanel = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label57 = new System.Windows.Forms.Label();
-            this.SlotsTextBox = new System.Windows.Forms.TextBox();
-            this.globalDropNotify_CheckBox = new System.Windows.Forms.CheckBox();
-            this.CanAwaken = new System.Windows.Forms.CheckBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.TooltipTextBox = new System.Windows.Forms.TextBox();
-            this.FastRunCheckBox = new System.Windows.Forms.CheckBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.IGradeComboBox = new System.Windows.Forms.ComboBox();
-            this.RandomStatstextBox = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.LightIntensitytextBox = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.NeedIdentifycheckbox = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ItemIndexTextBox = new System.Windows.Forms.TextBox();
-            this.StartItemCheckBox = new System.Windows.Forms.CheckBox();
-            this.ClassBasedcheckbox = new System.Windows.Forms.CheckBox();
-            this.LevelBasedcheckbox = new System.Windows.Forms.CheckBox();
-            this.ShowGroupPickupcheckbox = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ItemNameTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.EffectTextBox = new System.Windows.Forms.TextBox();
-            this.ITypeComboBox = new System.Windows.Forms.ComboBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.PriceTextBox = new System.Windows.Forms.TextBox();
-            this.RTypeComboBox = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.DuraTextBox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.RClassComboBox = new System.Windows.Forms.ComboBox();
-            this.LightTextBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.RAmountTextBox = new System.Windows.Forms.TextBox();
-            this.WeightTextBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.ImageTextBox = new System.Windows.Forms.TextBox();
-            this.ShapeTextBox = new System.Windows.Forms.TextBox();
-            this.SSizeTextBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.RGenderComboBox = new System.Windows.Forms.ComboBox();
-            this.ISetComboBox = new System.Windows.Forms.ComboBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.ReflecttextBox = new System.Windows.Forms.TextBox();
-            this.HpDrainRatetextBox = new System.Windows.Forms.TextBox();
-            this.CriticalDamagetextBox = new System.Windows.Forms.TextBox();
-            this.CriticalRatetextBox = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.MinACTextBox = new System.Windows.Forms.TextBox();
-            this.MPratetextbox = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.MaxACTextBox = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.MinMACTextBox = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.MaxMACTextBox = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.MinDCTextBox = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.MaxDCTextBox = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.PoisonAttacktextbox = new System.Windows.Forms.TextBox();
-            this.MinMCTextBox = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.Freezingtextbox = new System.Windows.Forms.TextBox();
-            this.MaxMCTextBox = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.Holytextbox = new System.Windows.Forms.TextBox();
-            this.MinSCTextBox = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.HPratetextbox = new System.Windows.Forms.TextBox();
-            this.MaxSCTextBox = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.PoisonRecoverytextBox = new System.Windows.Forms.TextBox();
-            this.HPTextBox = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.SpellRecoverytextBox = new System.Windows.Forms.TextBox();
-            this.MPTextBox = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.PoisonResisttextBox = new System.Windows.Forms.TextBox();
-            this.AccuracyTextBox = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.MagicResisttextBox = new System.Windows.Forms.TextBox();
-            this.AgilityTextBox = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.HealthRecoveryTextbox = new System.Windows.Forms.TextBox();
-            this.ASpeedTextBox = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.StrongTextbox = new System.Windows.Forms.TextBox();
-            this.LuckTextBox = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.MacRateTextbox = new System.Windows.Forms.TextBox();
-            this.BWeightText = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.ACRateTextbox = new System.Windows.Forms.TextBox();
-            this.HWeightTextBox = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.WWeightTextBox = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.noMailBox = new System.Windows.Forms.CheckBox();
-            this.unableToDisassemble_CheckBox = new System.Windows.Forms.CheckBox();
-            this.unableToRent_CheckBox = new System.Windows.Forms.CheckBox();
-            this.NoWeddingRingcheckbox = new System.Windows.Forms.CheckBox();
-            this.BreakOnDeathcheckbox = new System.Windows.Forms.CheckBox();
-            this.Bind_DontSpecialRepaircheckBox = new System.Windows.Forms.CheckBox();
-            this.Bind_dontdropcheckbox = new System.Windows.Forms.CheckBox();
-            this.BindOnEquipcheckbox = new System.Windows.Forms.CheckBox();
-            this.Bind_dontdeathdropcheckbox = new System.Windows.Forms.CheckBox();
-            this.Bind_dontstorecheckbox = new System.Windows.Forms.CheckBox();
-            this.Bind_destroyondropcheckbox = new System.Windows.Forms.CheckBox();
-            this.Bind_dontupgradecheckbox = new System.Windows.Forms.CheckBox();
-            this.Bind_dontsellcheckbox = new System.Windows.Forms.CheckBox();
-            this.Bind_dontrepaircheckbox = new System.Windows.Forms.CheckBox();
-            this.Bind_donttradecheckbox = new System.Windows.Forms.CheckBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.PickaxecheckBox = new System.Windows.Forms.CheckBox();
-            this.NoDuraLosscheckBox = new System.Windows.Forms.CheckBox();
-            this.SkillcheckBox = new System.Windows.Forms.CheckBox();
-            this.ProbecheckBox = new System.Windows.Forms.CheckBox();
-            this.HealingcheckBox = new System.Windows.Forms.CheckBox();
-            this.FlamecheckBox = new System.Windows.Forms.CheckBox();
-            this.MusclecheckBox = new System.Windows.Forms.CheckBox();
-            this.RevivalcheckBox = new System.Windows.Forms.CheckBox();
-            this.ProtectioncheckBox = new System.Windows.Forms.CheckBox();
-            this.ClearcheckBox = new System.Windows.Forms.CheckBox();
-            this.TeleportcheckBox = new System.Windows.Forms.CheckBox();
-            this.ParalysischeckBox = new System.Windows.Forms.CheckBox();
-            this.BlinkcheckBox = new System.Windows.Forms.CheckBox();
-            this.RemoveButton = new System.Windows.Forms.Button();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.ItemInfoListBox = new System.Windows.Forms.ListBox();
-            this.PasteButton = new System.Windows.Forms.Button();
-            this.CopyMButton = new System.Windows.Forms.Button();
-            this.ITypeFilterComboBox = new System.Windows.Forms.ComboBox();
-            this.Gameshop_button = new System.Windows.Forms.Button();
-            this.ItemInfoPanel.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemInfoForm));
+            DamageReductiontextBox = new TextBox();
+            label64 = new Label();
+            GoldRatetextBox = new TextBox();
+            label63 = new Label();
+            DropRatetextBox = new TextBox();
+            label62 = new Label();
+            ExpRatetextBox = new TextBox();
+            label61 = new Label();
+            MaxSCRatetextBox = new TextBox();
+            label60 = new Label();
+            MaxMCRatetextBox = new TextBox();
+            label59 = new Label();
+            MaxDCRatetextBox = new TextBox();
+            label58 = new Label();
+            ItemInfoPanel = new Panel();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            label57 = new Label();
+            SlotsTextBox = new TextBox();
+            globalDropNotify_CheckBox = new CheckBox();
+            CanAwaken = new CheckBox();
+            label56 = new Label();
+            TooltipTextBox = new TextBox();
+            FastRunCheckBox = new CheckBox();
+            label55 = new Label();
+            IGradeComboBox = new ComboBox();
+            RandomStatstextBox = new TextBox();
+            label54 = new Label();
+            LightIntensitytextBox = new TextBox();
+            label53 = new Label();
+            NeedIdentifycheckbox = new CheckBox();
+            label1 = new Label();
+            ItemIndexTextBox = new TextBox();
+            StartItemCheckBox = new CheckBox();
+            ClassBasedcheckbox = new CheckBox();
+            LevelBasedcheckbox = new CheckBox();
+            ShowGroupPickupcheckbox = new CheckBox();
+            label3 = new Label();
+            ItemNameTextBox = new TextBox();
+            label2 = new Label();
+            EffectTextBox = new TextBox();
+            ITypeComboBox = new ComboBox();
+            label34 = new Label();
+            label4 = new Label();
+            PriceTextBox = new TextBox();
+            RTypeComboBox = new ComboBox();
+            label12 = new Label();
+            DuraTextBox = new TextBox();
+            label5 = new Label();
+            label11 = new Label();
+            RClassComboBox = new ComboBox();
+            LightTextBox = new TextBox();
+            label6 = new Label();
+            label9 = new Label();
+            RAmountTextBox = new TextBox();
+            WeightTextBox = new TextBox();
+            label10 = new Label();
+            label8 = new Label();
+            ImageTextBox = new TextBox();
+            ShapeTextBox = new TextBox();
+            SSizeTextBox = new TextBox();
+            label7 = new Label();
+            label13 = new Label();
+            label33 = new Label();
+            RGenderComboBox = new ComboBox();
+            ISetComboBox = new ComboBox();
+            label35 = new Label();
+            tabPage2 = new TabPage();
+            groupBox1 = new GroupBox();
+            label50 = new Label();
+            label52 = new Label();
+            label49 = new Label();
+            ReflecttextBox = new TextBox();
+            HpDrainRatetextBox = new TextBox();
+            CriticalDamagetextBox = new TextBox();
+            CriticalRatetextBox = new TextBox();
+            label51 = new Label();
+            label37 = new Label();
+            label14 = new Label();
+            MinACTextBox = new TextBox();
+            MPratetextbox = new TextBox();
+            label15 = new Label();
+            label48 = new Label();
+            MaxACTextBox = new TextBox();
+            label17 = new Label();
+            MinMACTextBox = new TextBox();
+            label16 = new Label();
+            MaxMACTextBox = new TextBox();
+            label21 = new Label();
+            MinDCTextBox = new TextBox();
+            label20 = new Label();
+            MaxDCTextBox = new TextBox();
+            label19 = new Label();
+            PoisonAttacktextbox = new TextBox();
+            MinMCTextBox = new TextBox();
+            label47 = new Label();
+            label18 = new Label();
+            Freezingtextbox = new TextBox();
+            MaxMCTextBox = new TextBox();
+            label46 = new Label();
+            label23 = new Label();
+            Holytextbox = new TextBox();
+            MinSCTextBox = new TextBox();
+            label45 = new Label();
+            label22 = new Label();
+            HPratetextbox = new TextBox();
+            MaxSCTextBox = new TextBox();
+            label44 = new Label();
+            label25 = new Label();
+            PoisonRecoverytextBox = new TextBox();
+            HPTextBox = new TextBox();
+            label43 = new Label();
+            label24 = new Label();
+            SpellRecoverytextBox = new TextBox();
+            MPTextBox = new TextBox();
+            label42 = new Label();
+            label27 = new Label();
+            PoisonResisttextBox = new TextBox();
+            AccuracyTextBox = new TextBox();
+            label41 = new Label();
+            label26 = new Label();
+            MagicResisttextBox = new TextBox();
+            AgilityTextBox = new TextBox();
+            label40 = new Label();
+            label29 = new Label();
+            HealthRecoveryTextbox = new TextBox();
+            ASpeedTextBox = new TextBox();
+            label39 = new Label();
+            label28 = new Label();
+            StrongTextbox = new TextBox();
+            LuckTextBox = new TextBox();
+            label38 = new Label();
+            label31 = new Label();
+            MacRateTextbox = new TextBox();
+            BWeightText = new TextBox();
+            label30 = new Label();
+            ACRateTextbox = new TextBox();
+            HWeightTextBox = new TextBox();
+            label36 = new Label();
+            label32 = new Label();
+            WWeightTextBox = new TextBox();
+            tabPage3 = new TabPage();
+            noMailBox = new CheckBox();
+            unableToDisassemble_CheckBox = new CheckBox();
+            unableToRent_CheckBox = new CheckBox();
+            NoWeddingRingcheckbox = new CheckBox();
+            BreakOnDeathcheckbox = new CheckBox();
+            Bind_DontSpecialRepaircheckBox = new CheckBox();
+            Bind_dontdropcheckbox = new CheckBox();
+            BindOnEquipcheckbox = new CheckBox();
+            Bind_dontdeathdropcheckbox = new CheckBox();
+            Bind_dontstorecheckbox = new CheckBox();
+            Bind_destroyondropcheckbox = new CheckBox();
+            Bind_dontupgradecheckbox = new CheckBox();
+            Bind_dontsellcheckbox = new CheckBox();
+            Bind_dontrepaircheckbox = new CheckBox();
+            Bind_donttradecheckbox = new CheckBox();
+            tabPage4 = new TabPage();
+            PickaxecheckBox = new CheckBox();
+            NoDuraLosscheckBox = new CheckBox();
+            SkillcheckBox = new CheckBox();
+            ProbecheckBox = new CheckBox();
+            HealingcheckBox = new CheckBox();
+            FlamecheckBox = new CheckBox();
+            MusclecheckBox = new CheckBox();
+            RevivalcheckBox = new CheckBox();
+            ProtectioncheckBox = new CheckBox();
+            ClearcheckBox = new CheckBox();
+            TeleportcheckBox = new CheckBox();
+            ParalysischeckBox = new CheckBox();
+            BlinkcheckBox = new CheckBox();
+            RemoveButton = new Button();
+            AddButton = new Button();
+            ItemInfoListBox = new ListBox();
+            PasteButton = new Button();
+            CopyMButton = new Button();
+            ITypeFilterComboBox = new ComboBox();
+            Gameshop_button = new Button();
+            ItemInfoPanel.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            groupBox1.SuspendLayout();
+            tabPage3.SuspendLayout();
+            tabPage4.SuspendLayout();
+            SuspendLayout();
             // 
             // DamageReductiontextBox
             // 
-            this.DamageReductiontextBox.Location = new System.Drawing.Point(533, 258);
-            this.DamageReductiontextBox.MaxLength = 3;
-            this.DamageReductiontextBox.Name = "DamageReductiontextBox";
-            this.DamageReductiontextBox.Size = new System.Drawing.Size(30, 20);
-            this.DamageReductiontextBox.TabIndex = 139;
-            this.DamageReductiontextBox.TextChanged += new System.EventHandler(this.DamageReductiontextBox_TextChanged);
+            resources.ApplyResources(DamageReductiontextBox, "DamageReductiontextBox");
+            DamageReductiontextBox.Name = "DamageReductiontextBox";
+            DamageReductiontextBox.TextChanged += DamageReductiontextBox_TextChanged;
             // 
             // label64
             // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(387, 261);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(124, 13);
-            this.label64.TabIndex = 137;
-            this.label64.Text = "All Damage Reduction %";
+            resources.ApplyResources(label64, "label64");
+            label64.Name = "label64";
             // 
             // GoldRatetextBox
             // 
-            this.GoldRatetextBox.Location = new System.Drawing.Point(517, 71);
-            this.GoldRatetextBox.MaxLength = 3;
-            this.GoldRatetextBox.Name = "GoldRatetextBox";
-            this.GoldRatetextBox.Size = new System.Drawing.Size(30, 20);
-            this.GoldRatetextBox.TabIndex = 136;
-            this.GoldRatetextBox.TextChanged += new System.EventHandler(this.GoldRatetextBox_TextChanged);
+            resources.ApplyResources(GoldRatetextBox, "GoldRatetextBox");
+            GoldRatetextBox.Name = "GoldRatetextBox";
+            GoldRatetextBox.TextChanged += GoldRatetextBox_TextChanged;
             // 
             // label63
             // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(430, 74);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(66, 13);
-            this.label63.TabIndex = 135;
-            this.label63.Text = "Gold Rate %:";
+            resources.ApplyResources(label63, "label63");
+            label63.Name = "label63";
             // 
             // DropRatetextBox
             // 
-            this.DropRatetextBox.Location = new System.Drawing.Point(517, 40);
-            this.DropRatetextBox.MaxLength = 3;
-            this.DropRatetextBox.Name = "DropRatetextBox";
-            this.DropRatetextBox.Size = new System.Drawing.Size(30, 20);
-            this.DropRatetextBox.TabIndex = 134;
-            this.DropRatetextBox.TextChanged += new System.EventHandler(this.DropRatetextBox_TextChanged);
+            resources.ApplyResources(DropRatetextBox, "DropRatetextBox");
+            DropRatetextBox.Name = "DropRatetextBox";
+            DropRatetextBox.TextChanged += DropRatetextBox_TextChanged;
             // 
             // label62
             // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(429, 43);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(67, 13);
-            this.label62.TabIndex = 133;
-            this.label62.Text = "Drop Rate %:";
+            resources.ApplyResources(label62, "label62");
+            label62.Name = "label62";
             // 
             // ExpRatetextBox
             // 
-            this.ExpRatetextBox.Location = new System.Drawing.Point(517, 10);
-            this.ExpRatetextBox.MaxLength = 3;
-            this.ExpRatetextBox.Name = "ExpRatetextBox";
-            this.ExpRatetextBox.Size = new System.Drawing.Size(30, 20);
-            this.ExpRatetextBox.TabIndex = 132;
-            this.ExpRatetextBox.TextChanged += new System.EventHandler(this.ExpRatetextBox_TextChanged);
+            resources.ApplyResources(ExpRatetextBox, "ExpRatetextBox");
+            ExpRatetextBox.Name = "ExpRatetextBox";
+            ExpRatetextBox.TextChanged += ExpRatetextBox_TextChanged;
             // 
             // label61
             // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(433, 13);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(62, 13);
-            this.label61.TabIndex = 130;
-            this.label61.Text = "Exp Rate %:";
+            resources.ApplyResources(label61, "label61");
+            label61.Name = "label61";
             // 
             // MaxSCRatetextBox
             // 
-            this.MaxSCRatetextBox.Location = new System.Drawing.Point(382, 68);
-            this.MaxSCRatetextBox.MaxLength = 3;
-            this.MaxSCRatetextBox.Name = "MaxSCRatetextBox";
-            this.MaxSCRatetextBox.Size = new System.Drawing.Size(30, 20);
-            this.MaxSCRatetextBox.TabIndex = 131;
-            this.MaxSCRatetextBox.TextChanged += new System.EventHandler(this.MaxSCRatetextBox_TextChanged);
+            resources.ApplyResources(MaxSCRatetextBox, "MaxSCRatetextBox");
+            MaxSCRatetextBox.Name = "MaxSCRatetextBox";
+            MaxSCRatetextBox.TextChanged += MaxSCRatetextBox_TextChanged;
             // 
             // label60
             // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(313, 74);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(58, 13);
-            this.label60.TabIndex = 130;
-            this.label60.Text = "Max SC %:";
+            resources.ApplyResources(label60, "label60");
+            label60.Name = "label60";
             // 
             // MaxMCRatetextBox
             // 
-            this.MaxMCRatetextBox.Location = new System.Drawing.Point(382, 39);
-            this.MaxMCRatetextBox.MaxLength = 3;
-            this.MaxMCRatetextBox.Name = "MaxMCRatetextBox";
-            this.MaxMCRatetextBox.Size = new System.Drawing.Size(30, 20);
-            this.MaxMCRatetextBox.TabIndex = 127;
-            this.MaxMCRatetextBox.TextChanged += new System.EventHandler(this.MaxMCRatetextBox_TextChanged);
+            resources.ApplyResources(MaxMCRatetextBox, "MaxMCRatetextBox");
+            MaxMCRatetextBox.Name = "MaxMCRatetextBox";
+            MaxMCRatetextBox.TextChanged += MaxMCRatetextBox_TextChanged;
             // 
             // label59
             // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(311, 43);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(60, 13);
-            this.label59.TabIndex = 129;
-            this.label59.Text = "Max MC %:";
+            resources.ApplyResources(label59, "label59");
+            label59.Name = "label59";
             // 
             // MaxDCRatetextBox
             // 
-            this.MaxDCRatetextBox.Location = new System.Drawing.Point(382, 10);
-            this.MaxDCRatetextBox.MaxLength = 3;
-            this.MaxDCRatetextBox.Name = "MaxDCRatetextBox";
-            this.MaxDCRatetextBox.Size = new System.Drawing.Size(30, 20);
-            this.MaxDCRatetextBox.TabIndex = 127;
-            this.MaxDCRatetextBox.TextChanged += new System.EventHandler(this.MaxDCRatetextBox_TextChanged);
+            resources.ApplyResources(MaxDCRatetextBox, "MaxDCRatetextBox");
+            MaxDCRatetextBox.Name = "MaxDCRatetextBox";
+            MaxDCRatetextBox.TextChanged += MaxDCRatetextBox_TextChanged;
             // 
             // label58
             // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(312, 13);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(59, 13);
-            this.label58.TabIndex = 128;
-            this.label58.Text = "Max DC %:";
+            resources.ApplyResources(label58, "label58");
+            label58.Name = "label58";
             // 
             // ItemInfoPanel
             // 
-            this.ItemInfoPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ItemInfoPanel.Controls.Add(this.tabControl1);
-            this.ItemInfoPanel.Enabled = false;
-            this.ItemInfoPanel.Location = new System.Drawing.Point(174, 41);
-            this.ItemInfoPanel.Name = "ItemInfoPanel";
-            this.ItemInfoPanel.Size = new System.Drawing.Size(626, 423);
-            this.ItemInfoPanel.TabIndex = 11;
+            resources.ApplyResources(ItemInfoPanel, "ItemInfoPanel");
+            ItemInfoPanel.Controls.Add(tabControl1);
+            ItemInfoPanel.Name = "ItemInfoPanel";
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(3, 3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(609, 416);
-            this.tabControl1.TabIndex = 117;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabPage4);
+            resources.ApplyResources(tabControl1, "tabControl1");
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label57);
-            this.tabPage1.Controls.Add(this.SlotsTextBox);
-            this.tabPage1.Controls.Add(this.globalDropNotify_CheckBox);
-            this.tabPage1.Controls.Add(this.CanAwaken);
-            this.tabPage1.Controls.Add(this.label56);
-            this.tabPage1.Controls.Add(this.TooltipTextBox);
-            this.tabPage1.Controls.Add(this.FastRunCheckBox);
-            this.tabPage1.Controls.Add(this.label55);
-            this.tabPage1.Controls.Add(this.IGradeComboBox);
-            this.tabPage1.Controls.Add(this.RandomStatstextBox);
-            this.tabPage1.Controls.Add(this.label54);
-            this.tabPage1.Controls.Add(this.LightIntensitytextBox);
-            this.tabPage1.Controls.Add(this.label53);
-            this.tabPage1.Controls.Add(this.NeedIdentifycheckbox);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.ItemIndexTextBox);
-            this.tabPage1.Controls.Add(this.StartItemCheckBox);
-            this.tabPage1.Controls.Add(this.ClassBasedcheckbox);
-            this.tabPage1.Controls.Add(this.LevelBasedcheckbox);
-            this.tabPage1.Controls.Add(this.ShowGroupPickupcheckbox);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.ItemNameTextBox);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.EffectTextBox);
-            this.tabPage1.Controls.Add(this.ITypeComboBox);
-            this.tabPage1.Controls.Add(this.label34);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.PriceTextBox);
-            this.tabPage1.Controls.Add(this.RTypeComboBox);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.DuraTextBox);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.RClassComboBox);
-            this.tabPage1.Controls.Add(this.LightTextBox);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.RAmountTextBox);
-            this.tabPage1.Controls.Add(this.WeightTextBox);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.ImageTextBox);
-            this.tabPage1.Controls.Add(this.ShapeTextBox);
-            this.tabPage1.Controls.Add(this.SSizeTextBox);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.label33);
-            this.tabPage1.Controls.Add(this.RGenderComboBox);
-            this.tabPage1.Controls.Add(this.ISetComboBox);
-            this.tabPage1.Controls.Add(this.label35);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(601, 390);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "General";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Controls.Add(label57);
+            tabPage1.Controls.Add(SlotsTextBox);
+            tabPage1.Controls.Add(globalDropNotify_CheckBox);
+            tabPage1.Controls.Add(CanAwaken);
+            tabPage1.Controls.Add(label56);
+            tabPage1.Controls.Add(TooltipTextBox);
+            tabPage1.Controls.Add(FastRunCheckBox);
+            tabPage1.Controls.Add(label55);
+            tabPage1.Controls.Add(IGradeComboBox);
+            tabPage1.Controls.Add(RandomStatstextBox);
+            tabPage1.Controls.Add(label54);
+            tabPage1.Controls.Add(LightIntensitytextBox);
+            tabPage1.Controls.Add(label53);
+            tabPage1.Controls.Add(NeedIdentifycheckbox);
+            tabPage1.Controls.Add(label1);
+            tabPage1.Controls.Add(ItemIndexTextBox);
+            tabPage1.Controls.Add(StartItemCheckBox);
+            tabPage1.Controls.Add(ClassBasedcheckbox);
+            tabPage1.Controls.Add(LevelBasedcheckbox);
+            tabPage1.Controls.Add(ShowGroupPickupcheckbox);
+            tabPage1.Controls.Add(label3);
+            tabPage1.Controls.Add(ItemNameTextBox);
+            tabPage1.Controls.Add(label2);
+            tabPage1.Controls.Add(EffectTextBox);
+            tabPage1.Controls.Add(ITypeComboBox);
+            tabPage1.Controls.Add(label34);
+            tabPage1.Controls.Add(label4);
+            tabPage1.Controls.Add(PriceTextBox);
+            tabPage1.Controls.Add(RTypeComboBox);
+            tabPage1.Controls.Add(label12);
+            tabPage1.Controls.Add(DuraTextBox);
+            tabPage1.Controls.Add(label5);
+            tabPage1.Controls.Add(label11);
+            tabPage1.Controls.Add(RClassComboBox);
+            tabPage1.Controls.Add(LightTextBox);
+            tabPage1.Controls.Add(label6);
+            tabPage1.Controls.Add(label9);
+            tabPage1.Controls.Add(RAmountTextBox);
+            tabPage1.Controls.Add(WeightTextBox);
+            tabPage1.Controls.Add(label10);
+            tabPage1.Controls.Add(label8);
+            tabPage1.Controls.Add(ImageTextBox);
+            tabPage1.Controls.Add(ShapeTextBox);
+            tabPage1.Controls.Add(SSizeTextBox);
+            tabPage1.Controls.Add(label7);
+            tabPage1.Controls.Add(label13);
+            tabPage1.Controls.Add(label33);
+            tabPage1.Controls.Add(RGenderComboBox);
+            tabPage1.Controls.Add(ISetComboBox);
+            tabPage1.Controls.Add(label35);
+            resources.ApplyResources(tabPage1, "tabPage1");
+            tabPage1.Name = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // label57
             // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(522, 102);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(33, 13);
-            this.label57.TabIndex = 126;
-            this.label57.Text = "Slots:";
+            resources.ApplyResources(label57, "label57");
+            label57.Name = "label57";
             // 
             // SlotsTextBox
             // 
-            this.SlotsTextBox.Location = new System.Drawing.Point(561, 99);
-            this.SlotsTextBox.Name = "SlotsTextBox";
-            this.SlotsTextBox.Size = new System.Drawing.Size(30, 20);
-            this.SlotsTextBox.TabIndex = 125;
-            this.SlotsTextBox.TextChanged += new System.EventHandler(this.SlotsTextBox_TextChanged);
+            resources.ApplyResources(SlotsTextBox, "SlotsTextBox");
+            SlotsTextBox.Name = "SlotsTextBox";
+            SlotsTextBox.TextChanged += SlotsTextBox_TextChanged;
             // 
             // globalDropNotify_CheckBox
             // 
-            this.globalDropNotify_CheckBox.AutoSize = true;
-            this.globalDropNotify_CheckBox.Location = new System.Drawing.Point(468, 340);
-            this.globalDropNotify_CheckBox.Name = "globalDropNotify_CheckBox";
-            this.globalDropNotify_CheckBox.Size = new System.Drawing.Size(128, 17);
-            this.globalDropNotify_CheckBox.TabIndex = 124;
-            this.globalDropNotify_CheckBox.Text = "Notify Server on Drop";
-            this.globalDropNotify_CheckBox.UseVisualStyleBackColor = true;
-            this.globalDropNotify_CheckBox.CheckedChanged += new System.EventHandler(this.globalDropNotify_CheckBox_CheckedChanged);
+            resources.ApplyResources(globalDropNotify_CheckBox, "globalDropNotify_CheckBox");
+            globalDropNotify_CheckBox.Name = "globalDropNotify_CheckBox";
+            globalDropNotify_CheckBox.UseVisualStyleBackColor = true;
+            globalDropNotify_CheckBox.CheckedChanged += globalDropNotify_CheckBox_CheckedChanged;
             // 
             // CanAwaken
             // 
-            this.CanAwaken.AutoSize = true;
-            this.CanAwaken.Location = new System.Drawing.Point(468, 317);
-            this.CanAwaken.Name = "CanAwaken";
-            this.CanAwaken.Size = new System.Drawing.Size(87, 17);
-            this.CanAwaken.TabIndex = 114;
-            this.CanAwaken.Text = "Can Awaken";
-            this.CanAwaken.UseVisualStyleBackColor = true;
-            this.CanAwaken.CheckedChanged += new System.EventHandler(this.CanAwakening_CheckedChanged);
+            resources.ApplyResources(CanAwaken, "CanAwaken");
+            CanAwaken.Name = "CanAwaken";
+            CanAwaken.UseVisualStyleBackColor = true;
+            CanAwaken.CheckedChanged += CanAwakening_CheckedChanged;
             // 
             // label56
             // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(45, 233);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(46, 13);
-            this.label56.TabIndex = 123;
-            this.label56.Text = "ToolTip:";
+            resources.ApplyResources(label56, "label56");
+            label56.Name = "label56";
             // 
             // TooltipTextBox
             // 
-            this.TooltipTextBox.Location = new System.Drawing.Point(98, 230);
-            this.TooltipTextBox.Multiline = true;
-            this.TooltipTextBox.Name = "TooltipTextBox";
-            this.TooltipTextBox.Size = new System.Drawing.Size(226, 151);
-            this.TooltipTextBox.TabIndex = 122;
-            this.TooltipTextBox.TextChanged += new System.EventHandler(this.TooltipTextBox_TextChanged);
+            resources.ApplyResources(TooltipTextBox, "TooltipTextBox");
+            TooltipTextBox.Name = "TooltipTextBox";
+            TooltipTextBox.TextChanged += TooltipTextBox_TextChanged;
             // 
             // FastRunCheckBox
             // 
-            this.FastRunCheckBox.AutoSize = true;
-            this.FastRunCheckBox.Location = new System.Drawing.Point(468, 294);
-            this.FastRunCheckBox.Name = "FastRunCheckBox";
-            this.FastRunCheckBox.Size = new System.Drawing.Size(69, 17);
-            this.FastRunCheckBox.TabIndex = 121;
-            this.FastRunCheckBox.Text = "Fast Run";
-            this.FastRunCheckBox.UseVisualStyleBackColor = true;
-            this.FastRunCheckBox.CheckedChanged += new System.EventHandler(this.FastRunCheckBox_CheckedChanged);
+            resources.ApplyResources(FastRunCheckBox, "FastRunCheckBox");
+            FastRunCheckBox.Name = "FastRunCheckBox";
+            FastRunCheckBox.UseVisualStyleBackColor = true;
+            FastRunCheckBox.CheckedChanged += FastRunCheckBox_CheckedChanged;
             // 
             // label55
             // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(28, 98);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(62, 13);
-            this.label55.TabIndex = 120;
-            this.label55.Text = "Item Grade:";
+            resources.ApplyResources(label55, "label55");
+            label55.Name = "label55";
             // 
             // IGradeComboBox
             // 
-            this.IGradeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.IGradeComboBox.FormattingEnabled = true;
-            this.IGradeComboBox.Location = new System.Drawing.Point(98, 94);
-            this.IGradeComboBox.Name = "IGradeComboBox";
-            this.IGradeComboBox.Size = new System.Drawing.Size(92, 21);
-            this.IGradeComboBox.TabIndex = 119;
-            this.IGradeComboBox.SelectedIndexChanged += new System.EventHandler(this.IGradeComboBox_SelectedIndexChanged);
+            IGradeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            IGradeComboBox.FormattingEnabled = true;
+            resources.ApplyResources(IGradeComboBox, "IGradeComboBox");
+            IGradeComboBox.Name = "IGradeComboBox";
+            IGradeComboBox.SelectedIndexChanged += IGradeComboBox_SelectedIndexChanged;
             // 
             // RandomStatstextBox
             // 
-            this.RandomStatstextBox.Location = new System.Drawing.Point(365, 16);
-            this.RandomStatstextBox.MaxLength = 3;
-            this.RandomStatstextBox.Name = "RandomStatstextBox";
-            this.RandomStatstextBox.Size = new System.Drawing.Size(30, 20);
-            this.RandomStatstextBox.TabIndex = 115;
-            this.RandomStatstextBox.TextChanged += new System.EventHandler(this.RandomStatstextBox_TextChanged);
+            resources.ApplyResources(RandomStatstextBox, "RandomStatstextBox");
+            RandomStatstextBox.Name = "RandomStatstextBox";
+            RandomStatstextBox.TextChanged += RandomStatstextBox_TextChanged;
             // 
             // label54
             // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(282, 20);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(77, 13);
-            this.label54.TabIndex = 114;
-            this.label54.Text = "Random Stats:";
+            resources.ApplyResources(label54, "label54");
+            label54.Name = "label54";
             // 
             // LightIntensitytextBox
             // 
-            this.LightIntensitytextBox.Location = new System.Drawing.Point(468, 151);
-            this.LightIntensitytextBox.MaxLength = 3;
-            this.LightIntensitytextBox.Name = "LightIntensitytextBox";
-            this.LightIntensitytextBox.Size = new System.Drawing.Size(30, 20);
-            this.LightIntensitytextBox.TabIndex = 112;
-            this.LightIntensitytextBox.TextChanged += new System.EventHandler(this.LightIntensitytextBox_TextChanged);
+            resources.ApplyResources(LightIntensitytextBox, "LightIntensitytextBox");
+            LightIntensitytextBox.Name = "LightIntensitytextBox";
+            LightIntensitytextBox.TextChanged += LightIntensitytextBox_TextChanged;
             // 
             // label53
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(421, 153);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(49, 13);
-            this.label53.TabIndex = 113;
-            this.label53.Text = "Intensity:";
+            resources.ApplyResources(label53, "label53");
+            label53.Name = "label53";
             // 
             // NeedIdentifycheckbox
             // 
-            this.NeedIdentifycheckbox.AutoSize = true;
-            this.NeedIdentifycheckbox.Location = new System.Drawing.Point(468, 246);
-            this.NeedIdentifycheckbox.Name = "NeedIdentifycheckbox";
-            this.NeedIdentifycheckbox.Size = new System.Drawing.Size(89, 17);
-            this.NeedIdentifycheckbox.TabIndex = 110;
-            this.NeedIdentifycheckbox.Text = "Mystery Stats";
-            this.NeedIdentifycheckbox.UseVisualStyleBackColor = true;
-            this.NeedIdentifycheckbox.CheckedChanged += new System.EventHandler(this.NeedIdentifycheckbox_CheckedChanged);
+            resources.ApplyResources(NeedIdentifycheckbox, "NeedIdentifycheckbox");
+            NeedIdentifycheckbox.Name = "NeedIdentifycheckbox";
+            NeedIdentifycheckbox.UseVisualStyleBackColor = true;
+            NeedIdentifycheckbox.CheckedChanged += NeedIdentifycheckbox_CheckedChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Item Index:";
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // ItemIndexTextBox
             // 
-            this.ItemIndexTextBox.Location = new System.Drawing.Point(98, 10);
-            this.ItemIndexTextBox.Name = "ItemIndexTextBox";
-            this.ItemIndexTextBox.ReadOnly = true;
-            this.ItemIndexTextBox.Size = new System.Drawing.Size(47, 20);
-            this.ItemIndexTextBox.TabIndex = 0;
+            resources.ApplyResources(ItemIndexTextBox, "ItemIndexTextBox");
+            ItemIndexTextBox.Name = "ItemIndexTextBox";
+            ItemIndexTextBox.ReadOnly = true;
             // 
             // StartItemCheckBox
             // 
-            this.StartItemCheckBox.AutoSize = true;
-            this.StartItemCheckBox.Location = new System.Drawing.Point(365, 246);
-            this.StartItemCheckBox.Name = "StartItemCheckBox";
-            this.StartItemCheckBox.Size = new System.Drawing.Size(85, 17);
-            this.StartItemCheckBox.TabIndex = 63;
-            this.StartItemCheckBox.Text = "Starting Item";
-            this.StartItemCheckBox.UseVisualStyleBackColor = true;
-            this.StartItemCheckBox.CheckedChanged += new System.EventHandler(this.StartItemCheckBox_CheckedChanged);
+            resources.ApplyResources(StartItemCheckBox, "StartItemCheckBox");
+            StartItemCheckBox.Name = "StartItemCheckBox";
+            StartItemCheckBox.UseVisualStyleBackColor = true;
+            StartItemCheckBox.CheckedChanged += StartItemCheckBox_CheckedChanged;
             // 
             // ClassBasedcheckbox
             // 
-            this.ClassBasedcheckbox.AutoSize = true;
-            this.ClassBasedcheckbox.Location = new System.Drawing.Point(365, 270);
-            this.ClassBasedcheckbox.Name = "ClassBasedcheckbox";
-            this.ClassBasedcheckbox.Size = new System.Drawing.Size(81, 17);
-            this.ClassBasedcheckbox.TabIndex = 100;
-            this.ClassBasedcheckbox.Text = "ClassBased";
-            this.ClassBasedcheckbox.UseVisualStyleBackColor = true;
-            this.ClassBasedcheckbox.CheckedChanged += new System.EventHandler(this.ClassBasedcheckbox_CheckedChanged);
+            resources.ApplyResources(ClassBasedcheckbox, "ClassBasedcheckbox");
+            ClassBasedcheckbox.Name = "ClassBasedcheckbox";
+            ClassBasedcheckbox.UseVisualStyleBackColor = true;
+            ClassBasedcheckbox.CheckedChanged += ClassBasedcheckbox_CheckedChanged;
             // 
             // LevelBasedcheckbox
             // 
-            this.LevelBasedcheckbox.AutoSize = true;
-            this.LevelBasedcheckbox.Location = new System.Drawing.Point(365, 294);
-            this.LevelBasedcheckbox.Name = "LevelBasedcheckbox";
-            this.LevelBasedcheckbox.Size = new System.Drawing.Size(82, 17);
-            this.LevelBasedcheckbox.TabIndex = 101;
-            this.LevelBasedcheckbox.Text = "LevelBased";
-            this.LevelBasedcheckbox.UseVisualStyleBackColor = true;
-            this.LevelBasedcheckbox.CheckedChanged += new System.EventHandler(this.LevelBasedcheckbox_CheckedChanged);
+            resources.ApplyResources(LevelBasedcheckbox, "LevelBasedcheckbox");
+            LevelBasedcheckbox.Name = "LevelBasedcheckbox";
+            LevelBasedcheckbox.UseVisualStyleBackColor = true;
+            LevelBasedcheckbox.CheckedChanged += LevelBasedcheckbox_CheckedChanged;
             // 
             // ShowGroupPickupcheckbox
             // 
-            this.ShowGroupPickupcheckbox.AutoSize = true;
-            this.ShowGroupPickupcheckbox.Location = new System.Drawing.Point(468, 270);
-            this.ShowGroupPickupcheckbox.Name = "ShowGroupPickupcheckbox";
-            this.ShowGroupPickupcheckbox.Size = new System.Drawing.Size(121, 17);
-            this.ShowGroupPickupcheckbox.TabIndex = 111;
-            this.ShowGroupPickupcheckbox.Text = "Show Group Pickup";
-            this.ShowGroupPickupcheckbox.UseVisualStyleBackColor = true;
-            this.ShowGroupPickupcheckbox.CheckedChanged += new System.EventHandler(this.ShowGroupPickupcheckbox_CheckedChanged);
+            resources.ApplyResources(ShowGroupPickupcheckbox, "ShowGroupPickupcheckbox");
+            ShowGroupPickupcheckbox.Name = "ShowGroupPickupcheckbox";
+            ShowGroupPickupcheckbox.UseVisualStyleBackColor = true;
+            ShowGroupPickupcheckbox.CheckedChanged += ShowGroupPickupcheckbox_CheckedChanged;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Item Name:";
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
             // 
             // ItemNameTextBox
             // 
-            this.ItemNameTextBox.Location = new System.Drawing.Point(98, 38);
-            this.ItemNameTextBox.Name = "ItemNameTextBox";
-            this.ItemNameTextBox.Size = new System.Drawing.Size(115, 20);
-            this.ItemNameTextBox.TabIndex = 1;
-            this.ItemNameTextBox.TextChanged += new System.EventHandler(this.ItemNameTextBox_TextChanged);
+            resources.ApplyResources(ItemNameTextBox, "ItemNameTextBox");
+            ItemNameTextBox.Name = "ItemNameTextBox";
+            ItemNameTextBox.TextChanged += ItemNameTextBox_TextChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Item Type:";
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
             // 
             // EffectTextBox
             // 
-            this.EffectTextBox.Location = new System.Drawing.Point(561, 70);
-            this.EffectTextBox.Name = "EffectTextBox";
-            this.EffectTextBox.Size = new System.Drawing.Size(30, 20);
-            this.EffectTextBox.TabIndex = 73;
-            this.EffectTextBox.TextChanged += new System.EventHandler(this.EffectTextBox_TextChanged);
+            resources.ApplyResources(EffectTextBox, "EffectTextBox");
+            EffectTextBox.Name = "EffectTextBox";
+            EffectTextBox.TextChanged += EffectTextBox_TextChanged;
             // 
             // ITypeComboBox
             // 
-            this.ITypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ITypeComboBox.FormattingEnabled = true;
-            this.ITypeComboBox.Location = new System.Drawing.Point(98, 67);
-            this.ITypeComboBox.Name = "ITypeComboBox";
-            this.ITypeComboBox.Size = new System.Drawing.Size(92, 21);
-            this.ITypeComboBox.TabIndex = 5;
-            this.ITypeComboBox.SelectedIndexChanged += new System.EventHandler(this.ITypeComboBox_SelectedIndexChanged);
+            ITypeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            ITypeComboBox.FormattingEnabled = true;
+            resources.ApplyResources(ITypeComboBox, "ITypeComboBox");
+            ITypeComboBox.Name = "ITypeComboBox";
+            ITypeComboBox.SelectedIndexChanged += ITypeComboBox_SelectedIndexChanged;
             // 
             // label34
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(517, 73);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(38, 13);
-            this.label34.TabIndex = 72;
-            this.label34.Text = "Effect:";
+            resources.ApplyResources(label34, "label34");
+            label34.Name = "label34";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 124);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Required Type:";
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
             // 
             // PriceTextBox
             // 
-            this.PriceTextBox.Location = new System.Drawing.Point(365, 199);
-            this.PriceTextBox.MaxLength = 10;
-            this.PriceTextBox.Name = "PriceTextBox";
-            this.PriceTextBox.Size = new System.Drawing.Size(69, 20);
-            this.PriceTextBox.TabIndex = 8;
-            this.PriceTextBox.TextChanged += new System.EventHandler(this.PriceTextBox_TextChanged);
+            resources.ApplyResources(PriceTextBox, "PriceTextBox");
+            PriceTextBox.Name = "PriceTextBox";
+            PriceTextBox.TextChanged += PriceTextBox_TextChanged;
             // 
             // RTypeComboBox
             // 
-            this.RTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RTypeComboBox.FormattingEnabled = true;
-            this.RTypeComboBox.Location = new System.Drawing.Point(98, 120);
-            this.RTypeComboBox.Name = "RTypeComboBox";
-            this.RTypeComboBox.Size = new System.Drawing.Size(92, 21);
-            this.RTypeComboBox.TabIndex = 9;
-            this.RTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.RTypeComboBox_SelectedIndexChanged);
+            RTypeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            RTypeComboBox.FormattingEnabled = true;
+            resources.ApplyResources(RTypeComboBox, "RTypeComboBox");
+            RTypeComboBox.Name = "RTypeComboBox";
+            RTypeComboBox.SelectedIndexChanged += RTypeComboBox_SelectedIndexChanged;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(325, 203);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 13);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "Price:";
+            resources.ApplyResources(label12, "label12");
+            label12.Name = "label12";
             // 
             // DuraTextBox
             // 
-            this.DuraTextBox.Location = new System.Drawing.Point(365, 173);
-            this.DuraTextBox.MaxLength = 5;
-            this.DuraTextBox.Name = "DuraTextBox";
-            this.DuraTextBox.Size = new System.Drawing.Size(40, 20);
-            this.DuraTextBox.TabIndex = 4;
-            this.DuraTextBox.TextChanged += new System.EventHandler(this.DuraTextBox_TextChanged);
+            resources.ApplyResources(DuraTextBox, "DuraTextBox");
+            DuraTextBox.Name = "DuraTextBox";
+            DuraTextBox.TextChanged += DuraTextBox_TextChanged;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 177);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Required Class:";
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(305, 177);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 13);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Durability:";
+            resources.ApplyResources(label11, "label11");
+            label11.Name = "label11";
             // 
             // RClassComboBox
             // 
-            this.RClassComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RClassComboBox.FormattingEnabled = true;
-            this.RClassComboBox.Location = new System.Drawing.Point(98, 174);
-            this.RClassComboBox.Name = "RClassComboBox";
-            this.RClassComboBox.Size = new System.Drawing.Size(92, 21);
-            this.RClassComboBox.TabIndex = 11;
-            this.RClassComboBox.SelectedIndexChanged += new System.EventHandler(this.RClassComboBox_SelectedIndexChanged);
+            RClassComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            RClassComboBox.FormattingEnabled = true;
+            resources.ApplyResources(RClassComboBox, "RClassComboBox");
+            RClassComboBox.Name = "RClassComboBox";
+            RClassComboBox.SelectedIndexChanged += RClassComboBox_SelectedIndexChanged;
             // 
             // LightTextBox
             // 
-            this.LightTextBox.Location = new System.Drawing.Point(365, 147);
-            this.LightTextBox.MaxLength = 3;
-            this.LightTextBox.Name = "LightTextBox";
-            this.LightTextBox.Size = new System.Drawing.Size(30, 20);
-            this.LightTextBox.TabIndex = 12;
-            this.LightTextBox.TextChanged += new System.EventHandler(this.LightTextBox_TextChanged);
+            resources.ApplyResources(LightTextBox, "LightTextBox");
+            LightTextBox.Name = "LightTextBox";
+            LightTextBox.TextChanged += LightTextBox_TextChanged;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(267, 47);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 13);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Required Amount:";
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(292, 151);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 13);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Light Range:";
+            resources.ApplyResources(label9, "label9");
+            label9.Name = "label9";
             // 
             // RAmountTextBox
             // 
-            this.RAmountTextBox.Location = new System.Drawing.Point(365, 43);
-            this.RAmountTextBox.MaxLength = 3;
-            this.RAmountTextBox.Name = "RAmountTextBox";
-            this.RAmountTextBox.Size = new System.Drawing.Size(30, 20);
-            this.RAmountTextBox.TabIndex = 10;
-            this.RAmountTextBox.TextChanged += new System.EventHandler(this.RAmountTextBox_TextChanged);
+            resources.ApplyResources(RAmountTextBox, "RAmountTextBox");
+            RAmountTextBox.Name = "RAmountTextBox";
+            RAmountTextBox.TextChanged += RAmountTextBox_TextChanged;
             // 
             // WeightTextBox
             // 
-            this.WeightTextBox.Location = new System.Drawing.Point(365, 121);
-            this.WeightTextBox.MaxLength = 3;
-            this.WeightTextBox.Name = "WeightTextBox";
-            this.WeightTextBox.Size = new System.Drawing.Size(30, 20);
-            this.WeightTextBox.TabIndex = 2;
-            this.WeightTextBox.TextChanged += new System.EventHandler(this.WeightTextBox_TextChanged);
+            resources.ApplyResources(WeightTextBox, "WeightTextBox");
+            WeightTextBox.Name = "WeightTextBox";
+            WeightTextBox.TextChanged += WeightTextBox_TextChanged;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(320, 70);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 13);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "Image:";
+            resources.ApplyResources(label10, "label10");
+            label10.Name = "label10";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(318, 125);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 13);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Weight:";
+            resources.ApplyResources(label8, "label8");
+            label8.Name = "label8";
             // 
             // ImageTextBox
             // 
-            this.ImageTextBox.Location = new System.Drawing.Point(365, 69);
-            this.ImageTextBox.MaxLength = 5;
-            this.ImageTextBox.Name = "ImageTextBox";
-            this.ImageTextBox.Size = new System.Drawing.Size(40, 20);
-            this.ImageTextBox.TabIndex = 3;
-            this.ImageTextBox.TextChanged += new System.EventHandler(this.ImageTextBox_TextChanged);
+            resources.ApplyResources(ImageTextBox, "ImageTextBox");
+            ImageTextBox.Name = "ImageTextBox";
+            ImageTextBox.TextChanged += ImageTextBox_TextChanged;
             // 
             // ShapeTextBox
             // 
-            this.ShapeTextBox.Location = new System.Drawing.Point(468, 70);
-            this.ShapeTextBox.MaxLength = 3;
-            this.ShapeTextBox.Name = "ShapeTextBox";
-            this.ShapeTextBox.Size = new System.Drawing.Size(30, 20);
-            this.ShapeTextBox.TabIndex = 6;
-            this.ShapeTextBox.TextChanged += new System.EventHandler(this.ShapeTextBox_TextChanged);
+            resources.ApplyResources(ShapeTextBox, "ShapeTextBox");
+            ShapeTextBox.Name = "ShapeTextBox";
+            ShapeTextBox.TextChanged += ShapeTextBox_TextChanged;
             // 
             // SSizeTextBox
             // 
-            this.SSizeTextBox.Location = new System.Drawing.Point(365, 95);
-            this.SSizeTextBox.MaxLength = 10;
-            this.SSizeTextBox.Name = "SSizeTextBox";
-            this.SSizeTextBox.Size = new System.Drawing.Size(69, 20);
-            this.SSizeTextBox.TabIndex = 7;
-            this.SSizeTextBox.TextChanged += new System.EventHandler(this.SSizeTextBox_TextChanged);
+            resources.ApplyResources(SSizeTextBox, "SSizeTextBox");
+            SSizeTextBox.Name = "SSizeTextBox";
+            SSizeTextBox.TextChanged += SSizeTextBox_TextChanged;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(421, 73);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Shape:";
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(298, 99);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 13);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "Stack Size:";
+            resources.ApplyResources(label13, "label13");
+            label13.Name = "label13";
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(0, 150);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(91, 13);
-            this.label33.TabIndex = 71;
-            this.label33.Text = "Required Gender:";
+            resources.ApplyResources(label33, "label33");
+            label33.Name = "label33";
             // 
             // RGenderComboBox
             // 
-            this.RGenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RGenderComboBox.FormattingEnabled = true;
-            this.RGenderComboBox.Location = new System.Drawing.Point(98, 147);
-            this.RGenderComboBox.Name = "RGenderComboBox";
-            this.RGenderComboBox.Size = new System.Drawing.Size(92, 21);
-            this.RGenderComboBox.TabIndex = 70;
-            this.RGenderComboBox.SelectedIndexChanged += new System.EventHandler(this.RGenderComboBox_SelectedIndexChanged);
+            RGenderComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            RGenderComboBox.FormattingEnabled = true;
+            resources.ApplyResources(RGenderComboBox, "RGenderComboBox");
+            RGenderComboBox.Name = "RGenderComboBox";
+            RGenderComboBox.SelectedIndexChanged += RGenderComboBox_SelectedIndexChanged;
             // 
             // ISetComboBox
             // 
-            this.ISetComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ISetComboBox.FormattingEnabled = true;
-            this.ISetComboBox.Location = new System.Drawing.Point(98, 202);
-            this.ISetComboBox.Name = "ISetComboBox";
-            this.ISetComboBox.Size = new System.Drawing.Size(92, 21);
-            this.ISetComboBox.TabIndex = 74;
-            this.ISetComboBox.SelectedIndexChanged += new System.EventHandler(this.ISetComboBox_SelectedIndexChanged);
+            ISetComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            ISetComboBox.FormattingEnabled = true;
+            resources.ApplyResources(ISetComboBox, "ISetComboBox");
+            ISetComboBox.Name = "ISetComboBox";
+            ISetComboBox.SelectedIndexChanged += ISetComboBox_SelectedIndexChanged;
             // 
             // label35
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(42, 205);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(49, 13);
-            this.label35.TabIndex = 75;
-            this.label35.Text = "Item Set:";
+            resources.ApplyResources(label35, "label35");
+            label35.Name = "label35";
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.label64);
-            this.tabPage2.Controls.Add(this.DamageReductiontextBox);
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Controls.Add(this.label37);
-            this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.MinACTextBox);
-            this.tabPage2.Controls.Add(this.MPratetextbox);
-            this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.label48);
-            this.tabPage2.Controls.Add(this.MaxACTextBox);
-            this.tabPage2.Controls.Add(this.label17);
-            this.tabPage2.Controls.Add(this.MinMACTextBox);
-            this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.MaxMACTextBox);
-            this.tabPage2.Controls.Add(this.label21);
-            this.tabPage2.Controls.Add(this.MinDCTextBox);
-            this.tabPage2.Controls.Add(this.label20);
-            this.tabPage2.Controls.Add(this.MaxDCTextBox);
-            this.tabPage2.Controls.Add(this.label19);
-            this.tabPage2.Controls.Add(this.PoisonAttacktextbox);
-            this.tabPage2.Controls.Add(this.MinMCTextBox);
-            this.tabPage2.Controls.Add(this.label47);
-            this.tabPage2.Controls.Add(this.label18);
-            this.tabPage2.Controls.Add(this.Freezingtextbox);
-            this.tabPage2.Controls.Add(this.MaxMCTextBox);
-            this.tabPage2.Controls.Add(this.label46);
-            this.tabPage2.Controls.Add(this.label23);
-            this.tabPage2.Controls.Add(this.Holytextbox);
-            this.tabPage2.Controls.Add(this.MinSCTextBox);
-            this.tabPage2.Controls.Add(this.label45);
-            this.tabPage2.Controls.Add(this.label22);
-            this.tabPage2.Controls.Add(this.HPratetextbox);
-            this.tabPage2.Controls.Add(this.MaxSCTextBox);
-            this.tabPage2.Controls.Add(this.label44);
-            this.tabPage2.Controls.Add(this.label25);
-            this.tabPage2.Controls.Add(this.PoisonRecoverytextBox);
-            this.tabPage2.Controls.Add(this.HPTextBox);
-            this.tabPage2.Controls.Add(this.label43);
-            this.tabPage2.Controls.Add(this.label24);
-            this.tabPage2.Controls.Add(this.SpellRecoverytextBox);
-            this.tabPage2.Controls.Add(this.MPTextBox);
-            this.tabPage2.Controls.Add(this.label42);
-            this.tabPage2.Controls.Add(this.label27);
-            this.tabPage2.Controls.Add(this.PoisonResisttextBox);
-            this.tabPage2.Controls.Add(this.AccuracyTextBox);
-            this.tabPage2.Controls.Add(this.label41);
-            this.tabPage2.Controls.Add(this.label26);
-            this.tabPage2.Controls.Add(this.MagicResisttextBox);
-            this.tabPage2.Controls.Add(this.AgilityTextBox);
-            this.tabPage2.Controls.Add(this.label40);
-            this.tabPage2.Controls.Add(this.label29);
-            this.tabPage2.Controls.Add(this.HealthRecoveryTextbox);
-            this.tabPage2.Controls.Add(this.ASpeedTextBox);
-            this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Controls.Add(this.StrongTextbox);
-            this.tabPage2.Controls.Add(this.LuckTextBox);
-            this.tabPage2.Controls.Add(this.label38);
-            this.tabPage2.Controls.Add(this.label31);
-            this.tabPage2.Controls.Add(this.MacRateTextbox);
-            this.tabPage2.Controls.Add(this.BWeightText);
-            this.tabPage2.Controls.Add(this.label30);
-            this.tabPage2.Controls.Add(this.ACRateTextbox);
-            this.tabPage2.Controls.Add(this.HWeightTextBox);
-            this.tabPage2.Controls.Add(this.label36);
-            this.tabPage2.Controls.Add(this.label32);
-            this.tabPage2.Controls.Add(this.WWeightTextBox);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(601, 390);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Basic Stats";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Controls.Add(label64);
+            tabPage2.Controls.Add(DamageReductiontextBox);
+            tabPage2.Controls.Add(groupBox1);
+            tabPage2.Controls.Add(label37);
+            tabPage2.Controls.Add(label14);
+            tabPage2.Controls.Add(MinACTextBox);
+            tabPage2.Controls.Add(MPratetextbox);
+            tabPage2.Controls.Add(label15);
+            tabPage2.Controls.Add(label48);
+            tabPage2.Controls.Add(MaxACTextBox);
+            tabPage2.Controls.Add(label17);
+            tabPage2.Controls.Add(MinMACTextBox);
+            tabPage2.Controls.Add(label16);
+            tabPage2.Controls.Add(MaxMACTextBox);
+            tabPage2.Controls.Add(label21);
+            tabPage2.Controls.Add(MinDCTextBox);
+            tabPage2.Controls.Add(label20);
+            tabPage2.Controls.Add(MaxDCTextBox);
+            tabPage2.Controls.Add(label19);
+            tabPage2.Controls.Add(PoisonAttacktextbox);
+            tabPage2.Controls.Add(MinMCTextBox);
+            tabPage2.Controls.Add(label47);
+            tabPage2.Controls.Add(label18);
+            tabPage2.Controls.Add(Freezingtextbox);
+            tabPage2.Controls.Add(MaxMCTextBox);
+            tabPage2.Controls.Add(label46);
+            tabPage2.Controls.Add(label23);
+            tabPage2.Controls.Add(Holytextbox);
+            tabPage2.Controls.Add(MinSCTextBox);
+            tabPage2.Controls.Add(label45);
+            tabPage2.Controls.Add(label22);
+            tabPage2.Controls.Add(HPratetextbox);
+            tabPage2.Controls.Add(MaxSCTextBox);
+            tabPage2.Controls.Add(label44);
+            tabPage2.Controls.Add(label25);
+            tabPage2.Controls.Add(PoisonRecoverytextBox);
+            tabPage2.Controls.Add(HPTextBox);
+            tabPage2.Controls.Add(label43);
+            tabPage2.Controls.Add(label24);
+            tabPage2.Controls.Add(SpellRecoverytextBox);
+            tabPage2.Controls.Add(MPTextBox);
+            tabPage2.Controls.Add(label42);
+            tabPage2.Controls.Add(label27);
+            tabPage2.Controls.Add(PoisonResisttextBox);
+            tabPage2.Controls.Add(AccuracyTextBox);
+            tabPage2.Controls.Add(label41);
+            tabPage2.Controls.Add(label26);
+            tabPage2.Controls.Add(MagicResisttextBox);
+            tabPage2.Controls.Add(AgilityTextBox);
+            tabPage2.Controls.Add(label40);
+            tabPage2.Controls.Add(label29);
+            tabPage2.Controls.Add(HealthRecoveryTextbox);
+            tabPage2.Controls.Add(ASpeedTextBox);
+            tabPage2.Controls.Add(label39);
+            tabPage2.Controls.Add(label28);
+            tabPage2.Controls.Add(StrongTextbox);
+            tabPage2.Controls.Add(LuckTextBox);
+            tabPage2.Controls.Add(label38);
+            tabPage2.Controls.Add(label31);
+            tabPage2.Controls.Add(MacRateTextbox);
+            tabPage2.Controls.Add(BWeightText);
+            tabPage2.Controls.Add(label30);
+            tabPage2.Controls.Add(ACRateTextbox);
+            tabPage2.Controls.Add(HWeightTextBox);
+            tabPage2.Controls.Add(label36);
+            tabPage2.Controls.Add(label32);
+            tabPage2.Controls.Add(WWeightTextBox);
+            resources.ApplyResources(tabPage2, "tabPage2");
+            tabPage2.Name = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.DropRatetextBox);
-            this.groupBox1.Controls.Add(this.label63);
-            this.groupBox1.Controls.Add(this.GoldRatetextBox);
-            this.groupBox1.Controls.Add(this.label62);
-            this.groupBox1.Controls.Add(this.ExpRatetextBox);
-            this.groupBox1.Controls.Add(this.label61);
-            this.groupBox1.Controls.Add(this.MaxSCRatetextBox);
-            this.groupBox1.Controls.Add(this.label60);
-            this.groupBox1.Controls.Add(this.MaxMCRatetextBox);
-            this.groupBox1.Controls.Add(this.label59);
-            this.groupBox1.Controls.Add(this.MaxDCRatetextBox);
-            this.groupBox1.Controls.Add(this.label58);
-            this.groupBox1.Controls.Add(this.label50);
-            this.groupBox1.Controls.Add(this.label52);
-            this.groupBox1.Controls.Add(this.label49);
-            this.groupBox1.Controls.Add(this.ReflecttextBox);
-            this.groupBox1.Controls.Add(this.HpDrainRatetextBox);
-            this.groupBox1.Controls.Add(this.CriticalDamagetextBox);
-            this.groupBox1.Controls.Add(this.CriticalRatetextBox);
-            this.groupBox1.Controls.Add(this.label51);
-            this.groupBox1.Location = new System.Drawing.Point(16, 286);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(579, 98);
-            this.groupBox1.TabIndex = 123;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "New Stats";
+            groupBox1.Controls.Add(DropRatetextBox);
+            groupBox1.Controls.Add(label63);
+            groupBox1.Controls.Add(GoldRatetextBox);
+            groupBox1.Controls.Add(label62);
+            groupBox1.Controls.Add(ExpRatetextBox);
+            groupBox1.Controls.Add(label61);
+            groupBox1.Controls.Add(MaxSCRatetextBox);
+            groupBox1.Controls.Add(label60);
+            groupBox1.Controls.Add(MaxMCRatetextBox);
+            groupBox1.Controls.Add(label59);
+            groupBox1.Controls.Add(MaxDCRatetextBox);
+            groupBox1.Controls.Add(label58);
+            groupBox1.Controls.Add(label50);
+            groupBox1.Controls.Add(label52);
+            groupBox1.Controls.Add(label49);
+            groupBox1.Controls.Add(ReflecttextBox);
+            groupBox1.Controls.Add(HpDrainRatetextBox);
+            groupBox1.Controls.Add(CriticalDamagetextBox);
+            groupBox1.Controls.Add(CriticalRatetextBox);
+            groupBox1.Controls.Add(label51);
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // label50
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(6, 23);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(62, 13);
-            this.label50.TabIndex = 119;
-            this.label50.Text = "Critical rate:";
+            resources.ApplyResources(label50, "label50");
+            label50.Name = "label50";
             // 
             // label52
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(6, 62);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(44, 13);
-            this.label52.TabIndex = 122;
-            this.label52.Text = "Reflect:";
+            resources.ApplyResources(label52, "label52");
+            label52.Name = "label52";
             // 
             // label49
             // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(173, 61);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(53, 13);
-            this.label49.TabIndex = 115;
-            this.label49.Text = "HP Drain:";
+            resources.ApplyResources(label49, "label49");
+            label49.Name = "label49";
             // 
             // ReflecttextBox
             // 
-            this.ReflecttextBox.Location = new System.Drawing.Point(76, 58);
-            this.ReflecttextBox.MaxLength = 3;
-            this.ReflecttextBox.Name = "ReflecttextBox";
-            this.ReflecttextBox.Size = new System.Drawing.Size(30, 20);
-            this.ReflecttextBox.TabIndex = 121;
-            this.ReflecttextBox.TextChanged += new System.EventHandler(this.ReflecttextBox_TextChanged);
+            resources.ApplyResources(ReflecttextBox, "ReflecttextBox");
+            ReflecttextBox.Name = "ReflecttextBox";
+            ReflecttextBox.TextChanged += ReflecttextBox_TextChanged;
             // 
             // HpDrainRatetextBox
             // 
-            this.HpDrainRatetextBox.Location = new System.Drawing.Point(260, 55);
-            this.HpDrainRatetextBox.MaxLength = 3;
-            this.HpDrainRatetextBox.Name = "HpDrainRatetextBox";
-            this.HpDrainRatetextBox.Size = new System.Drawing.Size(30, 20);
-            this.HpDrainRatetextBox.TabIndex = 116;
-            this.HpDrainRatetextBox.TextChanged += new System.EventHandler(this.HpDrainRatetextBox_TextChanged);
+            resources.ApplyResources(HpDrainRatetextBox, "HpDrainRatetextBox");
+            HpDrainRatetextBox.Name = "HpDrainRatetextBox";
+            HpDrainRatetextBox.TextChanged += HpDrainRatetextBox_TextChanged;
             // 
             // CriticalDamagetextBox
             // 
-            this.CriticalDamagetextBox.Location = new System.Drawing.Point(260, 23);
-            this.CriticalDamagetextBox.MaxLength = 3;
-            this.CriticalDamagetextBox.Name = "CriticalDamagetextBox";
-            this.CriticalDamagetextBox.Size = new System.Drawing.Size(30, 20);
-            this.CriticalDamagetextBox.TabIndex = 118;
-            this.CriticalDamagetextBox.TextChanged += new System.EventHandler(this.CriticalDamagetextBox_TextChanged);
+            resources.ApplyResources(CriticalDamagetextBox, "CriticalDamagetextBox");
+            CriticalDamagetextBox.Name = "CriticalDamagetextBox";
+            CriticalDamagetextBox.TextChanged += CriticalDamagetextBox_TextChanged;
             // 
             // CriticalRatetextBox
             // 
-            this.CriticalRatetextBox.Location = new System.Drawing.Point(76, 20);
-            this.CriticalRatetextBox.MaxLength = 3;
-            this.CriticalRatetextBox.Name = "CriticalRatetextBox";
-            this.CriticalRatetextBox.Size = new System.Drawing.Size(30, 20);
-            this.CriticalRatetextBox.TabIndex = 117;
-            this.CriticalRatetextBox.TextChanged += new System.EventHandler(this.CriticalRatetextBox_TextChanged);
+            resources.ApplyResources(CriticalRatetextBox, "CriticalRatetextBox");
+            CriticalRatetextBox.Name = "CriticalRatetextBox";
+            CriticalRatetextBox.TextChanged += CriticalRatetextBox_TextChanged;
             // 
             // label51
             // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(173, 23);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(66, 13);
-            this.label51.TabIndex = 120;
-            this.label51.Text = "Critical Dmg:";
+            resources.ApplyResources(label51, "label51");
+            label51.Name = "label51";
             // 
             // label37
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(488, 14);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(57, 13);
-            this.label37.TabIndex = 78;
-            this.label37.Text = "Mac Rate:";
+            resources.ApplyResources(label37, "label37");
+            label37.Name = "label37";
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(27, 18);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(44, 13);
-            this.label14.TabIndex = 32;
-            this.label14.Text = "Min AC:";
+            resources.ApplyResources(label14, "label14");
+            label14.Name = "label14";
             // 
             // MinACTextBox
             // 
-            this.MinACTextBox.Location = new System.Drawing.Point(77, 15);
-            this.MinACTextBox.MaxLength = 3;
-            this.MinACTextBox.Name = "MinACTextBox";
-            this.MinACTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MinACTextBox.TabIndex = 13;
-            this.MinACTextBox.TextChanged += new System.EventHandler(this.MinACTextBox_TextChanged);
+            resources.ApplyResources(MinACTextBox, "MinACTextBox");
+            MinACTextBox.Name = "MinACTextBox";
+            MinACTextBox.TextChanged += MinACTextBox_TextChanged;
             // 
             // MPratetextbox
             // 
-            this.MPratetextbox.Location = new System.Drawing.Point(359, 67);
-            this.MPratetextbox.MaxLength = 3;
-            this.MPratetextbox.Name = "MPratetextbox";
-            this.MPratetextbox.Size = new System.Drawing.Size(30, 20);
-            this.MPratetextbox.TabIndex = 114;
-            this.MPratetextbox.TextChanged += new System.EventHandler(this.MPratetextBox_TextChanged);
+            resources.ApplyResources(MPratetextbox, "MPratetextbox");
+            MPratetextbox.Name = "MPratetextbox";
+            MPratetextbox.TextChanged += MPratetextBox_TextChanged;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(113, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(47, 13);
-            this.label15.TabIndex = 34;
-            this.label15.Text = "Max AC:";
+            resources.ApplyResources(label15, "label15");
+            label15.Name = "label15";
             // 
             // label48
             // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(314, 70);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(39, 13);
-            this.label48.TabIndex = 113;
-            this.label48.Text = "Mp +%";
+            resources.ApplyResources(label48, "label48");
+            label48.Name = "label48";
             // 
             // MaxACTextBox
             // 
-            this.MaxACTextBox.Location = new System.Drawing.Point(166, 15);
-            this.MaxACTextBox.MaxLength = 3;
-            this.MaxACTextBox.Name = "MaxACTextBox";
-            this.MaxACTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MaxACTextBox.TabIndex = 14;
-            this.MaxACTextBox.TextChanged += new System.EventHandler(this.MaxACTextBox_TextChanged);
+            resources.ApplyResources(MaxACTextBox, "MaxACTextBox");
+            MaxACTextBox.Name = "MaxACTextBox";
+            MaxACTextBox.TextChanged += MaxACTextBox_TextChanged;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(202, 18);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 13);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "Min MAC:";
+            resources.ApplyResources(label17, "label17");
+            label17.Name = "label17";
             // 
             // MinMACTextBox
             // 
-            this.MinMACTextBox.Location = new System.Drawing.Point(261, 15);
-            this.MinMACTextBox.MaxLength = 3;
-            this.MinMACTextBox.Name = "MinMACTextBox";
-            this.MinMACTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MinMACTextBox.TabIndex = 15;
-            this.MinMACTextBox.TextChanged += new System.EventHandler(this.MinMACTextBox_TextChanged);
+            resources.ApplyResources(MinMACTextBox, "MinMACTextBox");
+            MinMACTextBox.Name = "MinMACTextBox";
+            MinMACTextBox.TextChanged += MinMACTextBox_TextChanged;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(297, 18);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 13);
-            this.label16.TabIndex = 38;
-            this.label16.Text = "Max MAC:";
+            resources.ApplyResources(label16, "label16");
+            label16.Name = "label16";
             // 
             // MaxMACTextBox
             // 
-            this.MaxMACTextBox.Location = new System.Drawing.Point(359, 15);
-            this.MaxMACTextBox.MaxLength = 3;
-            this.MaxMACTextBox.Name = "MaxMACTextBox";
-            this.MaxMACTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MaxMACTextBox.TabIndex = 16;
-            this.MaxMACTextBox.TextChanged += new System.EventHandler(this.MaxMACTextBox_TextChanged);
+            resources.ApplyResources(MaxMACTextBox, "MaxMACTextBox");
+            MaxMACTextBox.Name = "MaxMACTextBox";
+            MaxMACTextBox.TextChanged += MaxMACTextBox_TextChanged;
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(26, 48);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(45, 13);
-            this.label21.TabIndex = 40;
-            this.label21.Text = "Min DC:";
+            resources.ApplyResources(label21, "label21");
+            label21.Name = "label21";
             // 
             // MinDCTextBox
             // 
-            this.MinDCTextBox.Location = new System.Drawing.Point(77, 41);
-            this.MinDCTextBox.MaxLength = 3;
-            this.MinDCTextBox.Name = "MinDCTextBox";
-            this.MinDCTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MinDCTextBox.TabIndex = 17;
-            this.MinDCTextBox.TextChanged += new System.EventHandler(this.MinDCTextBox_TextChanged);
+            resources.ApplyResources(MinDCTextBox, "MinDCTextBox");
+            MinDCTextBox.Name = "MinDCTextBox";
+            MinDCTextBox.TextChanged += MinDCTextBox_TextChanged;
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(113, 44);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(48, 13);
-            this.label20.TabIndex = 42;
-            this.label20.Text = "Max DC:";
+            resources.ApplyResources(label20, "label20");
+            label20.Name = "label20";
             // 
             // MaxDCTextBox
             // 
-            this.MaxDCTextBox.Location = new System.Drawing.Point(166, 41);
-            this.MaxDCTextBox.MaxLength = 3;
-            this.MaxDCTextBox.Name = "MaxDCTextBox";
-            this.MaxDCTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MaxDCTextBox.TabIndex = 18;
-            this.MaxDCTextBox.TextChanged += new System.EventHandler(this.MaxDCTextBox_TextChanged);
+            resources.ApplyResources(MaxDCTextBox, "MaxDCTextBox");
+            MaxDCTextBox.Name = "MaxDCTextBox";
+            MaxDCTextBox.TextChanged += MaxDCTextBox_TextChanged;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(209, 44);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(46, 13);
-            this.label19.TabIndex = 44;
-            this.label19.Text = "Min MC:";
+            resources.ApplyResources(label19, "label19");
+            label19.Name = "label19";
             // 
             // PoisonAttacktextbox
             // 
-            this.PoisonAttacktextbox.Location = new System.Drawing.Point(166, 173);
-            this.PoisonAttacktextbox.MaxLength = 3;
-            this.PoisonAttacktextbox.Name = "PoisonAttacktextbox";
-            this.PoisonAttacktextbox.Size = new System.Drawing.Size(30, 20);
-            this.PoisonAttacktextbox.TabIndex = 99;
-            this.PoisonAttacktextbox.TextChanged += new System.EventHandler(this.PoisonAttacktextbox_TextChanged);
+            resources.ApplyResources(PoisonAttacktextbox, "PoisonAttacktextbox");
+            PoisonAttacktextbox.Name = "PoisonAttacktextbox";
+            PoisonAttacktextbox.TextChanged += PoisonAttacktextbox_TextChanged;
             // 
             // MinMCTextBox
             // 
-            this.MinMCTextBox.Location = new System.Drawing.Point(261, 41);
-            this.MinMCTextBox.MaxLength = 3;
-            this.MinMCTextBox.Name = "MinMCTextBox";
-            this.MinMCTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MinMCTextBox.TabIndex = 19;
-            this.MinMCTextBox.TextChanged += new System.EventHandler(this.MinMCTextBox_TextChanged);
+            resources.ApplyResources(MinMCTextBox, "MinMCTextBox");
+            MinMCTextBox.Name = "MinMCTextBox";
+            MinMCTextBox.TextChanged += MinMCTextBox_TextChanged;
             // 
             // label47
             // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(84, 176);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(76, 13);
-            this.label47.TabIndex = 98;
-            this.label47.Text = "Poison Attack:";
+            resources.ApplyResources(label47, "label47");
+            label47.Name = "label47";
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(304, 44);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(49, 13);
-            this.label18.TabIndex = 46;
-            this.label18.Text = "Max MC:";
+            resources.ApplyResources(label18, "label18");
+            label18.Name = "label18";
             // 
             // Freezingtextbox
             // 
-            this.Freezingtextbox.Location = new System.Drawing.Point(166, 211);
-            this.Freezingtextbox.MaxLength = 3;
-            this.Freezingtextbox.Name = "Freezingtextbox";
-            this.Freezingtextbox.Size = new System.Drawing.Size(30, 20);
-            this.Freezingtextbox.TabIndex = 97;
-            this.Freezingtextbox.TextChanged += new System.EventHandler(this.Freezingtextbox_TextChanged);
+            resources.ApplyResources(Freezingtextbox, "Freezingtextbox");
+            Freezingtextbox.Name = "Freezingtextbox";
+            Freezingtextbox.TextChanged += Freezingtextbox_TextChanged;
             // 
             // MaxMCTextBox
             // 
-            this.MaxMCTextBox.Location = new System.Drawing.Point(359, 41);
-            this.MaxMCTextBox.MaxLength = 3;
-            this.MaxMCTextBox.Name = "MaxMCTextBox";
-            this.MaxMCTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MaxMCTextBox.TabIndex = 20;
-            this.MaxMCTextBox.TextChanged += new System.EventHandler(this.MaxMCTextBox_TextChanged);
+            resources.ApplyResources(MaxMCTextBox, "MaxMCTextBox");
+            MaxMCTextBox.Name = "MaxMCTextBox";
+            MaxMCTextBox.TextChanged += MaxMCTextBox_TextChanged;
             // 
             // label46
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(110, 215);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(50, 13);
-            this.label46.TabIndex = 96;
-            this.label46.Text = "Freezing:";
+            resources.ApplyResources(label46, "label46");
+            label46.Name = "label46";
             // 
             // label23
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(401, 46);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(44, 13);
-            this.label23.TabIndex = 48;
-            this.label23.Text = "Min SC:";
+            resources.ApplyResources(label23, "label23");
+            label23.Name = "label23";
             // 
             // Holytextbox
             // 
-            this.Holytextbox.Location = new System.Drawing.Point(166, 234);
-            this.Holytextbox.MaxLength = 3;
-            this.Holytextbox.Name = "Holytextbox";
-            this.Holytextbox.Size = new System.Drawing.Size(30, 20);
-            this.Holytextbox.TabIndex = 95;
-            this.Holytextbox.TextChanged += new System.EventHandler(this.Holytextbox_TextChanged);
+            resources.ApplyResources(Holytextbox, "Holytextbox");
+            Holytextbox.Name = "Holytextbox";
+            Holytextbox.TextChanged += Holytextbox_TextChanged;
             // 
             // MinSCTextBox
             // 
-            this.MinSCTextBox.Location = new System.Drawing.Point(453, 43);
-            this.MinSCTextBox.MaxLength = 3;
-            this.MinSCTextBox.Name = "MinSCTextBox";
-            this.MinSCTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MinSCTextBox.TabIndex = 21;
-            this.MinSCTextBox.TextChanged += new System.EventHandler(this.MinSCTextBox_TextChanged);
+            resources.ApplyResources(MinSCTextBox, "MinSCTextBox");
+            MinSCTextBox.Name = "MinSCTextBox";
+            MinSCTextBox.TextChanged += MinSCTextBox_TextChanged;
             // 
             // label45
             // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(129, 237);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(31, 13);
-            this.label45.TabIndex = 94;
-            this.label45.Text = "Holy:";
+            resources.ApplyResources(label45, "label45");
+            label45.Name = "label45";
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(494, 46);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(47, 13);
-            this.label22.TabIndex = 50;
-            this.label22.Text = "Max SC:";
+            resources.ApplyResources(label22, "label22");
+            label22.Name = "label22";
             // 
             // HPratetextbox
             // 
-            this.HPratetextbox.Location = new System.Drawing.Point(261, 67);
-            this.HPratetextbox.MaxLength = 3;
-            this.HPratetextbox.Name = "HPratetextbox";
-            this.HPratetextbox.Size = new System.Drawing.Size(30, 20);
-            this.HPratetextbox.TabIndex = 93;
-            this.HPratetextbox.TextChanged += new System.EventHandler(this.HporMpRatetextbox_TextChanged);
+            resources.ApplyResources(HPratetextbox, "HPratetextbox");
+            HPratetextbox.Name = "HPratetextbox";
+            HPratetextbox.TextChanged += HporMpRatetextbox_TextChanged;
             // 
             // MaxSCTextBox
             // 
-            this.MaxSCTextBox.Location = new System.Drawing.Point(547, 43);
-            this.MaxSCTextBox.MaxLength = 3;
-            this.MaxSCTextBox.Name = "MaxSCTextBox";
-            this.MaxSCTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MaxSCTextBox.TabIndex = 22;
-            this.MaxSCTextBox.TextChanged += new System.EventHandler(this.MaxSCTextBox_TextChanged);
+            resources.ApplyResources(MaxSCTextBox, "MaxSCTextBox");
+            MaxSCTextBox.Name = "MaxSCTextBox";
+            MaxSCTextBox.TextChanged += MaxSCTextBox_TextChanged;
             // 
             // label44
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(220, 70);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(35, 13);
-            this.label44.TabIndex = 92;
-            this.label44.Text = "Hp+%";
+            resources.ApplyResources(label44, "label44");
+            label44.Name = "label44";
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(46, 70);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(25, 13);
-            this.label25.TabIndex = 52;
-            this.label25.Text = "HP:";
+            resources.ApplyResources(label25, "label25");
+            label25.Name = "label25";
             // 
             // PoisonRecoverytextBox
             // 
-            this.PoisonRecoverytextBox.Location = new System.Drawing.Point(359, 145);
-            this.PoisonRecoverytextBox.MaxLength = 3;
-            this.PoisonRecoverytextBox.Name = "PoisonRecoverytextBox";
-            this.PoisonRecoverytextBox.Size = new System.Drawing.Size(30, 20);
-            this.PoisonRecoverytextBox.TabIndex = 91;
-            this.PoisonRecoverytextBox.TextChanged += new System.EventHandler(this.PoisonRecoverytextBox_TextChanged);
+            resources.ApplyResources(PoisonRecoverytextBox, "PoisonRecoverytextBox");
+            PoisonRecoverytextBox.Name = "PoisonRecoverytextBox";
+            PoisonRecoverytextBox.TextChanged += PoisonRecoverytextBox_TextChanged;
             // 
             // HPTextBox
             // 
-            this.HPTextBox.Location = new System.Drawing.Point(77, 67);
-            this.HPTextBox.MaxLength = 3;
-            this.HPTextBox.Name = "HPTextBox";
-            this.HPTextBox.Size = new System.Drawing.Size(30, 20);
-            this.HPTextBox.TabIndex = 23;
-            this.HPTextBox.TextChanged += new System.EventHandler(this.HPTextBox_TextChanged);
+            resources.ApplyResources(HPTextBox, "HPTextBox");
+            HPTextBox.Name = "HPTextBox";
+            HPTextBox.TextChanged += HPTextBox_TextChanged;
             // 
             // label43
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(288, 148);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(65, 13);
-            this.label43.TabIndex = 90;
-            this.label43.Text = "Pois Recov:";
+            resources.ApplyResources(label43, "label43");
+            label43.Name = "label43";
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(134, 70);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(26, 13);
-            this.label24.TabIndex = 54;
-            this.label24.Text = "MP:";
+            resources.ApplyResources(label24, "label24");
+            label24.Name = "label24";
             // 
             // SpellRecoverytextBox
             // 
-            this.SpellRecoverytextBox.Location = new System.Drawing.Point(547, 69);
-            this.SpellRecoverytextBox.MaxLength = 3;
-            this.SpellRecoverytextBox.Name = "SpellRecoverytextBox";
-            this.SpellRecoverytextBox.Size = new System.Drawing.Size(30, 20);
-            this.SpellRecoverytextBox.TabIndex = 89;
-            this.SpellRecoverytextBox.TextChanged += new System.EventHandler(this.SpellRecoverytextBox_TextChanged);
+            resources.ApplyResources(SpellRecoverytextBox, "SpellRecoverytextBox");
+            SpellRecoverytextBox.Name = "SpellRecoverytextBox";
+            SpellRecoverytextBox.TextChanged += SpellRecoverytextBox_TextChanged;
             // 
             // MPTextBox
             // 
-            this.MPTextBox.Location = new System.Drawing.Point(166, 67);
-            this.MPTextBox.MaxLength = 3;
-            this.MPTextBox.Name = "MPTextBox";
-            this.MPTextBox.Size = new System.Drawing.Size(30, 20);
-            this.MPTextBox.TabIndex = 24;
-            this.MPTextBox.TextChanged += new System.EventHandler(this.MPTextBox_TextChanged);
+            resources.ApplyResources(MPTextBox, "MPTextBox");
+            MPTextBox.Name = "MPTextBox";
+            MPTextBox.TextChanged += MPTextBox_TextChanged;
             // 
             // label42
             // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(488, 72);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(61, 13);
-            this.label42.TabIndex = 88;
-            this.label42.Text = "MP Regen:";
+            resources.ApplyResources(label42, "label42");
+            label42.Name = "label42";
             // 
             // label27
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(295, 93);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(55, 13);
-            this.label27.TabIndex = 56;
-            this.label27.Text = "Accuracy:";
+            resources.ApplyResources(label27, "label27");
+            label27.Name = "label27";
             // 
             // PoisonResisttextBox
             // 
-            this.PoisonResisttextBox.Location = new System.Drawing.Point(166, 145);
-            this.PoisonResisttextBox.MaxLength = 3;
-            this.PoisonResisttextBox.Name = "PoisonResisttextBox";
-            this.PoisonResisttextBox.Size = new System.Drawing.Size(30, 20);
-            this.PoisonResisttextBox.TabIndex = 87;
-            this.PoisonResisttextBox.TextChanged += new System.EventHandler(this.PoisonResisttextBox_TextChanged);
+            resources.ApplyResources(PoisonResisttextBox, "PoisonResisttextBox");
+            PoisonResisttextBox.Name = "PoisonResisttextBox";
+            PoisonResisttextBox.TextChanged += PoisonResisttextBox_TextChanged;
             // 
             // AccuracyTextBox
             // 
-            this.AccuracyTextBox.Location = new System.Drawing.Point(359, 90);
-            this.AccuracyTextBox.MaxLength = 3;
-            this.AccuracyTextBox.Name = "AccuracyTextBox";
-            this.AccuracyTextBox.Size = new System.Drawing.Size(30, 20);
-            this.AccuracyTextBox.TabIndex = 25;
-            this.AccuracyTextBox.TextChanged += new System.EventHandler(this.AccuracyTextBox_TextChanged);
+            resources.ApplyResources(AccuracyTextBox, "AccuracyTextBox");
+            AccuracyTextBox.Name = "AccuracyTextBox";
+            AccuracyTextBox.TextChanged += AccuracyTextBox_TextChanged;
             // 
             // label41
             // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(108, 148);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(52, 13);
-            this.label41.TabIndex = 86;
-            this.label41.Text = "Pois Res:";
+            resources.ApplyResources(label41, "label41");
+            label41.Name = "label41";
             // 
             // label26
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(411, 93);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(37, 13);
-            this.label26.TabIndex = 58;
-            this.label26.Text = "Agility:";
+            resources.ApplyResources(label26, "label26");
+            label26.Name = "label26";
             // 
             // MagicResisttextBox
             // 
-            this.MagicResisttextBox.Location = new System.Drawing.Point(77, 143);
-            this.MagicResisttextBox.MaxLength = 3;
-            this.MagicResisttextBox.Name = "MagicResisttextBox";
-            this.MagicResisttextBox.Size = new System.Drawing.Size(30, 20);
-            this.MagicResisttextBox.TabIndex = 85;
-            this.MagicResisttextBox.TextChanged += new System.EventHandler(this.MagicResisttextBox_TextChanged);
+            resources.ApplyResources(MagicResisttextBox, "MagicResisttextBox");
+            MagicResisttextBox.Name = "MagicResisttextBox";
+            MagicResisttextBox.TextChanged += MagicResisttextBox_TextChanged;
             // 
             // AgilityTextBox
             // 
-            this.AgilityTextBox.Location = new System.Drawing.Point(453, 90);
-            this.AgilityTextBox.MaxLength = 3;
-            this.AgilityTextBox.Name = "AgilityTextBox";
-            this.AgilityTextBox.Size = new System.Drawing.Size(30, 20);
-            this.AgilityTextBox.TabIndex = 26;
-            this.AgilityTextBox.TextChanged += new System.EventHandler(this.AgilityTextBox_TextChanged);
+            resources.ApplyResources(AgilityTextBox, "AgilityTextBox");
+            AgilityTextBox.Name = "AgilityTextBox";
+            AgilityTextBox.TextChanged += AgilityTextBox_TextChanged;
             // 
             // label40
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(13, 148);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(63, 13);
-            this.label40.TabIndex = 84;
-            this.label40.Text = "Mag Resist:";
+            resources.ApplyResources(label40, "label40");
+            label40.Name = "label40";
             // 
             // label29
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(17, 96);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(54, 13);
-            this.label29.TabIndex = 60;
-            this.label29.Text = "A. Speed:";
+            resources.ApplyResources(label29, "label29");
+            label29.Name = "label29";
             // 
             // HealthRecoveryTextbox
             // 
-            this.HealthRecoveryTextbox.Location = new System.Drawing.Point(453, 67);
-            this.HealthRecoveryTextbox.MaxLength = 3;
-            this.HealthRecoveryTextbox.Name = "HealthRecoveryTextbox";
-            this.HealthRecoveryTextbox.Size = new System.Drawing.Size(30, 20);
-            this.HealthRecoveryTextbox.TabIndex = 83;
-            this.HealthRecoveryTextbox.TextChanged += new System.EventHandler(this.HealthRecoveryTextbox_TextChanged);
+            resources.ApplyResources(HealthRecoveryTextbox, "HealthRecoveryTextbox");
+            HealthRecoveryTextbox.Name = "HealthRecoveryTextbox";
+            HealthRecoveryTextbox.TextChanged += HealthRecoveryTextbox_TextChanged;
             // 
             // ASpeedTextBox
             // 
-            this.ASpeedTextBox.Location = new System.Drawing.Point(77, 93);
-            this.ASpeedTextBox.MaxLength = 4;
-            this.ASpeedTextBox.Name = "ASpeedTextBox";
-            this.ASpeedTextBox.Size = new System.Drawing.Size(30, 20);
-            this.ASpeedTextBox.TabIndex = 27;
-            this.ASpeedTextBox.TextChanged += new System.EventHandler(this.ASpeedTextBox_TextChanged);
+            resources.ApplyResources(ASpeedTextBox, "ASpeedTextBox");
+            ASpeedTextBox.Name = "ASpeedTextBox";
+            ASpeedTextBox.TextChanged += ASpeedTextBox_TextChanged;
             // 
             // label39
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(395, 72);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(60, 13);
-            this.label39.TabIndex = 82;
-            this.label39.Text = "HP Regen:";
+            resources.ApplyResources(label39, "label39");
+            label39.Name = "label39";
             // 
             // label28
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(126, 96);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(34, 13);
-            this.label28.TabIndex = 62;
-            this.label28.Text = "Luck:";
+            resources.ApplyResources(label28, "label28");
+            label28.Name = "label28";
             // 
             // StrongTextbox
             // 
-            this.StrongTextbox.Location = new System.Drawing.Point(261, 93);
-            this.StrongTextbox.MaxLength = 3;
-            this.StrongTextbox.Name = "StrongTextbox";
-            this.StrongTextbox.Size = new System.Drawing.Size(30, 20);
-            this.StrongTextbox.TabIndex = 81;
-            this.StrongTextbox.TextChanged += new System.EventHandler(this.StrongTextbox_TextChanged);
+            resources.ApplyResources(StrongTextbox, "StrongTextbox");
+            StrongTextbox.Name = "StrongTextbox";
+            StrongTextbox.TextChanged += StrongTextbox_TextChanged;
             // 
             // LuckTextBox
             // 
-            this.LuckTextBox.Location = new System.Drawing.Point(166, 93);
-            this.LuckTextBox.MaxLength = 4;
-            this.LuckTextBox.Name = "LuckTextBox";
-            this.LuckTextBox.Size = new System.Drawing.Size(30, 20);
-            this.LuckTextBox.TabIndex = 28;
-            this.LuckTextBox.TextChanged += new System.EventHandler(this.LuckTextBox_TextChanged);
+            resources.ApplyResources(LuckTextBox, "LuckTextBox");
+            LuckTextBox.Name = "LuckTextBox";
+            LuckTextBox.TextChanged += LuckTextBox_TextChanged;
             // 
             // label38
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(214, 93);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(41, 13);
-            this.label38.TabIndex = 80;
-            this.label38.Text = "Strong:";
+            resources.ApplyResources(label38, "label38");
+            label38.Name = "label38";
             // 
             // label31
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(5, 122);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(66, 13);
-            this.label31.TabIndex = 66;
-            this.label31.Text = "Bag Weight:";
+            resources.ApplyResources(label31, "label31");
+            label31.Name = "label31";
             // 
             // MacRateTextbox
             // 
-            this.MacRateTextbox.Location = new System.Drawing.Point(547, 11);
-            this.MacRateTextbox.MaxLength = 3;
-            this.MacRateTextbox.Name = "MacRateTextbox";
-            this.MacRateTextbox.Size = new System.Drawing.Size(30, 20);
-            this.MacRateTextbox.TabIndex = 79;
-            this.MacRateTextbox.TextChanged += new System.EventHandler(this.MacRateTextbox_TextChanged);
+            resources.ApplyResources(MacRateTextbox, "MacRateTextbox");
+            MacRateTextbox.Name = "MacRateTextbox";
+            MacRateTextbox.TextChanged += MacRateTextbox_TextChanged;
             // 
             // BWeightText
             // 
-            this.BWeightText.Location = new System.Drawing.Point(77, 119);
-            this.BWeightText.MaxLength = 4;
-            this.BWeightText.Name = "BWeightText";
-            this.BWeightText.Size = new System.Drawing.Size(30, 20);
-            this.BWeightText.TabIndex = 64;
-            this.BWeightText.TextChanged += new System.EventHandler(this.BWeightText_TextChanged);
+            resources.ApplyResources(BWeightText, "BWeightText");
+            BWeightText.Name = "BWeightText";
+            BWeightText.TextChanged += BWeightText_TextChanged;
             // 
             // label30
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(182, 122);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(73, 13);
-            this.label30.TabIndex = 67;
-            this.label30.Text = "Hand Weight.";
+            resources.ApplyResources(label30, "label30");
+            label30.Name = "label30";
             // 
             // ACRateTextbox
             // 
-            this.ACRateTextbox.Location = new System.Drawing.Point(452, 13);
-            this.ACRateTextbox.MaxLength = 3;
-            this.ACRateTextbox.Name = "ACRateTextbox";
-            this.ACRateTextbox.Size = new System.Drawing.Size(30, 20);
-            this.ACRateTextbox.TabIndex = 77;
-            this.ACRateTextbox.TextChanged += new System.EventHandler(this.ACRateTextbox_TextChanged);
+            resources.ApplyResources(ACRateTextbox, "ACRateTextbox");
+            ACRateTextbox.Name = "ACRateTextbox";
+            ACRateTextbox.TextChanged += ACRateTextbox_TextChanged;
             // 
             // HWeightTextBox
             // 
-            this.HWeightTextBox.Location = new System.Drawing.Point(261, 119);
-            this.HWeightTextBox.MaxLength = 4;
-            this.HWeightTextBox.Name = "HWeightTextBox";
-            this.HWeightTextBox.Size = new System.Drawing.Size(30, 20);
-            this.HWeightTextBox.TabIndex = 65;
-            this.HWeightTextBox.TextChanged += new System.EventHandler(this.HWeightTextBox_TextChanged);
+            resources.ApplyResources(HWeightTextBox, "HWeightTextBox");
+            HWeightTextBox.Name = "HWeightTextBox";
+            HWeightTextBox.TextChanged += HWeightTextBox_TextChanged;
             // 
             // label36
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(398, 17);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(49, 13);
-            this.label36.TabIndex = 76;
-            this.label36.Text = "Ac Rate:";
+            resources.ApplyResources(label36, "label36");
+            label36.Name = "label36";
             // 
             // label32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(378, 124);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(73, 13);
-            this.label32.TabIndex = 69;
-            this.label32.Text = "Wear Weight.";
+            resources.ApplyResources(label32, "label32");
+            label32.Name = "label32";
             // 
             // WWeightTextBox
             // 
-            this.WWeightTextBox.Location = new System.Drawing.Point(453, 121);
-            this.WWeightTextBox.MaxLength = 4;
-            this.WWeightTextBox.Name = "WWeightTextBox";
-            this.WWeightTextBox.Size = new System.Drawing.Size(32, 20);
-            this.WWeightTextBox.TabIndex = 68;
-            this.WWeightTextBox.TextChanged += new System.EventHandler(this.WWeightTextBox_TextChanged);
+            resources.ApplyResources(WWeightTextBox, "WWeightTextBox");
+            WWeightTextBox.Name = "WWeightTextBox";
+            WWeightTextBox.TextChanged += WWeightTextBox_TextChanged;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.noMailBox);
-            this.tabPage3.Controls.Add(this.unableToDisassemble_CheckBox);
-            this.tabPage3.Controls.Add(this.unableToRent_CheckBox);
-            this.tabPage3.Controls.Add(this.NoWeddingRingcheckbox);
-            this.tabPage3.Controls.Add(this.BreakOnDeathcheckbox);
-            this.tabPage3.Controls.Add(this.Bind_DontSpecialRepaircheckBox);
-            this.tabPage3.Controls.Add(this.Bind_dontdropcheckbox);
-            this.tabPage3.Controls.Add(this.BindOnEquipcheckbox);
-            this.tabPage3.Controls.Add(this.Bind_dontdeathdropcheckbox);
-            this.tabPage3.Controls.Add(this.Bind_dontstorecheckbox);
-            this.tabPage3.Controls.Add(this.Bind_destroyondropcheckbox);
-            this.tabPage3.Controls.Add(this.Bind_dontupgradecheckbox);
-            this.tabPage3.Controls.Add(this.Bind_dontsellcheckbox);
-            this.tabPage3.Controls.Add(this.Bind_dontrepaircheckbox);
-            this.tabPage3.Controls.Add(this.Bind_donttradecheckbox);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(601, 390);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Binding";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            tabPage3.Controls.Add(noMailBox);
+            tabPage3.Controls.Add(unableToDisassemble_CheckBox);
+            tabPage3.Controls.Add(unableToRent_CheckBox);
+            tabPage3.Controls.Add(NoWeddingRingcheckbox);
+            tabPage3.Controls.Add(BreakOnDeathcheckbox);
+            tabPage3.Controls.Add(Bind_DontSpecialRepaircheckBox);
+            tabPage3.Controls.Add(Bind_dontdropcheckbox);
+            tabPage3.Controls.Add(BindOnEquipcheckbox);
+            tabPage3.Controls.Add(Bind_dontdeathdropcheckbox);
+            tabPage3.Controls.Add(Bind_dontstorecheckbox);
+            tabPage3.Controls.Add(Bind_destroyondropcheckbox);
+            tabPage3.Controls.Add(Bind_dontupgradecheckbox);
+            tabPage3.Controls.Add(Bind_dontsellcheckbox);
+            tabPage3.Controls.Add(Bind_dontrepaircheckbox);
+            tabPage3.Controls.Add(Bind_donttradecheckbox);
+            resources.ApplyResources(tabPage3, "tabPage3");
+            tabPage3.Name = "tabPage3";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // noMailBox
             // 
-            this.noMailBox.AutoSize = true;
-            this.noMailBox.Location = new System.Drawing.Point(21, 343);
-            this.noMailBox.Name = "noMailBox";
-            this.noMailBox.Size = new System.Drawing.Size(98, 17);
-            this.noMailBox.TabIndex = 119;
-            this.noMailBox.Text = "Unable To Mail";
-            this.noMailBox.UseVisualStyleBackColor = true;
-            this.noMailBox.CheckedChanged += new System.EventHandler(this.noMailBox_CheckedChanged);
+            resources.ApplyResources(noMailBox, "noMailBox");
+            noMailBox.Name = "noMailBox";
+            noMailBox.UseVisualStyleBackColor = true;
+            noMailBox.CheckedChanged += noMailBox_CheckedChanged;
             // 
             // unableToDisassemble_CheckBox
             // 
-            this.unableToDisassemble_CheckBox.AutoSize = true;
-            this.unableToDisassemble_CheckBox.Location = new System.Drawing.Point(21, 320);
-            this.unableToDisassemble_CheckBox.Name = "unableToDisassemble_CheckBox";
-            this.unableToDisassemble_CheckBox.Size = new System.Drawing.Size(138, 17);
-            this.unableToDisassemble_CheckBox.TabIndex = 117;
-            this.unableToDisassemble_CheckBox.Text = "Unable To Disassemble";
-            this.unableToDisassemble_CheckBox.UseVisualStyleBackColor = true;
-            this.unableToDisassemble_CheckBox.CheckedChanged += new System.EventHandler(this.unableToDisassemble_CheckBox_CheckedChanged);
+            resources.ApplyResources(unableToDisassemble_CheckBox, "unableToDisassemble_CheckBox");
+            unableToDisassemble_CheckBox.Name = "unableToDisassemble_CheckBox";
+            unableToDisassemble_CheckBox.UseVisualStyleBackColor = true;
+            unableToDisassemble_CheckBox.CheckedChanged += unableToDisassemble_CheckBox_CheckedChanged;
             // 
             // unableToRent_CheckBox
             // 
-            this.unableToRent_CheckBox.AutoSize = true;
-            this.unableToRent_CheckBox.Location = new System.Drawing.Point(21, 297);
-            this.unableToRent_CheckBox.Name = "unableToRent_CheckBox";
-            this.unableToRent_CheckBox.Size = new System.Drawing.Size(102, 17);
-            this.unableToRent_CheckBox.TabIndex = 116;
-            this.unableToRent_CheckBox.Text = "Unable To Rent";
-            this.unableToRent_CheckBox.UseVisualStyleBackColor = true;
-            this.unableToRent_CheckBox.CheckedChanged += new System.EventHandler(this.unableToRent_CheckBox_CheckedChanged);
+            resources.ApplyResources(unableToRent_CheckBox, "unableToRent_CheckBox");
+            unableToRent_CheckBox.Name = "unableToRent_CheckBox";
+            unableToRent_CheckBox.UseVisualStyleBackColor = true;
+            unableToRent_CheckBox.CheckedChanged += unableToRent_CheckBox_CheckedChanged;
             // 
             // NoWeddingRingcheckbox
             // 
-            this.NoWeddingRingcheckbox.AutoSize = true;
-            this.NoWeddingRingcheckbox.Location = new System.Drawing.Point(21, 274);
-            this.NoWeddingRingcheckbox.Name = "NoWeddingRingcheckbox";
-            this.NoWeddingRingcheckbox.Size = new System.Drawing.Size(130, 17);
-            this.NoWeddingRingcheckbox.TabIndex = 115;
-            this.NoWeddingRingcheckbox.Text = "Disabled Weddingring";
-            this.NoWeddingRingcheckbox.UseVisualStyleBackColor = true;
-            this.NoWeddingRingcheckbox.CheckedChanged += new System.EventHandler(this.NoWeddingRingcheckbox_CheckedChanged);
+            resources.ApplyResources(NoWeddingRingcheckbox, "NoWeddingRingcheckbox");
+            NoWeddingRingcheckbox.Name = "NoWeddingRingcheckbox";
+            NoWeddingRingcheckbox.UseVisualStyleBackColor = true;
+            NoWeddingRingcheckbox.CheckedChanged += NoWeddingRingcheckbox_CheckedChanged;
             // 
             // BreakOnDeathcheckbox
             // 
-            this.BreakOnDeathcheckbox.AutoSize = true;
-            this.BreakOnDeathcheckbox.Location = new System.Drawing.Point(21, 251);
-            this.BreakOnDeathcheckbox.Name = "BreakOnDeathcheckbox";
-            this.BreakOnDeathcheckbox.Size = new System.Drawing.Size(101, 17);
-            this.BreakOnDeathcheckbox.TabIndex = 114;
-            this.BreakOnDeathcheckbox.Text = "Break on Death";
-            this.BreakOnDeathcheckbox.UseVisualStyleBackColor = true;
-            this.BreakOnDeathcheckbox.CheckedChanged += new System.EventHandler(this.BreakOnDeathcheckbox_CheckedChanged);
+            resources.ApplyResources(BreakOnDeathcheckbox, "BreakOnDeathcheckbox");
+            BreakOnDeathcheckbox.Name = "BreakOnDeathcheckbox";
+            BreakOnDeathcheckbox.UseVisualStyleBackColor = true;
+            BreakOnDeathcheckbox.CheckedChanged += BreakOnDeathcheckbox_CheckedChanged;
             // 
             // Bind_DontSpecialRepaircheckBox
             // 
-            this.Bind_DontSpecialRepaircheckBox.AutoSize = true;
-            this.Bind_DontSpecialRepaircheckBox.Location = new System.Drawing.Point(21, 160);
-            this.Bind_DontSpecialRepaircheckBox.Name = "Bind_DontSpecialRepaircheckBox";
-            this.Bind_DontSpecialRepaircheckBox.Size = new System.Drawing.Size(121, 17);
-            this.Bind_DontSpecialRepaircheckBox.TabIndex = 113;
-            this.Bind_DontSpecialRepaircheckBox.Text = "Dont Special Repair";
-            this.Bind_DontSpecialRepaircheckBox.UseVisualStyleBackColor = true;
-            this.Bind_DontSpecialRepaircheckBox.CheckedChanged += new System.EventHandler(this.Bind_DontSpecialRepaircheckBox_CheckedChanged);
+            resources.ApplyResources(Bind_DontSpecialRepaircheckBox, "Bind_DontSpecialRepaircheckBox");
+            Bind_DontSpecialRepaircheckBox.Name = "Bind_DontSpecialRepaircheckBox";
+            Bind_DontSpecialRepaircheckBox.UseVisualStyleBackColor = true;
+            Bind_DontSpecialRepaircheckBox.CheckedChanged += Bind_DontSpecialRepaircheckBox_CheckedChanged;
             // 
             // Bind_dontdropcheckbox
             // 
-            this.Bind_dontdropcheckbox.AutoSize = true;
-            this.Bind_dontdropcheckbox.Location = new System.Drawing.Point(21, 12);
-            this.Bind_dontdropcheckbox.Name = "Bind_dontdropcheckbox";
-            this.Bind_dontdropcheckbox.Size = new System.Drawing.Size(73, 17);
-            this.Bind_dontdropcheckbox.TabIndex = 102;
-            this.Bind_dontdropcheckbox.Text = "Dont drop";
-            this.Bind_dontdropcheckbox.UseVisualStyleBackColor = true;
-            this.Bind_dontdropcheckbox.CheckedChanged += new System.EventHandler(this.Bind_dontdropcheckbox_CheckedChanged);
+            resources.ApplyResources(Bind_dontdropcheckbox, "Bind_dontdropcheckbox");
+            Bind_dontdropcheckbox.Name = "Bind_dontdropcheckbox";
+            Bind_dontdropcheckbox.UseVisualStyleBackColor = true;
+            Bind_dontdropcheckbox.CheckedChanged += Bind_dontdropcheckbox_CheckedChanged;
             // 
             // BindOnEquipcheckbox
             // 
-            this.BindOnEquipcheckbox.AutoSize = true;
-            this.BindOnEquipcheckbox.Location = new System.Drawing.Point(21, 228);
-            this.BindOnEquipcheckbox.Name = "BindOnEquipcheckbox";
-            this.BindOnEquipcheckbox.Size = new System.Drawing.Size(92, 17);
-            this.BindOnEquipcheckbox.TabIndex = 112;
-            this.BindOnEquipcheckbox.Text = "Bind on Equip";
-            this.BindOnEquipcheckbox.UseVisualStyleBackColor = true;
-            this.BindOnEquipcheckbox.CheckedChanged += new System.EventHandler(this.BindOnEquipcheckbox_CheckedChanged);
+            resources.ApplyResources(BindOnEquipcheckbox, "BindOnEquipcheckbox");
+            BindOnEquipcheckbox.Name = "BindOnEquipcheckbox";
+            BindOnEquipcheckbox.UseVisualStyleBackColor = true;
+            BindOnEquipcheckbox.CheckedChanged += BindOnEquipcheckbox_CheckedChanged;
             // 
             // Bind_dontdeathdropcheckbox
             // 
-            this.Bind_dontdeathdropcheckbox.AutoSize = true;
-            this.Bind_dontdeathdropcheckbox.Location = new System.Drawing.Point(21, 38);
-            this.Bind_dontdeathdropcheckbox.Name = "Bind_dontdeathdropcheckbox";
-            this.Bind_dontdeathdropcheckbox.Size = new System.Drawing.Size(105, 17);
-            this.Bind_dontdeathdropcheckbox.TabIndex = 103;
-            this.Bind_dontdeathdropcheckbox.Text = "Dont Death drop";
-            this.Bind_dontdeathdropcheckbox.UseVisualStyleBackColor = true;
-            this.Bind_dontdeathdropcheckbox.CheckedChanged += new System.EventHandler(this.Bind_dontdeathdropcheckbox_CheckedChanged);
+            resources.ApplyResources(Bind_dontdeathdropcheckbox, "Bind_dontdeathdropcheckbox");
+            Bind_dontdeathdropcheckbox.Name = "Bind_dontdeathdropcheckbox";
+            Bind_dontdeathdropcheckbox.UseVisualStyleBackColor = true;
+            Bind_dontdeathdropcheckbox.CheckedChanged += Bind_dontdeathdropcheckbox_CheckedChanged;
             // 
             // Bind_dontstorecheckbox
             // 
-            this.Bind_dontstorecheckbox.AutoSize = true;
-            this.Bind_dontstorecheckbox.Location = new System.Drawing.Point(21, 182);
-            this.Bind_dontstorecheckbox.Name = "Bind_dontstorecheckbox";
-            this.Bind_dontstorecheckbox.Size = new System.Drawing.Size(77, 17);
-            this.Bind_dontstorecheckbox.TabIndex = 109;
-            this.Bind_dontstorecheckbox.Text = "Dont Store";
-            this.Bind_dontstorecheckbox.UseVisualStyleBackColor = true;
-            this.Bind_dontstorecheckbox.CheckedChanged += new System.EventHandler(this.Bind_dontstorecheckbox_CheckedChanged);
+            resources.ApplyResources(Bind_dontstorecheckbox, "Bind_dontstorecheckbox");
+            Bind_dontstorecheckbox.Name = "Bind_dontstorecheckbox";
+            Bind_dontstorecheckbox.UseVisualStyleBackColor = true;
+            Bind_dontstorecheckbox.CheckedChanged += Bind_dontstorecheckbox_CheckedChanged;
             // 
             // Bind_destroyondropcheckbox
             // 
-            this.Bind_destroyondropcheckbox.AutoSize = true;
-            this.Bind_destroyondropcheckbox.Location = new System.Drawing.Point(21, 65);
-            this.Bind_destroyondropcheckbox.Name = "Bind_destroyondropcheckbox";
-            this.Bind_destroyondropcheckbox.Size = new System.Drawing.Size(101, 17);
-            this.Bind_destroyondropcheckbox.TabIndex = 104;
-            this.Bind_destroyondropcheckbox.Text = "Destroy on drop";
-            this.Bind_destroyondropcheckbox.UseVisualStyleBackColor = true;
-            this.Bind_destroyondropcheckbox.CheckedChanged += new System.EventHandler(this.Bind_destroyondropcheckbox_CheckedChanged);
+            resources.ApplyResources(Bind_destroyondropcheckbox, "Bind_destroyondropcheckbox");
+            Bind_destroyondropcheckbox.Name = "Bind_destroyondropcheckbox";
+            Bind_destroyondropcheckbox.UseVisualStyleBackColor = true;
+            Bind_destroyondropcheckbox.CheckedChanged += Bind_destroyondropcheckbox_CheckedChanged;
             // 
             // Bind_dontupgradecheckbox
             // 
-            this.Bind_dontupgradecheckbox.AutoSize = true;
-            this.Bind_dontupgradecheckbox.Location = new System.Drawing.Point(21, 205);
-            this.Bind_dontupgradecheckbox.Name = "Bind_dontupgradecheckbox";
-            this.Bind_dontupgradecheckbox.Size = new System.Drawing.Size(93, 17);
-            this.Bind_dontupgradecheckbox.TabIndex = 108;
-            this.Bind_dontupgradecheckbox.Text = "Dont Upgrade";
-            this.Bind_dontupgradecheckbox.UseVisualStyleBackColor = true;
-            this.Bind_dontupgradecheckbox.CheckedChanged += new System.EventHandler(this.Bind_dontupgradecheckbox_CheckedChanged);
+            resources.ApplyResources(Bind_dontupgradecheckbox, "Bind_dontupgradecheckbox");
+            Bind_dontupgradecheckbox.Name = "Bind_dontupgradecheckbox";
+            Bind_dontupgradecheckbox.UseVisualStyleBackColor = true;
+            Bind_dontupgradecheckbox.CheckedChanged += Bind_dontupgradecheckbox_CheckedChanged;
             // 
             // Bind_dontsellcheckbox
             // 
-            this.Bind_dontsellcheckbox.AutoSize = true;
-            this.Bind_dontsellcheckbox.Location = new System.Drawing.Point(21, 91);
-            this.Bind_dontsellcheckbox.Name = "Bind_dontsellcheckbox";
-            this.Bind_dontsellcheckbox.Size = new System.Drawing.Size(67, 17);
-            this.Bind_dontsellcheckbox.TabIndex = 105;
-            this.Bind_dontsellcheckbox.Text = "Dont sell";
-            this.Bind_dontsellcheckbox.UseVisualStyleBackColor = true;
-            this.Bind_dontsellcheckbox.CheckedChanged += new System.EventHandler(this.Bind_dontsellcheckbox_CheckedChanged);
+            resources.ApplyResources(Bind_dontsellcheckbox, "Bind_dontsellcheckbox");
+            Bind_dontsellcheckbox.Name = "Bind_dontsellcheckbox";
+            Bind_dontsellcheckbox.UseVisualStyleBackColor = true;
+            Bind_dontsellcheckbox.CheckedChanged += Bind_dontsellcheckbox_CheckedChanged;
             // 
             // Bind_dontrepaircheckbox
             // 
-            this.Bind_dontrepaircheckbox.AutoSize = true;
-            this.Bind_dontrepaircheckbox.Location = new System.Drawing.Point(21, 137);
-            this.Bind_dontrepaircheckbox.Name = "Bind_dontrepaircheckbox";
-            this.Bind_dontrepaircheckbox.Size = new System.Drawing.Size(83, 17);
-            this.Bind_dontrepaircheckbox.TabIndex = 107;
-            this.Bind_dontrepaircheckbox.Text = "Dont Repair";
-            this.Bind_dontrepaircheckbox.UseVisualStyleBackColor = true;
-            this.Bind_dontrepaircheckbox.CheckedChanged += new System.EventHandler(this.Bind_dontrepaircheckbox_CheckedChanged);
+            resources.ApplyResources(Bind_dontrepaircheckbox, "Bind_dontrepaircheckbox");
+            Bind_dontrepaircheckbox.Name = "Bind_dontrepaircheckbox";
+            Bind_dontrepaircheckbox.UseVisualStyleBackColor = true;
+            Bind_dontrepaircheckbox.CheckedChanged += Bind_dontrepaircheckbox_CheckedChanged;
             // 
             // Bind_donttradecheckbox
             // 
-            this.Bind_donttradecheckbox.AutoSize = true;
-            this.Bind_donttradecheckbox.Location = new System.Drawing.Point(21, 114);
-            this.Bind_donttradecheckbox.Name = "Bind_donttradecheckbox";
-            this.Bind_donttradecheckbox.Size = new System.Drawing.Size(80, 17);
-            this.Bind_donttradecheckbox.TabIndex = 106;
-            this.Bind_donttradecheckbox.Text = "Dont Trade";
-            this.Bind_donttradecheckbox.UseVisualStyleBackColor = true;
-            this.Bind_donttradecheckbox.CheckedChanged += new System.EventHandler(this.Bind_donttradecheckbox_CheckedChanged);
+            resources.ApplyResources(Bind_donttradecheckbox, "Bind_donttradecheckbox");
+            Bind_donttradecheckbox.Name = "Bind_donttradecheckbox";
+            Bind_donttradecheckbox.UseVisualStyleBackColor = true;
+            Bind_donttradecheckbox.CheckedChanged += Bind_donttradecheckbox_CheckedChanged;
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.PickaxecheckBox);
-            this.tabPage4.Controls.Add(this.NoDuraLosscheckBox);
-            this.tabPage4.Controls.Add(this.SkillcheckBox);
-            this.tabPage4.Controls.Add(this.ProbecheckBox);
-            this.tabPage4.Controls.Add(this.HealingcheckBox);
-            this.tabPage4.Controls.Add(this.FlamecheckBox);
-            this.tabPage4.Controls.Add(this.MusclecheckBox);
-            this.tabPage4.Controls.Add(this.RevivalcheckBox);
-            this.tabPage4.Controls.Add(this.ProtectioncheckBox);
-            this.tabPage4.Controls.Add(this.ClearcheckBox);
-            this.tabPage4.Controls.Add(this.TeleportcheckBox);
-            this.tabPage4.Controls.Add(this.ParalysischeckBox);
-            this.tabPage4.Controls.Add(this.BlinkcheckBox);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(601, 390);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Special Stats";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            tabPage4.Controls.Add(PickaxecheckBox);
+            tabPage4.Controls.Add(NoDuraLosscheckBox);
+            tabPage4.Controls.Add(SkillcheckBox);
+            tabPage4.Controls.Add(ProbecheckBox);
+            tabPage4.Controls.Add(HealingcheckBox);
+            tabPage4.Controls.Add(FlamecheckBox);
+            tabPage4.Controls.Add(MusclecheckBox);
+            tabPage4.Controls.Add(RevivalcheckBox);
+            tabPage4.Controls.Add(ProtectioncheckBox);
+            tabPage4.Controls.Add(ClearcheckBox);
+            tabPage4.Controls.Add(TeleportcheckBox);
+            tabPage4.Controls.Add(ParalysischeckBox);
+            tabPage4.Controls.Add(BlinkcheckBox);
+            resources.ApplyResources(tabPage4, "tabPage4");
+            tabPage4.Name = "tabPage4";
+            tabPage4.UseVisualStyleBackColor = true;
             // 
             // PickaxecheckBox
             // 
-            this.PickaxecheckBox.AutoSize = true;
-            this.PickaxecheckBox.Location = new System.Drawing.Point(22, 267);
-            this.PickaxecheckBox.Name = "PickaxecheckBox";
-            this.PickaxecheckBox.Size = new System.Drawing.Size(64, 17);
-            this.PickaxecheckBox.TabIndex = 11;
-            this.PickaxecheckBox.Text = "Pickaxe";
-            this.PickaxecheckBox.UseVisualStyleBackColor = true;
-            this.PickaxecheckBox.CheckedChanged += new System.EventHandler(this.PickaxecheckBox_CheckedChanged);
+            resources.ApplyResources(PickaxecheckBox, "PickaxecheckBox");
+            PickaxecheckBox.Name = "PickaxecheckBox";
+            PickaxecheckBox.UseVisualStyleBackColor = true;
+            PickaxecheckBox.CheckedChanged += PickaxecheckBox_CheckedChanged;
             // 
             // NoDuraLosscheckBox
             // 
-            this.NoDuraLosscheckBox.AutoSize = true;
-            this.NoDuraLosscheckBox.Location = new System.Drawing.Point(22, 244);
-            this.NoDuraLosscheckBox.Name = "NoDuraLosscheckBox";
-            this.NoDuraLosscheckBox.Size = new System.Drawing.Size(85, 17);
-            this.NoDuraLosscheckBox.TabIndex = 10;
-            this.NoDuraLosscheckBox.Text = "No dura loss";
-            this.NoDuraLosscheckBox.UseVisualStyleBackColor = true;
-            this.NoDuraLosscheckBox.CheckedChanged += new System.EventHandler(this.NoDuraLosscheckBox_CheckedChanged);
+            resources.ApplyResources(NoDuraLosscheckBox, "NoDuraLosscheckBox");
+            NoDuraLosscheckBox.Name = "NoDuraLosscheckBox";
+            NoDuraLosscheckBox.UseVisualStyleBackColor = true;
+            NoDuraLosscheckBox.CheckedChanged += NoDuraLosscheckBox_CheckedChanged;
             // 
             // SkillcheckBox
             // 
-            this.SkillcheckBox.AutoSize = true;
-            this.SkillcheckBox.Location = new System.Drawing.Point(22, 221);
-            this.SkillcheckBox.Name = "SkillcheckBox";
-            this.SkillcheckBox.Size = new System.Drawing.Size(92, 17);
-            this.SkillcheckBox.TabIndex = 9;
-            this.SkillcheckBox.Text = "Skill necklace";
-            this.SkillcheckBox.UseVisualStyleBackColor = true;
-            this.SkillcheckBox.CheckedChanged += new System.EventHandler(this.SkillcheckBox_CheckedChanged);
+            resources.ApplyResources(SkillcheckBox, "SkillcheckBox");
+            SkillcheckBox.Name = "SkillcheckBox";
+            SkillcheckBox.UseVisualStyleBackColor = true;
+            SkillcheckBox.CheckedChanged += SkillcheckBox_CheckedChanged;
             // 
             // ProbecheckBox
             // 
-            this.ProbecheckBox.AutoSize = true;
-            this.ProbecheckBox.Location = new System.Drawing.Point(22, 198);
-            this.ProbecheckBox.Name = "ProbecheckBox";
-            this.ProbecheckBox.Size = new System.Drawing.Size(101, 17);
-            this.ProbecheckBox.TabIndex = 8;
-            this.ProbecheckBox.Text = "Probe necklace";
-            this.ProbecheckBox.UseVisualStyleBackColor = true;
-            this.ProbecheckBox.CheckedChanged += new System.EventHandler(this.ProbecheckBox_CheckedChanged);
+            resources.ApplyResources(ProbecheckBox, "ProbecheckBox");
+            ProbecheckBox.Name = "ProbecheckBox";
+            ProbecheckBox.UseVisualStyleBackColor = true;
+            ProbecheckBox.CheckedChanged += ProbecheckBox_CheckedChanged;
             // 
             // HealingcheckBox
             // 
-            this.HealingcheckBox.AutoSize = true;
-            this.HealingcheckBox.Location = new System.Drawing.Point(22, 176);
-            this.HealingcheckBox.Name = "HealingcheckBox";
-            this.HealingcheckBox.Size = new System.Drawing.Size(82, 17);
-            this.HealingcheckBox.TabIndex = 7;
-            this.HealingcheckBox.Text = "Healing ring";
-            this.HealingcheckBox.UseVisualStyleBackColor = true;
-            this.HealingcheckBox.CheckedChanged += new System.EventHandler(this.HealingcheckBox_CheckedChanged);
+            resources.ApplyResources(HealingcheckBox, "HealingcheckBox");
+            HealingcheckBox.Name = "HealingcheckBox";
+            HealingcheckBox.UseVisualStyleBackColor = true;
+            HealingcheckBox.CheckedChanged += HealingcheckBox_CheckedChanged;
             // 
             // FlamecheckBox
             // 
-            this.FlamecheckBox.AutoSize = true;
-            this.FlamecheckBox.Location = new System.Drawing.Point(22, 152);
-            this.FlamecheckBox.Name = "FlamecheckBox";
-            this.FlamecheckBox.Size = new System.Drawing.Size(74, 17);
-            this.FlamecheckBox.TabIndex = 6;
-            this.FlamecheckBox.Text = "Flame ring";
-            this.FlamecheckBox.UseVisualStyleBackColor = true;
-            this.FlamecheckBox.CheckedChanged += new System.EventHandler(this.FlamecheckBox_CheckedChanged);
+            resources.ApplyResources(FlamecheckBox, "FlamecheckBox");
+            FlamecheckBox.Name = "FlamecheckBox";
+            FlamecheckBox.UseVisualStyleBackColor = true;
+            FlamecheckBox.CheckedChanged += FlamecheckBox_CheckedChanged;
             // 
             // MusclecheckBox
             // 
-            this.MusclecheckBox.AutoSize = true;
-            this.MusclecheckBox.Location = new System.Drawing.Point(22, 129);
-            this.MusclecheckBox.Name = "MusclecheckBox";
-            this.MusclecheckBox.Size = new System.Drawing.Size(80, 17);
-            this.MusclecheckBox.TabIndex = 5;
-            this.MusclecheckBox.Text = "Muscle ring";
-            this.MusclecheckBox.UseVisualStyleBackColor = true;
-            this.MusclecheckBox.CheckedChanged += new System.EventHandler(this.MusclecheckBox_CheckedChanged);
+            resources.ApplyResources(MusclecheckBox, "MusclecheckBox");
+            MusclecheckBox.Name = "MusclecheckBox";
+            MusclecheckBox.UseVisualStyleBackColor = true;
+            MusclecheckBox.CheckedChanged += MusclecheckBox_CheckedChanged;
             // 
             // RevivalcheckBox
             // 
-            this.RevivalcheckBox.AutoSize = true;
-            this.RevivalcheckBox.Location = new System.Drawing.Point(22, 106);
-            this.RevivalcheckBox.Name = "RevivalcheckBox";
-            this.RevivalcheckBox.Size = new System.Drawing.Size(82, 17);
-            this.RevivalcheckBox.TabIndex = 4;
-            this.RevivalcheckBox.Text = "Revival ring";
-            this.RevivalcheckBox.UseVisualStyleBackColor = true;
-            this.RevivalcheckBox.CheckedChanged += new System.EventHandler(this.RevivalcheckBox_CheckedChanged);
+            resources.ApplyResources(RevivalcheckBox, "RevivalcheckBox");
+            RevivalcheckBox.Name = "RevivalcheckBox";
+            RevivalcheckBox.UseVisualStyleBackColor = true;
+            RevivalcheckBox.CheckedChanged += RevivalcheckBox_CheckedChanged;
             // 
             // ProtectioncheckBox
             // 
-            this.ProtectioncheckBox.AutoSize = true;
-            this.ProtectioncheckBox.Location = new System.Drawing.Point(22, 83);
-            this.ProtectioncheckBox.Name = "ProtectioncheckBox";
-            this.ProtectioncheckBox.Size = new System.Drawing.Size(94, 17);
-            this.ProtectioncheckBox.TabIndex = 3;
-            this.ProtectioncheckBox.Text = "Protection ring";
-            this.ProtectioncheckBox.UseVisualStyleBackColor = true;
-            this.ProtectioncheckBox.CheckedChanged += new System.EventHandler(this.ProtectioncheckBox_CheckedChanged);
+            resources.ApplyResources(ProtectioncheckBox, "ProtectioncheckBox");
+            ProtectioncheckBox.Name = "ProtectioncheckBox";
+            ProtectioncheckBox.UseVisualStyleBackColor = true;
+            ProtectioncheckBox.CheckedChanged += ProtectioncheckBox_CheckedChanged;
             // 
             // ClearcheckBox
             // 
-            this.ClearcheckBox.AutoSize = true;
-            this.ClearcheckBox.Location = new System.Drawing.Point(22, 60);
-            this.ClearcheckBox.Name = "ClearcheckBox";
-            this.ClearcheckBox.Size = new System.Drawing.Size(70, 17);
-            this.ClearcheckBox.TabIndex = 2;
-            this.ClearcheckBox.Text = "Clear ring";
-            this.ClearcheckBox.UseVisualStyleBackColor = true;
-            this.ClearcheckBox.CheckedChanged += new System.EventHandler(this.ClearcheckBox_CheckedChanged);
+            resources.ApplyResources(ClearcheckBox, "ClearcheckBox");
+            ClearcheckBox.Name = "ClearcheckBox";
+            ClearcheckBox.UseVisualStyleBackColor = true;
+            ClearcheckBox.CheckedChanged += ClearcheckBox_CheckedChanged;
             // 
             // TeleportcheckBox
             // 
-            this.TeleportcheckBox.AutoSize = true;
-            this.TeleportcheckBox.Location = new System.Drawing.Point(22, 37);
-            this.TeleportcheckBox.Name = "TeleportcheckBox";
-            this.TeleportcheckBox.Size = new System.Drawing.Size(85, 17);
-            this.TeleportcheckBox.TabIndex = 1;
-            this.TeleportcheckBox.Text = "Teleport ring";
-            this.TeleportcheckBox.UseVisualStyleBackColor = true;
-            this.TeleportcheckBox.CheckedChanged += new System.EventHandler(this.TeleportcheckBox_CheckedChanged);
+            resources.ApplyResources(TeleportcheckBox, "TeleportcheckBox");
+            TeleportcheckBox.Name = "TeleportcheckBox";
+            TeleportcheckBox.UseVisualStyleBackColor = true;
+            TeleportcheckBox.CheckedChanged += TeleportcheckBox_CheckedChanged;
             // 
             // ParalysischeckBox
             // 
-            this.ParalysischeckBox.AutoSize = true;
-            this.ParalysischeckBox.Location = new System.Drawing.Point(22, 14);
-            this.ParalysischeckBox.Name = "ParalysischeckBox";
-            this.ParalysischeckBox.Size = new System.Drawing.Size(87, 17);
-            this.ParalysischeckBox.TabIndex = 0;
-            this.ParalysischeckBox.Text = "Paralysis ring";
-            this.ParalysischeckBox.UseVisualStyleBackColor = true;
-            this.ParalysischeckBox.CheckedChanged += new System.EventHandler(this.ParalysischeckBox_CheckedChanged);
+            resources.ApplyResources(ParalysischeckBox, "ParalysischeckBox");
+            ParalysischeckBox.Name = "ParalysischeckBox";
+            ParalysischeckBox.UseVisualStyleBackColor = true;
+            ParalysischeckBox.CheckedChanged += ParalysischeckBox_CheckedChanged;
             // 
             // BlinkcheckBox
             // 
-            this.BlinkcheckBox.AutoSize = true;
-            this.BlinkcheckBox.Location = new System.Drawing.Point(22, 290);
-            this.BlinkcheckBox.Name = "BlinkcheckBox";
-            this.BlinkcheckBox.Size = new System.Drawing.Size(49, 17);
-            this.BlinkcheckBox.TabIndex = 6;
-            this.BlinkcheckBox.Text = "Blink";
-            this.BlinkcheckBox.UseVisualStyleBackColor = true;
-            this.BlinkcheckBox.CheckedChanged += new System.EventHandler(this.BlinkcheckBox_CheckedChanged);
+            resources.ApplyResources(BlinkcheckBox, "BlinkcheckBox");
+            BlinkcheckBox.Name = "BlinkcheckBox";
+            BlinkcheckBox.UseVisualStyleBackColor = true;
+            BlinkcheckBox.CheckedChanged += BlinkcheckBox_CheckedChanged;
             // 
             // RemoveButton
             // 
-            this.RemoveButton.Location = new System.Drawing.Point(235, 12);
-            this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.Size = new System.Drawing.Size(65, 23);
-            this.RemoveButton.TabIndex = 9;
-            this.RemoveButton.Text = "Remove";
-            this.RemoveButton.UseVisualStyleBackColor = true;
-            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
+            resources.ApplyResources(RemoveButton, "RemoveButton");
+            RemoveButton.Name = "RemoveButton";
+            RemoveButton.UseVisualStyleBackColor = true;
+            RemoveButton.Click += RemoveButton_Click;
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(174, 12);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(55, 23);
-            this.AddButton.TabIndex = 8;
-            this.AddButton.Text = "Add";
-            this.AddButton.UseVisualStyleBackColor = true;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            resources.ApplyResources(AddButton, "AddButton");
+            AddButton.Name = "AddButton";
+            AddButton.UseVisualStyleBackColor = true;
+            AddButton.Click += AddButton_Click;
             // 
             // ItemInfoListBox
             // 
-            this.ItemInfoListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.ItemInfoListBox.FormattingEnabled = true;
-            this.ItemInfoListBox.Location = new System.Drawing.Point(12, 40);
-            this.ItemInfoListBox.Name = "ItemInfoListBox";
-            this.ItemInfoListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.ItemInfoListBox.Size = new System.Drawing.Size(156, 420);
-            this.ItemInfoListBox.TabIndex = 10;
-            this.ItemInfoListBox.SelectedIndexChanged += new System.EventHandler(this.ItemInfoListBox_SelectedIndexChanged);
+            resources.ApplyResources(ItemInfoListBox, "ItemInfoListBox");
+            ItemInfoListBox.FormattingEnabled = true;
+            ItemInfoListBox.Name = "ItemInfoListBox";
+            ItemInfoListBox.SelectionMode = SelectionMode.MultiExtended;
+            ItemInfoListBox.SelectedIndexChanged += ItemInfoListBox_SelectedIndexChanged;
             // 
             // PasteButton
             // 
-            this.PasteButton.Enabled = false;
-            this.PasteButton.Location = new System.Drawing.Point(363, 12);
-            this.PasteButton.Name = "PasteButton";
-            this.PasteButton.Size = new System.Drawing.Size(53, 23);
-            this.PasteButton.TabIndex = 24;
-            this.PasteButton.Text = "Paste";
-            this.PasteButton.UseVisualStyleBackColor = true;
-            this.PasteButton.Visible = false;
-            this.PasteButton.Click += new System.EventHandler(this.PasteButton_Click);
+            resources.ApplyResources(PasteButton, "PasteButton");
+            PasteButton.Name = "PasteButton";
+            PasteButton.UseVisualStyleBackColor = true;
+            PasteButton.Click += PasteButton_Click;
             // 
             // CopyMButton
             // 
-            this.CopyMButton.Enabled = false;
-            this.CopyMButton.Location = new System.Drawing.Point(306, 12);
-            this.CopyMButton.Name = "CopyMButton";
-            this.CopyMButton.Size = new System.Drawing.Size(51, 23);
-            this.CopyMButton.TabIndex = 23;
-            this.CopyMButton.Text = "Copy";
-            this.CopyMButton.UseVisualStyleBackColor = true;
-            this.CopyMButton.Visible = false;
-            this.CopyMButton.Click += new System.EventHandler(this.CopyMButton_Click);
+            resources.ApplyResources(CopyMButton, "CopyMButton");
+            CopyMButton.Name = "CopyMButton";
+            CopyMButton.UseVisualStyleBackColor = true;
+            CopyMButton.Click += CopyMButton_Click;
             // 
             // ITypeFilterComboBox
             // 
-            this.ITypeFilterComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ITypeFilterComboBox.FormattingEnabled = true;
-            this.ITypeFilterComboBox.Location = new System.Drawing.Point(14, 14);
-            this.ITypeFilterComboBox.Name = "ITypeFilterComboBox";
-            this.ITypeFilterComboBox.Size = new System.Drawing.Size(121, 21);
-            this.ITypeFilterComboBox.TabIndex = 25;
-            this.ITypeFilterComboBox.SelectedIndexChanged += new System.EventHandler(this.ITypeFilterComboBox_SelectedIndexChanged);
+            ITypeFilterComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            ITypeFilterComboBox.FormattingEnabled = true;
+            resources.ApplyResources(ITypeFilterComboBox, "ITypeFilterComboBox");
+            ITypeFilterComboBox.Name = "ITypeFilterComboBox";
+            ITypeFilterComboBox.SelectedIndexChanged += ITypeFilterComboBox_SelectedIndexChanged;
             // 
             // Gameshop_button
             // 
-            this.Gameshop_button.Location = new System.Drawing.Point(422, 12);
-            this.Gameshop_button.Name = "Gameshop_button";
-            this.Gameshop_button.Size = new System.Drawing.Size(83, 23);
-            this.Gameshop_button.TabIndex = 29;
-            this.Gameshop_button.Text = "+ Gameshop";
-            this.Gameshop_button.UseVisualStyleBackColor = true;
-            this.Gameshop_button.Click += new System.EventHandler(this.Gameshop_button_Click);
+            resources.ApplyResources(Gameshop_button, "Gameshop_button");
+            Gameshop_button.Name = "Gameshop_button";
+            Gameshop_button.UseVisualStyleBackColor = true;
+            Gameshop_button.Click += Gameshop_button_Click;
             // 
             // ItemInfoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 479);
-            this.Controls.Add(this.Gameshop_button);
-            this.Controls.Add(this.ITypeFilterComboBox);
-            this.Controls.Add(this.PasteButton);
-            this.Controls.Add(this.CopyMButton);
-            this.Controls.Add(this.ItemInfoPanel);
-            this.Controls.Add(this.RemoveButton);
-            this.Controls.Add(this.AddButton);
-            this.Controls.Add(this.ItemInfoListBox);
-            this.Name = "ItemInfoForm";
-            this.Text = "ItemInfoForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ItemInfoForm_FormClosed);
-            this.Load += new System.EventHandler(this.ItemInfoForm_Load);
-            this.ItemInfoPanel.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.ResumeLayout(false);
-
+            resources.ApplyResources(this, "$this");
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(Gameshop_button);
+            Controls.Add(ITypeFilterComboBox);
+            Controls.Add(PasteButton);
+            Controls.Add(CopyMButton);
+            Controls.Add(ItemInfoPanel);
+            Controls.Add(RemoveButton);
+            Controls.Add(AddButton);
+            Controls.Add(ItemInfoListBox);
+            Name = "ItemInfoForm";
+            FormClosed += ItemInfoForm_FormClosed;
+            Load += ItemInfoForm_Load;
+            ItemInfoPanel.ResumeLayout(false);
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
+            tabPage4.ResumeLayout(false);
+            tabPage4.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

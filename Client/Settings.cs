@@ -186,12 +186,14 @@ namespace Client
 
         //AutoPatcher
         public static bool P_Patcher = true;
+        //public static string P_Host = @"http://mirfiles.co.uk/mir2/cmir/patch/";
         public static string P_Host = @"http://mirfiles.com/mir2/cmir/patch/";
         public static string P_PatchFileName = @"PList.gz";
         public static bool P_NeedLogin = false;
         public static string P_Login = string.Empty;
         public static string P_Password = string.Empty;
         public static string P_ServerName = string.Empty;
+        //public static string P_BrowserAddress = "http://192.168.8.18/mir2-patchsite/";
         public static string P_BrowserAddress = "https://www.lomcn.org/mir2-patchsite/";
         public static string P_Client = Application.StartupPath + "\\";
         public static bool P_AutoStart = false;
@@ -305,6 +307,7 @@ namespace Client
             //Temp check to update everyones address
             if (P_Host.ToLower() == "http://mirfiles.co.uk/mir2/cmir/patch/")
             {
+                //P_Host = "http://mirfiles.co.uk/mir2/cmir/patch/";
                 P_Host = "http://mirfiles.com/mir2/cmir/patch/";
             }
 

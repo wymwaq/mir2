@@ -2,11 +2,12 @@
 using Server.MirEnvir;
 using Server.Utils;
 using C = ClientPackets;
+using Server.Library;
 
 namespace Server.MirDatabase
 {
     public class AccountInfo
-    {       
+    {
         protected static Envir Envir
         {
             get { return Envir.Main; }
@@ -22,10 +23,10 @@ namespace Server.MirDatabase
         {
             get { return password; }
             set
-            {                
+            {
                 Salt = Crypto.GenerateSalt();
                 password = Crypto.HashPassword(value, Salt);
-                
+
             }
         }
 
@@ -58,7 +59,7 @@ namespace Server.MirDatabase
         public uint Credit;
 
         public MirConnection Connection;
-        
+
         public LinkedList<AuctionInfo> Auctions = new LinkedList<AuctionInfo>();
         public bool AdminAccount;
 
@@ -120,21 +121,21 @@ namespace Server.MirDatabase
 
                 if (info.Deleted && info.DeleteDate.AddMonths(Settings.ArchiveDeletedCharacterAfterMonths) <= Envir.Now)
                 {
-                    MessageQueue.Enqueue($"Player {info.Name} has been archived due to {Settings.ArchiveDeletedCharacterAfterMonths} month deletion.");
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerArchivedDue1, info.Name, Settings.ArchiveDeletedCharacterAfterMonths));
                     Envir.SaveArchivedCharacter(info);
                     continue;
                 }
 
                 if (info.LastLoginDate == DateTime.MinValue && info.CreationDate.AddMonths(Settings.ArchiveInactiveCharacterAfterMonths) <= Envir.Now)
                 {
-                    MessageQueue.Enqueue($"Player {info.Name} has been archived due to no login after {Settings.ArchiveInactiveCharacterAfterMonths} months.");
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerArchivedDue2, info.Name, Settings.ArchiveInactiveCharacterAfterMonths));
                     Envir.SaveArchivedCharacter(info);
                     continue;
                 }
-                
+
                 if (info.LastLoginDate > DateTime.MinValue && info.LastLoginDate.AddMonths(Settings.ArchiveInactiveCharacterAfterMonths) <= Envir.Now)
                 {
-                    MessageQueue.Enqueue($"Player {info.Name} has been archived due to {Settings.ArchiveInactiveCharacterAfterMonths} months inactivity.");
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerArchivedDue3, info.Name, Settings.ArchiveInactiveCharacterAfterMonths));
                     Envir.SaveArchivedCharacter(info);
                     continue;
                 }
@@ -147,7 +148,7 @@ namespace Server.MirDatabase
                 HasExpandedStorage = reader.ReadBoolean();
                 ExpandedStorageExpiryDate = DateTime.FromBinary(reader.ReadInt64());
             }
-            
+
             Gold = reader.ReadUInt32();
             if (Envir.LoadVersion >= 63) Credit = reader.ReadUInt32();
 

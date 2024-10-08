@@ -1,4 +1,5 @@
-﻿using Server.MirEnvir;
+﻿using Server.Library;
+using Server.MirEnvir;
 using Server.MirObjects;
 
 namespace Server.MirDatabase
@@ -33,7 +34,7 @@ namespace Server.MirDatabase
             ItemInfo itemInfo = Envir.GetItemInfo(name);
             if (itemInfo == null)
             {
-                MessageQueue.Enqueue(string.Format("Could not find Item: {0}", name));
+                MessageQueue.Enqueue(string.Format(ServerLibraryResources.CouldNotFindItem1, name));
                 return;
             }
 
@@ -98,7 +99,7 @@ namespace Server.MirDatabase
 
                             if (info == null)
                             {
-                                MessageQueue.Enqueue(string.Format("Could not find Tool: {0}, Recipe: {1}", lines[i], recipe));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.CouldNotFindTool, lines[i], recipe));
                                 continue;
                             }
 
@@ -115,7 +116,7 @@ namespace Server.MirDatabase
 
                             if (info == null)
                             {
-                                MessageQueue.Enqueue(string.Format("Could not find Ingredient: {0}, Recipe: {1}", lines[i], recipe));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.CouldNotFindIngredient, lines[i], recipe));
                                 continue;
                             }
 
@@ -176,7 +177,7 @@ namespace Server.MirDatabase
                             }
                             catch
                             {
-                                MessageQueue.Enqueue(string.Format("Could not parse option: {0}, Value: {1}", data[0], data[1]));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.CouldNotParseOption, data[0], data[1]));
                                 continue;
                             }
                         }
@@ -205,7 +206,7 @@ namespace Server.MirDatabase
             {
                 foreach (var flag in RequiredFlag)
                 {
-                     if(!player.Info.Flags[flag])
+                    if (!player.Info.Flags[flag])
                         return false;
                 }
             }

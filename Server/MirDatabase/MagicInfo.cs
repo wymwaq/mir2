@@ -156,7 +156,8 @@ namespace Server.MirDatabase
         {
             return new ClientMagic
             {
-                    Name = Info.Name,
+                    //Name = Info.Name,
+                    Name = Wq.LanMgr.Ins.ToCN(Info.Name,Wq.TYPE.MAGIC),
                     Spell = Spell,
                     BaseCost = Info.BaseCost,
                     LevelCost = Info.LevelCost,

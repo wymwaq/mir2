@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label64.Text" xml:space="preserve">
+    <value>所有伤害减免 %</value>
+  </data>
+  <data name="label63.Text" xml:space="preserve">
+    <value>金币掉落率 %：</value>
+  </data>
+  <data name="label62.Text" xml:space="preserve">
+    <value>掉落率 %：</value>
+  </data>
+  <data name="label61.Text" xml:space="preserve">
+    <value>经验率 %：</value>
+  </data>
+  <data name="label60.Text" xml:space="preserve">
+    <value>最大道术力 %：</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>最大魔法力 %：</value>
+  </data>
+  <data name="label58.Text" xml:space="preserve">
+    <value>最大攻击力 %：</value>
+  </data>
+  <data name="label57.Text" xml:space="preserve">
+    <value>槽位：</value>
+  </data>
+  <data name="globalDropNotify_CheckBox.Text" xml:space="preserve">
+    <value>掉落时通知服务器</value>
+  </data>
+  <data name="CanAwaken.Text" xml:space="preserve">
+    <value>可觉醒</value>
+  </data>
+  <data name="label56.Text" xml:space="preserve">
+    <value>工具提示：</value>
+  </data>
+  <data name="FastRunCheckBox.Text" xml:space="preserve">
+    <value>快速运行</value>
+  </data>
+  <data name="label55.Text" xml:space="preserve">
+    <value>物品等级：</value>
+  </data>
+  <data name="label54.Text" xml:space="preserve">
+    <value>随机属性：</value>
+  </data>
+  <data name="label53.Text" xml:space="preserve">
+    <value>强度：</value>
+  </data>
+  <data name="NeedIdentifycheckbox.Text" xml:space="preserve">
+    <value>神秘属性</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>物品索引：</value>
+  </data>
+  <data name="StartItemCheckBox.Text" xml:space="preserve">
+    <value>起始物品</value>
+  </data>
+  <data name="ClassBasedcheckbox.Text" xml:space="preserve">
+    <value>按职业</value>
+  </data>
+  <data name="LevelBasedcheckbox.Text" xml:space="preserve">
+    <value>按等级</value>
+  </data>
+  <data name="ShowGroupPickupcheckbox.Text" xml:space="preserve">
+    <value>显示组拾取</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>物品名称：</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>物品类型：</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>效果：</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>所需类型：</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>价格：</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>所需职业：</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>耐久度：</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>所需数量：</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>光照范围：</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>图片：</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>重量：</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>形状：</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>堆叠数量：</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>所需性别：</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>物品套装：</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>通用</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>暴击率：</value>
+  </data>
+  <data name="label52.Text" xml:space="preserve">
+    <value>反射：</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>HP 吸取：</value>
+  </data>
+  <data name="label51.Text" xml:space="preserve">
+    <value>暴击伤害：</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>新属性</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>魔法防御力率：</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>最小防御力：</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>最大防御力：</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>MP +%</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>最小魔法防御力：</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>最大魔法防御力：</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>最小攻击力：</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>最大攻击力：</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>最小魔法力：</value>
+  </data>
+  <data name="label47.Text" xml:space="preserve">
+    <value>毒素攻击：</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>最大魔法力：</value>
+  </data>
+  <data name="label46.Text" xml:space="preserve">
+    <value>冰冻：</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>最小道术力：</value>
+  </data>
+  <data name="label45.Text" xml:space="preserve">
+    <value>神圣：</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>最大道术力：</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>HP +%</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>HP：</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>毒素恢复：</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>MP：</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>MP 回复：</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>准确度：</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>毒素抵抗：</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>敏捷：</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>魔法抵抗：</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>攻击速度：</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>HP 回复：</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>幸运：</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>强度：</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>背包重量：</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>手部重量：</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>AC 率：</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>穿戴重量：</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>基础属性</value>
+  </data>
+  <data name="noMailBox.Text" xml:space="preserve">
+    <value>无法邮寄</value>
+  </data>
+  <data name="unableToDisassemble_CheckBox.Text" xml:space="preserve">
+    <value>无法拆解</value>
+  </data>
+  <data name="unableToRent_CheckBox.Text" xml:space="preserve">
+    <value>无法租赁</value>
+  </data>
+  <data name="NoWeddingRingcheckbox.Text" xml:space="preserve">
+    <value>禁用婚戒</value>
+  </data>
+  <data name="BreakOnDeathcheckbox.Text" xml:space="preserve">
+    <value>死亡时破坏</value>
+  </data>
+  <data name="Bind_DontSpecialRepaircheckBox.Text" xml:space="preserve">
+    <value>不进行特殊修理</value>
+  </data>
+  <data name="Bind_dontdropcheckbox.Text" xml:space="preserve">
+    <value>不掉落</value>
+  </data>
+  <data name="BindOnEquipcheckbox.Text" xml:space="preserve">
+    <value>装备时绑定</value>
+  </data>
+  <data name="Bind_dontdeathdropcheckbox.Text" xml:space="preserve">
+    <value>不死亡掉落</value>
+  </data>
+  <data name="Bind_dontstorecheckbox.Text" xml:space="preserve">
+    <value>不存储</value>
+  </data>
+  <data name="Bind_destroyondropcheckbox.Text" xml:space="preserve">
+    <value>掉落时销毁</value>
+  </data>
+  <data name="Bind_dontupgradecheckbox.Text" xml:space="preserve">
+    <value>不升级</value>
+  </data>
+  <data name="Bind_dontsellcheckbox.Text" xml:space="preserve">
+    <value>不出售</value>
+  </data>
+  <data name="Bind_dontrepaircheckbox.Text" xml:space="preserve">
+    <value>不修理</value>
+  </data>
+  <data name="Bind_donttradecheckbox.Text" xml:space="preserve">
+    <value>不交易</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>绑定</value>
+  </data>
+  <data name="PickaxecheckBox.Text" xml:space="preserve">
+    <value>矿镐</value>
+  </data>
+  <data name="NoDuraLosscheckBox.Text" xml:space="preserve">
+    <value>无耐久损失</value>
+  </data>
+  <data name="SkillcheckBox.Text" xml:space="preserve">
+    <value>技能项链</value>
+  </data>
+  <data name="ProbecheckBox.Text" xml:space="preserve">
+    <value>探测项链</value>
+  </data>
+  <data name="HealingcheckBox.Text" xml:space="preserve">
+    <value>治疗戒指</value>
+  </data>
+  <data name="FlamecheckBox.Text" xml:space="preserve">
+    <value>火焰戒指</value>
+  </data>
+  <data name="MusclecheckBox.Text" xml:space="preserve">
+    <value>肌肉戒指</value>
+  </data>
+  <data name="RevivalcheckBox.Text" xml:space="preserve">
+    <value>复活戒指</value>
+  </data>
+  <data name="ProtectioncheckBox.Text" xml:space="preserve">
+    <value>保护戒指</value>
+  </data>
+  <data name="ClearcheckBox.Text" xml:space="preserve">
+    <value>清除戒指</value>
+  </data>
+  <data name="TeleportcheckBox.Text" xml:space="preserve">
+    <value>传送戒指</value>
+  </data>
+  <data name="ParalysischeckBox.Text" xml:space="preserve">
+    <value>麻痹戒指</value>
+  </data>
+  <data name="BlinkcheckBox.Text" xml:space="preserve">
+    <value>闪现</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>特殊属性</value>
+  </data>
+  <data name="RemoveButton.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="AddButton.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="PasteButton.Text" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="CopyMButton.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Gameshop_button.Text" xml:space="preserve">
+    <value>+ 游戏商城</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>物品信息表单</value>
+  </data>
+</root>

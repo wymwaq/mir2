@@ -43,6 +43,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Shared\Shared.csproj" />
+    <ProjectReference Include="..\Wq\Wq.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,6 +53,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="ClientResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ClientResources.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\Images.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -60,6 +66,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="ClientResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClientResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Images.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Images.Designer.cs</LastGenOutput>

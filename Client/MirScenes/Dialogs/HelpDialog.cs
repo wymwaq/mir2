@@ -1,6 +1,7 @@
 ﻿using Client.MirControls;
 using Client.MirGraphics;
 using Client.MirSounds;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirScenes.Dialogs
 {
@@ -257,7 +258,7 @@ namespace Client.MirScenes.Dialogs
                 new ShortcutInfo(CMain.InputKeys.GetKey(KeybindOptions.Autorun), "Auto run on / off"),
                 new ShortcutInfo(CMain.InputKeys.GetKey(KeybindOptions.Cameramode), "Show / Hide interface"),
                 new ShortcutInfo(CMain.InputKeys.GetKey(KeybindOptions.Pickup), "Highlight / Pickup Items"),
-                new ShortcutInfo("Ctrl + Right Click", "Show other players kits"),
+                new ShortcutInfo(WqCr.CtrlRightClick, "Show other players kits"),
                 //Shortcuts.Add(new ShortcutInfo("F12", "Chat macros"));
                 new ShortcutInfo(CMain.InputKeys.GetKey(KeybindOptions.Screenshot), "Screen Capture"),
                 new ShortcutInfo(CMain.InputKeys.GetKey(KeybindOptions.Fishing), "Open / Close fishing window"),

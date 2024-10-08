@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SuitableWeaponRequired" xml:space="preserve">
+    <value>You must be wearing a suitable weapon to perform this skill</value>
+  </data>
+  <data name="CannotCastSpell" xml:space="preserve">
+    <value>You cannot cast {0} for another {1} seconds.</value>
+  </data>
+  <data name="UseThrusting" xml:space="preserve">
+    <value>Use Thrusting.</value>
+  </data>
+  <data name="DoNotUseThrusting" xml:space="preserve">
+    <value>Do not use Thrusting.</value>
+  </data>
+  <data name="UseHalfMoon" xml:space="preserve">
+    <value>Use Half Moon.</value>
+  </data>
+  <data name="DoNotUseHalfMoon" xml:space="preserve">
+    <value>Do not use Half Moon.</value>
+  </data>
+  <data name="UseCrossHalfMoon" xml:space="preserve">
+    <value>Use Cross Half Moon.</value>
+  </data>
+  <data name="DoNotUseCrossHalfMoon" xml:space="preserve">
+    <value>Do not use Cross Half Moon.</value>
+  </data>
+  <data name="UseDoubleSlash" xml:space="preserve">
+    <value>Use Double Slash.</value>
+  </data>
+  <data name="DoNotUseDoubleSlash" xml:space="preserve">
+    <value>Do not use Double Slash.</value>
+  </data>
+  <data name="NothingFound" xml:space="preserve">
+    <value>Nothing Found.</value>
+  </data>
+  <data name="QuestShareRequest" xml:space="preserve">
+    <value>{0} would like to share a quest with you. Do you accept?</value>
+  </data>
+  <data name="UserLoggedOff" xml:space="preserve">
+    <value>The person you were observing has logged off.</value>
+  </data>
+  <data name="ItemNoLongerLoyal" xml:space="preserve">
+    <value>{0} is no longer loyal to you.</value>
+  </data>
+  <data name="ItemDurabilityZero" xml:space="preserve">
+    <value>{0}'s dura has dropped to 0.</value>
+  </data>
+  <data name="InputBoxPrompt" xml:space="preserve">
+    <value>Please enter the required information.</value>
+  </data>
+  <data name="LeftGroupMessage" xml:space="preserve">
+    <value>You have left the group.</value>
+  </data>
+  <data name="MemberLeftGroupMessage" xml:space="preserve">
+    <value>-{0} has left the group.</value>
+  </data>
+  <data name="GroupInviteMessage" xml:space="preserve">
+    <value>Do you want to group with {0}?</value>
+  </data>
+  <data name="PlayerJoinedGroup" xml:space="preserve">
+    <value>-{0} has joined the group.</value>
+  </data>
+  <data name="TrustMerchantDead" xml:space="preserve">
+    <value>You cannot use the TrustMerchant when dead.</value>
+  </data>
+  <data name="TrustMerchantNoUse" xml:space="preserve">
+    <value>You cannot buy from the TrustMerchant without using.</value>
+  </data>
+  <data name="ItemAlreadySold" xml:space="preserve">
+    <value>This item has already been sold.</value>
+  </data>
+  <data name="ItemExpired" xml:space="preserve">
+    <value>This item has Expired and cannot be brought.</value>
+  </data>
+  <data name="InsufficientWeight" xml:space="preserve">
+    <value>You do not have enough weight or space spare to buy this item.</value>
+  </data>
+  <data name="CannotBuyOwnItems" xml:space="preserve">
+    <value>You cannot buy your own items.</value>
+  </data>
+  <data name="TooFarFromMerchant" xml:space="preserve">
+    <value>You are too far away from the Trust Merchant.</value>
+  </data>
+  <data name="InsufficientGold" xml:space="preserve">
+    <value>You cannot hold enough gold to get your sale.</value>
+  </data>
+  <data name="MinimumBidNotMet" xml:space="preserve">
+    <value>This item has not met the minimum bid yet.</value>
+  </data>
+  <data name="AuctionEnded" xml:space="preserve">
+    <value>Auction has already ended for this item.</value>
+  </data>
+  <data name="EnterGuildName" xml:space="preserve">
+    <value>Please enter a guild name, length must be 3~20 characters.</value>
+  </data>
+  <data name="GuildNameInvalid" xml:space="preserve">
+    <value>You cannot use the \\ sign in a guild name!</value>
+  </data>
+  <data name="EnterWarGuildName" xml:space="preserve">
+    <value>Please enter the guild you would like to go to war with.</value>
+  </data>
+  <data name="PlayerLoggedOn" xml:space="preserve">
+    <value>{0} logged on.</value>
+  </data>
+  <data name="PlayerJoinedGuild" xml:space="preserve">
+    <value>{0} joined guild.</value>
+  </data>
+  <data name="PlayerKickedFromGuild" xml:space="preserve">
+    <value>{0} got removed from the guild.</value>
+  </data>
+  <data name="PlayerLeftGuild" xml:space="preserve">
+    <value>{0} left the guild.</value>
+  </data>
+  <data name="PlayerDonatedGold" xml:space="preserve">
+    <value>{0} donated {1} gold to guild funds.</value>
+  </data>
+  <data name="PlayerRetrievedGold" xml:space="preserve">
+    <value>{0} retrieved {1} gold from guild funds.</value>
+  </data>
+  <data name="HeroCreationDisabled" xml:space="preserve">
+    <value>Creating new heroes is currently disabled.</value>
+  </data>
+  <data name="HeroNameNotAcceptable" xml:space="preserve">
+    <value>Your Hero Name is not acceptable.</value>
+  </data>
+  <data name="GenderDoesNotExist" xml:space="preserve">
+    <value>The gender you selected does not exist.\n Contact a GM for assistance.</value>
+  </data>
+  <data name="ClassDoesNotExist" xml:space="preserve">
+    <value>The class you selected does not exist.\n Contact a GM for assistance.</value>
+  </data>
+  <data name="NoMoreHeroes" xml:space="preserve">
+    <value>You cannot make anymore Heroes.</value>
+  </data>
+  <data name="CharacterNameExists" xml:space="preserve">
+    <value>A Character with this name already exists.</value>
+  </data>
+  <data name="NoBagSpace" xml:space="preserve">
+    <value>No bag space.</value>
+  </data>
+  <data name="HeroCreatedSuccessfully" xml:space="preserve">
+    <value>Hero created successfully.</value>
+  </data>
+  <data name="MarriageRequest" xml:space="preserve">
+    <value>{0} has asked for your hand in marriage.</value>
+  </data>
+  <data name="DivorceRequest" xml:space="preserve">
+    <value>{0} has requested a divorce.</value>
+  </data>
+  <data name="TeachRequest" xml:space="preserve">
+    <value>{0} (Level {1}) has requested you teach him the ways of the {2}.</value>
+  </data>
+  <data name="TradeRequest" xml:space="preserve">
+    <value>Player {0} has requested to trade with you.</value>
+  </data>
+  <data name="DealCancelled" xml:space="preserve">
+    <value>Deal cancelled.\r\nTo deal correctly you must face the other party.</value>
+  </data>
+  <data name="NotEnoughMaterials" xml:space="preserve">
+    <value>You have not supplied enough materials.</value>
+  </data>
+  <data name="AwakeningAtMaxLevel" xml:space="preserve">
+    <value>Awakening already at maximum level.</value>
+  </data>
+  <data name="CannotAwakenItem" xml:space="preserve">
+    <value>Cannot awaken this item.</value>
+  </data>
+  <data name="UpgradeFailed" xml:space="preserve">
+    <value>Upgrade Failed.</value>
+  </data>
+  <data name="UpgradeSuccess" xml:space="preserve">
+    <value>Upgrade Success.</value>
+  </data>
+  <data name="EnterMailRecipient" xml:space="preserve">
+    <value>Please enter the name of the person you would like to mail.</value>
+  </data>
+  <data name="NoParcelsToCollect" xml:space="preserve">
+    <value>No parcels to collect.</value>
+  </data>
+  <data name="AllParcelsCollected" xml:space="preserve">
+    <value>All parcels have been collected.</value>
+  </data>
+  <data name="RevivePrompt" xml:space="preserve">
+    <value>Would you like to be revived?</value>
+  </data>
+  <data name="CreatureNamePrompt" xml:space="preserve">
+    <value>Please give your creature a name.</value>
+  </data>
+  <data name="DurabilityText" xml:space="preserve">
+    <value>Durability</value>
+  </data>
+  <data name="SealsForText" xml:space="preserve">
+    <value>Seals for {0}</value>
+  </data>
+  <data name="DCText" xml:space="preserve">
+    <value>DC</value>
+  </data>
+  <data name="MCText" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="SCText" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="AccurancyText" xml:space="preserve">
+    <value>Accuracy</value>
+  </data>
+  <data name="ASpeedText" xml:space="preserve">
+    <value>A.Speed</value>
+  </data>
+  <data name="FreezingText" xml:space="preserve">
+    <value>Freezing</value>
+  </data>
+  <data name="PoisonText" xml:space="preserve">
+    <value>Poison</value>
+  </data>
+  <data name="FlexibilityNoAdd" xml:space="preserve">
+    <value>Flexibility: + {0}</value>
+  </data>
+  <data name="CriticalDamageNoAdd" xml:space="preserve">
+    <value>Critical Damage: + {0}</value>
+  </data>
+  <data name="MACText" xml:space="preserve">
+    <value>MAC</value>
+  </data>
+  <data name="MaxHPText" xml:space="preserve">
+    <value>Max HP</value>
+  </data>
+  <data name="MaxMPText" xml:space="preserve">
+    <value>Max MP</value>
+  </data>
+  <data name="MaxACText" xml:space="preserve">
+    <value>Max AC</value>
+  </data>
+  <data name="MaxMACText" xml:space="preserve">
+    <value>Max MAC</value>
+  </data>
+  <data name="HealthRecoveryText" xml:space="preserve">
+    <value>Health Recovery</value>
+  </data>
+  <data name="ManaRecoveryText" xml:space="preserve">
+    <value>Mana Recovery</value>
+  </data>
+  <data name="PoisonRecoveryText" xml:space="preserve">
+    <value>Poison Recovery</value>
+  </data>
+  <data name="AddsText" xml:space="preserve">
+    <value>Adds</value>
+  </data>
+  <data name="AgilityText" xml:space="preserve">
+    <value>Agility</value>
+  </data>
+  <data name="StrongText" xml:space="preserve">
+    <value>Strong</value>
+  </data>
+  <data name="PoisonResistText" xml:space="preserve">
+    <value>Poison Resist</value>
+  </data>
+  <data name="JoinGuildPrompt" xml:space="preserve">
+    <value>Do you want to join the {0} guild?</value>
+  </data>
+  <data name="MagicResistText" xml:space="preserve">
+    <value>Magic Resist</value>
+  </data>
+  <data name="MaxDCText" xml:space="preserve">
+    <value>Max DC</value>
+  </data>
+  <data name="MaxMCText" xml:space="preserve">
+    <value>Max MC</value>
+  </data>
+  <data name="MaxSCText" xml:space="preserve">
+    <value>Max SC</value>
+  </data>
+  <data name="AllDamageReductionText" xml:space="preserve">
+    <value>All Damage Reduction</value>
+  </data>
+  <data name="HandWeightText" xml:space="preserve">
+    <value>Hand Weight</value>
+  </data>
+  <data name="WearWeightText" xml:space="preserve">
+    <value>Wear Weight</value>
+  </data>
+  <data name="BagWeightText" xml:space="preserve">
+    <value>Bag Weight</value>
+  </data>
+  <data name="RequiredText" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="ACText" xml:space="preserve">
+    <value>AC</value>
+  </data>
+  <data name="ExpText" xml:space="preserve">
+    <value>Exp</value>
+  </data>
+  <data name="DropText" xml:space="preserve">
+    <value>Drop</value>
+  </data>
+  <data name="CurseText" xml:space="preserve">
+    <value>Curse</value>
+  </data>
+  <data name="ExpRateText" xml:space="preserve">
+    <value>Exp Rate</value>
+  </data>
+  <data name="DropRateText" xml:space="preserve">
+    <value>Drop Rate</value>
+  </data>
+  <data name="GoldRateText" xml:space="preserve">
+    <value>Gold Rate</value>
+  </data>
+  <data name="HPDrainRateText" xml:space="preserve">
+    <value>HP Drain Rate</value>
+  </data>
+  <data name="MaximumLevelText" xml:space="preserve">
+    <value>Maximum Level</value>
+  </data>
+  <data name="RequiredBaseACText" xml:space="preserve">
+    <value>Required Base AC</value>
+  </data>
+  <data name="RequiredBaseMACText" xml:space="preserve">
+    <value>Required Base MAC</value>
+  </data>
+  <data name="RequiredBaseDCText" xml:space="preserve">
+    <value>Required Base DC</value>
+  </data>
+  <data name="RequiredBaseMCText" xml:space="preserve">
+    <value>Required Base MC</value>
+  </data>
+  <data name="RequiredBaseSCText" xml:space="preserve">
+    <value>Required Base SC</value>
+  </data>
+  <data name="CantDropOnDeath" xml:space="preserve">
+    <value>Can't drop on death</value>
+  </data>
+  <data name="CantDrop" xml:space="preserve">
+    <value>Can't drop</value>
+  </data>
+  <data name="CantUpgrade" xml:space="preserve">
+    <value>Can't upgrade</value>
+  </data>
+  <data name="CantSell" xml:space="preserve">
+    <value>Can't sell</value>
+  </data>
+  <data name="CantTrade" xml:space="preserve">
+    <value>Can't trade</value>
+  </data>
+  <data name="CantStore" xml:space="preserve">
+    <value>Can't store</value>
+  </data>
+  <data name="CantRepair" xml:space="preserve">
+    <value>Can't repair</value>
+  </data>
+  <data name="CantSpecialRepair" xml:space="preserve">
+    <value>Can't special repair</value>
+  </data>
+  <data name="BreaksOnDeath" xml:space="preserve">
+    <value>Breaks on death</value>
+  </data>
+  <data name="DestroyedWhenDropped" xml:space="preserve">
+    <value>Destroyed when dropped</value>
+  </data>
+  <data name="CannotBeWeddingRing" xml:space="preserve">
+    <value>Cannot be a Wedding Ring</value>
+  </data>
+  <data name="CannotBeUsedByHero" xml:space="preserve">
+    <value>Cannot be used by Hero</value>
+  </data>
+  <data name="SoulBindsOnEquip" xml:space="preserve">
+    <value>SoulBinds on equip</value>
+  </data>
+  <data name="CannotBeUsedOnAnyItem" xml:space="preserve">
+    <value>Cannot be used on any item.</value>
+  </data>
+  <data name="CanBeUsedOn" xml:space="preserve">
+    <value>Can be used on</value>
+  </data>
+  <data name="AddsCreditsToAccount" xml:space="preserve">
+    <value>Adds {0} Credits to your Account.</value>
+  </data>
+  <data name="CreatedByGameMaster" xml:space="preserve">
+    <value>Created by Game Master</value>
+  </data>
+  <data name="DurationText" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="CriticalChanceText" xml:space="preserve">
+    <value>Critical Chance</value>
+  </data>
+  <data name="FlexibilityText" xml:space="preserve">
+    <value>Flexibility</value>
+  </data>
+  <data name="CriticalDamageText" xml:space="preserve">
+    <value>Critical Damage</value>
+  </data>
+  <data name="ReflectChanceText" xml:space="preserve">
+    <value>Reflect chance</value>
+  </data>
+  <data name="GoldText" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="SellingPriceText" xml:space="preserve">
+    <value>Selling Price</value>
+  </data>
+  <data name="CantCastAnotherSeconds" xml:space="preserve">
+    <value>You cannot cast {0} for another {1} seconds.</value>
+  </data>
+  <data name="TargetTooFar" xml:space="preserve">
+    <value>Target is too far.</value>
+  </data>
+  <data name="SaleText" xml:space="preserve">
+    <value>Sale</value>
+  </data>
+  <data name="RepairText" xml:space="preserve">
+    <value>Repair</value>
+  </data>
+  <data name="SRepairText" xml:space="preserve">
+    <value>S. Repair</value>
+  </data>
+  <data name="ConsignmentText" xml:space="preserve">
+    <value>Consignment</value>
+  </data>
+  <data name="ItemWillBeDestroyed" xml:space="preserve">
+    <value>Item will be Destroyed</value>
+  </data>
+  <data name="DowngradeText" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="ResetText" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="RefineText" xml:space="preserve">
+    <value>Refine</value>
+  </data>
+  <data name="CheckRefineText" xml:space="preserve">
+    <value>Check Refine</value>
+  </data>
+  <data name="ReplaceText" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="ConsignmentPriceText" xml:space="preserve">
+    <value>Consignment Price</value>
+  </data>
+  <data name="CannotSellItem" xml:space="preserve">
+    <value>Cannot sell this item.</value>
+  </data>
+  <data name="CannotCarryAnymoreGold" xml:space="preserve">
+    <value>Cannot carry anymore gold.</value>
+  </data>
+  <data name="CannotRepairItem" xml:space="preserve">
+    <value>Cannot repair this item.</value>
+  </data>
+  <data name="CannotConsignItem" xml:space="preserve">
+    <value>Cannot consign this item.</value>
+  </data>
+  <data name="DontHaveGoldRefine" xml:space="preserve">
+    <value>You don't have enough gold to refine your {0}.</value>
+  </data>
+  <data name="HaventDepositedRefine" xml:space="preserve">
+    <value>You haven't deposited any items to refine your {0} with.</value>
+  </data>
+  <data name="IsntRing" xml:space="preserve">
+    <value>{0} isn't a ring.</value>
+  </data>
+  <data name="SocketText" xml:space="preserve">
+    <value>Socket</value>
+  </data>
+  <data name="EmptyText" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="UnknownTypeRequired" xml:space="preserve">
+    <value>Unknown Type Required</value>
+  </data>
+  <data name="LoyaltyText" xml:space="preserve">
+    <value>Loyalty</value>
+  </data>
+  <data name="CtrlRightClick" xml:space="preserve">
+    <value>Ctrl + Right Click</value>
+  </data>
+  <data name="ToOpenSockets" xml:space="preserve">
+    <value>To Open Sockets</value>
+  </data>
+  <data name="SearchAgainAfter" xml:space="preserve">
+    <value>You can search again after {0} seconds.</value>
+  </data>
+  <data name="PriceText" xml:space="preserve">
+    <value>Price</value>
+  </data>
+</root>

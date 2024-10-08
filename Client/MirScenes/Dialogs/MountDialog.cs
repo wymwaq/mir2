@@ -4,6 +4,7 @@ using Client.MirNetwork;
 using Client.MirObjects;
 using Client.MirSounds;
 using C = ClientPackets;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirScenes.Dialogs
 {
@@ -218,7 +219,7 @@ namespace Client.MirScenes.Dialogs
                 if (item != null)
                 {
                     MountName.Text = item.FriendlyName;
-                    MountLoyalty.Text = string.Format("{0} / {1} Loyalty", item.CurrentDura, item.MaxDura);
+                    MountLoyalty.Text = string.Format($"{0} / {1} {WqCr.LoyaltyText}", item.CurrentDura, item.MaxDura);
                 }
             }
 

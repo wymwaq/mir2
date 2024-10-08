@@ -13,6 +13,7 @@ using Client.MirScenes.Dialogs;
 using Client.Utils;
 using static System.Net.Mime.MediaTypeNames;
 using Client.MirGraphics.Particles;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirScenes
 {
@@ -868,7 +869,7 @@ namespace Client.MirScenes
 
             if (!actor.HasClassWeapon && actor.Weapon >= 0)
             {
-                ChatDialog.ReceiveChat("You must be wearing a suitable weapon to perform this skill", ChatType.System);
+                ChatDialog.ReceiveChat(WqCr.SuitableWeaponRequired, ChatType.System);
                 return;
             }
 
@@ -893,7 +894,7 @@ namespace Client.MirScenes
                         if (CMain.Time >= OutputDelay)
                         {
                             OutputDelay = CMain.Time + 1000;
-                            Scene.OutputMessage(string.Format("You cannot cast {0} for another {1} seconds.", magic.Spell.ToString(), ((magic.CastTime + magic.Delay) - CMain.Time - 1) / 1000 + 1));
+                            Scene.OutputMessage(string.Format(WqCr.CannotCastSpell, magic.Spell.ToString(), ((magic.CastTime + magic.Delay) - CMain.Time - 1) / 1000 + 1));
                         }
 
                         return;
@@ -918,28 +919,28 @@ namespace Client.MirScenes
                 case Spell.Thrusting:
                     if (CMain.Time < ToggleTime) return;
                     actor.Thrusting = !actor.Thrusting;
-                    ChatDialog.ReceiveChat(prefix + (actor.Thrusting ? "Use Thrusting." : "Do not use Thrusting."), ChatType.Hint);
+                    ChatDialog.ReceiveChat(prefix + (actor.Thrusting ? WqCr.UseThrusting : WqCr.DoNotUseThrusting), ChatType.Hint);
                     ToggleTime = CMain.Time + 1000;
                     SendSpellToggle(actor, magic.Spell, actor.Thrusting);                    
                     break;
                 case Spell.HalfMoon:
                     if (CMain.Time < ToggleTime) return;
                     actor.HalfMoon = !actor.HalfMoon;
-                    ChatDialog.ReceiveChat(prefix + (actor.HalfMoon ? "Use Half Moon." : "Do not use Half Moon."), ChatType.Hint);
+                    ChatDialog.ReceiveChat(prefix + (actor.HalfMoon ? WqCr.UseHalfMoon : WqCr.DoNotUseHalfMoon), ChatType.Hint);
                     ToggleTime = CMain.Time + 1000;
                     SendSpellToggle(actor, magic.Spell, actor.HalfMoon);
                     break;
                 case Spell.CrossHalfMoon:
                     if (CMain.Time < ToggleTime) return;
                     actor.CrossHalfMoon = !actor.CrossHalfMoon;
-                    ChatDialog.ReceiveChat(prefix + (actor.CrossHalfMoon ? "Use Cross Half Moon." : "Do not use Cross Half Moon."), ChatType.Hint);
+                    ChatDialog.ReceiveChat(prefix + (actor.CrossHalfMoon ? WqCr.UseCrossHalfMoon : WqCr.DoNotUseCrossHalfMoon), ChatType.Hint);
                     ToggleTime = CMain.Time + 1000;
                     SendSpellToggle(actor, magic.Spell, actor.CrossHalfMoon);
                     break;
                 case Spell.DoubleSlash:
                     if (CMain.Time < ToggleTime) return;
                     actor.DoubleSlash = !actor.DoubleSlash;
-                    ChatDialog.ReceiveChat(prefix + (actor.DoubleSlash ? "Use Double Slash." : "Do not use Double Slash."), ChatType.Hint);
+                    ChatDialog.ReceiveChat(prefix + (actor.DoubleSlash ? WqCr.UseDoubleSlash : WqCr.DoNotUseDoubleSlash), ChatType.Hint);
                     ToggleTime = CMain.Time + 1000;
                     SendSpellToggle(actor, magic.Spell, actor.DoubleSlash);
                     break;
@@ -2000,7 +2001,7 @@ namespace Client.MirScenes
         {
             if (MapControl != null && !MapControl.IsDisposed)
                 MapControl.Dispose();
-            MapControl = new MapControl { Index = p.MapIndex, FileName = Path.Combine(Settings.MapPath, p.FileName + ".map"), Title = p.Title, MiniMap = p.MiniMap, BigMap = p.BigMap, Lights = p.Lights, Lightning = p.Lightning, Fire = p.Fire, MapDarkLight = p.MapDarkLight, Music = p.Music};
+            MapControl = new MapControl { Index = p.MapIndex,Wq_ID = p.FileName, FileName = Path.Combine(Settings.MapPath, p.FileName + ".map"), Title = p.Title, MiniMap = p.MiniMap, BigMap = p.BigMap, Lights = p.Lights, Lightning = p.Lightning, Fire = p.Fire, MapDarkLight = p.MapDarkLight, Music = p.Music};
             MapControl.Weather = p.WeatherParticles;
             MapControl.LoadMap();
             InsertControl(0, MapControl);
@@ -2066,7 +2067,7 @@ namespace Client.MirScenes
         {
             if (info.MapIndex == -1 && info.NPCIndex == 0)
             {
-                MirMessageBox messageBox = new MirMessageBox("Nothing Found.", MirMessageBoxButtons.OK);
+                MirMessageBox messageBox = new MirMessageBox(WqCr.NothingFound, MirMessageBoxButtons.OK);
                 messageBox.OKButton.Click += (o, a) =>
                 {
                     BigMapDialog.SearchTextBox.SetFocus();
@@ -2965,7 +2966,7 @@ namespace Client.MirScenes
             
             if (quest == null) return;
 
-            MirMessageBox messageBox = new MirMessageBox(string.Format("{0} would like to share a quest with you. Do you accept?", p.SharerName), MirMessageBoxButtons.YesNo);
+            MirMessageBox messageBox = new MirMessageBox(string.Format(WqCr.QuestShareRequest, p.SharerName), MirMessageBoxButtons.YesNo);
 
             messageBox.YesButton.Click += (o, e) => Network.Enqueue(new C.AcceptQuest { NPCIndex = 0, QuestIndex = quest.Index });
 
@@ -3087,7 +3088,7 @@ namespace Client.MirScenes
 
             ActiveScene = new LoginScene();
             Dispose();
-            MirMessageBox.Show("The person you was observing has logged off.");
+            MirMessageBox.Show(WqCr.UserLoggedOff);
         }
 
         private void TimeOfDay(S.TimeOfDay p)
@@ -3449,10 +3450,10 @@ namespace Client.MirScenes
                 switch (item.Info.Type)
                 {
                     case ItemType.Mount:
-                        ChatDialog.ReceiveChat(string.Format("{0} is no longer loyal to you.", item.Info.FriendlyName), ChatType.System);
+                        ChatDialog.ReceiveChat(string.Format(WqCr.ItemNoLongerLoyal, item.Info.FriendlyName), ChatType.System);
                         break;
                     default:
-                        ChatDialog.ReceiveChat(string.Format("{0}'s dura has dropped to 0.", item.Info.FriendlyName), ChatType.System);
+                        ChatDialog.ReceiveChat(string.Format(WqCr.ItemDurabilityZero, item.Info.FriendlyName), ChatType.System);
                         break;
                 }
                 
@@ -3893,6 +3894,7 @@ namespace Client.MirScenes
             {
                 MapControl.Index = p.MapIndex;
                 MapControl.FileName = Path.Combine(Settings.MapPath, p.FileName + ".map");
+                MapControl.Wq_ID = p.FileName;
                 MapControl.Title = p.Title;
                 MapControl.MiniMap = p.MiniMap;
                 MapControl.BigMap = p.BigMap;
@@ -4215,7 +4217,7 @@ namespace Client.MirScenes
         }
         private void NPCRequestInput(S.NPCRequestInput p)
         {
-            MirInputBox inputBox = new MirInputBox("Please enter the required information.");
+            MirInputBox inputBox = new MirInputBox(WqCr.InputBoxPrompt);
 
             inputBox.OKButton.Click += (o1, e1) =>
             {
@@ -4955,7 +4957,7 @@ namespace Client.MirScenes
             GroupDialog.GroupList.Clear();
             GroupDialog.GroupMembersMap.Clear();
             BigMapViewPort.PlayerLocations.Clear();
-            ChatDialog.ReceiveChat("You have left the group.", ChatType.Group);
+            ChatDialog.ReceiveChat(WqCr.LeftGroupMessage, ChatType.Group);
         }
 
         private void DeleteMember(S.DeleteMember p)
@@ -4963,12 +4965,12 @@ namespace Client.MirScenes
             GroupDialog.GroupList.Remove(p.Name);
             GroupDialog.GroupMembersMap.Remove(p.Name);
             BigMapViewPort.PlayerLocations.Remove(p.Name);
-            ChatDialog.ReceiveChat(string.Format("-{0} has left the group.", p.Name), ChatType.Group);
+            ChatDialog.ReceiveChat(string.Format(WqCr.MemberLeftGroupMessage, p.Name), ChatType.Group);
         }
 
         private void GroupInvite(S.GroupInvite p)
         {
-            MirMessageBox messageBox = new MirMessageBox(string.Format("Do you want to group with {0}?", p.Name), MirMessageBoxButtons.YesNo);
+            MirMessageBox messageBox = new MirMessageBox(string.Format(WqCr.GroupInviteMessage, p.Name), MirMessageBoxButtons.YesNo);
 
             messageBox.YesButton.Click += (o, e) =>
             {
@@ -4981,7 +4983,7 @@ namespace Client.MirScenes
         private void AddMember(S.AddMember p)
         {
             GroupDialog.GroupList.Add(p.Name);
-            ChatDialog.ReceiveChat(string.Format("-{0} has joined the group.", p.Name), ChatType.Group);
+            ChatDialog.ReceiveChat(string.Format(WqCr.PlayerJoinedGroup, p.Name), ChatType.Group);
         }
         private void GroupMembersMap(S.GroupMembersMap p)
         {
@@ -5046,19 +5048,19 @@ namespace Client.MirScenes
                     break;
                 case Spell.Thrusting:
                     actor.Thrusting = p.CanUse;
-                    ChatDialog.ReceiveChat(prefix + (actor.Thrusting ? "Use Thrusting." : "Do not use Thrusting."), ChatType.Hint);
+                    ChatDialog.ReceiveChat(prefix + (actor.Thrusting ? WqCr.UseThrusting : WqCr.DoNotUseThrusting), ChatType.Hint);
                     break;
                 case Spell.HalfMoon:
                     actor.HalfMoon = p.CanUse;
-                    ChatDialog.ReceiveChat(prefix + (actor.HalfMoon ? "Use HalfMoon." : "Do not use HalfMoon."), ChatType.Hint);
+                    ChatDialog.ReceiveChat(prefix + (actor.HalfMoon ? WqCr.UseHalfMoon : WqCr.DoNotUseHalfMoon), ChatType.Hint);
                     break;
                 case Spell.CrossHalfMoon:
                     actor.CrossHalfMoon = p.CanUse;
-                    ChatDialog.ReceiveChat(prefix + (actor.CrossHalfMoon ? "Use CrossHalfMoon." : "Do not use CrossHalfMoon."), ChatType.Hint);
+                    ChatDialog.ReceiveChat(prefix + (actor.CrossHalfMoon ? WqCr.UseCrossHalfMoon : WqCr.DoNotUseCrossHalfMoon), ChatType.Hint);
                     break;
                 case Spell.DoubleSlash:
                     actor.DoubleSlash = p.CanUse;
-                    ChatDialog.ReceiveChat(prefix + (actor.DoubleSlash ? "Use DoubleSlash." : "Do not use DoubleSlash."), ChatType.Hint);
+                    ChatDialog.ReceiveChat(prefix + (actor.DoubleSlash ? WqCr.UseDoubleSlash : WqCr.DoNotUseDoubleSlash), ChatType.Hint);
                     break;
                 case Spell.FlamingSword:
                     actor.FlamingSword = p.CanUse;
@@ -5748,37 +5750,37 @@ namespace Client.MirScenes
             switch (p.Reason)
             {
                 case 0:
-                    MirMessageBox.Show("You cannot use the TrustMerchant when dead.");
+                    MirMessageBox.Show(WqCr.TrustMerchantDead);
                     break;
                 case 1:
-                    MirMessageBox.Show("You cannot buy from the TrustMerchant without using.");
+                    MirMessageBox.Show(WqCr.TrustMerchantNoUse);
                     break;
                 case 2:
-                    MirMessageBox.Show("This item has already been sold.");
+                    MirMessageBox.Show(WqCr.ItemAlreadySold);
                     break;
                 case 3:
-                    MirMessageBox.Show("This item has Expired and cannot be brought.");
+                    MirMessageBox.Show(WqCr.ItemExpired);
                     break;
                 case 4:
                     MirMessageBox.Show(GameLanguage.LowGold);
                     break;
                 case 5:
-                    MirMessageBox.Show("You do not have enough weight or space spare to buy this item.");
+                    MirMessageBox.Show(WqCr.InsufficientWeight);
                     break;
                 case 6:
-                    MirMessageBox.Show("You cannot buy your own items.");
+                    MirMessageBox.Show(WqCr.CannotBuyOwnItems);
                     break;
                 case 7:
-                    MirMessageBox.Show("You are too far away from the Trust Merchant.");
+                    MirMessageBox.Show(WqCr.TooFarFromMerchant);
                     break;
                 case 8:
-                    MirMessageBox.Show("You cannot hold enough gold to get your sale.");
+                    MirMessageBox.Show(WqCr.InsufficientGold);
                     break;
                 case 9:
-                    MirMessageBox.Show("This item has not met the minimum bid yet.");
+                    MirMessageBox.Show(WqCr.MinimumBidNotMet);
                     break;
                 case 10:
-                    MirMessageBox.Show("Auction has already ended for this item.");
+                    MirMessageBox.Show(WqCr.AuctionEnded);
                     break;
             }
 
@@ -5841,7 +5843,7 @@ namespace Client.MirScenes
 
         private void GuildInvite(S.GuildInvite p)
         {
-            MirMessageBox messageBox = new MirMessageBox(string.Format("Do you want to join the {0} guild?", p.Name), MirMessageBoxButtons.YesNo);
+            MirMessageBox messageBox = new MirMessageBox(string.Format(WqCr.JoinGuildPrompt, p.Name), MirMessageBoxButtons.YesNo);
 
             messageBox.YesButton.Click += (o, e) => Network.Enqueue(new C.GuildInvite { AcceptInvite = true });
             messageBox.NoButton.Click += (o, e) => Network.Enqueue(new C.GuildInvite { AcceptInvite = false });
@@ -5851,7 +5853,7 @@ namespace Client.MirScenes
 
         private void GuildNameRequest(S.GuildNameRequest p)
         {
-            MirInputBox inputBox = new MirInputBox("Please enter a guild name, length must be 3~20 characters.");
+            MirInputBox inputBox = new MirInputBox(WqCr.EnterGuildName);
             inputBox.InputTextBox.TextBox.KeyPress += (o, e) =>
             {
                 string Allowed = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -5862,7 +5864,7 @@ namespace Client.MirScenes
             {
                 if (inputBox.InputTextBox.Text.Contains('\\'))
                 {
-                    ChatDialog.ReceiveChat("You cannot use the \\ sign in a guildname!", ChatType.System);
+                    ChatDialog.ReceiveChat(WqCr.GuildNameInvalid, ChatType.System);
                     inputBox.InputTextBox.Text = "";
                 }
                 Network.Enqueue(new C.GuildNameReturn { Name = inputBox.InputTextBox.Text });
@@ -5873,7 +5875,7 @@ namespace Client.MirScenes
 
         private void GuildRequestWar(S.GuildRequestWar p)
         {
-            MirInputBox inputBox = new MirInputBox("Please enter the guild you would like to go to war with.");
+            MirInputBox inputBox = new MirInputBox(WqCr.EnterWarGuildName);
 
             inputBox.OKButton.Click += (o, e) =>
             {
@@ -5898,20 +5900,20 @@ namespace Client.MirScenes
                     GuildDialog.MemberStatusChange(p.Name, false);
                     break;
                 case 1: // logged on
-                    ChatDialog.ReceiveChat(String.Format("{0} logged on.", p.Name), ChatType.Guild);
+                    ChatDialog.ReceiveChat(String.Format(WqCr.PlayerLoggedOn, p.Name), ChatType.Guild);
                     GuildDialog.MemberStatusChange(p.Name, true);
                     break;
                 case 2://new member
-                    ChatDialog.ReceiveChat(String.Format("{0} joined guild.", p.Name), ChatType.Guild);
+                    ChatDialog.ReceiveChat(String.Format(WqCr.PlayerJoinedGuild, p.Name), ChatType.Guild);
                     GuildDialog.MemberCount++;
                     GuildDialog.MembersChanged = true;
                     break;
                 case 3://kicked member
-                    ChatDialog.ReceiveChat(String.Format("{0} got removed from the guild.", p.Name), ChatType.Guild);
+                    ChatDialog.ReceiveChat(String.Format(WqCr.PlayerKickedFromGuild, p.Name), ChatType.Guild);
                     GuildDialog.MembersChanged = true;
                     break;
                 case 4://member left
-                    ChatDialog.ReceiveChat(String.Format("{0} left the guild.", p.Name), ChatType.Guild);
+                    ChatDialog.ReceiveChat(String.Format(WqCr.PlayerLeftGuild, p.Name), ChatType.Guild);
                     GuildDialog.MembersChanged = true;
                     break;
                 case 5://rank change (name or different rank)
@@ -5988,11 +5990,11 @@ namespace Client.MirScenes
             switch (p.Type)
             {
                 case 0:
-                    ChatDialog.ReceiveChat(String.Format("{0} donated {1} gold to guild funds.", p.Name, p.Amount), ChatType.Guild);
+                    ChatDialog.ReceiveChat(String.Format(WqCr.PlayerDonatedGold, p.Name, p.Amount), ChatType.Guild);
                     GuildDialog.Gold += p.Amount;
                     break;
                 case 1:
-                    ChatDialog.ReceiveChat(String.Format("{0} retrieved {1} gold from guild funds.", p.Name, p.Amount), ChatType.Guild);
+                    ChatDialog.ReceiveChat(String.Format(WqCr.PlayerRetrievedGold, p.Name, p.Amount), ChatType.Guild);
                     if (GuildDialog.Gold > p.Amount)
                         GuildDialog.Gold -= p.Amount;
                     else
@@ -6185,33 +6187,33 @@ namespace Client.MirScenes
             switch (p.Result)
             {
                 case 0:
-                    MirMessageBox.Show("Creating new heroes is currently disabled.");
+                    MirMessageBox.Show(WqCr.HeroCreationDisabled);
                     NewHeroDialog.Hide();
                     break;
                 case 1:
-                    MirMessageBox.Show("Your Hero Name is not acceptable.");
+                    MirMessageBox.Show(WqCr.HeroNameNotAcceptable);
                     NewHeroDialog.NameTextBox.SetFocus();
                     break;
                 case 2:
-                    MirMessageBox.Show("The gender you selected does not exist.\n Contact a GM for assistance.");
+                    MirMessageBox.Show(WqCr.GenderDoesNotExist);
                     break;
                 case 3:
-                    MirMessageBox.Show("The class you selected does not exist.\n Contact a GM for assistance.");
+                    MirMessageBox.Show(WqCr.ClassDoesNotExist);
                     break;
                 case 4:
-                    MirMessageBox.Show("You cannot make anymore Heroes.");
+                    MirMessageBox.Show(WqCr.NoMoreHeroes);
                     NewHeroDialog.Hide();
                     break;
                 case 5:
-                    MirMessageBox.Show("A Character with this name already exists.");
+                    MirMessageBox.Show(WqCr.CharacterNameExists);
                     NewHeroDialog.NameTextBox.SetFocus();
                     break;
                 case 6:
-                    MirMessageBox.Show("No bag space.");
+                    MirMessageBox.Show(WqCr.NoBagSpace);
                     NewHeroDialog.Hide();
                     break;
                 case 10:
-                    MirMessageBox.Show("Hero created successfully.");
+                    MirMessageBox.Show(WqCr.HeroCreatedSuccessfully);
                     NewHeroDialog.Hide();
                     break;
             }
@@ -6268,7 +6270,7 @@ namespace Client.MirScenes
 
         private void MarriageRequest(S.MarriageRequest p)
         {
-            MirMessageBox messageBox = new MirMessageBox(string.Format("{0} has asked for your hand in marriage.", p.Name), MirMessageBoxButtons.YesNo);
+            MirMessageBox messageBox = new MirMessageBox(string.Format(WqCr.MarriageRequest, p.Name), MirMessageBoxButtons.YesNo);
 
             messageBox.YesButton.Click += (o, e) => Network.Enqueue(new C.MarriageReply { AcceptInvite = true });
             messageBox.NoButton.Click += (o, e) => { Network.Enqueue(new C.MarriageReply { AcceptInvite = false }); messageBox.Dispose(); };
@@ -6278,7 +6280,7 @@ namespace Client.MirScenes
 
         private void DivorceRequest(S.DivorceRequest p)
         {
-            MirMessageBox messageBox = new MirMessageBox(string.Format("{0} has requested a divorce", p.Name), MirMessageBoxButtons.YesNo);
+            MirMessageBox messageBox = new MirMessageBox(string.Format(WqCr.DivorceRequest, p.Name), MirMessageBoxButtons.YesNo);
 
             messageBox.YesButton.Click += (o, e) => Network.Enqueue(new C.DivorceReply { AcceptInvite = true });
             messageBox.NoButton.Click += (o, e) => { Network.Enqueue(new C.DivorceReply { AcceptInvite = false }); messageBox.Dispose(); };
@@ -6288,7 +6290,7 @@ namespace Client.MirScenes
 
         private void MentorRequest(S.MentorRequest p)
         {
-            MirMessageBox messageBox = new MirMessageBox(string.Format("{0} (Level {1}) has requested you teach him the ways of the {2}.", p.Name, p.Level, GameScene.User.Class.ToString()), MirMessageBoxButtons.YesNo);
+            MirMessageBox messageBox = new MirMessageBox(string.Format(WqCr.TeachRequest, p.Name, p.Level, GameScene.User.Class.ToString()), MirMessageBoxButtons.YesNo);
 
             messageBox.YesButton.Click += (o, e) => Network.Enqueue(new C.MentorReply { AcceptInvite = true });
             messageBox.NoButton.Click += (o, e) => { Network.Enqueue(new C.MentorReply { AcceptInvite = false }); messageBox.Dispose(); };
@@ -6368,7 +6370,7 @@ namespace Client.MirScenes
 
         private void TradeRequest(S.TradeRequest p)
         {
-            MirMessageBox messageBox = new MirMessageBox(string.Format("Player {0} has requested to trade with you.", p.Name), MirMessageBoxButtons.YesNo);
+            MirMessageBox messageBox = new MirMessageBox(string.Format(WqCr.TradeRequest, p.Name), MirMessageBoxButtons.YesNo);
 
             messageBox.YesButton.Click += (o, e) => Network.Enqueue(new C.TradeReply { AcceptInvite = true });
             messageBox.NoButton.Click += (o, e) => { Network.Enqueue(new C.TradeReply { AcceptInvite = false }); messageBox.Dispose(); };
@@ -6406,7 +6408,7 @@ namespace Client.MirScenes
             {
                 TradeDialog.TradeReset();
 
-                MirMessageBox messageBox = new MirMessageBox("Deal cancelled.\r\nTo deal correctly you must face the other party.", MirMessageBoxButtons.OK);
+                MirMessageBox messageBox = new MirMessageBox(WqCr.DealCancelled, MirMessageBoxButtons.OK);
                 messageBox.Show();
             }
         }
@@ -6480,7 +6482,7 @@ namespace Client.MirScenes
             switch (p.result)
             {
                 case -4:
-                    messageBox = new MirMessageBox("You have not supplied enough materials.", MirMessageBoxButtons.OK);
+                    messageBox = new MirMessageBox(WqCr.NotEnoughMaterials, MirMessageBoxButtons.OK);
                     MapControl.AwakeningAction = false;
                     break;
                 case -3:
@@ -6488,18 +6490,18 @@ namespace Client.MirScenes
                     MapControl.AwakeningAction = false;
                     break;
                 case -2:
-                    messageBox = new MirMessageBox("Awakening already at maximum level.", MirMessageBoxButtons.OK);
+                    messageBox = new MirMessageBox(WqCr.AwakeningAtMaxLevel, MirMessageBoxButtons.OK);
                     MapControl.AwakeningAction = false;
                     break;
                 case -1:
-                    messageBox = new MirMessageBox("Cannot awaken this item.", MirMessageBoxButtons.OK);
+                    messageBox = new MirMessageBox(WqCr.CannotAwakenItem, MirMessageBoxButtons.OK);
                     MapControl.AwakeningAction = false;
                     break;
                 case 0:
-                    //messageBox = new MirMessageBox("Upgrade Failed.", MirMessageBoxButtons.OK);
+                    //messageBox = new MirMessageBox(WqCr.UpgradeFailed, MirMessageBoxButtons.OK);
                     break;
                 case 1:
-                    //messageBox = new MirMessageBox("Upgrade Success.", MirMessageBoxButtons.OK);
+                    //messageBox = new MirMessageBox(WqCr.UpgradeSuccess, MirMessageBoxButtons.OK);
                     break;
 
             }
@@ -6541,7 +6543,7 @@ namespace Client.MirScenes
 
         private void MailSendRequest(S.MailSendRequest p)
         {
-            MirInputBox inputBox = new MirInputBox("Please enter the name of the person you would like to mail.");
+            MirInputBox inputBox = new MirInputBox(WqCr.EnterMailRecipient);
 
             inputBox.OKButton.Click += (o1, e1) =>
             {
@@ -6581,11 +6583,11 @@ namespace Client.MirScenes
             switch(p.Result)
             {
                 case -1:
-                    MirMessageBox messageBox = new MirMessageBox(string.Format("No parcels to collect."), MirMessageBoxButtons.OK);
+                    MirMessageBox messageBox = new MirMessageBox(WqCr.NoParcelsToCollect, MirMessageBoxButtons.OK);
                     messageBox.Show();
                     break;
                 case 0:
-                    messageBox = new MirMessageBox(string.Format("All parcels have been collected."), MirMessageBoxButtons.OK);
+                    messageBox = new MirMessageBox(WqCr.AllParcelsCollected, MirMessageBoxButtons.OK);
                     messageBox.Show();
                     break;
                 case 1:
@@ -6653,7 +6655,7 @@ namespace Client.MirScenes
         {
             if (CMain.Time > User.DeadTime && User.CurrentAction == MirAction.Dead)
             {
-                MirMessageBox messageBox = new MirMessageBox("Would you like to be revived?", MirMessageBoxButtons.YesNo);
+                MirMessageBox messageBox = new MirMessageBox(WqCr.RevivePrompt, MirMessageBoxButtons.YesNo);
 
                 messageBox.YesButton.Click += (o, e) => Network.Enqueue(new C.AcceptReincarnation());
 
@@ -6665,7 +6667,7 @@ namespace Client.MirScenes
         {
             User.IntelligentCreatures.Add(p.Creature);
 
-            MirInputBox inputBox = new MirInputBox("Please give your creature a name.");
+            MirInputBox inputBox = new MirInputBox(WqCr.CreatureNamePrompt);
             inputBox.InputTextBox.Text = GameScene.User.IntelligentCreatures[User.IntelligentCreatures.Count-1].CustomName;
             inputBox.OKButton.Click += (o1, e1) =>
             {
@@ -6985,7 +6987,7 @@ namespace Client.MirScenes
                         if (HoverItem.Info.Shape == 26 || HoverItem.Info.Shape == 28)//WonderDrug, Knapsack
                         {
                             string strTime = Functions.PrintTimeSpanFromSeconds((HoverItem.CurrentDura * 3600), false);
-                            text += string.Format(" Duration {0}", strTime);
+                            text += string.Format(" {0} {1}", WqCr.DurationText, strTime);
                         }
                         break;
                     default:
@@ -7198,10 +7200,10 @@ namespace Client.MirScenes
                 switch (realItem.Shape)
                 {
                     default:
-                        text = string.Format("Adds +{0} Durability", minValue / 1000);
+                        text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue / 1000, WqCr.DurabilityText);
                         break;
                     case 8:
-                        text = string.Format("Seals for {0}", Functions.PrintTimeSpanFromSeconds(minValue * 60));
+                        text = string.Format(WqCr.SealsForText, Functions.PrintTimeSpanFromSeconds(minValue * 60));
                         break;
                 }
 
@@ -7233,7 +7235,7 @@ namespace Client.MirScenes
                 if (HoverItem.Info.Type != ItemType.Gem)
                     text = string.Format(addValue > 0 ? GameLanguage.DC : GameLanguage.DC2, minValue, maxValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} DC", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.DCText);
                 MirLabel DCLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7262,7 +7264,7 @@ namespace Client.MirScenes
                 if (HoverItem.Info.Type != ItemType.Gem)
                     text = string.Format(addValue > 0 ? GameLanguage.MC : GameLanguage.MC2, minValue, maxValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} MC", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.MCText);
                 MirLabel MCLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7291,7 +7293,7 @@ namespace Client.MirScenes
                 if (HoverItem.Info.Type != ItemType.Gem)
                     text = string.Format(addValue > 0 ? GameLanguage.SC : GameLanguage.SC2, minValue, maxValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} SC", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.SCText);
                 MirLabel SCLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7321,19 +7323,19 @@ namespace Client.MirScenes
 
                 if(realItem.Type == ItemType.Pets && realItem.Shape == 28)
                 {
-                    text = string.Format("BagWeight + {0}% ", minValue + addValue);
+                    text = string.Format("{0} + {1}% ", WqCr.BagWeightText, minValue + addValue);
                 }
                 else if (realItem.Type == ItemType.Potion && realItem.Shape == 4)
                 {
-                    text = string.Format("Exp + {0}% ", minValue + addValue);
+                    text = string.Format("{0} + {1}% ", WqCr.ExpText, minValue + addValue);
                 }
                 else if (realItem.Type == ItemType.Potion && realItem.Shape == 5)
                 {
-                    text = string.Format("Drop + {0}% ", minValue + addValue);
+                    text = string.Format("{0} + {1}% ", WqCr.DropText, minValue + addValue);
                 }
                 else
                 {
-                    text = string.Format(minValue + addValue > 0 ? GameLanguage.Luck: "Curse + {0}", Math.Abs(minValue + addValue));
+                    text = string.Format(minValue + addValue > 0 ? GameLanguage.Luck: "{0} + {1}", WqCr.CurseText, Math.Abs(minValue + addValue));
                 }
 
                 MirLabel LUCKLabel = new MirLabel
@@ -7366,7 +7368,7 @@ namespace Client.MirScenes
                 if (HoverItem.Info.Type != ItemType.Gem)
                     text = string.Format(addValue > 0 ? GameLanguage.Accuracy : GameLanguage.Accuracy2, minValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} Accuracy", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.AccurancyText);
                 MirLabel ACCLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7425,11 +7427,11 @@ namespace Client.MirScenes
                 {
                     string negative = "+";
                     if (addValue < 0) negative = "";
-                    text = string.Format(addValue != 0 ? "A.Speed: " + plus + "{0} ({2}{1})" : "A.Speed: " + plus + "{0}", minValue + addValue, addValue, negative);
+                    text = string.Format(addValue != 0 ? "{0}: " + plus + "{1} ({3}{2})" : "{0}: " + plus + "{1}", WqCr.ASpeedText, minValue + addValue, addValue, negative);
                     //text = string.Format(addValue > 0 ? "A.Speed: + {0} (+{1})" : "A.Speed: + {0}", minValue + addValue, addValue);
                 }
                 else
-                    text = string.Format("Adds +{0} A.Speed", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.ASpeedText);
                 MirLabel ASPEEDLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7457,9 +7459,9 @@ namespace Client.MirScenes
             {
                 count++;
                 if (HoverItem.Info.Type != ItemType.Gem)
-                    text = string.Format(addValue > 0 ? "Freezing: + {0} (+{1})" : "Freezing: + {0}", minValue + addValue, addValue);
+                    text = string.Format(addValue > 0 ? "{0}: + {1} (+{2})" : "{0}: + {1}", WqCr.FreezingText, minValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} Freezing", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.FreezingText);
                 MirLabel FREEZINGLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7487,9 +7489,9 @@ namespace Client.MirScenes
             {
                 count++;
                 if (HoverItem.Info.Type != ItemType.Gem)
-                    text = string.Format(addValue > 0 ? "Poison: + {0} (+{1})" : "Poison: + {0}", minValue + addValue, addValue);
+                    text = string.Format(addValue > 0 ? "{0}: + {1} (+{2})" : "{0}: + {1}", WqCr.PoisonText, minValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} Poison", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.PoisonText);
                 MirLabel POISONLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7524,12 +7526,12 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format("Critical Chance + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Critical Chance: + {0} (+{1})" : "Critical Chance: + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0}: + {1} (+{2})" : "{0}: + {1}", WqCr.CriticalChanceText, minValue + addValue, addValue)
                 };
 
                 if(fishingItem)
                 {
-                    CRITICALRATELabel.Text = string.Format(addValue > 0 ? "Flexibility: + {0} (+{1})" : "Flexibility: + {0}", minValue + addValue, addValue);
+                    CRITICALRATELabel.Text = string.Format(addValue > 0 ? "{0}: + {1} (+{2})" : "{0}: + {1}", WqCr.FlexibilityText, minValue + addValue, addValue);
                 }
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, CRITICALRATELabel.DisplayRectangle.Right + 4),
@@ -7555,7 +7557,7 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format("Critical Damage + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Critical Damage: + {0} (+{1})" : "Critical Damage: + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0}: + {1} (+{2})" : "{0}: + {1}", WqCr.CriticalDamageText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, CRITICALDAMAGELabel.DisplayRectangle.Right + 4),
@@ -7580,7 +7582,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Reflect chance: {0}", minValue)
+                    Text = string.Format("{0}: {1}",WqCr.ReflectChanceText, minValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, ReflectLabel.DisplayRectangle.Right + 4),
@@ -7605,7 +7607,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("HP Drain Rate: {0}%", minValue)
+                    Text = string.Format("{0}: {1}%", WqCr.HPDrainRateText, minValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, HPdrainLabel.DisplayRectangle.Right + 4),
@@ -7627,7 +7629,7 @@ namespace Client.MirScenes
                 count++;
                 string negative = "+";
                 if (addValue < 0) negative = "";
-                text = string.Format(addValue != 0 ? "Exp Rate: " + plus + "{0}% ({2}{1}%)" : "Exp Rate: " + plus + "{0}%", minValue + addValue, addValue, negative);
+                text = string.Format(addValue != 0 ? "{0}: " + plus + "{1}% ({3}{2}%)" : "{0}: " + plus + "{1}%", WqCr.ExpRateText, minValue + addValue, addValue, negative);
 
                 MirLabel expRateLabel = new MirLabel
                 {
@@ -7658,7 +7660,7 @@ namespace Client.MirScenes
                 count++;
                 string negative = "+";
                 if (addValue < 0) negative = "";
-                text = string.Format(addValue != 0 ? "Drop Rate: " + plus + "{0}% ({2}{1}%)" : "Drop Rate: " + plus + "{0}%", minValue + addValue, addValue, negative);
+                text = string.Format(addValue != 0 ? "{0}: " + plus + "{1}% ({3}{2}%)" : "{0}: " + plus + "{1}%", WqCr.DropRateText, minValue + addValue, addValue, negative);
 
                 MirLabel dropRateLabel = new MirLabel
                 {
@@ -7689,7 +7691,7 @@ namespace Client.MirScenes
                 count++;
                 string negative = "+";
                 if (addValue < 0) negative = "";
-                text = string.Format(addValue != 0 ? "Gold Rate: " + plus + "{0}% ({2}{1}%)" : "Gold Rate: " + plus + "{0}%", minValue + addValue, addValue, negative);
+                text = string.Format(addValue != 0 ? "{0}: " + plus + "{1}% ({3}{2}%)" : "{0}: " + plus + "{1}%", WqCr.GoldRateText, minValue + addValue, addValue, negative);
 
                 MirLabel goldRateLabel = new MirLabel
                 {
@@ -7807,7 +7809,7 @@ namespace Client.MirScenes
                 if (HoverItem.Info.Type != ItemType.Gem)
                     text = string.Format(addValue > 0 ? GameLanguage.AC : GameLanguage.AC2, minValue, maxValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} AC", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.ACText);
                 MirLabel ACLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7853,7 +7855,7 @@ namespace Client.MirScenes
                 if (HoverItem.Info.Type != ItemType.Gem)
                     text = string.Format(addValue > 0 ? GameLanguage.MAC : GameLanguage.MAC2, minValue, maxValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} MAC", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.MACText);
                 MirLabel MACLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -7895,7 +7897,7 @@ namespace Client.MirScenes
                         OutLine = true,
                         Parent = ItemLabel,
                         //Text = string.Format(realItem.Type == ItemType.Potion ? "HP + {0} Recovery" : "MAXHP + {0}", minValue + addValue)
-                        Text = string.Format(addValue > 0 ? "Max HP + {0} (+{1})" : "Max HP + {0}", minValue + addValue, addValue)
+                        Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.MaxHPText, minValue + addValue, addValue)
                     };
 
                     ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXHPLabel.DisplayRectangle.Right + 4),
@@ -7922,7 +7924,7 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format(realItem.Type == ItemType.Potion ? "MP + {0} Recovery" : "MAXMP + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Max MP + {0} (+{1})" : "Max MP + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.MaxMPText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXMPLabel.DisplayRectangle.Right + 4),
@@ -7947,7 +7949,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Max HP + {0}%", minValue + addValue)
+                    Text = string.Format("{0} + {1}%", WqCr.MaxHPText, minValue + addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXHPRATELabel.DisplayRectangle.Right + 4),
@@ -7972,7 +7974,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Max MP + {0}%", minValue + addValue)
+                    Text = string.Format("{0} + {1}%", WqCr.MaxMPText, minValue + addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXMPRATELabel.DisplayRectangle.Right + 4),
@@ -7997,7 +7999,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Max AC + {0}%", minValue + addValue)
+                    Text = string.Format("{0} + {1}%", WqCr.MaxACText, minValue + addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXACRATE.DisplayRectangle.Right + 4),
@@ -8022,7 +8024,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Max MAC + {0}%", minValue + addValue)
+                    Text = string.Format("{0} + {1}%", WqCr.MaxMACText, minValue + addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXMACRATELabel.DisplayRectangle.Right + 4),
@@ -8047,7 +8049,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format(addValue > 0 ? "Health Recovery + {0} (+{1})" : "Health Recovery + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.HealthRecoveryText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, HEALTH_RECOVERYLabel.DisplayRectangle.Right + 4),
@@ -8073,7 +8075,7 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format("ManaRecovery + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Mana Recovery + {0} (+{1})" : "Mana Recovery + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.ManaRecoveryText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MANA_RECOVERYLabel.DisplayRectangle.Right + 4),
@@ -8099,7 +8101,7 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format("Poison Recovery + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Poison Recovery + {0} (+{1})" : "Poison Recovery + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.PoisonRecoveryText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, POISON_RECOVERYabel.DisplayRectangle.Right + 4),
@@ -8120,7 +8122,7 @@ namespace Client.MirScenes
                 if (HoverItem.Info.Type != ItemType.Gem)
                     text = string.Format(addValue > 0 ? GameLanguage.Agility : GameLanguage.Agility2, minValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} Agility", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.AgilityText);
 
                 MirLabel AGILITYLabel = new MirLabel
                 {
@@ -8155,7 +8157,7 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format("Strong + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Strong + {0} (+{1})" : "Strong + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.StrongText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, STRONGLabel.DisplayRectangle.Right + 4),
@@ -8174,9 +8176,9 @@ namespace Client.MirScenes
             {
                 count++;
                 if (HoverItem.Info.Type != ItemType.Gem)
-                    text = string.Format(addValue > 0 ? "Poison Resist + {0} (+{1})" : "Poison Resist + {0}", minValue + addValue, addValue);
+                    text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.PoisonResistText, minValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} Poison Resist", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue,WqCr.PoisonResistText);
                 MirLabel POISON_RESISTLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -8203,9 +8205,9 @@ namespace Client.MirScenes
             {
                 count++;
                 if (HoverItem.Info.Type != ItemType.Gem)
-                    text = string.Format(addValue > 0 ? "Magic Resist + {0} (+{1})" : "Magic Resist + {0}", minValue + addValue, addValue);
+                    text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.MagicResistText, minValue + addValue, addValue);
                 else
-                    text = string.Format("Adds +{0} Magic Resist", minValue + maxValue + addValue);
+                    text = string.Format("{0} +{1} {2}", WqCr.AddsText, minValue + maxValue + addValue, WqCr.MagicResistText);
                 MirLabel MAGIC_RESISTLabel = new MirLabel
                 {
                     AutoSize = true,
@@ -8239,7 +8241,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Max DC + {0}%", minValue + addValue)
+                    Text = string.Format("{0} + {1}%", WqCr.MaxDCText, minValue + addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXDCRATE.DisplayRectangle.Right + 4),
@@ -8263,7 +8265,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Max MC + {0}%", minValue + addValue)
+                    Text = string.Format("{0} + {1}%", WqCr.MaxMCText, minValue + addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXMCRATE.DisplayRectangle.Right + 4),
@@ -8287,7 +8289,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Max SC + {0}%", minValue + addValue)
+                    Text = string.Format("{0} + {1}%", WqCr.MaxSCText, minValue + addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, MAXSCRATE.DisplayRectangle.Right + 4),
@@ -8311,7 +8313,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("All Damage Reduction + {0}%", minValue + addValue)
+                    Text = string.Format("{0} + {1}%", WqCr.AllDamageReductionText, minValue + addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DAMAGEREDUC.DisplayRectangle.Right + 4),
@@ -8375,7 +8377,7 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format("Hand Weight + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Hand Weight + {0} (+{1})" : "Hand Weight + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.HandWeightText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, HANDWEIGHTLabel.DisplayRectangle.Right + 4),
@@ -8401,7 +8403,7 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format("Wear Weight + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Wear Weight + {0} (+{1})" : "Wear Weight + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.WearWeightText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, WEARWEIGHTLabel.DisplayRectangle.Right + 4),
@@ -8427,7 +8429,7 @@ namespace Client.MirScenes
                     OutLine = true,
                     Parent = ItemLabel,
                     //Text = string.Format("Bag Weight + {0}", minValue + addValue)
-                    Text = string.Format(addValue > 0 ? "Bag Weight + {0} (+{1})" : "Bag Weight + {0}", minValue + addValue, addValue)
+                    Text = string.Format(addValue > 0 ? "{0} + {1} (+{2})" : "{0} + {1}", WqCr.BagWeightText, minValue + addValue, addValue)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, BAGWEIGHTLabel.DisplayRectangle.Right + 4),
@@ -8651,7 +8653,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Socket : {0}", item.Slots[i] == null ? "Empty" : item.Slots[i].FriendlyName)
+                    Text = string.Format($"{WqCr.SocketText} : {0}", item.Slots[i] == null ? WqCr.EmptyText : item.Slots[i].FriendlyName)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, SOCKETLabel.DisplayRectangle.Right + 4),
@@ -8672,7 +8674,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = "Ctrl + Right Click To Open Sockets"
+                    Text = $"{WqCr.CtrlRightClick} {WqCr.ToOpenSockets}"
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, SOCKETLabel.DisplayRectangle.Right + 4),
@@ -8729,12 +8731,12 @@ namespace Client.MirScenes
                             colour = Color.Red;
                         break;
                     case RequiredType.MaxAC:
-                        text = string.Format("Required AC : {0}", realItem.RequiredAmount);
+                        text = string.Format("{0} {1} : {2}", WqCr.RequiredText, WqCr.ACText, realItem.RequiredAmount);
                         if (MapObject.User.Stats[Stat.MaxAC] < realItem.RequiredAmount)
                             colour = Color.Red;
                         break;
                     case RequiredType.MaxMAC:
-                        text = string.Format("Required MAC : {0}", realItem.RequiredAmount);
+                        text = string.Format("{0} {1} : {2}", WqCr.RequiredText, WqCr.MACText,realItem.RequiredAmount);
                         if (MapObject.User.Stats[Stat.MaxMAC] < realItem.RequiredAmount)
                             colour = Color.Red;
                         break;
@@ -8754,37 +8756,37 @@ namespace Client.MirScenes
                             colour = Color.Red;
                         break;
                     case RequiredType.MaxLevel:
-                        text = string.Format("Maximum Level : {0}", realItem.RequiredAmount);
+                        text = string.Format("{0} : {1}", WqCr.MaximumLevelText, realItem.RequiredAmount);
                         if (MapObject.User.Level > realItem.RequiredAmount)
                             colour = Color.Red;
                         break;
                     case RequiredType.MinAC:
-                        text = string.Format("Required Base AC : {0}", realItem.RequiredAmount);
+                        text = string.Format("{0} : {1}", WqCr.RequiredBaseACText, realItem.RequiredAmount);
                         if (MapObject.User.Stats[Stat.MinAC] < realItem.RequiredAmount)
                             colour = Color.Red;
                         break;
                     case RequiredType.MinMAC:
-                        text = string.Format("Required Base MAC : {0}", realItem.RequiredAmount);
+                        text = string.Format("{0} : {1}", WqCr.RequiredBaseMACText, realItem.RequiredAmount);
                         if (MapObject.User.Stats[Stat.MinMAC] < realItem.RequiredAmount)
                             colour = Color.Red;
                         break;
                     case RequiredType.MinDC:
-                        text = string.Format("Required Base DC : {0}", realItem.RequiredAmount);
+                        text = string.Format("{0} : {1}", WqCr.RequiredBaseDCText, realItem.RequiredAmount);
                         if (MapObject.User.Stats[Stat.MinDC] < realItem.RequiredAmount)
                             colour = Color.Red;
                         break;
                     case RequiredType.MinMC:
-                        text = string.Format("Required Base MC : {0}", realItem.RequiredAmount);
+                        text = string.Format("{0} : {1}", WqCr.RequiredBaseMCText, realItem.RequiredAmount);
                         if (MapObject.User.Stats[Stat.MinMC] < realItem.RequiredAmount)
                             colour = Color.Red;
                         break;
                     case RequiredType.MinSC:
-                        text = string.Format("Required Base SC : {0}", realItem.RequiredAmount);
+                        text = string.Format("{0} : {1}", WqCr.RequiredBaseSCText, realItem.RequiredAmount);
                         if (MapObject.User.Stats[Stat.MinSC] < realItem.RequiredAmount)
                             colour = Color.Red;
                         break;
                     default:
-                        text = "Unknown Type Required";
+                        text = WqCr.UnknownTypeRequired;
                         break;
                 }
 
@@ -8857,7 +8859,7 @@ namespace Client.MirScenes
                 string text;
                 var colour = Color.White;
 
-                text = $"Selling Price : {((long)(item.Price() / 2)).ToString("###,###,##0")} Gold";
+                text = $"{WqCr.SellingPriceText} : {((long)(item.Price() / 2)).ToString("###,###,##0")} {WqCr.GoldText}";
 
                 var costLabel = new MirLabel
                 {
@@ -8925,7 +8927,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Can't drop on death")
+                    Text = string.Format(WqCr.CantDropOnDeath)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_DEATH_DROPLabel.DisplayRectangle.Right + 4),
@@ -8946,7 +8948,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Can't drop")
+                    Text = string.Format(WqCr.CantDrop)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_DROPLabel.DisplayRectangle.Right + 4),
@@ -8967,7 +8969,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Can't upgrade")
+                    Text = string.Format(WqCr.CantUpgrade)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_UPGRADELabel.DisplayRectangle.Right + 4),
@@ -8988,7 +8990,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Can't sell")
+                    Text = string.Format(WqCr.CantSell)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_SELLLabel.DisplayRectangle.Right + 4),
@@ -9009,7 +9011,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Can't trade")
+                    Text = string.Format(WqCr.CantTrade)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_TRADELabel.DisplayRectangle.Right + 4),
@@ -9030,7 +9032,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Can't store")
+                    Text = string.Format(WqCr.CantStore)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_STORELabel.DisplayRectangle.Right + 4),
@@ -9051,7 +9053,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Can't repair")
+                    Text = string.Format(WqCr.CantRepair)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_REPAIRLabel.DisplayRectangle.Right + 4),
@@ -9072,7 +9074,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Can't special repair")
+                    Text = string.Format(WqCr.CantSpecialRepair)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_REPAIRLabel.DisplayRectangle.Right + 4),
@@ -9093,7 +9095,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Breaks on death")
+                    Text = string.Format(WqCr.BreaksOnDeath)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_REPAIRLabel.DisplayRectangle.Right + 4),
@@ -9114,7 +9116,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Destroyed when dropped")
+                    Text = string.Format(WqCr.DestroyedWhenDropped)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, DONT_DODLabel.DisplayRectangle.Right + 4),
@@ -9135,7 +9137,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Cannot be a Wedding Ring")
+                    Text = string.Format(WqCr.CannotBeWeddingRing)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, No_WedLabel.DisplayRectangle.Right + 4),
@@ -9156,7 +9158,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("Cannot be used by Hero")
+                    Text = string.Format(WqCr.CannotBeUsedByHero)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, No_HeroLabel.DisplayRectangle.Right + 4),
@@ -9177,7 +9179,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = string.Format("SoulBinds on equip")
+                    Text = string.Format(WqCr.SoulBindsOnEquip)
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, BOELabel.DisplayRectangle.Right + 4),
@@ -9232,11 +9234,11 @@ namespace Client.MirScenes
                 string Text = "";
                 if (HoverItem.Info.Unique == SpecialItemMode.None)
                 {
-                    Text = "Cannot be used on any item.";
+                    Text = WqCr.CannotBeUsedOnAnyItem;
                 }
                 else
                 {
-                    Text = "Can be used on: ";
+                    Text = WqCr.CanBeUsedOn;
                 }
                 MirLabel GemUseOn = new MirLabel
                 {
@@ -9720,7 +9722,7 @@ namespace Client.MirScenes
 
             if (realItem.Type == ItemType.Scroll && realItem.Shape == 7)//Credit Scroll
             {
-                HoverItem.Info.ToolTip = string.Format("Adds {0} Credits to your Account.", HoverItem.Info.Price);
+                HoverItem.Info.ToolTip = string.Format(WqCr.AddsCreditsToAccount, HoverItem.Info.Price);
             }
 
             if (!string.IsNullOrEmpty(HoverItem.Info.ToolTip))
@@ -9798,7 +9800,7 @@ namespace Client.MirScenes
                     Location = new Point(4, ItemLabel.DisplayRectangle.Bottom),
                     OutLine = true,
                     Parent = ItemLabel,
-                    Text = "Created by Game Master"
+                    Text = WqCr.CreatedByGameMaster
                 };
 
                 ItemLabel.Size = new Size(Math.Max(ItemLabel.Size.Width, GMLabel.DisplayRectangle.Right + 4),
@@ -11525,7 +11527,7 @@ namespace Client.MirScenes
                             if (CMain.Time >= OutputDelay)
                             {
                                 OutputDelay = CMain.Time + 1000;
-                                GameScene.Scene.OutputMessage("Target is too far.");
+                                GameScene.Scene.OutputMessage(WqCr.TargetTooFar);
                             }
                         }
                         //  return;
@@ -11613,7 +11615,7 @@ namespace Client.MirScenes
                                             if (CMain.Time >= OutputDelay)
                                             {
                                                 OutputDelay = CMain.Time + 1000;
-                                                GameScene.Scene.OutputMessage("Target is too far.");
+                                                GameScene.Scene.OutputMessage(WqCr.TargetTooFar);
                                             }
                                             return;
                                         }
@@ -11650,7 +11652,7 @@ namespace Client.MirScenes
                                 if (CMain.Time >= OutputDelay)
                                 {
                                     OutputDelay = CMain.Time + 1000;
-                                    GameScene.Scene.OutputMessage("Target is too far.");
+                                    GameScene.Scene.OutputMessage(WqCr.TargetTooFar);
                                 }
                             }
                             return;
@@ -11818,7 +11820,7 @@ namespace Client.MirScenes
                 if (CMain.Time >= OutputDelay)
                 {
                     OutputDelay = CMain.Time + 1000;
-                    GameScene.Scene.OutputMessage(string.Format("You cannot cast {0} for another {1} seconds.", magic.Spell.ToString(), ((magic.CastTime + magic.Delay) - CMain.Time - 1) / 1000 + 1));
+                    GameScene.Scene.OutputMessage(string.Format(WqCr.CantCastAnotherSeconds, magic.Spell.ToString(), ((magic.CastTime + magic.Delay) - CMain.Time - 1) / 1000 + 1));
                 }
 
                 actor.ClearMagic();
@@ -12023,7 +12025,7 @@ namespace Client.MirScenes
                 if (CMain.Time >= OutputDelay)
                 {
                     OutputDelay = CMain.Time + 1000;
-                    GameScene.Scene.OutputMessage("Target is too far.");
+                    GameScene.Scene.OutputMessage(WqCr.TargetTooFar);
                 }
                 actor.ClearMagic();
                 return;

@@ -32,11 +32,11 @@ namespace Server.Library.Utils
                     _listener.Prefixes.Add(s);
                 }
                 _listener.Start();
-                MessageQueue.Instance.Enqueue("HttpService started.");
+                MessageQueue.Instance.Enqueue(ServerLibraryResources.HttpServiceStarted);
             }
             catch (Exception err)
             {
-                MessageQueue.Instance.Enqueue("HttpService start failed! Error:" + err);
+                MessageQueue.Instance.Enqueue(string.Format(ServerLibraryResources.HttpServiceStartFailed, err));
                 return;
             }
 

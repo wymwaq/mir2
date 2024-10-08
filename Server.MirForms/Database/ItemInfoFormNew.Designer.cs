@@ -29,9 +29,10 @@ namespace Server.Database
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemInfoFormNew));
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             itemInfoGridView = new DataGridView();
             Modified = new DataGridViewCheckBoxColumn();
             ItemIndex = new DataGridViewTextBoxColumn();
@@ -89,26 +90,22 @@ namespace Server.Database
             // 
             // itemInfoGridView
             // 
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            itemInfoGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            itemInfoGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             itemInfoGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             itemInfoGridView.Columns.AddRange(new DataGridViewColumn[] { Modified, ItemIndex, ItemName, ItemType, ItemGrade, ItemRequiredType, ItemRequiredGender, ItemRequiredClass, ItemSet, ItemRandomStatsId, ItemRequiredAmount, ItemImage, ItemShape, ItemEffect, ItemStackSize, ItemSlots, ItemWeight, ItemLightRange, ItemLightIntensity, ItemDurability, ItemPrice, ItemToolTip, StartItem, NeedIdentify, ShowGroupPickup, GlobalDropNotify, ClassBased, LevelBased, CanMine, CanFastRun, CanAwakening });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = SystemColors.Window;
-            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            itemInfoGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            itemInfoGridView.Dock = DockStyle.Fill;
-            itemInfoGridView.Location = new Point(0, 0);
-            itemInfoGridView.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = SystemColors.Window;
+            dataGridViewCellStyle6.Font = new Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            itemInfoGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            resources.ApplyResources(itemInfoGridView, "itemInfoGridView");
             itemInfoGridView.Name = "itemInfoGridView";
             itemInfoGridView.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             itemInfoGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            itemInfoGridView.Size = new Size(1115, 500);
-            itemInfoGridView.TabIndex = 0;
             itemInfoGridView.CurrentCellDirtyStateChanged += CurrentCellDirtyStateChanged;
             itemInfoGridView.DataError += itemInfoGridView_DataError;
             itemInfoGridView.DefaultValuesNeeded += itemInfoGridView_DefaultValuesNeeded;
@@ -119,212 +116,204 @@ namespace Server.Database
             Modified.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
             Modified.DataPropertyName = "Modified";
             Modified.Frozen = true;
-            Modified.HeaderText = "Modified";
+            resources.ApplyResources(Modified, "Modified");
             Modified.Name = "Modified";
             Modified.ReadOnly = true;
-            Modified.Width = 61;
             // 
             // ItemIndex
             // 
             ItemIndex.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             ItemIndex.DataPropertyName = "ItemIndex";
             ItemIndex.Frozen = true;
-            ItemIndex.HeaderText = "Index";
+            resources.ApplyResources(ItemIndex, "ItemIndex");
             ItemIndex.Name = "ItemIndex";
             ItemIndex.ReadOnly = true;
-            ItemIndex.Width = 61;
             // 
             // ItemName
             // 
             ItemName.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             ItemName.DataPropertyName = "ItemName";
             ItemName.Frozen = true;
-            ItemName.HeaderText = "Name";
+            resources.ApplyResources(ItemName, "ItemName");
             ItemName.Name = "ItemName";
-            ItemName.Width = 64;
             // 
             // ItemType
             // 
             ItemType.DataPropertyName = "ItemType";
-            ItemType.HeaderText = "Type";
+            resources.ApplyResources(ItemType, "ItemType");
             ItemType.Name = "ItemType";
             ItemType.SortMode = DataGridViewColumnSortMode.Automatic;
             // 
             // ItemGrade
             // 
             ItemGrade.DataPropertyName = "ItemGrade";
-            ItemGrade.HeaderText = "Grade";
+            resources.ApplyResources(ItemGrade, "ItemGrade");
             ItemGrade.Name = "ItemGrade";
             // 
             // ItemRequiredType
             // 
             ItemRequiredType.DataPropertyName = "ItemRequiredType";
-            ItemRequiredType.HeaderText = "Required Type";
+            resources.ApplyResources(ItemRequiredType, "ItemRequiredType");
             ItemRequiredType.Name = "ItemRequiredType";
             // 
             // ItemRequiredGender
             // 
             ItemRequiredGender.DataPropertyName = "ItemRequiredGender";
-            ItemRequiredGender.HeaderText = "Required Gender";
+            resources.ApplyResources(ItemRequiredGender, "ItemRequiredGender");
             ItemRequiredGender.Name = "ItemRequiredGender";
             // 
             // ItemRequiredClass
             // 
             ItemRequiredClass.DataPropertyName = "ItemRequiredClass";
-            ItemRequiredClass.HeaderText = "Required Class";
+            resources.ApplyResources(ItemRequiredClass, "ItemRequiredClass");
             ItemRequiredClass.Name = "ItemRequiredClass";
             // 
             // ItemSet
             // 
             ItemSet.DataPropertyName = "ItemSet";
-            ItemSet.HeaderText = "Set";
+            resources.ApplyResources(ItemSet, "ItemSet");
             ItemSet.Name = "ItemSet";
             // 
             // ItemRandomStatsId
             // 
             ItemRandomStatsId.DataPropertyName = "ItemRandomStatsId";
-            ItemRandomStatsId.HeaderText = "Random Stats";
+            resources.ApplyResources(ItemRandomStatsId, "ItemRandomStatsId");
             ItemRandomStatsId.Name = "ItemRandomStatsId";
             // 
             // ItemRequiredAmount
             // 
             ItemRequiredAmount.DataPropertyName = "ItemRequiredAmount";
-            ItemRequiredAmount.HeaderText = "Required Amount";
+            resources.ApplyResources(ItemRequiredAmount, "ItemRequiredAmount");
             ItemRequiredAmount.Name = "ItemRequiredAmount";
             // 
             // ItemImage
             // 
             ItemImage.DataPropertyName = "ItemImage";
-            ItemImage.HeaderText = "Image";
+            resources.ApplyResources(ItemImage, "ItemImage");
             ItemImage.Name = "ItemImage";
             // 
             // ItemShape
             // 
             ItemShape.DataPropertyName = "ItemShape";
-            ItemShape.HeaderText = "Shape";
+            resources.ApplyResources(ItemShape, "ItemShape");
             ItemShape.Name = "ItemShape";
             // 
             // ItemEffect
             // 
             ItemEffect.DataPropertyName = "ItemEffect";
-            ItemEffect.HeaderText = "Effect";
+            resources.ApplyResources(ItemEffect, "ItemEffect");
             ItemEffect.Name = "ItemEffect";
             // 
             // ItemStackSize
             // 
             ItemStackSize.DataPropertyName = "ItemStackSize";
-            ItemStackSize.HeaderText = "Stack Size";
+            resources.ApplyResources(ItemStackSize, "ItemStackSize");
             ItemStackSize.Name = "ItemStackSize";
             // 
             // ItemSlots
             // 
             ItemSlots.DataPropertyName = "ItemSlots";
-            ItemSlots.HeaderText = "Slots";
+            resources.ApplyResources(ItemSlots, "ItemSlots");
             ItemSlots.Name = "ItemSlots";
             // 
             // ItemWeight
             // 
             ItemWeight.DataPropertyName = "ItemWeight";
-            ItemWeight.HeaderText = "Weight";
+            resources.ApplyResources(ItemWeight, "ItemWeight");
             ItemWeight.Name = "ItemWeight";
             // 
             // ItemLightRange
             // 
             ItemLightRange.DataPropertyName = "ItemLightRange";
-            ItemLightRange.HeaderText = "Light Range";
+            resources.ApplyResources(ItemLightRange, "ItemLightRange");
             ItemLightRange.Name = "ItemLightRange";
             // 
             // ItemLightIntensity
             // 
             ItemLightIntensity.DataPropertyName = "ItemLightIntensity";
-            ItemLightIntensity.HeaderText = "Intensity";
+            resources.ApplyResources(ItemLightIntensity, "ItemLightIntensity");
             ItemLightIntensity.Name = "ItemLightIntensity";
             // 
             // ItemDurability
             // 
             ItemDurability.DataPropertyName = "ItemDurability";
-            ItemDurability.HeaderText = "Durability";
+            resources.ApplyResources(ItemDurability, "ItemDurability");
             ItemDurability.Name = "ItemDurability";
             // 
             // ItemPrice
             // 
             ItemPrice.DataPropertyName = "ItemPrice";
-            ItemPrice.HeaderText = "Price";
+            resources.ApplyResources(ItemPrice, "ItemPrice");
             ItemPrice.Name = "ItemPrice";
             // 
             // ItemToolTip
             // 
             ItemToolTip.DataPropertyName = "ItemToolTip";
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            ItemToolTip.DefaultCellStyle = dataGridViewCellStyle2;
-            ItemToolTip.HeaderText = "ToolTip";
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            ItemToolTip.DefaultCellStyle = dataGridViewCellStyle5;
+            resources.ApplyResources(ItemToolTip, "ItemToolTip");
             ItemToolTip.Name = "ItemToolTip";
-            ItemToolTip.Width = 68;
             // 
             // StartItem
             // 
             StartItem.DataPropertyName = "StartItem";
-            StartItem.HeaderText = "Start Item";
+            resources.ApplyResources(StartItem, "StartItem");
             StartItem.Name = "StartItem";
             StartItem.Resizable = DataGridViewTriState.True;
             // 
             // NeedIdentify
             // 
             NeedIdentify.DataPropertyName = "NeedIdentify";
-            NeedIdentify.HeaderText = "Need Identify";
+            resources.ApplyResources(NeedIdentify, "NeedIdentify");
             NeedIdentify.Name = "NeedIdentify";
             // 
             // ShowGroupPickup
             // 
             ShowGroupPickup.DataPropertyName = "ShowGroupPickup";
-            ShowGroupPickup.HeaderText = "Show Group Pickup";
+            resources.ApplyResources(ShowGroupPickup, "ShowGroupPickup");
             ShowGroupPickup.Name = "ShowGroupPickup";
             // 
             // GlobalDropNotify
             // 
             GlobalDropNotify.DataPropertyName = "GlobalDropNotify";
-            GlobalDropNotify.HeaderText = "Global Drop Notify";
+            resources.ApplyResources(GlobalDropNotify, "GlobalDropNotify");
             GlobalDropNotify.Name = "GlobalDropNotify";
             // 
             // ClassBased
             // 
             ClassBased.DataPropertyName = "ClassBased";
-            ClassBased.HeaderText = "Class Based";
+            resources.ApplyResources(ClassBased, "ClassBased");
             ClassBased.Name = "ClassBased";
             // 
             // LevelBased
             // 
             LevelBased.DataPropertyName = "LevelBased";
-            LevelBased.HeaderText = "Level Based";
+            resources.ApplyResources(LevelBased, "LevelBased");
             LevelBased.Name = "LevelBased";
             // 
             // CanMine
             // 
             CanMine.DataPropertyName = "CanMine";
-            CanMine.HeaderText = "Can Mine";
+            resources.ApplyResources(CanMine, "CanMine");
             CanMine.Name = "CanMine";
             // 
             // CanFastRun
             // 
             CanFastRun.DataPropertyName = "CanFastRun";
-            CanFastRun.HeaderText = "Can FastRun";
+            resources.ApplyResources(CanFastRun, "CanFastRun");
             CanFastRun.Name = "CanFastRun";
             // 
             // CanAwakening
             // 
             CanAwakening.DataPropertyName = "CanAwakening";
-            CanAwakening.HeaderText = "Can Awakening";
+            resources.ApplyResources(CanAwakening, "CanAwakening");
             CanAwakening.Name = "CanAwakening";
             // 
             // panel1
             // 
             panel1.Controls.Add(panel3);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
-            panel1.Size = new Size(1115, 54);
-            panel1.TabIndex = 1;
             // 
             // panel3
             // 
@@ -336,55 +325,34 @@ namespace Server.Database
             panel3.Controls.Add(drpFilterType);
             panel3.Controls.Add(lblSearch);
             panel3.Controls.Add(txtSearch);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(0, 0);
-            panel3.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(panel3, "panel3");
             panel3.Name = "panel3";
-            panel3.Size = new Size(1115, 54);
-            panel3.TabIndex = 5;
             // 
             // Gameshop_button
             // 
-            Gameshop_button.Location = new Point(903, 25);
-            Gameshop_button.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(Gameshop_button, "Gameshop_button");
             Gameshop_button.Name = "Gameshop_button";
-            Gameshop_button.Size = new Size(97, 27);
-            Gameshop_button.TabIndex = 30;
-            Gameshop_button.Text = "+ Gameshop";
             Gameshop_button.UseVisualStyleBackColor = true;
             Gameshop_button.Click += Gameshop_button_Click;
             // 
             // btnExport
             // 
-            btnExport.Location = new Point(808, 25);
-            btnExport.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(btnExport, "btnExport");
             btnExport.Name = "btnExport";
-            btnExport.Size = new Size(88, 27);
-            btnExport.TabIndex = 6;
-            btnExport.Text = "Export";
             btnExport.UseVisualStyleBackColor = true;
             btnExport.Click += btnExport_Click;
             // 
             // btnImport
             // 
-            btnImport.Location = new Point(713, 25);
-            btnImport.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(btnImport, "btnImport");
             btnImport.Name = "btnImport";
-            btnImport.Size = new Size(88, 27);
-            btnImport.TabIndex = 5;
-            btnImport.Text = "Import";
             btnImport.UseVisualStyleBackColor = true;
             btnImport.Click += btnImport_Click;
             // 
             // lblFilterType
             // 
-            lblFilterType.AutoSize = true;
-            lblFilterType.Location = new Point(390, 10);
-            lblFilterType.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(lblFilterType, "lblFilterType");
             lblFilterType.Name = "lblFilterType";
-            lblFilterType.Size = new Size(37, 15);
-            lblFilterType.TabIndex = 3;
-            lblFilterType.Text = "Type :";
             // 
             // groupView
             // 
@@ -393,78 +361,48 @@ namespace Server.Database
             groupView.Controls.Add(rbtnViewBinding);
             groupView.Controls.Add(rbtnViewBasic);
             groupView.Controls.Add(rbtnViewStats);
-            groupView.Location = new Point(4, 3);
-            groupView.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(groupView, "groupView");
             groupView.Name = "groupView";
-            groupView.Padding = new Padding(4, 3, 4, 3);
-            groupView.Size = new Size(379, 47);
-            groupView.TabIndex = 4;
             groupView.TabStop = false;
-            groupView.Text = "View Mode";
             // 
             // rBtnViewSpecial
             // 
-            rBtnViewSpecial.AutoSize = true;
-            rBtnViewSpecial.Location = new Point(289, 23);
-            rBtnViewSpecial.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(rBtnViewSpecial, "rBtnViewSpecial");
             rBtnViewSpecial.Name = "rBtnViewSpecial";
-            rBtnViewSpecial.Size = new Size(62, 19);
-            rBtnViewSpecial.TabIndex = 4;
             rBtnViewSpecial.TabStop = true;
-            rBtnViewSpecial.Text = "Special";
             rBtnViewSpecial.UseVisualStyleBackColor = true;
             rBtnViewSpecial.CheckedChanged += rBtnViewSpecial_CheckedChanged;
             // 
             // rbtnViewAll
             // 
-            rbtnViewAll.AutoSize = true;
+            resources.ApplyResources(rbtnViewAll, "rbtnViewAll");
             rbtnViewAll.Checked = true;
-            rbtnViewAll.Location = new Point(31, 22);
-            rbtnViewAll.Margin = new Padding(4, 3, 4, 3);
             rbtnViewAll.Name = "rbtnViewAll";
-            rbtnViewAll.Size = new Size(39, 19);
-            rbtnViewAll.TabIndex = 0;
             rbtnViewAll.TabStop = true;
-            rbtnViewAll.Text = "All";
             rbtnViewAll.UseVisualStyleBackColor = true;
             rbtnViewAll.CheckedChanged += rbtnViewAll_CheckedChanged;
             // 
             // rbtnViewBinding
             // 
-            rbtnViewBinding.AutoSize = true;
-            rbtnViewBinding.Location = new Point(211, 22);
-            rbtnViewBinding.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(rbtnViewBinding, "rbtnViewBinding");
             rbtnViewBinding.Name = "rbtnViewBinding";
-            rbtnViewBinding.Size = new Size(66, 19);
-            rbtnViewBinding.TabIndex = 3;
             rbtnViewBinding.TabStop = true;
-            rbtnViewBinding.Text = "Binding";
             rbtnViewBinding.UseVisualStyleBackColor = true;
             rbtnViewBinding.CheckedChanged += rbtnViewBinding_CheckedChanged;
             // 
             // rbtnViewBasic
             // 
-            rbtnViewBasic.AutoSize = true;
-            rbtnViewBasic.Location = new Point(80, 22);
-            rbtnViewBasic.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(rbtnViewBasic, "rbtnViewBasic");
             rbtnViewBasic.Name = "rbtnViewBasic";
-            rbtnViewBasic.Size = new Size(52, 19);
-            rbtnViewBasic.TabIndex = 1;
             rbtnViewBasic.TabStop = true;
-            rbtnViewBasic.Text = "Basic";
             rbtnViewBasic.UseVisualStyleBackColor = true;
             rbtnViewBasic.CheckedChanged += rbtnViewBasic_CheckedChanged;
             // 
             // rbtnViewStats
             // 
-            rbtnViewStats.AutoSize = true;
-            rbtnViewStats.Location = new Point(147, 22);
-            rbtnViewStats.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(rbtnViewStats, "rbtnViewStats");
             rbtnViewStats.Name = "rbtnViewStats";
-            rbtnViewStats.Size = new Size(50, 19);
-            rbtnViewStats.TabIndex = 2;
             rbtnViewStats.TabStop = true;
-            rbtnViewStats.Text = "Stats";
             rbtnViewStats.UseVisualStyleBackColor = true;
             rbtnViewStats.CheckedChanged += rbtnViewStats_CheckedChanged;
             // 
@@ -472,52 +410,34 @@ namespace Server.Database
             // 
             drpFilterType.DropDownStyle = ComboBoxStyle.DropDownList;
             drpFilterType.FormattingEnabled = true;
-            drpFilterType.Location = new Point(393, 28);
-            drpFilterType.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(drpFilterType, "drpFilterType");
             drpFilterType.Name = "drpFilterType";
-            drpFilterType.Size = new Size(140, 23);
-            drpFilterType.TabIndex = 2;
             drpFilterType.SelectedIndexChanged += drpFilterType_SelectedIndexChanged;
             // 
             // lblSearch
             // 
-            lblSearch.AutoSize = true;
-            lblSearch.Location = new Point(538, 10);
-            lblSearch.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(lblSearch, "lblSearch");
             lblSearch.Name = "lblSearch";
-            lblSearch.Size = new Size(45, 15);
-            lblSearch.TabIndex = 1;
-            lblSearch.Text = "Search:";
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(541, 29);
-            txtSearch.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(txtSearch, "txtSearch");
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(164, 23);
-            txtSearch.TabIndex = 0;
             txtSearch.KeyDown += txtSearch_KeyDown;
             // 
             // panel2
             // 
             panel2.Controls.Add(itemInfoGridView);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 54);
-            panel2.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(panel2, "panel2");
             panel2.Name = "panel2";
-            panel2.Size = new Size(1115, 500);
-            panel2.TabIndex = 2;
             // 
             // ItemInfoFormNew
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1115, 554);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Margin = new Padding(4, 3, 4, 3);
             Name = "ItemInfoFormNew";
-            Text = "ItemInfoFormNew";
             FormClosing += ItemInfoFormNew_FormClosing;
             ((System.ComponentModel.ISupportInitialize)itemInfoGridView).EndInit();
             panel1.ResumeLayout(false);

@@ -28,59 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MineComboBox = new System.Windows.Forms.ComboBox();
-            this.Details = new System.Windows.Forms.Label();
-            this.Selected = new System.Windows.Forms.CheckBox();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MineEntry));
+            MineComboBox = new ComboBox();
+            Details = new Label();
+            Selected = new CheckBox();
+            SuspendLayout();
             // 
             // MineComboBox
             // 
-            this.MineComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.MineComboBox.FormattingEnabled = true;
-            this.MineComboBox.Location = new System.Drawing.Point(24, 3);
-            this.MineComboBox.Name = "MineComboBox";
-            this.MineComboBox.Size = new System.Drawing.Size(68, 21);
-            this.MineComboBox.TabIndex = 2;
-            this.MineComboBox.SelectedIndexChanged += new System.EventHandler(this.MineComboBox_SelectedIndexChanged);
-            this.MineComboBox.MouseEnter += new System.EventHandler(this.Region_MouseEnter);
+            MineComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            MineComboBox.FormattingEnabled = true;
+            resources.ApplyResources(MineComboBox, "MineComboBox");
+            MineComboBox.Name = "MineComboBox";
+            MineComboBox.SelectedIndexChanged += MineComboBox_SelectedIndexChanged;
+            MineComboBox.MouseEnter += Region_MouseEnter;
             // 
             // Details
             // 
-            this.Details.AutoSize = true;
-            this.Details.Location = new System.Drawing.Point(97, 7);
-            this.Details.Name = "Details";
-            this.Details.Size = new System.Drawing.Size(39, 13);
-            this.Details.TabIndex = 3;
-            this.Details.Text = "Details";
-            this.Details.DoubleClick += new System.EventHandler(this.Details_DoubleClick);
-            this.Details.MouseEnter += new System.EventHandler(this.Region_MouseEnter);
+            resources.ApplyResources(Details, "Details");
+            Details.Name = "Details";
+            Details.DoubleClick += Details_DoubleClick;
+            Details.MouseEnter += Region_MouseEnter;
             // 
             // Selected
             // 
-            this.Selected.AutoSize = true;
-            this.Selected.Location = new System.Drawing.Point(3, 7);
-            this.Selected.Name = "Selected";
-            this.Selected.Size = new System.Drawing.Size(15, 14);
-            this.Selected.TabIndex = 4;
-            this.Selected.UseVisualStyleBackColor = true;
-            this.Selected.MouseEnter += new System.EventHandler(this.Region_MouseEnter);
+            resources.ApplyResources(Selected, "Selected");
+            Selected.Name = "Selected";
+            Selected.UseVisualStyleBackColor = true;
+            Selected.MouseEnter += Region_MouseEnter;
             // 
             // MineEntry
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.Selected);
-            this.Controls.Add(this.Details);
-            this.Controls.Add(this.MineComboBox);
-            this.Name = "MineEntry";
-            this.Size = new System.Drawing.Size(249, 28);
-            this.Load += new System.EventHandler(this.MineEntry_Load);
-            this.MouseEnter += new System.EventHandler(this.Region_MouseEnter);
-            this.MouseLeave += new System.EventHandler(this.Region_MouseLeave);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            resources.ApplyResources(this, "$this");
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            Controls.Add(Selected);
+            Controls.Add(Details);
+            Controls.Add(MineComboBox);
+            Name = "MineEntry";
+            Load += MineEntry_Load;
+            MouseEnter += Region_MouseEnter;
+            MouseLeave += Region_MouseLeave;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

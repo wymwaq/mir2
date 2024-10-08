@@ -29,6 +29,7 @@ namespace Server
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountInfoForm));
             CreateButton = new Button();
             label1 = new Label();
             FilterTextBox = new TextBox();
@@ -101,47 +102,31 @@ namespace Server
             // 
             // CreateButton
             // 
-            CreateButton.Location = new Point(14, 14);
-            CreateButton.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(CreateButton, "CreateButton");
             CreateButton.Name = "CreateButton";
-            CreateButton.Size = new Size(88, 27);
-            CreateButton.TabIndex = 9;
-            CreateButton.Text = "Create";
             CreateButton.UseVisualStyleBackColor = true;
             CreateButton.Click += CreateButton_Click;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(14, 48);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(98, 15);
-            label1.TabIndex = 11;
-            label1.Text = "Filter Account ID:";
             // 
             // FilterTextBox
             // 
-            FilterTextBox.Location = new Point(125, 45);
-            FilterTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(FilterTextBox, "FilterTextBox");
             FilterTextBox.Name = "FilterTextBox";
-            FilterTextBox.Size = new Size(116, 23);
-            FilterTextBox.TabIndex = 12;
             // 
             // RefreshButton
             // 
-            RefreshButton.Location = new Point(678, 45);
-            RefreshButton.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(RefreshButton, "RefreshButton");
             RefreshButton.Name = "RefreshButton";
-            RefreshButton.Size = new Size(88, 27);
-            RefreshButton.TabIndex = 13;
-            RefreshButton.Text = "Refresh";
             RefreshButton.UseVisualStyleBackColor = true;
             RefreshButton.Click += RefreshButton_Click;
             // 
             // AccountInfoPanel
             // 
-            AccountInfoPanel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(AccountInfoPanel, "AccountInfoPanel");
             AccountInfoPanel.Controls.Add(Delaccbtn);
             AccountInfoPanel.Controls.Add(CharactersListView);
             AccountInfoPanel.Controls.Add(LastIPSearch);
@@ -178,20 +163,12 @@ namespace Server
             AccountInfoPanel.Controls.Add(label3);
             AccountInfoPanel.Controls.Add(AccountIDTextBox);
             AccountInfoPanel.Controls.Add(label2);
-            AccountInfoPanel.Location = new Point(14, 277);
-            AccountInfoPanel.Margin = new Padding(4, 3, 4, 3);
             AccountInfoPanel.Name = "AccountInfoPanel";
-            AccountInfoPanel.Size = new Size(1248, 243);
-            AccountInfoPanel.TabIndex = 14;
             // 
             // Delaccbtn
             // 
-            Delaccbtn.Location = new Point(694, 207);
-            Delaccbtn.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(Delaccbtn, "Delaccbtn");
             Delaccbtn.Name = "Delaccbtn";
-            Delaccbtn.Size = new Size(88, 27);
-            Delaccbtn.TabIndex = 40;
-            Delaccbtn.Text = "Delete Acc";
             Delaccbtn.UseVisualStyleBackColor = true;
             Delaccbtn.Click += Delaccbtn_Click;
             // 
@@ -199,539 +176,344 @@ namespace Server
             // 
             CharactersListView.Columns.AddRange(new ColumnHeader[] { characterName, characterClass, characterLevel, characterPKPoints, characterGuild, characterStatus });
             CharactersListView.GridLines = true;
-            CharactersListView.Location = new Point(701, 0);
+            resources.ApplyResources(CharactersListView, "CharactersListView");
             CharactersListView.Name = "CharactersListView";
             CharactersListView.Scrollable = false;
-            CharactersListView.Size = new Size(546, 163);
-            CharactersListView.TabIndex = 39;
             CharactersListView.UseCompatibleStateImageBehavior = false;
             CharactersListView.View = View.Details;
             // 
             // characterName
             // 
-            characterName.Text = "Name";
-            characterName.Width = 80;
+            resources.ApplyResources(characterName, "characterName");
             // 
             // characterClass
             // 
-            characterClass.Text = "Class";
-            characterClass.Width = 80;
+            resources.ApplyResources(characterClass, "characterClass");
             // 
             // characterLevel
             // 
-            characterLevel.Text = "Level";
+            resources.ApplyResources(characterLevel, "characterLevel");
             // 
             // characterPKPoints
             // 
-            characterPKPoints.Text = "PKPoints";
-            characterPKPoints.Width = 59;
+            resources.ApplyResources(characterPKPoints, "characterPKPoints");
             // 
             // characterGuild
             // 
-            characterGuild.Text = "Guild";
-            characterGuild.Width = 100;
+            resources.ApplyResources(characterGuild, "characterGuild");
             // 
             // characterStatus
             // 
-            characterStatus.Text = "Status";
-            characterStatus.Width = 163;
+            resources.ApplyResources(characterStatus, "characterStatus");
             // 
             // LastIPSearch
             // 
-            LastIPSearch.Location = new Point(583, 81);
+            resources.ApplyResources(LastIPSearch, "LastIPSearch");
             LastIPSearch.Name = "LastIPSearch";
-            LastIPSearch.Size = new Size(25, 23);
-            LastIPSearch.TabIndex = 38;
-            LastIPSearch.Text = "🔎";
             LastIPSearch.UseVisualStyleBackColor = true;
             LastIPSearch.Click += LastIPSearch_Click;
             // 
             // CreationIPSearch
             // 
-            CreationIPSearch.Location = new Point(583, 21);
+            resources.ApplyResources(CreationIPSearch, "CreationIPSearch");
             CreationIPSearch.Name = "CreationIPSearch";
-            CreationIPSearch.Size = new Size(25, 23);
-            CreationIPSearch.TabIndex = 37;
-            CreationIPSearch.Text = "🔎";
             CreationIPSearch.UseVisualStyleBackColor = true;
             CreationIPSearch.Click += CreationIPSearch_Click;
             // 
             // PasswordChangeCheckBox
             // 
-            PasswordChangeCheckBox.AutoSize = true;
-            PasswordChangeCheckBox.Location = new Point(216, 50);
-            PasswordChangeCheckBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(PasswordChangeCheckBox, "PasswordChangeCheckBox");
             PasswordChangeCheckBox.Name = "PasswordChangeCheckBox";
-            PasswordChangeCheckBox.Size = new Size(110, 19);
-            PasswordChangeCheckBox.TabIndex = 34;
-            PasswordChangeCheckBox.Text = "Require Change";
             PasswordChangeCheckBox.UseVisualStyleBackColor = true;
             PasswordChangeCheckBox.CheckedChanged += PasswordChangeCheckBox_CheckedChanged;
             // 
             // setPasswordButton
             // 
-            setPasswordButton.Location = new Point(111, 47);
-            setPasswordButton.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(setPasswordButton, "setPasswordButton");
             setPasswordButton.Name = "setPasswordButton";
-            setPasswordButton.Size = new Size(98, 27);
-            setPasswordButton.TabIndex = 33;
-            setPasswordButton.Text = "Set Password";
             setPasswordButton.UseVisualStyleBackColor = true;
             setPasswordButton.Click += button1_Click;
             // 
             // AdminCheckBox
             // 
-            AdminCheckBox.AutoSize = true;
-            AdminCheckBox.Location = new Point(241, 20);
-            AdminCheckBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(AdminCheckBox, "AdminCheckBox");
             AdminCheckBox.Name = "AdminCheckBox";
-            AdminCheckBox.Size = new Size(99, 19);
-            AdminCheckBox.TabIndex = 32;
-            AdminCheckBox.Text = "Administrator";
             AdminCheckBox.UseVisualStyleBackColor = true;
             AdminCheckBox.CheckedChanged += AdminCheckBox_CheckedChanged;
             // 
             // PermBanButton
             // 
-            PermBanButton.Location = new Point(598, 207);
-            PermBanButton.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(PermBanButton, "PermBanButton");
             PermBanButton.Name = "PermBanButton";
-            PermBanButton.Size = new Size(88, 27);
-            PermBanButton.TabIndex = 31;
-            PermBanButton.Text = "Perm Ban";
             PermBanButton.UseVisualStyleBackColor = true;
             PermBanButton.Click += PermBanButton_Click;
             // 
             // WeekBanButton
             // 
-            WeekBanButton.Location = new Point(502, 207);
-            WeekBanButton.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(WeekBanButton, "WeekBanButton");
             WeekBanButton.Name = "WeekBanButton";
-            WeekBanButton.Size = new Size(88, 27);
-            WeekBanButton.TabIndex = 30;
-            WeekBanButton.Text = "Week Ban";
             WeekBanButton.UseVisualStyleBackColor = true;
             WeekBanButton.Click += WeekBanButton_Click;
             // 
             // DayBanButton
             // 
-            DayBanButton.Location = new Point(407, 207);
-            DayBanButton.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(DayBanButton, "DayBanButton");
             DayBanButton.Name = "DayBanButton";
-            DayBanButton.Size = new Size(88, 27);
-            DayBanButton.TabIndex = 29;
-            DayBanButton.Text = "Day Ban";
             DayBanButton.UseVisualStyleBackColor = true;
             DayBanButton.Click += DayBanButton_Click;
             // 
             // BannedCheckBox
             // 
-            BannedCheckBox.AutoSize = true;
-            BannedCheckBox.Location = new Point(610, 180);
-            BannedCheckBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(BannedCheckBox, "BannedCheckBox");
             BannedCheckBox.Name = "BannedCheckBox";
-            BannedCheckBox.Size = new Size(66, 19);
-            BannedCheckBox.TabIndex = 28;
-            BannedCheckBox.Text = "Banned";
             BannedCheckBox.UseVisualStyleBackColor = true;
             BannedCheckBox.CheckedChanged += BannedCheckBox_CheckedChanged;
             // 
             // ExpiryDateTextBox
             // 
-            ExpiryDateTextBox.Location = new Point(460, 178);
-            ExpiryDateTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(ExpiryDateTextBox, "ExpiryDateTextBox");
             ExpiryDateTextBox.Name = "ExpiryDateTextBox";
-            ExpiryDateTextBox.Size = new Size(139, 23);
-            ExpiryDateTextBox.TabIndex = 27;
             ExpiryDateTextBox.TextChanged += ExpiryDateTextBox_TextChanged;
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.Location = new Point(378, 181);
-            label14.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label14, "label14");
             label14.Name = "label14";
-            label14.Size = new Size(69, 15);
-            label14.TabIndex = 26;
-            label14.Text = "Expiry Date:";
             // 
             // BanReasonTextBox
             // 
-            BanReasonTextBox.Location = new Point(460, 148);
-            BanReasonTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(BanReasonTextBox, "BanReasonTextBox");
             BanReasonTextBox.Name = "BanReasonTextBox";
-            BanReasonTextBox.Size = new Size(223, 23);
-            BanReasonTextBox.TabIndex = 25;
             BanReasonTextBox.TextChanged += BanReasonTextBox_TextChanged;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(372, 151);
-            label13.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label13, "label13");
             label13.Name = "label13";
-            label13.Size = new Size(71, 15);
-            label13.TabIndex = 24;
-            label13.Text = "Ban Reason:";
             // 
             // LastDateTextBox
             // 
-            LastDateTextBox.Location = new Point(460, 110);
-            LastDateTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(LastDateTextBox, "LastDateTextBox");
             LastDateTextBox.Name = "LastDateTextBox";
             LastDateTextBox.ReadOnly = true;
-            LastDateTextBox.Size = new Size(139, 23);
-            LastDateTextBox.TabIndex = 23;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(387, 113);
-            label11.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label11, "label11");
             label11.Name = "label11";
-            label11.Size = new Size(58, 15);
-            label11.TabIndex = 22;
-            label11.Text = "Last Date:";
             // 
             // LastIPTextBox
             // 
-            LastIPTextBox.Location = new Point(460, 80);
-            LastIPTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(LastIPTextBox, "LastIPTextBox");
             LastIPTextBox.Name = "LastIPTextBox";
             LastIPTextBox.ReadOnly = true;
-            LastIPTextBox.Size = new Size(116, 23);
-            LastIPTextBox.TabIndex = 21;
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(402, 83);
-            label12.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label12, "label12");
             label12.Name = "label12";
-            label12.Size = new Size(44, 15);
-            label12.TabIndex = 20;
-            label12.Text = "Last IP:";
             // 
             // CreationDateTextBox
             // 
-            CreationDateTextBox.Location = new Point(460, 50);
-            CreationDateTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(CreationDateTextBox, "CreationDateTextBox");
             CreationDateTextBox.Name = "CreationDateTextBox";
             CreationDateTextBox.ReadOnly = true;
-            CreationDateTextBox.Size = new Size(139, 23);
-            CreationDateTextBox.TabIndex = 19;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(365, 53);
-            label9.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label9, "label9");
             label9.Name = "label9";
-            label9.Size = new Size(82, 15);
-            label9.TabIndex = 18;
-            label9.Text = "Creation Date:";
             // 
             // CreationIPTextBox
             // 
-            CreationIPTextBox.Location = new Point(460, 20);
-            CreationIPTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(CreationIPTextBox, "CreationIPTextBox");
             CreationIPTextBox.Name = "CreationIPTextBox";
             CreationIPTextBox.ReadOnly = true;
-            CreationIPTextBox.Size = new Size(116, 23);
-            CreationIPTextBox.TabIndex = 17;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(380, 23);
-            label10.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label10, "label10");
             label10.Name = "label10";
-            label10.Size = new Size(68, 15);
-            label10.TabIndex = 16;
-            label10.Text = "Creation IP:";
             // 
             // EMailTextBox
             // 
-            EMailTextBox.Location = new Point(111, 208);
-            EMailTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(EMailTextBox, "EMailTextBox");
             EMailTextBox.Name = "EMailTextBox";
-            EMailTextBox.Size = new Size(223, 23);
-            EMailTextBox.TabIndex = 15;
             EMailTextBox.TextChanged += EMailTextBox_TextChanged;
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(14, 211);
-            label8.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label8, "label8");
             label8.Name = "label8";
-            label8.Size = new Size(84, 15);
-            label8.TabIndex = 14;
-            label8.Text = "EMail Address:";
             // 
             // AnswerTextBox
             // 
-            AnswerTextBox.Location = new Point(111, 178);
-            AnswerTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(AnswerTextBox, "AnswerTextBox");
             AnswerTextBox.Name = "AnswerTextBox";
-            AnswerTextBox.Size = new Size(153, 23);
-            AnswerTextBox.TabIndex = 13;
             AnswerTextBox.TextChanged += AnswerTextBox_TextChanged;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(51, 181);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label7, "label7");
             label7.Name = "label7";
-            label7.Size = new Size(49, 15);
-            label7.TabIndex = 12;
-            label7.Text = "Answer:";
             // 
             // QuestionTextBox
             // 
-            QuestionTextBox.Location = new Point(111, 148);
-            QuestionTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(QuestionTextBox, "QuestionTextBox");
             QuestionTextBox.Name = "QuestionTextBox";
-            QuestionTextBox.Size = new Size(153, 23);
-            QuestionTextBox.TabIndex = 11;
             QuestionTextBox.TextChanged += QuestionTextBox_TextChanged;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(43, 151);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label6, "label6");
             label6.Name = "label6";
-            label6.Size = new Size(58, 15);
-            label6.TabIndex = 10;
-            label6.Text = "Question:";
             // 
             // BirthDateTextBox
             // 
-            BirthDateTextBox.Location = new Point(111, 118);
-            BirthDateTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(BirthDateTextBox, "BirthDateTextBox");
             BirthDateTextBox.Name = "BirthDateTextBox";
-            BirthDateTextBox.Size = new Size(84, 23);
-            BirthDateTextBox.TabIndex = 9;
             BirthDateTextBox.TextChanged += BirthDateTextBox_TextChanged;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(37, 121);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label5, "label5");
             label5.Name = "label5";
-            label5.Size = new Size(62, 15);
-            label5.TabIndex = 8;
-            label5.Text = "Birth Date:";
             // 
             // UserNameTextBox
             // 
-            UserNameTextBox.Location = new Point(111, 88);
-            UserNameTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(UserNameTextBox, "UserNameTextBox");
             UserNameTextBox.Name = "UserNameTextBox";
-            UserNameTextBox.Size = new Size(116, 23);
-            UserNameTextBox.TabIndex = 7;
             UserNameTextBox.TextChanged += UserNameTextBox_TextChanged;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(30, 91);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label4, "label4");
             label4.Name = "label4";
-            label4.Size = new Size(68, 15);
-            label4.TabIndex = 6;
-            label4.Text = "User Name:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(38, 50);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
-            label3.Size = new Size(60, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Password:";
             // 
             // AccountIDTextBox
             // 
-            AccountIDTextBox.Location = new Point(111, 16);
-            AccountIDTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(AccountIDTextBox, "AccountIDTextBox");
             AccountIDTextBox.Name = "AccountIDTextBox";
-            AccountIDTextBox.Size = new Size(116, 23);
-            AccountIDTextBox.TabIndex = 3;
             AccountIDTextBox.TextChanged += AccountIDTextBox_TextChanged;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(29, 20);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
-            label2.Size = new Size(69, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Account ID:";
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(250, 48);
-            label15.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label15, "label15");
             label15.Name = "label15";
-            label15.Size = new Size(71, 15);
-            label15.TabIndex = 15;
-            label15.Text = "Filter Player:";
             // 
             // FilterPlayerTextBox
             // 
-            FilterPlayerTextBox.Location = new Point(331, 45);
-            FilterPlayerTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(FilterPlayerTextBox, "FilterPlayerTextBox");
             FilterPlayerTextBox.Name = "FilterPlayerTextBox";
-            FilterPlayerTextBox.Size = new Size(116, 23);
-            FilterPlayerTextBox.TabIndex = 16;
             // 
             // AccountInfoListView
             // 
             AccountInfoListView.AllowColumnReorder = true;
-            AccountInfoListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(AccountInfoListView, "AccountInfoListView");
             AccountInfoListView.Columns.AddRange(new ColumnHeader[] { indexHeader, accountIDHeader, userNameHeader, adminHeader, bannedHeader, banReasonHeader, expiryDateHeader, Gold, GameGold });
             AccountInfoListView.FullRowSelect = true;
             AccountInfoListView.GridLines = true;
-            AccountInfoListView.Location = new Point(12, 75);
-            AccountInfoListView.Margin = new Padding(4, 3, 4, 3);
             AccountInfoListView.Name = "AccountInfoListView";
-            AccountInfoListView.Size = new Size(1249, 194);
             AccountInfoListView.Sorting = SortOrder.Ascending;
-            AccountInfoListView.TabIndex = 8;
             AccountInfoListView.UseCompatibleStateImageBehavior = false;
             AccountInfoListView.View = View.Details;
             AccountInfoListView.SelectedIndexChanged += AccountInfoListView_SelectedIndexChanged;
             // 
             // indexHeader
             // 
-            indexHeader.Text = "Index";
+            resources.ApplyResources(indexHeader, "indexHeader");
             // 
             // accountIDHeader
             // 
-            accountIDHeader.Text = "Account ID";
-            accountIDHeader.Width = 92;
+            resources.ApplyResources(accountIDHeader, "accountIDHeader");
             // 
             // userNameHeader
             // 
-            userNameHeader.Text = "User Name";
-            userNameHeader.Width = 75;
+            resources.ApplyResources(userNameHeader, "userNameHeader");
             // 
             // adminHeader
             // 
-            adminHeader.Text = "Administrator";
-            adminHeader.Width = 73;
+            resources.ApplyResources(adminHeader, "adminHeader");
             // 
             // bannedHeader
             // 
-            bannedHeader.Text = "Banned";
-            bannedHeader.Width = 54;
+            resources.ApplyResources(bannedHeader, "bannedHeader");
             // 
             // banReasonHeader
             // 
-            banReasonHeader.Text = "Ban Reason";
-            banReasonHeader.Width = 74;
+            resources.ApplyResources(banReasonHeader, "banReasonHeader");
             // 
             // expiryDateHeader
             // 
-            expiryDateHeader.Text = "Expiry Date";
-            expiryDateHeader.Width = 81;
+            resources.ApplyResources(expiryDateHeader, "expiryDateHeader");
             // 
             // Gold
             // 
-            Gold.Text = "Gold";
-            Gold.Width = 100;
+            resources.ApplyResources(Gold, "Gold");
             // 
             // GameGold
             // 
-            GameGold.Text = "GameGold";
-            GameGold.Width = 70;
+            resources.ApplyResources(GameGold, "GameGold");
             // 
             // MatchFilterCheckBox
             // 
-            MatchFilterCheckBox.AutoSize = true;
-            MatchFilterCheckBox.Location = new Point(774, 50);
-            MatchFilterCheckBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(MatchFilterCheckBox, "MatchFilterCheckBox");
             MatchFilterCheckBox.Name = "MatchFilterCheckBox";
-            MatchFilterCheckBox.Size = new Size(89, 19);
-            MatchFilterCheckBox.TabIndex = 17;
-            MatchFilterCheckBox.Text = "Match Filter";
             MatchFilterCheckBox.UseVisualStyleBackColor = true;
             // 
             // WipeCharButton
             // 
-            WipeCharButton.Location = new Point(108, 14);
-            WipeCharButton.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(WipeCharButton, "WipeCharButton");
             WipeCharButton.Name = "WipeCharButton";
-            WipeCharButton.Size = new Size(134, 27);
-            WipeCharButton.TabIndex = 18;
-            WipeCharButton.Text = "Wipe All Characters";
             WipeCharButton.UseVisualStyleBackColor = true;
             WipeCharButton.Click += WipeCharButton_Click;
             // 
             // ServerGoldTextBox
             // 
-            ServerGoldTextBox.Location = new Point(356, 16);
+            resources.ApplyResources(ServerGoldTextBox, "ServerGoldTextBox");
             ServerGoldTextBox.Name = "ServerGoldTextBox";
             ServerGoldTextBox.ReadOnly = true;
-            ServerGoldTextBox.Size = new Size(153, 23);
-            ServerGoldTextBox.TabIndex = 22;
             // 
             // TotalServerGold
             // 
-            TotalServerGold.AutoSize = true;
-            TotalServerGold.Location = new Point(252, 19);
+            resources.ApplyResources(TotalServerGold, "TotalServerGold");
             TotalServerGold.Name = "TotalServerGold";
-            TotalServerGold.Size = new Size(98, 15);
-            TotalServerGold.TabIndex = 21;
-            TotalServerGold.Text = "Total Server Gold:";
             // 
             // ServerCreditTextBox
             // 
-            ServerCreditTextBox.Location = new Point(624, 19);
+            resources.ApplyResources(ServerCreditTextBox, "ServerCreditTextBox");
             ServerCreditTextBox.Name = "ServerCreditTextBox";
             ServerCreditTextBox.ReadOnly = true;
-            ServerCreditTextBox.Size = new Size(153, 23);
-            ServerCreditTextBox.TabIndex = 24;
             // 
             // TotalServerCredit
             // 
-            TotalServerCredit.AutoSize = true;
-            TotalServerCredit.Location = new Point(520, 22);
+            resources.ApplyResources(TotalServerCredit, "TotalServerCredit");
             TotalServerCredit.Name = "TotalServerCredit";
-            TotalServerCredit.Size = new Size(105, 15);
-            TotalServerCredit.TabIndex = 23;
-            TotalServerCredit.Text = "Total Server Credit:";
             // 
             // FilterIPTextBox
             // 
-            FilterIPTextBox.Location = new Point(541, 45);
-            FilterIPTextBox.Margin = new Padding(4, 3, 4, 3);
+            resources.ApplyResources(FilterIPTextBox, "FilterIPTextBox");
             FilterIPTextBox.Name = "FilterIPTextBox";
-            FilterIPTextBox.Size = new Size(116, 23);
-            FilterIPTextBox.TabIndex = 26;
             // 
             // label16
             // 
-            label16.AutoSize = true;
-            label16.Location = new Point(460, 48);
-            label16.Margin = new Padding(4, 0, 4, 0);
+            resources.ApplyResources(label16, "label16");
             label16.Name = "label16";
-            label16.Size = new Size(49, 15);
-            label16.TabIndex = 25;
-            label16.Text = "Filter IP:";
             // 
             // AccountInfoForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1276, 532);
             Controls.Add(FilterIPTextBox);
             Controls.Add(label16);
             Controls.Add(ServerCreditTextBox);
@@ -748,9 +530,7 @@ namespace Server
             Controls.Add(label1);
             Controls.Add(CreateButton);
             Controls.Add(AccountInfoListView);
-            Margin = new Padding(4, 3, 4, 3);
             Name = "AccountInfoForm";
-            Text = "AccountInfoForm";
             FormClosed += AccountInfoForm_FormClosed;
             AccountInfoPanel.ResumeLayout(false);
             AccountInfoPanel.PerformLayout();

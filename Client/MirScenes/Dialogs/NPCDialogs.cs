@@ -8,6 +8,8 @@ using Client.MirSounds;
 using Font = System.Drawing.Font;
 using C = ClientPackets;
 using System.Diagnostics;
+using WqCr = Client.ClientResources;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Client.MirScenes.Dialogs
 {
@@ -974,7 +976,7 @@ namespace Client.MirScenes.Dialogs
                 case PanelType.Sell:
                     if (TargetItem.Info.Bind.HasFlag(BindMode.DontSell))
                     {
-                        GameScene.Scene.ChatDialog.ReceiveChat("Cannot sell this item.", ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(WqCr.CannotSellItem, ChatType.System);
                         return;
                     }
                     if (GameScene.Gold + TargetItem.Price() / 2 <= uint.MaxValue)
@@ -983,12 +985,12 @@ namespace Client.MirScenes.Dialogs
                         TargetItem = null;
                         return;
                     }
-                    GameScene.Scene.ChatDialog.ReceiveChat("Cannot carry anymore gold.", ChatType.System);
+                    GameScene.Scene.ChatDialog.ReceiveChat(WqCr.CannotCarryAnymoreGold, ChatType.System);
                     break;
                 case PanelType.Repair:
                     if (TargetItem.Info.Bind.HasFlag(BindMode.DontRepair))
                     {
-                        GameScene.Scene.ChatDialog.ReceiveChat("Cannot repair this item.", ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(WqCr.CannotRepairItem, ChatType.System);
                         return;
                     }
                     if (GameScene.Gold >= TargetItem.RepairPrice() * GameScene.NPCRate)
@@ -1002,7 +1004,7 @@ namespace Client.MirScenes.Dialogs
                 case PanelType.SpecialRepair:
                     if ((TargetItem.Info.Bind.HasFlag(BindMode.DontRepair)) || (TargetItem.Info.Bind.HasFlag(BindMode.NoSRepair)))
                     {
-                        GameScene.Scene.ChatDialog.ReceiveChat("Cannot repair this item.", ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(WqCr.CannotRepairItem, ChatType.System);
                         return;
                     }
                     if (GameScene.Gold >= (TargetItem.RepairPrice() * 3) * GameScene.NPCRate)
@@ -1016,10 +1018,10 @@ namespace Client.MirScenes.Dialogs
                 case PanelType.Consign:
                     if (TargetItem.Info.Bind.HasFlag(BindMode.DontStore) || TargetItem.Info.Bind.HasFlag(BindMode.DontSell))
                     {
-                        GameScene.Scene.ChatDialog.ReceiveChat("Cannot consign this item.", ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(WqCr.CannotConsignItem, ChatType.System);
                         return;
                     }
-                    MirAmountBox box = new MirAmountBox("Consignment Price:", TargetItem.Image, Globals.MaxConsignment, Globals.MinConsignment)
+                    MirAmountBox box = new MirAmountBox($"{WqCr.ConsignmentPriceText}:", TargetItem.Image, Globals.MaxConsignment, Globals.MinConsignment)
                     {
                         InputTextBox = { Text = string.Empty },
                         Amount = 0
@@ -1056,18 +1058,18 @@ namespace Client.MirScenes.Dialogs
                                 TargetItem = null;
                                 return;
                             }
-                            GameScene.Scene.ChatDialog.ReceiveChat(String.Format("You don't have enough gold to refine your {0}.", TargetItem.FriendlyName), ChatType.System);
+                            GameScene.Scene.ChatDialog.ReceiveChat(String.Format(WqCr.CannotConsignItem, TargetItem.FriendlyName), ChatType.System);
                             return;
                         }
 
                     }
-                    GameScene.Scene.ChatDialog.ReceiveChat(String.Format("You haven't deposited any items to refine your {0} with.", TargetItem.FriendlyName), ChatType.System);
+                    GameScene.Scene.ChatDialog.ReceiveChat(String.Format(WqCr.DontHaveGoldRefine, TargetItem.FriendlyName), ChatType.System);
                     break;
                 case PanelType.CheckRefine:
 
                     if (TargetItem.RefineAdded == 0)
                     {
-                        GameScene.Scene.ChatDialog.ReceiveChat(String.Format("Your {0} hasn't been refined so it doesn't need checking.", TargetItem.FriendlyName), ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(String.Format(WqCr.HaventDepositedRefine, TargetItem.FriendlyName), ChatType.System);
                         return;
                     }
                     Network.Enqueue(new C.CheckRefine { UniqueID = TargetItem.UniqueID });
@@ -1077,7 +1079,7 @@ namespace Client.MirScenes.Dialogs
 
                     if (TargetItem.Info.Type != ItemType.Ring)
                     {
-                        GameScene.Scene.ChatDialog.ReceiveChat(String.Format("{0} isn't a ring.", TargetItem.FriendlyName), ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(String.Format(WqCr.IsntRing, TargetItem.FriendlyName), ChatType.System);
                         return;
                     }
 
@@ -1205,19 +1207,19 @@ namespace Client.MirScenes.Dialogs
             switch (PType)
             {
                 case PanelType.Sell:
-                    text = "Sale: ";
+                    text = $"{WqCr.SaleText}: ";
                     break;
                 case PanelType.Repair:
-                    text = "Repair: ";
+                    text = $"{WqCr.RepairText}: ";
                     break;
                 case PanelType.SpecialRepair:
-                    text = "S. Repair: ";
+                    text = $"{WqCr.SRepairText}: ";
                     break;
                 case PanelType.Consign:
-                    InfoLabel.Text = "Consignment: ";
+                    InfoLabel.Text = $"{WqCr.ConsignmentText}: ";
                     return;
                 case PanelType.Disassemble:
-                    text = "Item will be Destroyed\n\n\n\n\n\n\n\n         ";
+                    text = $"{WqCr.ItemWillBeDestroyed}\n\n\n\n\n\n\n\n         ";
                     HoldButton.Visible = false;
                     Index = 711;
                     Library = Libraries.Title;
@@ -1230,26 +1232,26 @@ namespace Client.MirScenes.Dialogs
                     ItemCell.Location = new Point(83, 94);
                     break;
                 case PanelType.Downgrade:
-                    text = "Downgrade: ";
+                    text = $"{WqCr.DowngradeText}: ";
                     HoldButton.Visible = false;
                     break;
                 case PanelType.Reset:
-                    text = "Reset: ";
+                    text = $"{WqCr.ResetText}: ";
                     HoldButton.Visible = false;
                     break;
                 case PanelType.Refine:
-                    text = "Refine: ";
+                    text = $"{WqCr.RefineText}: ";
                     HoldButton.Visible = false;
                     ConfirmButton.Visible = true;
                     GameScene.Scene.RefineDialog.Show();
                     break;
                 case PanelType.CheckRefine:
-                    text = "Check Refine";
+                    text = $"{WqCr.CheckRefineText}";
                     HoldButton.Visible = false;
                     ConfirmButton.Visible = true;
                     break;
                 case PanelType.ReplaceWedRing:
-                    text = "Replace: ";
+                    text = $"{WqCr.ReplaceText}: ";
                     HoldButton.Visible = false;
                     ConfirmButton.Visible = true;
                     break;
@@ -1290,7 +1292,7 @@ namespace Client.MirScenes.Dialogs
                     default: return;
                 }
 
-                text += " Gold";
+                text += $" {WqCr.GoldText}";
             }
 
             InfoLabel.Text = text;

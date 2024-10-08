@@ -1,5 +1,6 @@
 using System.Drawing;
-﻿using Server.MirDatabase;
+using Server.Library;
+using Server.MirDatabase;
 using Server.MirObjects;
 using Server.MirObjects.Monsters;
 
@@ -68,7 +69,7 @@ namespace Server.MirEnvir
                 MonsterInfo info = Envir.GetMonsterInfo(Info.MonsterName);
                 if (info == null)
                 {
-                    MessageQueue.Enqueue("Failed to load Dragon (bad monster name): " + Info.MonsterName);
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToLoadDragonMonster, Info.MonsterName));
                     return false;
                 }
                 LinkedMonster = MonsterObject.GetMonster(info);
@@ -76,13 +77,13 @@ namespace Server.MirEnvir
                 Map map = Envir.GetMapByNameAndInstance(Info.MapFileName);
                 if (map == null)
                 {
-                    MessageQueue.Enqueue("Failed to load Dragon (bad map name): " + Info.MapFileName);
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToLoadDragonMapName, Info.MapFileName));
                     return false;
                 }
 
                 if (Info.Location.X > map.Width || Info.Location.Y > map.Height)
                 {
-                    MessageQueue.Enqueue("Failed to load Dragon (bad map XY): " + Info.MapFileName);
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToLoadDragonMapXY, Info.MapFileName));
                     return false;
                 }
 
@@ -118,7 +119,7 @@ namespace Server.MirEnvir
                 MessageQueue.Enqueue(ex);
             }
 
-            MessageQueue.Enqueue("Failed to load Dragon");
+            MessageQueue.Enqueue(ServerLibraryResources.FailedToLoadDragon);
             return false;
         }
         public void GainExp(int ammount)

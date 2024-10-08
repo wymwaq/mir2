@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema 
+    Microsoft ResX Schema
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -117,4 +117,258 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CharactersList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 108</value>
+  </data>
+  <data name="CharactersList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 525</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CharactersList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CharactersList.Name" xml:space="preserve">
+    <value>CharactersList</value>
+  </data>
+  <data name="&gt;&gt;CharactersList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CharactersList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CharactersList.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="IndexHeader.Text" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="IndexHeader.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="NameHeader.Text" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="NameHeader.Width" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="AccountNameHeader.Text" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="AccountNameHeader.Width" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="CharacterCountLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CharacterCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 10</value>
+  </data>
+  <data name="CharacterCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 17</value>
+  </data>
+  <data name="CharacterCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="CharacterCountLabel.Text" xml:space="preserve">
+    <value>Characters count :</value>
+  </data>
+  <data name="&gt;&gt;CharacterCountLabel.Name" xml:space="preserve">
+    <value>CharacterCountLabel</value>
+  </data>
+  <data name="&gt;&gt;CharacterCountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CharacterCountLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CharacterCountLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="RefreshButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 69</value>
+  </data>
+  <data name="RefreshButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 26</value>
+  </data>
+  <data name="RefreshButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="RefreshButton.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.Name" xml:space="preserve">
+    <value>RefreshButton</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FindPlayerLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FindPlayerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 10</value>
+  </data>
+  <data name="FindPlayerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="FindPlayerLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="FindPlayerLabel.Text" xml:space="preserve">
+    <value>Find Player : </value>
+  </data>
+  <data name="&gt;&gt;FindPlayerLabel.Name" xml:space="preserve">
+    <value>FindPlayerLabel</value>
+  </data>
+  <data name="&gt;&gt;FindPlayerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FindPlayerLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FindPlayerLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FilterPlayerTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 7</value>
+  </data>
+  <data name="FilterPlayerTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 23</value>
+  </data>
+  <data name="FilterPlayerTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;FilterPlayerTextBox.Name" xml:space="preserve">
+    <value>FilterPlayerTextBox</value>
+  </data>
+  <data name="&gt;&gt;FilterPlayerTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FilterPlayerTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FilterPlayerTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="FilterItemTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 36</value>
+  </data>
+  <data name="FilterItemTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 23</value>
+  </data>
+  <data name="FilterItemTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;FilterItemTextBox.Name" xml:space="preserve">
+    <value>FilterItemTextBox</value>
+  </data>
+  <data name="&gt;&gt;FilterItemTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FilterItemTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FilterItemTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 40</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Find Item (Name/UID) : </value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="MatchFilterCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MatchFilterCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 71</value>
+  </data>
+  <data name="MatchFilterCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 21</value>
+  </data>
+  <data name="MatchFilterCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="MatchFilterCheckBox.Text" xml:space="preserve">
+    <value>Match Filter</value>
+  </data>
+  <data name="&gt;&gt;MatchFilterCheckBox.Name" xml:space="preserve">
+    <value>MatchFilterCheckBox</value>
+  </data>
+  <data name="&gt;&gt;MatchFilterCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MatchFilterCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MatchFilterCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>zh</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>382, 636</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Characters</value>
+  </data>
+  <data name="&gt;&gt;IndexHeader.Name" xml:space="preserve">
+    <value>IndexHeader</value>
+  </data>
+  <data name="&gt;&gt;IndexHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NameHeader.Name" xml:space="preserve">
+    <value>NameHeader</value>
+  </data>
+  <data name="&gt;&gt;NameHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AccountNameHeader.Name" xml:space="preserve">
+    <value>AccountNameHeader</value>
+  </data>
+  <data name="&gt;&gt;AccountNameHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CharacterInfoForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

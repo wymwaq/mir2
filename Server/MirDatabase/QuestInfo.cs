@@ -1,6 +1,7 @@
 ﻿using Server.MirObjects;
 using System.Text.RegularExpressions;
 using Server.MirEnvir;
+using Server.Library;
 
 namespace Server.MirDatabase
 {
@@ -42,19 +43,19 @@ namespace Server.MirDatabase
             }
         }
 
-        public string 
-            Name = string.Empty, 
-            Group = string.Empty, 
-            FileName = string.Empty, 
-            GotoMessage = string.Empty, 
-            KillMessage = string.Empty, 
+        public string
+            Name = string.Empty,
+            Group = string.Empty,
+            FileName = string.Empty,
+            GotoMessage = string.Empty,
+            KillMessage = string.Empty,
             ItemMessage = string.Empty,
             FlagMessage = string.Empty;
 
         public List<string> Description = new List<string>();
         public List<string> TaskDescription = new List<string>();
         public List<string> ReturnDescription = new List<string>();
-        public List<string> CompletionDescription = new List<string>(); 
+        public List<string> CompletionDescription = new List<string>();
 
         public int RequiredMinLevel, RequiredMaxLevel, RequiredQuest;
         public RequiredClass RequiredClass = RequiredClass.None;
@@ -63,7 +64,7 @@ namespace Server.MirDatabase
 
         public int TimeLimitInSeconds = 0;
 
-        public List<QuestItemTask> CarryItems = new List<QuestItemTask>(); 
+        public List<QuestItemTask> CarryItems = new List<QuestItemTask>();
 
         public List<QuestKillTask> KillTasks = new List<QuestKillTask>();
         public List<QuestItemTask> ItemTasks = new List<QuestItemTask>();
@@ -142,7 +143,7 @@ namespace Server.MirDatabase
                 ParseFile(lines);
             }
             else
-                MessageQueue.Enqueue(string.Format("File Not Found: {0}, Quest: {1}", fileName, Name));
+                MessageQueue.Enqueue(string.Format(ServerLibraryResources.FileNotFoundQuest, fileName, Name));
         }
 
         public void ClearInfo()
@@ -175,8 +176,8 @@ namespace Server.MirDatabase
                 goldRewardKey = "[@GOLDREWARD]",
                 creditRewardKey = "[@CREDITREWARD]";
 
-            List<string> headers = new List<string> 
-            { 
+            List<string> headers = new List<string>
+            {
                 descriptionCollectKey, descriptionTaskKey, descriptionCompletionKey,
                 carryItemsKey, killTasksKey, itemTasksKey, flagTasksKey,
                 fixedRewardsKey, selectRewardsKey, expRewardKey, goldRewardKey, creditRewardKey, descriptionReturnKey
@@ -219,7 +220,7 @@ namespace Server.MirDatabase
                                 break;
                             case killTasksKey:
                                 QuestKillTask t1 = ParseKill(innerLine);
-                                if(t1 != null) KillTasks.Add(t1);
+                                if (t1 != null) KillTasks.Add(t1);
                                 break;
                             case itemTasksKey:
                                 QuestItemTask t2 = ParseItem(innerLine);

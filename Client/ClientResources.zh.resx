@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SuitableWeaponRequired" xml:space="preserve">
+    <value>你必须装备合适的武器才能使用这个技能</value>
+  </data>
+  <data name="CannotCastSpell" xml:space="preserve">
+    <value>你在 {1} 秒内无法施放 {0}。</value>
+  </data>
+  <data name="UseThrusting" xml:space="preserve">
+    <value>使用刺杀剑术。</value>
+  </data>
+  <data name="DoNotUseThrusting" xml:space="preserve">
+    <value>不使用刺杀剑术。</value>
+  </data>
+  <data name="UseHalfMoon" xml:space="preserve">
+    <value>使用半月弯刀。</value>
+  </data>
+  <data name="DoNotUseHalfMoon" xml:space="preserve">
+    <value>不使用半月弯刀。</value>
+  </data>
+  <data name="UseCrossHalfMoon" xml:space="preserve">
+    <value>使用圆月弯刀。</value>
+  </data>
+  <data name="DoNotUseCrossHalfMoon" xml:space="preserve">
+    <value>不使用圆月弯刀。</value>
+  </data>
+  <data name="UseDoubleSlash" xml:space="preserve">
+    <value>使用双刀术。</value>
+  </data>
+  <data name="DoNotUseDoubleSlash" xml:space="preserve">
+    <value>不使用双刀术。</value>
+  </data>
+  <data name="NothingFound" xml:space="preserve">
+    <value>没有找到。</value>
+  </data>
+  <data name="QuestShareRequest" xml:space="preserve">
+    <value>{0} 想与你分享一个任务。你接受吗？</value>
+  </data>
+  <data name="UserLoggedOff" xml:space="preserve">
+    <value>你正在观察的人已下线。</value>
+  </data>
+  <data name="ItemNoLongerLoyal" xml:space="preserve">
+    <value>{0} 已不再忠于你。</value>
+  </data>
+  <data name="ItemDurabilityZero" xml:space="preserve">
+    <value>{0} 的耐久度已降至 0。</value>
+  </data>
+  <data name="InputBoxPrompt" xml:space="preserve">
+    <value>请输入所需的信息。</value>
+  </data>
+  <data name="LeftGroupMessage" xml:space="preserve">
+    <value>你已离开该小组。</value>
+  </data>
+  <data name="MemberLeftGroupMessage" xml:space="preserve">
+    <value>-{0} 已离开该小组。</value>
+  </data>
+  <data name="GroupInviteMessage" xml:space="preserve">
+    <value>您想与 {0} 组队吗？</value>
+  </data>
+  <data name="PlayerJoinedGroup" xml:space="preserve">
+    <value>-{0} 已加入组队。</value>
+  </data>
+  <data name="TrustMerchantDead" xml:space="preserve">
+    <value>您无法在死亡时使用信任商人。</value>
+  </data>
+  <data name="TrustMerchantNoUse" xml:space="preserve">
+    <value>您无法在未使用时购买信任商人的商品。</value>
+  </data>
+  <data name="ItemAlreadySold" xml:space="preserve">
+    <value>该物品已被出售。</value>
+  </data>
+  <data name="ItemExpired" xml:space="preserve">
+    <value>该物品已过期，无法购买。</value>
+  </data>
+  <data name="InsufficientWeight" xml:space="preserve">
+    <value>您没有足够的重量或空间来购买此物品。</value>
+  </data>
+  <data name="CannotBuyOwnItems" xml:space="preserve">
+    <value>您无法购买自己的物品。</value>
+  </data>
+  <data name="TooFarFromMerchant" xml:space="preserve">
+    <value>您离信任商人太远。</value>
+  </data>
+  <data name="InsufficientGold" xml:space="preserve">
+    <value>您没有足够的金币来获取您的销售。</value>
+  </data>
+  <data name="MinimumBidNotMet" xml:space="preserve">
+    <value>该物品尚未满足最低竞标。</value>
+  </data>
+  <data name="AuctionEnded" xml:space="preserve">
+    <value>该物品的拍卖已结束。</value>
+  </data>
+  <data name="EnterGuildName" xml:space="preserve">
+    <value>请输入公会名称，长度必须为 3~20 个字符。</value>
+  </data>
+  <data name="GuildNameInvalid" xml:space="preserve">
+    <value>您不能在公会名称中使用 \\ 符号！</value>
+  </data>
+  <data name="EnterWarGuildName" xml:space="preserve">
+    <value>请输入您想宣战的公会名称。</value>
+  </data>
+  <data name="PlayerLoggedOn" xml:space="preserve">
+    <value>{0} 登陆了。</value>
+  </data>
+  <data name="PlayerJoinedGuild" xml:space="preserve">
+    <value>{0} 加入了公会。</value>
+  </data>
+  <data name="PlayerKickedFromGuild" xml:space="preserve">
+    <value>{0} 被踢出了公会。</value>
+  </data>
+  <data name="PlayerLeftGuild" xml:space="preserve">
+    <value>{0} 离开了公会。</value>
+  </data>
+  <data name="PlayerDonatedGold" xml:space="preserve">
+    <value>{0} 向公会资金捐赠了 {1} 黄金。</value>
+  </data>
+  <data name="PlayerRetrievedGold" xml:space="preserve">
+    <value>{0} 从公会资金中取回了 {1} 黄金。</value>
+  </data>
+  <data name="HeroCreationDisabled" xml:space="preserve">
+    <value>当前无法创建新英雄。</value>
+  </data>
+  <data name="HeroNameNotAcceptable" xml:space="preserve">
+    <value>您的英雄名称不可接受。</value>
+  </data>
+  <data name="GenderDoesNotExist" xml:space="preserve">
+    <value>您选择的性别不存在。\n 请联系GM以获得帮助。</value>
+  </data>
+  <data name="ClassDoesNotExist" xml:space="preserve">
+    <value>您选择的职业不存在。\n 请联系GM以获得帮助。</value>
+  </data>
+  <data name="NoMoreHeroes" xml:space="preserve">
+    <value>您无法再创建更多英雄。</value>
+  </data>
+  <data name="CharacterNameExists" xml:space="preserve">
+    <value>已有此名称的角色。</value>
+  </data>
+  <data name="NoBagSpace" xml:space="preserve">
+    <value>没有背包空间。</value>
+  </data>
+  <data name="HeroCreatedSuccessfully" xml:space="preserve">
+    <value>英雄创建成功。</value>
+  </data>
+  <data name="MarriageRequest" xml:space="preserve">
+    <value>{0} 请求您的手。</value>
+  </data>
+  <data name="DivorceRequest" xml:space="preserve">
+    <value>{0} 请求离婚。</value>
+  </data>
+  <data name="TeachRequest" xml:space="preserve">
+    <value>{0}（等级 {1}）请求您教授他 {2} 的技能。</value>
+  </data>
+  <data name="TradeRequest" xml:space="preserve">
+    <value>玩家 {0} 请求与您交易。</value>
+  </data>
+  <data name="DealCancelled" xml:space="preserve">
+    <value>交易已取消。\r\n要正确交易，您必须面向对方。</value>
+  </data>
+  <data name="NotEnoughMaterials" xml:space="preserve">
+    <value>您没有提供足够的材料。</value>
+  </data>
+  <data name="AwakeningAtMaxLevel" xml:space="preserve">
+    <value>觉醒已达到最大等级。</value>
+  </data>
+  <data name="CannotAwakenItem" xml:space="preserve">
+    <value>无法觉醒此物品。</value>
+  </data>
+  <data name="UpgradeFailed" xml:space="preserve">
+    <value>升级失败。</value>
+  </data>
+  <data name="UpgradeSuccess" xml:space="preserve">
+    <value>升级成功。</value>
+  </data>
+  <data name="EnterMailRecipient" xml:space="preserve">
+    <value>请输入您想寄信的人的名字。</value>
+  </data>
+  <data name="NoParcelsToCollect" xml:space="preserve">
+    <value>没有包裹可领取。</value>
+  </data>
+  <data name="AllParcelsCollected" xml:space="preserve">
+    <value>所有包裹都已领取。</value>
+  </data>
+  <data name="RevivePrompt" xml:space="preserve">
+    <value>您想复活吗？</value>
+  </data>
+  <data name="CreatureNamePrompt" xml:space="preserve">
+    <value>请为您的宠物起个名字。</value>
+  </data>
+  <data name="DurabilityText" xml:space="preserve">
+    <value>耐久度</value>
+  </data>
+  <data name="SealsForText" xml:space="preserve">
+    <value>封印持续 {0}</value>
+  </data>
+  <data name="DCText" xml:space="preserve">
+    <value>攻击力</value>
+  </data>
+  <data name="MCText" xml:space="preserve">
+    <value>魔法力</value>
+  </data>
+  <data name="SCText" xml:space="preserve">
+    <value>道术力</value>
+  </data>
+  <data name="AccurancyText" xml:space="preserve">
+    <value>准确</value>
+  </data>
+  <data name="ASpeedText" xml:space="preserve">
+    <value>攻速</value>
+  </data>
+  <data name="FreezingText" xml:space="preserve">
+    <value>冰冻</value>
+  </data>
+  <data name="PoisonText" xml:space="preserve">
+    <value>中毒</value>
+  </data>
+  <data name="FlexibilityNoAdd" xml:space="preserve">
+    <value>灵活性: + {0}</value>
+  </data>
+  <data name="CriticalDamageNoAdd" xml:space="preserve">
+    <value>暴击伤害: + {0}</value>
+  </data>
+  <data name="MACText" xml:space="preserve">
+    <value>魔御力</value>
+  </data>
+  <data name="MaxHPText" xml:space="preserve">
+    <value>最大生命值</value>
+  </data>
+  <data name="MaxMPText" xml:space="preserve">
+    <value>最大魔法值</value>
+  </data>
+  <data name="MaxACText" xml:space="preserve">
+    <value>最大防御力</value>
+  </data>
+  <data name="MaxMACText" xml:space="preserve">
+    <value>最大魔御力</value>
+  </data>
+  <data name="HealthRecoveryText" xml:space="preserve">
+    <value>生命恢复</value>
+  </data>
+  <data name="ManaRecoveryText" xml:space="preserve">
+    <value>魔法恢复</value>
+  </data>
+  <data name="PoisonRecoveryText" xml:space="preserve">
+    <value>中毒恢复</value>
+  </data>
+  <data name="AddsText" xml:space="preserve">
+    <value>增加</value>
+  </data>
+  <data name="AgilityText" xml:space="preserve">
+    <value>敏捷</value>
+  </data>
+  <data name="StrongText" xml:space="preserve">
+    <value>强度</value>
+  </data>
+  <data name="PoisonResistText" xml:space="preserve">
+    <value>中毒抗性</value>
+  </data>
+  <data name="JoinGuildPrompt" xml:space="preserve">
+    <value>你想加入 {0} 行会吗？</value>
+  </data>
+  <data name="MagicResistText" xml:space="preserve">
+    <value>魔法抗性</value>
+  </data>
+  <data name="MaxDCText" xml:space="preserve">
+    <value>最大攻击力</value>
+  </data>
+  <data name="MaxMCText" xml:space="preserve">
+    <value>最大魔法力</value>
+  </data>
+  <data name="MaxSCText" xml:space="preserve">
+    <value>最大道术力</value>
+  </data>
+  <data name="AllDamageReductionText" xml:space="preserve">
+    <value>所有伤害减少</value>
+  </data>
+  <data name="HandWeightText" xml:space="preserve">
+    <value>腕力</value>
+  </data>
+  <data name="WearWeightText" xml:space="preserve">
+    <value>穿戴负重</value>
+  </data>
+  <data name="BagWeightText" xml:space="preserve">
+    <value>背包负重</value>
+  </data>
+  <data name="RequiredText" xml:space="preserve">
+    <value>需要</value>
+  </data>
+  <data name="ACText" xml:space="preserve">
+    <value>防御力</value>
+  </data>
+  <data name="ExpText" xml:space="preserve">
+    <value>经验值</value>
+  </data>
+  <data name="DropText" xml:space="preserve">
+    <value>掉落</value>
+  </data>
+  <data name="CurseText" xml:space="preserve">
+    <value>诅咒</value>
+  </data>
+  <data name="ExpRateText" xml:space="preserve">
+    <value>经验率</value>
+  </data>
+  <data name="DropRateText" xml:space="preserve">
+    <value>掉落率</value>
+  </data>
+  <data name="GoldRateText" xml:space="preserve">
+    <value>金币率</value>
+  </data>
+  <data name="HPDrainRateText" xml:space="preserve">
+    <value>生命流失率</value>
+  </data>
+  <data name="MaximumLevelText" xml:space="preserve">
+    <value>最大等级</value>
+  </data>
+  <data name="RequiredBaseACText" xml:space="preserve">
+    <value>需要基础防御</value>
+  </data>
+  <data name="RequiredBaseMACText" xml:space="preserve">
+    <value>需要基础魔法防御力</value>
+  </data>
+  <data name="RequiredBaseDCText" xml:space="preserve">
+    <value>需要基础攻击力</value>
+  </data>
+  <data name="RequiredBaseMCText" xml:space="preserve">
+    <value>需要基础魔法力</value>
+  </data>
+  <data name="RequiredBaseSCText" xml:space="preserve">
+    <value>需要基础道术力</value>
+  </data>
+  <data name="CantDropOnDeath" xml:space="preserve">
+    <value>死亡时无法丢弃</value>
+  </data>
+  <data name="CantDrop" xml:space="preserve">
+    <value>无法丢弃</value>
+  </data>
+  <data name="CantRepair" xml:space="preserve">
+    <value>无法修理</value>
+  </data>
+  <data name="CantSell" xml:space="preserve">
+    <value>无法出售</value>
+  </data>
+  <data name="CantSpecialRepair" xml:space="preserve">
+    <value>无法特殊修理</value>
+  </data>
+  <data name="CantStore" xml:space="preserve">
+    <value>无法存储</value>
+  </data>
+  <data name="CantTrade" xml:space="preserve">
+    <value>无法交易</value>
+  </data>
+  <data name="CantUpgrade" xml:space="preserve">
+    <value>无法升级</value>
+  </data>
+  <data name="BreaksOnDeath" xml:space="preserve">
+    <value>死亡时损坏</value>
+  </data>
+  <data name="DestroyedWhenDropped" xml:space="preserve">
+    <value>丢弃时销毁</value>
+  </data>
+  <data name="CannotBeUsedByHero" xml:space="preserve">
+    <value>无法由英雄使用</value>
+  </data>
+  <data name="CannotBeWeddingRing" xml:space="preserve">
+    <value>无法作为结婚戒指</value>
+  </data>
+  <data name="SoulBindsOnEquip" xml:space="preserve">
+    <value>装备时绑定灵魂</value>
+  </data>
+  <data name="CannotBeUsedOnAnyItem" xml:space="preserve">
+    <value>无法用于任何物品。</value>
+  </data>
+  <data name="CanBeUsedOn" xml:space="preserve">
+    <value>可用于</value>
+  </data>
+  <data name="AddsCreditsToAccount" xml:space="preserve">
+    <value>向您的账户添加 {0} 积分。</value>
+  </data>
+  <data name="CreatedByGameMaster" xml:space="preserve">
+    <value>由游戏管理员创建</value>
+  </data>
+  <data name="DurationText" xml:space="preserve">
+    <value>持续时间</value>
+  </data>
+  <data name="CriticalChanceText" xml:space="preserve">
+    <value>暴击率</value>
+  </data>
+  <data name="FlexibilityText" xml:space="preserve">
+    <value>灵活性</value>
+  </data>
+  <data name="CriticalDamageText" xml:space="preserve">
+    <value>暴击伤害</value>
+  </data>
+  <data name="ReflectChanceText" xml:space="preserve">
+    <value>反击几率</value>
+  </data>
+  <data name="GoldText" xml:space="preserve">
+    <value>金币</value>
+  </data>
+  <data name="SellingPriceText" xml:space="preserve">
+    <value>售价</value>
+  </data>
+  <data name="CantCastAnotherSeconds" xml:space="preserve">
+    <value>你还需等待 {1} 秒才能再次施放 {0}。</value>
+  </data>
+  <data name="TargetTooFar" xml:space="preserve">
+    <value>目标太远了。</value>
+  </data>
+  <data name="SaleText" xml:space="preserve">
+    <value>出售</value>
+  </data>
+  <data name="RepairText" xml:space="preserve">
+    <value>修理</value>
+  </data>
+  <data name="SRepairText" xml:space="preserve">
+    <value>特殊修理</value>
+  </data>
+  <data name="ConsignmentText" xml:space="preserve">
+    <value>寄售</value>
+  </data>
+  <data name="ItemWillBeDestroyed" xml:space="preserve">
+    <value>物品将被销毁</value>
+  </data>
+  <data name="DowngradeText" xml:space="preserve">
+    <value>降级</value>
+  </data>
+  <data name="ResetText" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="RefineText" xml:space="preserve">
+    <value>升级</value>
+  </data>
+  <data name="CheckRefineText" xml:space="preserve">
+    <value>检查升级</value>
+  </data>
+  <data name="ReplaceText" xml:space="preserve">
+    <value>替换</value>
+  </data>
+  <data name="ConsignmentPriceText" xml:space="preserve">
+    <value>寄售价格</value>
+  </data>
+  <data name="CannotSellItem" xml:space="preserve">
+    <value>无法出售此物品。</value>
+  </data>
+  <data name="CannotCarryAnymoreGold" xml:space="preserve">
+    <value>无法再携带更多的金币。</value>
+  </data>
+  <data name="CannotRepairItem" xml:space="preserve">
+    <value>无法修理此物品。</value>
+  </data>
+  <data name="CannotConsignItem" xml:space="preserve">
+    <value>无法寄售此物品。</value>
+  </data>
+  <data name="DontHaveGoldRefine" xml:space="preserve">
+    <value>你没有足够的金币来精炼你的{0}。</value>
+  </data>
+  <data name="HaventDepositedRefine" xml:space="preserve">
+    <value>你的{0}尚未升级，因此不需要检查。</value>
+  </data>
+  <data name="IsntRing" xml:space="preserve">
+    <value>{0}不是戒指。</value>
+  </data>
+  <data name="SocketText" xml:space="preserve">
+    <value>插槽</value>
+  </data>
+  <data name="EmptyText" xml:space="preserve">
+    <value>空</value>
+  </data>
+  <data name="UnknownTypeRequired" xml:space="preserve">
+    <value>需要未知类型</value>
+  </data>
+  <data name="LoyaltyText" xml:space="preserve">
+    <value>忠诚</value>
+  </data>
+  <data name="CtrlRightClick" xml:space="preserve">
+    <value>Ctrl + 右击</value>
+  </data>
+  <data name="ToOpenSockets" xml:space="preserve">
+    <value>打开插槽</value>
+  </data>
+  <data name="SearchAgainAfter" xml:space="preserve">
+    <value>{0} 秒后可重新搜索。</value>
+  </data>
+  <data name="PriceText" xml:space="preserve">
+    <value>价格</value>
+  </data>
+</root>

@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label11.Text" xml:space="preserve">
+    <value>音乐：</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>天气（可选择多个）</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>矿区类型：</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>大地图：</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>光源：</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>地图索引：</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>小地图：</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>文件名：</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>地图名称：</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="NoReincarnation.Text" xml:space="preserve">
+    <value>不允许转生</value>
+  </data>
+  <data name="NoTownTeleportCheckbox.Text" xml:space="preserve">
+    <value>不允许传送到城镇</value>
+  </data>
+  <data name="NoFightCheckbox.Text" xml:space="preserve">
+    <value>不允许战斗</value>
+  </data>
+  <data name="NeedBridleCheckbox.Text" xml:space="preserve">
+    <value>需要缰绳</value>
+  </data>
+  <data name="NoMountCheckbox.Text" xml:space="preserve">
+    <value>不允许骑乘</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>地图暗光</value>
+  </data>
+  <data name="NoNamesCheckbox.Text" xml:space="preserve">
+    <value>不显示名字</value>
+  </data>
+  <data name="NoDropMonsterCheckbox.Text" xml:space="preserve">
+    <value>怪物不掉落</value>
+  </data>
+  <data name="NoDropPlayerCheckbox.Text" xml:space="preserve">
+    <value>玩家不掉落</value>
+  </data>
+  <data name="NoThrowItemCheckbox.Text" xml:space="preserve">
+    <value>不投掷物品</value>
+  </data>
+  <data name="NoPositionCheckbox.Text" xml:space="preserve">
+    <value>无位置</value>
+  </data>
+  <data name="NoDrugCheckbox.Text" xml:space="preserve">
+    <value>不允许药物</value>
+  </data>
+  <data name="NoRecallCheckbox.Text" xml:space="preserve">
+    <value>不允许召回</value>
+  </data>
+  <data name="NoEscapeCheckbox.Text" xml:space="preserve">
+    <value>不允许逃跑</value>
+  </data>
+  <data name="NoRandomCheckbox.Text" xml:space="preserve">
+    <value>不随机</value>
+  </data>
+  <data name="LightningCheckbox.Text" xml:space="preserve">
+    <value>闪电</value>
+  </data>
+  <data name="FireCheckbox.Text" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="FightCheckbox.Text" xml:space="preserve">
+    <value>战斗</value>
+  </data>
+  <data name="NoReconnectCheckbox.Text" xml:space="preserve">
+    <value>不允许重新连接</value>
+  </data>
+  <data name="NoTeleportCheckbox.Text" xml:space="preserve">
+    <value>不允许传送</value>
+  </data>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="RemoveSZButton.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="AddSZButton.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Y：</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>大小：</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>X：</value>
+  </data>
+  <data name="StartPointCheckBox.Text" xml:space="preserve">
+    <value>起始点</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>安全区</value>
+  </data>
+  <data name="RPasteButton.Text" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="RCopyButton.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="RemoveRButton.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="AddRButton.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="chkrespawnsave.Text" xml:space="preserve">
+    <value>保存重启时重生计时器</value>
+  </data>
+  <data name="chkRespawnEnableTick.Text" xml:space="preserve">
+    <value>使用基于计时的重生</value>
+  </data>
+  <data name="Randomtextbox.ToolTip" xml:space="preserve">
+    <value>允许每次重生时间加或减随机值</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>R：</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>路线：</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>方向：</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>延迟：</value>
+  </data>
+  <data name="DelayTextBox.ToolTip" xml:space="preserve">
+    <value>如果使用基于计时的重生：此项将被忽略！</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>怪物：</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>分布：</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Y：</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>数量：</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>X：</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>重生</value>
+  </data>
+  <data name="RemoveMButton.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="AddMButton.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>图标：</value>
+  </data>
+  <data name="ShowBigMapCheckBox.Text" xml:space="preserve">
+    <value>在大地图上显示</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>征服：</value>
+  </data>
+  <data name="NeedMoveMCheckBox.Text" xml:space="preserve">
+    <value>需要移动</value>
+  </data>
+  <data name="NeedHoleMCheckBox.Text" xml:space="preserve">
+    <value>需要洞口</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>到地图：</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>到 Y：</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>到 X：</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>从 Y：</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>从 X：</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="MZDeletebutton.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="MZAddbutton.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>矿区类型：</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Y：</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>大小：</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>X：</value>
+  </data>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>矿区</value>
+  </data>
+  <data name="RemoveButton.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="AddButton.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="PasteMapButton.Text" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="CopyMapButton.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="ImportMapInfoButton.Text" xml:space="preserve">
+    <value>导入地图信息</value>
+  </data>
+  <data name="ExportMapInfoButton.Text" xml:space="preserve">
+    <value>导出地图信息</value>
+  </data>
+  <data name="ImportMongenButton.Text" xml:space="preserve">
+    <value>导入重生点</value>
+  </data>
+  <data name="ExportMongenButton.Text" xml:space="preserve">
+    <value>导出重生点</value>
+  </data>
+  <data name="VisualizerButton.Text" xml:space="preserve">
+    <value>可视化</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>地图信息</value>
+  </data>
+</root>

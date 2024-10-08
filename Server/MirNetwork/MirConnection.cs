@@ -7,6 +7,7 @@ using C = ClientPackets;
 using S = ServerPackets;
 using System.Text.RegularExpressions;
 using Server.Utils;
+using Server.Library;
 
 namespace Server.MirNetwork
 {
@@ -80,7 +81,7 @@ namespace Server.MirNetwork
 
             Envir.UpdateIPBlock(IPAddress, TimeSpan.FromSeconds(Settings.IPBlockSeconds));
 
-            MessageQueue.Enqueue(IPAddress + ", Connected.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.Connected, IPAddress));
 
             _client = client;
             _client.NoDelay = true;
@@ -172,7 +173,7 @@ namespace Server.MirNetwork
             {
                 Envir.UpdateIPBlock(IPAddress, TimeSpan.FromHours(24));
 
-                MessageQueue.Enqueue($"{IPAddress} Disconnected, Invalid packet.");
+                MessageQueue.Enqueue(string.Format(ServerLibraryResources.DisconnectedInvalidPacket, IPAddress));
 
                 Disconnecting = true;
                 return;
@@ -193,7 +194,7 @@ namespace Server.MirNetwork
                     packetList.Add(cPacket.ToString());
                 }
 
-                MessageQueue.Enqueue($"{IPAddress} Disconnected, Large amount of Packets. LastPackets: {String.Join(",", packetList.Distinct())}.");
+                MessageQueue.Enqueue(string.Format(ServerLibraryResources.DisconnectedLargePackets, IPAddress, String.Join(",", packetList.Distinct())));
 
                 Disconnecting = true;
                 return;
@@ -723,7 +724,7 @@ namespace Server.MirNetwork
                     ConfirmItemRental();
                     break;
                 default:
-                    MessageQueue.Enqueue(string.Format("Invalid packet received. Index : {0}", p.Index));
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.InvalidPacketReceived, p.Index));
                     break;
             }
         }
@@ -831,12 +832,12 @@ namespace Server.MirNetwork
 
                     BeginSend(data);
                     SoftDisconnect(10);
-                    MessageQueue.Enqueue(SessionID + ", Disconnnected - Wrong Client Version.");
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.DisconnectedWrongClientVersion, SessionID));
                     return;
                 }
             }
 
-            MessageQueue.Enqueue(SessionID + ", " + IPAddress + ", Client version matched.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.ClientVersionMatched, SessionID, IPAddress));
             Enqueue(new S.ClientVersion { Result = 1 });
 
             Stage = GameStage.Login;
@@ -852,21 +853,21 @@ namespace Server.MirNetwork
         {
             if (Stage != GameStage.Login) return;
 
-            MessageQueue.Enqueue(SessionID + ", " + IPAddress + ", New account being created.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.NewAccountBeingCreated, SessionID, IPAddress));
             Envir.NewAccount(p, this);
         }
         private void ChangePassword(C.ChangePassword p)
         {
             if (Stage != GameStage.Login) return;
 
-            MessageQueue.Enqueue(SessionID + ", " + IPAddress + ", Password being changed.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.PasswordBeingChanged, SessionID, IPAddress));
             Envir.ChangePassword(p, this);
         }
         private void Login(C.Login p)
         {
             if (Stage != GameStage.Login) return;
 
-            MessageQueue.Enqueue(SessionID + ", " + IPAddress + ", User logging in.");
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.UserLoggingIn, SessionID, IPAddress));
             Envir.Login(p, this);
         }
         private void NewCharacter(C.NewCharacter p)

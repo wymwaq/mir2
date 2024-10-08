@@ -4,12 +4,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{520C78C8-1838-4A22-B024-08C044ADE635}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F26C62A-158F-40B8-945D-3FAA19566492} = {9F26C62A-158F-40B8-945D-3FAA19566492}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{ABB9A7A2-DB8C-497F-B67E-C522F812117E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F26C62A-158F-40B8-945D-3FAA19566492} = {9F26C62A-158F-40B8-945D-3FAA19566492}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Library", "Server\Server.Library.csproj", "{5B5CAC11-D4DE-44EC-9175-0D2BB7A9603C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F26C62A-158F-40B8-945D-3FAA19566492} = {9F26C62A-158F-40B8-945D-3FAA19566492}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server.MirForms\Server.csproj", "{884D7004-37B4-4C38-AA64-F73BF64E9CB4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F26C62A-158F-40B8-945D-3FAA19566492} = {9F26C62A-158F-40B8-945D-3FAA19566492}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{F75359D0-CBBC-49F2-9BB7-3AAC3B4D775F}"
 	ProjectSection(SolutionItems) = preProject
@@ -51,6 +63,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryEditor", "LibraryEditor\LibraryEditor.csproj", "{A3B8CA9F-5C91-49CB-902D-62A38DF4EF93}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryViewer", "LibraryViewer\LibraryViewer.csproj", "{456E4777-5510-49E1-BE8D-C536753964E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wq", "Wq\Wq.csproj", "{9F26C62A-158F-40B8-945D-3FAA19566492}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +108,10 @@ Global
 		{456E4777-5510-49E1-BE8D-C536753964E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{456E4777-5510-49E1-BE8D-C536753964E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{456E4777-5510-49E1-BE8D-C536753964E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F26C62A-158F-40B8-945D-3FAA19566492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F26C62A-158F-40B8-945D-3FAA19566492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F26C62A-158F-40B8-945D-3FAA19566492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F26C62A-158F-40B8-945D-3FAA19566492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

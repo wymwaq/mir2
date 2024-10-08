@@ -1,5 +1,6 @@
 using System.Drawing;
-﻿using Server.MirDatabase;
+using Server.Library;
+using Server.MirDatabase;
 using Server.MirObjects;
 using S = ServerPackets;
 
@@ -507,8 +508,8 @@ namespace Server.MirEnvir
                 MessageQueue.Enqueue(ex);
             }
 
-            MessageQueue.Enqueue("Failed to Load Map: " + Info.Title);
-            MessageQueue.Enqueue("Filename: " + Info.FileName);
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToLoadMap, Info.Title));
+            MessageQueue.Enqueue(string.Format(ServerLibraryResources.MapFileName, Info.FileName));
             return false;
         }
 

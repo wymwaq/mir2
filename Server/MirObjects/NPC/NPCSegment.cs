@@ -6,6 +6,8 @@ using System.Numerics;
 using System.Text.RegularExpressions;
 using S = ServerPackets;
 using Timer = Server.MirEnvir.Timer;
+using Server.Library;
+using WqSr = Server.Library.ServerLibraryResources;
 
 namespace Server.MirObjects
 {
@@ -1374,55 +1376,55 @@ namespace Server.MirObjects
                     break;
                 case "ARMOUR":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Armour] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Armour].FriendlyName : "No Armour";
+                        player.Info.Equipment[(int)EquipmentSlot.Armour].FriendlyName : WqSr.NoArmour;
                     break;
                 case "WEAPON":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Weapon] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Weapon].FriendlyName : "No Weapon";
+                        player.Info.Equipment[(int)EquipmentSlot.Weapon].FriendlyName : WqSr.NoWeapon;
                     break;
                 case "RING_L":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.RingL] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.RingL].FriendlyName : "No Ring";
+                        player.Info.Equipment[(int)EquipmentSlot.RingL].FriendlyName : WqSr.NoRing;
                     break;
                 case "RING_R":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.RingR] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.RingR].FriendlyName : "No Ring";
+                        player.Info.Equipment[(int)EquipmentSlot.RingR].FriendlyName : WqSr.NoRing;
                     break;
                 case "BRACELET_L":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.BraceletL] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.BraceletL].FriendlyName : "No Bracelet";
+                        player.Info.Equipment[(int)EquipmentSlot.BraceletL].FriendlyName : WqSr.NoBracelet;
                     break;
                 case "BRACELET_R":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.BraceletR] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.BraceletR].FriendlyName : "No Bracelet";
+                        player.Info.Equipment[(int)EquipmentSlot.BraceletR].FriendlyName : WqSr.NoBracelet;
                     break;
                 case "NECKLACE":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Necklace] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Necklace].FriendlyName : "No Necklace";
+                        player.Info.Equipment[(int)EquipmentSlot.Necklace].FriendlyName : WqSr.NoNecklace;
                     break;
                 case "BELT":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Belt] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Belt].FriendlyName : "No Belt";
+                        player.Info.Equipment[(int)EquipmentSlot.Belt].FriendlyName : WqSr.NoBelt;
                     break;
                 case "BOOTS":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Boots] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Boots].FriendlyName : "No Boots";
+                        player.Info.Equipment[(int)EquipmentSlot.Boots].FriendlyName : WqSr.NoBoots;
                     break;
                 case "HELMET":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Helmet] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Helmet].FriendlyName : "No Helmet";
+                        player.Info.Equipment[(int)EquipmentSlot.Helmet].FriendlyName : WqSr.NoBracelet;
                     break;
                 case "AMULET":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Amulet] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Amulet].FriendlyName : "No Amulet";
+                        player.Info.Equipment[(int)EquipmentSlot.Amulet].FriendlyName : WqSr.NoAmulet;
                     break;
                 case "STONE":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Stone] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Stone].FriendlyName : "No Stone";
+                        player.Info.Equipment[(int)EquipmentSlot.Stone].FriendlyName : WqSr.NoStone;
                     break;
                 case "TORCH":
                     newValue = player.Info.Equipment[(int)EquipmentSlot.Torch] != null ?
-                        player.Info.Equipment[(int)EquipmentSlot.Torch].FriendlyName : "No Torch";
+                        player.Info.Equipment[(int)EquipmentSlot.Torch].FriendlyName : WqSr.NoTorch;
                     break;
 
                 case "DATE":
@@ -1444,9 +1446,9 @@ namespace Server.MirObjects
                     newValue = player.GetMailAwaitingCollectionAmount().ToString();
                     break;
                 case "GUILDNAME":
-                    if (player.MyGuild == null) return "No Guild";
+                    if (player.MyGuild == null) return WqSr.NoGuild;
                     else
-                        newValue = player.MyGuild.Name + " Guild";
+                        newValue = player.MyGuild.Name + $" {WqSr.GuildText}";
                     break;
                 case "ROLLRESULT":
                     newValue = player.NPCData.TryGetValue("NPCRollResult", out object _rollResult) ? _rollResult.ToString() : "Not Rolled";
@@ -1683,7 +1685,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[1], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[1], Key));
                             return true;
                         }
                         break;
@@ -1741,7 +1743,7 @@ namespace Server.MirObjects
                             }
                             catch (ArgumentException)
                             {
-                                MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                                 return true;
                             }
                         }
@@ -1886,7 +1888,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[1], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[1], Key));
                             return true;
                         }
                         break;
@@ -1943,7 +1945,7 @@ namespace Server.MirObjects
                             }
                             catch (ArgumentException)
                             {
-                                MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                                 return true;
                             }
                         }
@@ -1962,7 +1964,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -1979,7 +1981,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -1996,7 +1998,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2130,7 +2132,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2324,7 +2326,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[1], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[1], Key));
                             return true;
                         }
                         break;
@@ -2415,7 +2417,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2448,7 +2450,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2481,7 +2483,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2514,7 +2516,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2547,7 +2549,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2591,7 +2593,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2618,7 +2620,7 @@ namespace Server.MirObjects
                         }
                         catch (ArgumentException)
                         {
-                            MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                             return true;
                         }
                         break;
@@ -2657,7 +2659,7 @@ namespace Server.MirObjects
                             }
                             catch (ArgumentException)
                             {
-                                MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[0], Key));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[0], Key));
                                 return true;
                             }
                         }
@@ -2919,7 +2921,7 @@ namespace Server.MirObjects
 
                             if (info == null)
                             {
-                                MessageQueue.Enqueue(string.Format("Failed to get ItemInfo: {0}, Page: {1}", param[0], Key));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToGetItemInfo, param[0], Key));
                                 break;
                             }
 
@@ -2929,7 +2931,7 @@ namespace Server.MirObjects
 
                                 if (item == null)
                                 {
-                                    MessageQueue.Enqueue(string.Format("Failed to create UserItem: {0}, Page: {1}", param[0], Key));
+                                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToCreateUserItem, param[0], Key));
                                     return;
                                 }
 
@@ -2960,7 +2962,7 @@ namespace Server.MirObjects
 
                             if (info == null)
                             {
-                                MessageQueue.Enqueue(string.Format("Failed to get ItemInfo: {0}, Page: {1}", param[0], Key));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToGetItemInfo, param[0], Key));
                                 break;
                             }
 
@@ -3492,7 +3494,7 @@ namespace Server.MirObjects
                                 }
                                 catch (ArgumentException)
                                 {
-                                    MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[1], Key));
+                                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[1], Key));
                                 }
                             }
                             else
@@ -3597,7 +3599,7 @@ namespace Server.MirObjects
 
                             if (info == null)
                             {
-                                MessageQueue.Enqueue(string.Format("Failed to get ItemInfo: {0}, Page: {1}", param[0], Key));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToGetItemInfo, param[0], Key));
                                 break;
                             }
 
@@ -3607,7 +3609,7 @@ namespace Server.MirObjects
 
                                 if (item == null)
                                 {
-                                    MessageQueue.Enqueue(string.Format("Failed to create UserItem: {0}, Page: {1}", param[0], Key));
+                                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.FailedToCreateUserItem, param[0], Key));
                                     return;
                                 }
 
@@ -3843,25 +3845,25 @@ namespace Server.MirObjects
                                 conquest.StartType = ConquestType.Forced;
                                 conquest.StartWar(conquest.GameType);
 
-                                MessageQueue.Enqueue(string.Format("{0} War Started.", conquest.Info.Name));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.WarStarted, conquest.Info.Name));
 
                             }
                             else
                             {
                                 conquest.WarIsOn = false;
 
-                                MessageQueue.Enqueue(string.Format("{0} War Stopped.", conquest.Info.Name));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.WarStopped, conquest.Info.Name));
                             }
 
                             foreach (var pl in Envir.Players)
                             {
                                 if (conquest.WarIsOn)
                                 {
-                                    pl.ReceiveChat($"{conquest.Info.Name} War Started.", ChatType.System);
+                                    pl.ReceiveChat(string.Format(WqSr.WarStarted, conquest.Info.Name), ChatType.System);
                                 }
                                 else
                                 {
-                                    pl.ReceiveChat($"{conquest.Info.Name} War Stopped.", ChatType.System);
+                                    pl.ReceiveChat(string.Format(WqSr.WarStopped, conquest.Info.Name), ChatType.System);
                                 }
 
                                 pl.BroadcastInfo();
@@ -3917,7 +3919,7 @@ namespace Server.MirObjects
                             string randomTextPath = Path.Combine(Settings.NPCPath, param[0]);
                             if (!File.Exists(randomTextPath))
                             {
-                                MessageQueue.Enqueue(string.Format("the randomTextFile:{0} does not exist.", randomTextPath));
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.RandomTextFileNotExist, randomTextPath));
                             }
                             else
                             {
@@ -4093,8 +4095,8 @@ namespace Server.MirObjects
                         {
                             if(!player.IsGM)
                             {
-                                player.ReceiveChat($"You are not a GM and this command is not enabled for you.", ChatType.System);
-                                MessageQueue.Enqueue($"GM Command @CONQUESTREPAIRALL invoked by non-GM player: {player.Name}");
+                                player.ReceiveChat(WqSr.YouAreNotGM1, ChatType.System);
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.NonGMPlayerConquestRepairAll, player.Name));
                                 return;
                             }
 
@@ -4102,16 +4104,16 @@ namespace Server.MirObjects
                             var conquest = Envir.Conquests.FirstOrDefault(z => z.Info.Index == tempInt);
                             if (conquest == null) return;
 
-                            MessageQueue.Enqueue($"@CONQUESTREPAIRALL invoked by GM: {player.Name} on account index: {player.Info.AccountInfo.Index}");
-                            MessageQueue.Enqueue($"Conquest: {conquest.Info.Name}");
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.GMConquestRepairAll, player.Name, player.Info.AccountInfo.Index));
+                            MessageQueue.Enqueue(string.Format(ServerLibraryResources.ConquestInfoName, conquest.Info.Name));
 
                             if (conquest.Guild != null)
                             {
-                                MessageQueue.Enqueue($"Owner: {conquest.Guild.Name}");
+                                MessageQueue.Enqueue(string.Format(ServerLibraryResources.ConquestOwner, conquest.Guild.Name));
                             }
                             else
                             {
-                                MessageQueue.Enqueue($"No current owner.");
+                                MessageQueue.Enqueue(ServerLibraryResources.NoCurrentOwner);
                             }
 
                             int _fixed = 0;
@@ -4124,8 +4126,9 @@ namespace Server.MirObjects
                                     _fixed++;
                                 }
                             }
-                            player.ReceiveChat($"Archers repaired: {_fixed}/{conquest.ArcherList.Count}", ChatType.System);
-                            MessageQueue.Enqueue($"Archers repaired: {_fixed}/{conquest.ArcherList.Count}");
+                            string msgArchersRepaired = string.Format(ServerLibraryResources.ArchersRepaired, _fixed, conquest.ArcherList.Count);
+                            player.ReceiveChat(msgArchersRepaired, ChatType.System);
+                            MessageQueue.Enqueue(msgArchersRepaired);
 
                             _fixed = 0;
                             foreach (ConquestGuildGateInfo conquestGate in conquest.GateList)
@@ -4136,8 +4139,9 @@ namespace Server.MirObjects
                                     _fixed++;
                                 }
                             }
-                            player.ReceiveChat($"Gates repaired: {_fixed}/{conquest.GateList.Count}", ChatType.System);
-                            MessageQueue.Enqueue($"Gates repaired: {_fixed}/{conquest.GateList.Count}");
+                            string msgGatesRepaired = string.Format(ServerLibraryResources.GatesRepaired, _fixed, conquest.GateList.Count);
+                            player.ReceiveChat(msgGatesRepaired, ChatType.System);
+                            MessageQueue.Enqueue(msgGatesRepaired);
 
                             _fixed = 0;
                             foreach (ConquestGuildWallInfo conquestWall in conquest.WallList)
@@ -4148,8 +4152,9 @@ namespace Server.MirObjects
                                     _fixed++;
                                 }
                             }
-                            player.ReceiveChat($"Walls repaired: {_fixed}/{conquest.WallList.Count}", ChatType.System);
-                            MessageQueue.Enqueue($"Walls repaired: {_fixed}/{conquest.WallList.Count}");
+                            string msgWallsRepaired = string.Format(ServerLibraryResources.WallsRepaired, _fixed, conquest.WallList.Count);
+                            player.ReceiveChat(msgWallsRepaired, ChatType.System);
+                            MessageQueue.Enqueue(msgWallsRepaired);
 
                             _fixed = 0;
                             foreach (ConquestGuildSiegeInfo conquestSiege in conquest.SiegeList)
@@ -4160,8 +4165,9 @@ namespace Server.MirObjects
                                     _fixed++;
                                 }
                             }
-                            player.ReceiveChat($"Sieges repaired: {_fixed}/{conquest.SiegeList.Count}", ChatType.System);
-                            MessageQueue.Enqueue($"Sieges repaired: {_fixed}/{conquest.SiegeList.Count}");
+                            string msgSiegesRepaired = string.Format(ServerLibraryResources.SiegesRepaired, _fixed, conquest.SiegeList.Count);
+                            player.ReceiveChat(msgSiegesRepaired, ChatType.System);
+                            MessageQueue.Enqueue(msgSiegesRepaired);
 
                             break;
                         }
@@ -4309,7 +4315,7 @@ namespace Server.MirObjects
                                 }
                                 catch (ArgumentException)
                                 {
-                                    MessageQueue.Enqueue(string.Format("Incorrect operator: {0}, Page: {1}", param[1], Key));
+                                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.IncorrectOperator, param[1], Key));
                                 }
                             }
                             else

@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label4.Text" xml:space="preserve">
+    <value>怪物生成几率 %：</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>钓鱼</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>怪物</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>怪物生成：</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>成功率倍增器：</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>延迟 / 毫秒：</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>成功率起始 %：</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>每轮尝试次数：</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>保险 % 每件物品</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>每千个成本</value>
+  </data>
+  <data name="MailFreeWithStampCheckbox.Text" xml:space="preserve">
+    <value>使用邮票免费发送邮件</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>自动发送</value>
+  </data>
+  <data name="MailAutoSendItemsCheckbox.Text" xml:space="preserve">
+    <value>物品</value>
+  </data>
+  <data name="MailAutoSendGoldCheckbox.Text" xml:space="preserve">
+    <value>金币</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>货物</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>最大回购存储量</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>回购时间 / 分钟</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>最大货物存储量</value>
+  </data>
+  <data name="GoodsOnCheckBox.Text" xml:space="preserve">
+    <value>货物再销售</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>精炼</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>矿石名称</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>精炼成本</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>物品递减收益</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>武器递减收益</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>暴击增加倍数</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>暴击几率 (%)</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>普通属性增加</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>精炼时间（分钟）</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>基础成功几率 (%)</value>
+  </data>
+  <data name="WeaponOnly_checkbox.Text" xml:space="preserve">
+    <value>仅限武器精炼</value>
+  </data>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>关系</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>更换戒指成本</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>结婚所需等级</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>结婚冷却时间（天）</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>组队经验奖励 %</value>
+  </data>
+  <data name="LoverRecall_checkbox.Text" xml:space="preserve">
+    <value>使用婚戒召回</value>
+  </data>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>导师</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>成为导师所需经验 (%) </value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>学徒经验提升（有导师）</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>导师对学徒的伤害提升</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>导师时长（天）</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>导师等级差距</value>
+  </data>
+  <data name="MenteeSkillBoost_checkbox.Text" xml:space="preserve">
+    <value>学徒 2 倍技能速度（有导师）</value>
+  </data>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>宝石</value>
+  </data>
+  <data name="GemStatCheckBox.Text" xml:space="preserve">
+    <value>宝石属性独立</value>
+  </data>
+  <data name="tabPage8.Text" xml:space="preserve">
+    <value>生成间隔</value>
+  </data>
+  <data name="lbltickmins.Text" xml:space="preserve">
+    <value>以分钟为单位</value>
+  </data>
+  <data name="txtSpawnTickDefault.ToolTip" xml:space="preserve">
+    <value>没有用户在线时 1 次 tick 持续多长时间？
+（建议默认值 = 20）
+以分钟为单位！</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>默认 tick 速度：</value>
+  </data>
+  <data name="txtSpawnTickSpeed.ToolTip" xml:space="preserve">
+    <value>1.0 = 正常速度
+较低值 = tick 速度更快（= 更快的重生）
+例如：
+0.9 的 20 分钟默认 tick = 现在是 18 分钟/tick</value>
+  </data>
+  <data name="txtSpawnTickUsers.ToolTip" xml:space="preserve">
+    <value>至少需要多少用户在线才能使用此速率？</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>生成间隔速度：</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>在线用户：</value>
+  </data>
+  <data name="btnSpawnTickRemove.Text" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="btnSpawnTickAdd.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="tabPage9.Text" xml:space="preserve">
+    <value>英雄</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>英雄封印物品</value>
+  </data>
+  <data name="groupBox6.ToolTip" xml:space="preserve">
+    <value>从物品数据库中选择英雄封印物品。这将在英雄被封印时使用，并且必须是正确的物品类型才能生效。</value>
+  </data>
+  <data name="HeroSealItem_ComboBox.ToolTip" xml:space="preserve">
+    <value>从物品数据库中选择英雄封印物品。这将在英雄被封印时使用，并且必须是正确的物品类型才能生效。</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>NPC 命令</value>
+  </data>
+  <data name="groupBox5.ToolTip" xml:space="preserve">
+    <value>这些 NPC 命令来自位于“Envir\NPCs”文件夹中的 NPC 脚本。</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="groupBox4.ToolTip" xml:space="preserve">
+    <value>配置英雄功能的常见设置。</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>（0 - 9）</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>每个玩家最大英雄数量</value>
+  </data>
+  <data name="label35.ToolTip" xml:space="preserve">
+    <value>这是一个玩家可以拥有的最大英雄数量。（客户端 GUI 支持 1 个活动英雄和 8 个通过管理对话框存储的英雄）。</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>英雄封印最大次数</value>
+  </data>
+  <data name="label34.ToolTip" xml:space="preserve">
+    <value>这是一个英雄可以被封印到英雄物品中的最大次数以供出售。</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>英雄所需最低玩家等级</value>
+  </data>
+  <data name="label33.ToolTip" xml:space="preserve">
+    <value>这是玩家必须达到的最低等级才能拥有英雄伙伴。</value>
+  </data>
+  <data name="MaxPlayerHeroCount_textBox.ToolTip" xml:space="preserve">
+    <value>这是一个玩家可以拥有的最大英雄数量。（客户端 GUI 支持 1 个活动英雄和 8 个通过管理对话框存储的英雄）。</value>
+  </data>
+  <data name="MaxHeroSealCount_textBox.ToolTip" xml:space="preserve">
+    <value>这是一个英雄可以被封印到英雄物品中的最大次数以供出售。</value>
+  </data>
+  <data name="MinPlayerLevelHero_textBox.ToolTip" xml:space="preserve">
+    <value>这是玩家必须达到的最低等级才能拥有英雄伙伴。</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>英雄创建</value>
+  </data>
+  <data name="groupBox3.ToolTip" xml:space="preserve">
+    <value>选择可以创建的职业</value>
+  </data>
+  <data name="AllowArcherHero_checkBox.Text" xml:space="preserve">
+    <value>允许弓箭手英雄</value>
+  </data>
+  <data name="AllowArcherHero_checkBox.ToolTip" xml:space="preserve">
+    <value>启用/禁用弓箭手英雄的创建</value>
+  </data>
+  <data name="AllowAssassinHero_checkBox.Text" xml:space="preserve">
+    <value>允许刺客英雄</value>
+  </data>
+  <data name="AllowAssassinHero_checkBox.ToolTip" xml:space="preserve">
+    <value>启用/禁用刺客英雄的创建</value>
+  </data>
+  <data name="AllowTaoistHero_checkBox.Text" xml:space="preserve">
+    <value>允许道士英雄</value>
+  </data>
+  <data name="AllowTaoistHero_checkBox.ToolTip" xml:space="preserve">
+    <value>启用/禁用道士英雄的创建</value>
+  </data>
+  <data name="AllowWizardHero_checkBox.Text" xml:space="preserve">
+    <value>允许法师英雄</value>
+  </data>
+  <data name="AllowWizardHero_checkBox.ToolTip" xml:space="preserve">
+    <value>启用/禁用法师英雄的创建</value>
+  </data>
+  <data name="AllowWarriorHero_checkBox.Text" xml:space="preserve">
+    <value>允许战士英雄</value>
+  </data>
+  <data name="AllowWarriorHero_checkBox.ToolTip" xml:space="preserve">
+    <value>启用/禁用战士英雄的创建</value>
+  </data>
+  <data name="AllowNewHero_checkBox.Text" xml:space="preserve">
+    <value>允许创建新英雄</value>
+  </data>
+  <data name="AllowNewHero_checkBox.ToolTip" xml:space="preserve">
+    <value>启用/禁用玩家创建新英雄伙伴的能力。</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>系统信息表单</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>@SEALHERO - 将当前英雄存储在英雄封印物品中。</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>@MANAGEHERO - 打开英雄管理对话框。</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>@REVIVEHERO - 复活当前选择的英雄。</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>@DELETEHERO - 删除当前选择的英雄。</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>@ADDHERO - 向玩家添加新的英雄伙伴。</value>
+  </data>
+</root>

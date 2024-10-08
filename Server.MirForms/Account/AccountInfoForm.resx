@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema 
+    Microsoft ResX Schema
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -117,4 +117,2027 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CreateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 16</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CreateButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="CreateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 31</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CreateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="CreateButton.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="&gt;&gt;CreateButton.Name" xml:space="preserve">
+    <value>CreateButton</value>
+  </data>
+  <data name="&gt;&gt;CreateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreateButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CreateButton.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 54</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Filter Account ID:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="FilterTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 51</value>
+  </data>
+  <data name="FilterTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="FilterTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="FilterTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;FilterTextBox.Name" xml:space="preserve">
+    <value>FilterTextBox</value>
+  </data>
+  <data name="&gt;&gt;FilterTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FilterTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FilterTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="RefreshButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>678, 51</value>
+  </data>
+  <data name="RefreshButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="RefreshButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 31</value>
+  </data>
+  <data name="RefreshButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="RefreshButton.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.Name" xml:space="preserve">
+    <value>RefreshButton</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AccountInfoPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;Delaccbtn.Name" xml:space="preserve">
+    <value>Delaccbtn</value>
+  </data>
+  <data name="&gt;&gt;Delaccbtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Delaccbtn.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;Delaccbtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CharactersListView.Name" xml:space="preserve">
+    <value>CharactersListView</value>
+  </data>
+  <data name="&gt;&gt;CharactersListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CharactersListView.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;CharactersListView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LastIPSearch.Name" xml:space="preserve">
+    <value>LastIPSearch</value>
+  </data>
+  <data name="&gt;&gt;LastIPSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastIPSearch.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;LastIPSearch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CreationIPSearch.Name" xml:space="preserve">
+    <value>CreationIPSearch</value>
+  </data>
+  <data name="&gt;&gt;CreationIPSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreationIPSearch.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;CreationIPSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PasswordChangeCheckBox.Name" xml:space="preserve">
+    <value>PasswordChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;PasswordChangeCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PasswordChangeCheckBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;PasswordChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;setPasswordButton.Name" xml:space="preserve">
+    <value>setPasswordButton</value>
+  </data>
+  <data name="&gt;&gt;setPasswordButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;setPasswordButton.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;setPasswordButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;AdminCheckBox.Name" xml:space="preserve">
+    <value>AdminCheckBox</value>
+  </data>
+  <data name="&gt;&gt;AdminCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AdminCheckBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;AdminCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PermBanButton.Name" xml:space="preserve">
+    <value>PermBanButton</value>
+  </data>
+  <data name="&gt;&gt;PermBanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PermBanButton.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;PermBanButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;WeekBanButton.Name" xml:space="preserve">
+    <value>WeekBanButton</value>
+  </data>
+  <data name="&gt;&gt;WeekBanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WeekBanButton.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;WeekBanButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;DayBanButton.Name" xml:space="preserve">
+    <value>DayBanButton</value>
+  </data>
+  <data name="&gt;&gt;DayBanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DayBanButton.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;DayBanButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;BannedCheckBox.Name" xml:space="preserve">
+    <value>BannedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;BannedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BannedCheckBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;BannedCheckBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ExpiryDateTextBox.Name" xml:space="preserve">
+    <value>ExpiryDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;ExpiryDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExpiryDateTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;ExpiryDateTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;BanReasonTextBox.Name" xml:space="preserve">
+    <value>BanReasonTextBox</value>
+  </data>
+  <data name="&gt;&gt;BanReasonTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BanReasonTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;BanReasonTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;LastDateTextBox.Name" xml:space="preserve">
+    <value>LastDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;LastDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastDateTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;LastDateTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;LastIPTextBox.Name" xml:space="preserve">
+    <value>LastIPTextBox</value>
+  </data>
+  <data name="&gt;&gt;LastIPTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastIPTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;LastIPTextBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;CreationDateTextBox.Name" xml:space="preserve">
+    <value>CreationDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;CreationDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreationDateTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;CreationDateTextBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;CreationIPTextBox.Name" xml:space="preserve">
+    <value>CreationIPTextBox</value>
+  </data>
+  <data name="&gt;&gt;CreationIPTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreationIPTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;CreationIPTextBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;EMailTextBox.Name" xml:space="preserve">
+    <value>EMailTextBox</value>
+  </data>
+  <data name="&gt;&gt;EMailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EMailTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;EMailTextBox.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;AnswerTextBox.Name" xml:space="preserve">
+    <value>AnswerTextBox</value>
+  </data>
+  <data name="&gt;&gt;AnswerTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AnswerTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;AnswerTextBox.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;QuestionTextBox.Name" xml:space="preserve">
+    <value>QuestionTextBox</value>
+  </data>
+  <data name="&gt;&gt;QuestionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QuestionTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;QuestionTextBox.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextBox.Name" xml:space="preserve">
+    <value>BirthDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextBox.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;UserNameTextBox.Name" xml:space="preserve">
+    <value>UserNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;UserNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserNameTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;UserNameTextBox.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;AccountIDTextBox.Name" xml:space="preserve">
+    <value>AccountIDTextBox</value>
+  </data>
+  <data name="&gt;&gt;AccountIDTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AccountIDTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;AccountIDTextBox.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="AccountInfoPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 314</value>
+  </data>
+  <data name="AccountInfoPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="AccountInfoPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1248, 275</value>
+  </data>
+  <data name="AccountInfoPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;AccountInfoPanel.Name" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;AccountInfoPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AccountInfoPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AccountInfoPanel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Delaccbtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>694, 235</value>
+  </data>
+  <data name="Delaccbtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="Delaccbtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 31</value>
+  </data>
+  <data name="Delaccbtn.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="Delaccbtn.Text" xml:space="preserve">
+    <value>Delete Acc</value>
+  </data>
+  <data name="&gt;&gt;Delaccbtn.Name" xml:space="preserve">
+    <value>Delaccbtn</value>
+  </data>
+  <data name="&gt;&gt;Delaccbtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Delaccbtn.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;Delaccbtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CharactersListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 0</value>
+  </data>
+  <data name="CharactersListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>546, 184</value>
+  </data>
+  <data name="CharactersListView.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;CharactersListView.Name" xml:space="preserve">
+    <value>CharactersListView</value>
+  </data>
+  <data name="&gt;&gt;CharactersListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CharactersListView.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;CharactersListView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="characterName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="characterName.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="characterClass.Text" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="characterClass.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="characterLevel.Text" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="characterPKPoints.Text" xml:space="preserve">
+    <value>PKPoints</value>
+  </data>
+  <data name="characterPKPoints.Width" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="characterGuild.Text" xml:space="preserve">
+    <value>Guild</value>
+  </data>
+  <data name="characterGuild.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="characterStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="characterStatus.Width" type="System.Int32, mscorlib">
+    <value>163</value>
+  </data>
+  <data name="LastIPSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 92</value>
+  </data>
+  <data name="LastIPSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 26</value>
+  </data>
+  <data name="LastIPSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;LastIPSearch.Name" xml:space="preserve">
+    <value>LastIPSearch</value>
+  </data>
+  <data name="&gt;&gt;LastIPSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastIPSearch.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;LastIPSearch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CreationIPSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 24</value>
+  </data>
+  <data name="CreationIPSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 26</value>
+  </data>
+  <data name="CreationIPSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;CreationIPSearch.Name" xml:space="preserve">
+    <value>CreationIPSearch</value>
+  </data>
+  <data name="&gt;&gt;CreationIPSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreationIPSearch.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;CreationIPSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PasswordChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PasswordChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 57</value>
+  </data>
+  <data name="PasswordChangeCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="PasswordChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 21</value>
+  </data>
+  <data name="PasswordChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="PasswordChangeCheckBox.Text" xml:space="preserve">
+    <value>Require Change</value>
+  </data>
+  <data name="&gt;&gt;PasswordChangeCheckBox.Name" xml:space="preserve">
+    <value>PasswordChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;PasswordChangeCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PasswordChangeCheckBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;PasswordChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="setPasswordButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 53</value>
+  </data>
+  <data name="setPasswordButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="setPasswordButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 31</value>
+  </data>
+  <data name="setPasswordButton.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="setPasswordButton.Text" xml:space="preserve">
+    <value>Set Password</value>
+  </data>
+  <data name="&gt;&gt;setPasswordButton.Name" xml:space="preserve">
+    <value>setPasswordButton</value>
+  </data>
+  <data name="&gt;&gt;setPasswordButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;setPasswordButton.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;setPasswordButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="AdminCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AdminCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 23</value>
+  </data>
+  <data name="AdminCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="AdminCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 21</value>
+  </data>
+  <data name="AdminCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="AdminCheckBox.Text" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="&gt;&gt;AdminCheckBox.Name" xml:space="preserve">
+    <value>AdminCheckBox</value>
+  </data>
+  <data name="&gt;&gt;AdminCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AdminCheckBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;AdminCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PermBanButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 235</value>
+  </data>
+  <data name="PermBanButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="PermBanButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 31</value>
+  </data>
+  <data name="PermBanButton.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="PermBanButton.Text" xml:space="preserve">
+    <value>Perm Ban</value>
+  </data>
+  <data name="&gt;&gt;PermBanButton.Name" xml:space="preserve">
+    <value>PermBanButton</value>
+  </data>
+  <data name="&gt;&gt;PermBanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PermBanButton.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;PermBanButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="WeekBanButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 235</value>
+  </data>
+  <data name="WeekBanButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="WeekBanButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 31</value>
+  </data>
+  <data name="WeekBanButton.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="WeekBanButton.Text" xml:space="preserve">
+    <value>Week Ban</value>
+  </data>
+  <data name="&gt;&gt;WeekBanButton.Name" xml:space="preserve">
+    <value>WeekBanButton</value>
+  </data>
+  <data name="&gt;&gt;WeekBanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WeekBanButton.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;WeekBanButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="DayBanButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 235</value>
+  </data>
+  <data name="DayBanButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="DayBanButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 31</value>
+  </data>
+  <data name="DayBanButton.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="DayBanButton.Text" xml:space="preserve">
+    <value>Day Ban</value>
+  </data>
+  <data name="&gt;&gt;DayBanButton.Name" xml:space="preserve">
+    <value>DayBanButton</value>
+  </data>
+  <data name="&gt;&gt;DayBanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DayBanButton.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;DayBanButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="BannedCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BannedCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 204</value>
+  </data>
+  <data name="BannedCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="BannedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 21</value>
+  </data>
+  <data name="BannedCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="BannedCheckBox.Text" xml:space="preserve">
+    <value>Banned</value>
+  </data>
+  <data name="&gt;&gt;BannedCheckBox.Name" xml:space="preserve">
+    <value>BannedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;BannedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BannedCheckBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;BannedCheckBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ExpiryDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 202</value>
+  </data>
+  <data name="ExpiryDateTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="ExpiryDateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 23</value>
+  </data>
+  <data name="ExpiryDateTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;ExpiryDateTextBox.Name" xml:space="preserve">
+    <value>ExpiryDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;ExpiryDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExpiryDateTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;ExpiryDateTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 205</value>
+  </data>
+  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Expiry Date:</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="BanReasonTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 168</value>
+  </data>
+  <data name="BanReasonTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="BanReasonTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 23</value>
+  </data>
+  <data name="BanReasonTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;BanReasonTextBox.Name" xml:space="preserve">
+    <value>BanReasonTextBox</value>
+  </data>
+  <data name="&gt;&gt;BanReasonTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BanReasonTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;BanReasonTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 171</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Ban Reason:</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="LastDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 125</value>
+  </data>
+  <data name="LastDateTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="LastDateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 23</value>
+  </data>
+  <data name="LastDateTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;LastDateTextBox.Name" xml:space="preserve">
+    <value>LastDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;LastDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastDateTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;LastDateTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 128</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Last Date:</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="LastIPTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 91</value>
+  </data>
+  <data name="LastIPTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="LastIPTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="LastIPTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;LastIPTextBox.Name" xml:space="preserve">
+    <value>LastIPTextBox</value>
+  </data>
+  <data name="&gt;&gt;LastIPTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastIPTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;LastIPTextBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 94</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Last IP:</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="CreationDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 57</value>
+  </data>
+  <data name="CreationDateTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="CreationDateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 23</value>
+  </data>
+  <data name="CreationDateTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;CreationDateTextBox.Name" xml:space="preserve">
+    <value>CreationDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;CreationDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreationDateTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;CreationDateTextBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 60</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 17</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Creation Date:</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="CreationIPTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 23</value>
+  </data>
+  <data name="CreationIPTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="CreationIPTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="CreationIPTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;CreationIPTextBox.Name" xml:space="preserve">
+    <value>CreationIPTextBox</value>
+  </data>
+  <data name="&gt;&gt;CreationIPTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreationIPTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;CreationIPTextBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 26</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 17</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Creation IP:</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="EMailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 236</value>
+  </data>
+  <data name="EMailTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="EMailTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 23</value>
+  </data>
+  <data name="EMailTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;EMailTextBox.Name" xml:space="preserve">
+    <value>EMailTextBox</value>
+  </data>
+  <data name="&gt;&gt;EMailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EMailTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;EMailTextBox.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 239</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 17</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>EMail Address:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="AnswerTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 202</value>
+  </data>
+  <data name="AnswerTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="AnswerTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="AnswerTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;AnswerTextBox.Name" xml:space="preserve">
+    <value>AnswerTextBox</value>
+  </data>
+  <data name="&gt;&gt;AnswerTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AnswerTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;AnswerTextBox.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 205</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Answer:</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="QuestionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 168</value>
+  </data>
+  <data name="QuestionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="QuestionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="QuestionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;QuestionTextBox.Name" xml:space="preserve">
+    <value>QuestionTextBox</value>
+  </data>
+  <data name="&gt;&gt;QuestionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QuestionTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;QuestionTextBox.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 171</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 17</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Question:</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="BirthDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 134</value>
+  </data>
+  <data name="BirthDateTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="BirthDateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 23</value>
+  </data>
+  <data name="BirthDateTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextBox.Name" xml:space="preserve">
+    <value>BirthDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;BirthDateTextBox.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 137</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 17</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Birth Date:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="UserNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 100</value>
+  </data>
+  <data name="UserNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="UserNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="UserNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;UserNameTextBox.Name" xml:space="preserve">
+    <value>UserNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;UserNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserNameTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;UserNameTextBox.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 103</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 57</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="AccountIDTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 18</value>
+  </data>
+  <data name="AccountIDTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="AccountIDTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="AccountIDTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;AccountIDTextBox.Name" xml:space="preserve">
+    <value>AccountIDTextBox</value>
+  </data>
+  <data name="&gt;&gt;AccountIDTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AccountIDTextBox.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;AccountIDTextBox.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 23</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 17</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Account ID:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>AccountInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 54</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 17</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Filter Player:</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="FilterPlayerTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 51</value>
+  </data>
+  <data name="FilterPlayerTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="FilterPlayerTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="FilterPlayerTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;FilterPlayerTextBox.Name" xml:space="preserve">
+    <value>FilterPlayerTextBox</value>
+  </data>
+  <data name="&gt;&gt;FilterPlayerTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FilterPlayerTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FilterPlayerTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="AccountInfoListView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="AccountInfoListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 85</value>
+  </data>
+  <data name="AccountInfoListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="AccountInfoListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1249, 219</value>
+  </data>
+  <data name="AccountInfoListView.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;AccountInfoListView.Name" xml:space="preserve">
+    <value>AccountInfoListView</value>
+  </data>
+  <data name="&gt;&gt;AccountInfoListView.Type" xml:space="preserve">
+    <value>CustomFormControl.ListViewNF, CustomFormControl, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AccountInfoListView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AccountInfoListView.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="indexHeader.Text" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="accountIDHeader.Text" xml:space="preserve">
+    <value>Account ID</value>
+  </data>
+  <data name="accountIDHeader.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="userNameHeader.Text" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="userNameHeader.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="adminHeader.Text" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="adminHeader.Width" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="bannedHeader.Text" xml:space="preserve">
+    <value>Banned</value>
+  </data>
+  <data name="bannedHeader.Width" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="banReasonHeader.Text" xml:space="preserve">
+    <value>Ban Reason</value>
+  </data>
+  <data name="banReasonHeader.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="expiryDateHeader.Text" xml:space="preserve">
+    <value>Expiry Date</value>
+  </data>
+  <data name="expiryDateHeader.Width" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="Gold.Text" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="Gold.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="GameGold.Text" xml:space="preserve">
+    <value>GameGold</value>
+  </data>
+  <data name="GameGold.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="MatchFilterCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MatchFilterCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>774, 57</value>
+  </data>
+  <data name="MatchFilterCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="MatchFilterCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 21</value>
+  </data>
+  <data name="MatchFilterCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="MatchFilterCheckBox.Text" xml:space="preserve">
+    <value>Match Filter</value>
+  </data>
+  <data name="&gt;&gt;MatchFilterCheckBox.Name" xml:space="preserve">
+    <value>MatchFilterCheckBox</value>
+  </data>
+  <data name="&gt;&gt;MatchFilterCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MatchFilterCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MatchFilterCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="WipeCharButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 16</value>
+  </data>
+  <data name="WipeCharButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="WipeCharButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 31</value>
+  </data>
+  <data name="WipeCharButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="WipeCharButton.Text" xml:space="preserve">
+    <value>Wipe All Characters</value>
+  </data>
+  <data name="&gt;&gt;WipeCharButton.Name" xml:space="preserve">
+    <value>WipeCharButton</value>
+  </data>
+  <data name="&gt;&gt;WipeCharButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WipeCharButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;WipeCharButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ServerGoldTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 18</value>
+  </data>
+  <data name="ServerGoldTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="ServerGoldTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;ServerGoldTextBox.Name" xml:space="preserve">
+    <value>ServerGoldTextBox</value>
+  </data>
+  <data name="&gt;&gt;ServerGoldTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ServerGoldTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ServerGoldTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TotalServerGold.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalServerGold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 22</value>
+  </data>
+  <data name="TotalServerGold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 17</value>
+  </data>
+  <data name="TotalServerGold.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="TotalServerGold.Text" xml:space="preserve">
+    <value>Total Server Gold:</value>
+  </data>
+  <data name="&gt;&gt;TotalServerGold.Name" xml:space="preserve">
+    <value>TotalServerGold</value>
+  </data>
+  <data name="&gt;&gt;TotalServerGold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalServerGold.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TotalServerGold.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ServerCreditTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 22</value>
+  </data>
+  <data name="ServerCreditTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="ServerCreditTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;ServerCreditTextBox.Name" xml:space="preserve">
+    <value>ServerCreditTextBox</value>
+  </data>
+  <data name="&gt;&gt;ServerCreditTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ServerCreditTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ServerCreditTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TotalServerCredit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TotalServerCredit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 25</value>
+  </data>
+  <data name="TotalServerCredit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 17</value>
+  </data>
+  <data name="TotalServerCredit.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="TotalServerCredit.Text" xml:space="preserve">
+    <value>Total Server Credit:</value>
+  </data>
+  <data name="&gt;&gt;TotalServerCredit.Name" xml:space="preserve">
+    <value>TotalServerCredit</value>
+  </data>
+  <data name="&gt;&gt;TotalServerCredit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalServerCredit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TotalServerCredit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="FilterIPTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>541, 51</value>
+  </data>
+  <data name="FilterIPTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="FilterIPTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="FilterIPTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;FilterIPTextBox.Name" xml:space="preserve">
+    <value>FilterIPTextBox</value>
+  </data>
+  <data name="&gt;&gt;FilterIPTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FilterIPTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FilterIPTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 54</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Filter IP:</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>zh</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1276, 603</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>AccountInfoForm</value>
+  </data>
+  <data name="&gt;&gt;characterName.Name" xml:space="preserve">
+    <value>characterName</value>
+  </data>
+  <data name="&gt;&gt;characterName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;characterClass.Name" xml:space="preserve">
+    <value>characterClass</value>
+  </data>
+  <data name="&gt;&gt;characterClass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;characterLevel.Name" xml:space="preserve">
+    <value>characterLevel</value>
+  </data>
+  <data name="&gt;&gt;characterLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;characterPKPoints.Name" xml:space="preserve">
+    <value>characterPKPoints</value>
+  </data>
+  <data name="&gt;&gt;characterPKPoints.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;characterGuild.Name" xml:space="preserve">
+    <value>characterGuild</value>
+  </data>
+  <data name="&gt;&gt;characterGuild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;characterStatus.Name" xml:space="preserve">
+    <value>characterStatus</value>
+  </data>
+  <data name="&gt;&gt;characterStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;indexHeader.Name" xml:space="preserve">
+    <value>indexHeader</value>
+  </data>
+  <data name="&gt;&gt;indexHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;accountIDHeader.Name" xml:space="preserve">
+    <value>accountIDHeader</value>
+  </data>
+  <data name="&gt;&gt;accountIDHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userNameHeader.Name" xml:space="preserve">
+    <value>userNameHeader</value>
+  </data>
+  <data name="&gt;&gt;userNameHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;adminHeader.Name" xml:space="preserve">
+    <value>adminHeader</value>
+  </data>
+  <data name="&gt;&gt;adminHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bannedHeader.Name" xml:space="preserve">
+    <value>bannedHeader</value>
+  </data>
+  <data name="&gt;&gt;bannedHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;banReasonHeader.Name" xml:space="preserve">
+    <value>banReasonHeader</value>
+  </data>
+  <data name="&gt;&gt;banReasonHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;expiryDateHeader.Name" xml:space="preserve">
+    <value>expiryDateHeader</value>
+  </data>
+  <data name="&gt;&gt;expiryDateHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Gold.Name" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="&gt;&gt;Gold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GameGold.Name" xml:space="preserve">
+    <value>GameGold</value>
+  </data>
+  <data name="&gt;&gt;GameGold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AccountInfoForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

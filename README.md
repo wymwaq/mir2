@@ -1,3 +1,10 @@
+# Wq Note
+Patch:
+http://mirfiles.com/mir2/cmir/patch/	need VPN
+http://mirfiles.co.uk/mir2/cmir/patch/			
+Browser:
+https://www.lomcn.org/mir2-patchsite/	no VPN
+
 # Legend of Mir 2 - Official Public Crystal Source
 
 Visit our forum at [LOMCN](https://www.lomcn.net/forum/forums/crystalm2-files-open-source.633/) for discussions, help, and updates.

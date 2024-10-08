@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecipeInfoForm));
             RecipeList = new ListBox();
             label1 = new Label();
             label2 = new Label();
@@ -61,48 +62,29 @@
             // RecipeList
             // 
             RecipeList.FormattingEnabled = true;
-            RecipeList.ItemHeight = 15;
-            RecipeList.Location = new Point(12, 12);
+            resources.ApplyResources(RecipeList, "RecipeList");
             RecipeList.Name = "RecipeList";
-            RecipeList.Size = new Size(135, 319);
-            RecipeList.TabIndex = 0;
             RecipeList.SelectedIndexChanged += RecipeList_SelectedIndexChanged;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 42);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(89, 15);
-            label1.TabIndex = 1;
-            label1.Text = "Craft Amount : ";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(5, 71);
+            resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
-            label2.Size = new Size(69, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Chance % : ";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(6, 99);
+            resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
-            label3.Size = new Size(68, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Gold Cost : ";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 19);
+            resources.ApplyResources(label4, "label4");
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 4;
-            label4.Text = "Tool : ";
             // 
             // RecipeGroupBox
             // 
@@ -114,68 +96,48 @@
             RecipeGroupBox.Controls.Add(label1);
             RecipeGroupBox.Controls.Add(label2);
             RecipeGroupBox.Controls.Add(label3);
-            RecipeGroupBox.Location = new Point(153, 12);
+            resources.ApplyResources(RecipeGroupBox, "RecipeGroupBox");
             RecipeGroupBox.Name = "RecipeGroupBox";
-            RecipeGroupBox.Size = new Size(200, 131);
-            RecipeGroupBox.TabIndex = 6;
             RecipeGroupBox.TabStop = false;
-            RecipeGroupBox.Text = "Recipe (Required)";
             // 
             // GoldTextBox
             // 
-            GoldTextBox.Location = new Point(79, 99);
+            resources.ApplyResources(GoldTextBox, "GoldTextBox");
             GoldTextBox.Name = "GoldTextBox";
-            GoldTextBox.Size = new Size(60, 23);
-            GoldTextBox.TabIndex = 8;
             // 
             // ChanceTextBox
             // 
-            ChanceTextBox.Location = new Point(79, 68);
+            resources.ApplyResources(ChanceTextBox, "ChanceTextBox");
             ChanceTextBox.Name = "ChanceTextBox";
-            ChanceTextBox.Size = new Size(40, 23);
-            ChanceTextBox.TabIndex = 7;
             // 
             // CraftAmountTextBox
             // 
-            CraftAmountTextBox.Location = new Point(99, 42);
+            resources.ApplyResources(CraftAmountTextBox, "CraftAmountTextBox");
             CraftAmountTextBox.Name = "CraftAmountTextBox";
-            CraftAmountTextBox.Size = new Size(40, 23);
-            CraftAmountTextBox.TabIndex = 6;
             // 
             // ItemTextBox
             // 
-            ItemTextBox.Location = new Point(50, 16);
+            resources.ApplyResources(ItemTextBox, "ItemTextBox");
             ItemTextBox.Name = "ItemTextBox";
-            ItemTextBox.Size = new Size(121, 23);
-            ItemTextBox.TabIndex = 5;
             ItemTextBox.TextChanged += ItemTextBox_TextChanged;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(6, 19);
+            resources.ApplyResources(label6, "label6");
             label6.Name = "label6";
-            label6.Size = new Size(40, 15);
-            label6.TabIndex = 4;
-            label6.Text = "Item : ";
             // 
             // ToolsGroupBox
             // 
             ToolsGroupBox.Controls.Add(ToolTextBox);
             ToolsGroupBox.Controls.Add(label4);
-            ToolsGroupBox.Location = new Point(153, 149);
+            resources.ApplyResources(ToolsGroupBox, "ToolsGroupBox");
             ToolsGroupBox.Name = "ToolsGroupBox";
-            ToolsGroupBox.Size = new Size(200, 47);
-            ToolsGroupBox.TabIndex = 7;
             ToolsGroupBox.TabStop = false;
-            ToolsGroupBox.Text = "Tools (Optional)";
             // 
             // ToolTextBox
             // 
-            ToolTextBox.Location = new Point(50, 18);
+            resources.ApplyResources(ToolTextBox, "ToolTextBox");
             ToolTextBox.Name = "ToolTextBox";
-            ToolTextBox.Size = new Size(113, 23);
-            ToolTextBox.TabIndex = 20;
             // 
             // IngredientsGroupBox
             // 
@@ -189,109 +151,77 @@
             IngredientsGroupBox.Controls.Add(IngredientAmount3TextBox);
             IngredientsGroupBox.Controls.Add(IngredientAmount2TextBox);
             IngredientsGroupBox.Controls.Add(IngredientAmount1TextBox);
-            IngredientsGroupBox.Location = new Point(153, 202);
+            resources.ApplyResources(IngredientsGroupBox, "IngredientsGroupBox");
             IngredientsGroupBox.Name = "IngredientsGroupBox";
-            IngredientsGroupBox.Size = new Size(200, 160);
-            IngredientsGroupBox.TabIndex = 8;
             IngredientsGroupBox.TabStop = false;
-            IngredientsGroupBox.Text = "Ingredients (Required)";
             // 
             // IngredientName4TextBox
             // 
-            IngredientName4TextBox.Location = new Point(6, 132);
+            resources.ApplyResources(IngredientName4TextBox, "IngredientName4TextBox");
             IngredientName4TextBox.Name = "IngredientName4TextBox";
-            IngredientName4TextBox.Size = new Size(113, 23);
-            IngredientName4TextBox.TabIndex = 19;
             // 
             // IngredientName3TextBox
             // 
-            IngredientName3TextBox.Location = new Point(6, 103);
+            resources.ApplyResources(IngredientName3TextBox, "IngredientName3TextBox");
             IngredientName3TextBox.Name = "IngredientName3TextBox";
-            IngredientName3TextBox.Size = new Size(113, 23);
-            IngredientName3TextBox.TabIndex = 18;
             // 
             // IngredientName2TextBox
             // 
-            IngredientName2TextBox.Location = new Point(6, 74);
+            resources.ApplyResources(IngredientName2TextBox, "IngredientName2TextBox");
             IngredientName2TextBox.Name = "IngredientName2TextBox";
-            IngredientName2TextBox.Size = new Size(113, 23);
-            IngredientName2TextBox.TabIndex = 17;
             // 
             // IngredientName1TextBox
             // 
-            IngredientName1TextBox.Location = new Point(6, 45);
+            resources.ApplyResources(IngredientName1TextBox, "IngredientName1TextBox");
             IngredientName1TextBox.Name = "IngredientName1TextBox";
-            IngredientName1TextBox.Size = new Size(113, 23);
-            IngredientName1TextBox.TabIndex = 16;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(15, 19);
+            resources.ApplyResources(label7, "label7");
             label7.Name = "label7";
-            label7.Size = new Size(96, 15);
-            label7.TabIndex = 15;
-            label7.Text = "Ingredient Name";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(138, 19);
+            resources.ApplyResources(label5, "label5");
             label5.Name = "label5";
-            label5.Size = new Size(51, 15);
-            label5.TabIndex = 14;
-            label5.Text = "Amount";
             // 
             // IngredientAmount4TextBox
             // 
-            IngredientAmount4TextBox.Location = new Point(135, 132);
+            resources.ApplyResources(IngredientAmount4TextBox, "IngredientAmount4TextBox");
             IngredientAmount4TextBox.Name = "IngredientAmount4TextBox";
-            IngredientAmount4TextBox.Size = new Size(59, 23);
-            IngredientAmount4TextBox.TabIndex = 13;
             // 
             // IngredientAmount3TextBox
             // 
-            IngredientAmount3TextBox.Location = new Point(135, 103);
+            resources.ApplyResources(IngredientAmount3TextBox, "IngredientAmount3TextBox");
             IngredientAmount3TextBox.Name = "IngredientAmount3TextBox";
-            IngredientAmount3TextBox.Size = new Size(59, 23);
-            IngredientAmount3TextBox.TabIndex = 12;
             // 
             // IngredientAmount2TextBox
             // 
-            IngredientAmount2TextBox.Location = new Point(135, 74);
+            resources.ApplyResources(IngredientAmount2TextBox, "IngredientAmount2TextBox");
             IngredientAmount2TextBox.Name = "IngredientAmount2TextBox";
-            IngredientAmount2TextBox.Size = new Size(59, 23);
-            IngredientAmount2TextBox.TabIndex = 11;
             // 
             // IngredientAmount1TextBox
             // 
-            IngredientAmount1TextBox.Location = new Point(135, 45);
+            resources.ApplyResources(IngredientAmount1TextBox, "IngredientAmount1TextBox");
             IngredientAmount1TextBox.Name = "IngredientAmount1TextBox";
-            IngredientAmount1TextBox.Size = new Size(59, 23);
-            IngredientAmount1TextBox.TabIndex = 10;
             // 
             // NewRecipeButton
             // 
-            NewRecipeButton.Location = new Point(40, 337);
+            resources.ApplyResources(NewRecipeButton, "NewRecipeButton");
             NewRecipeButton.Name = "NewRecipeButton";
-            NewRecipeButton.Size = new Size(75, 23);
-            NewRecipeButton.TabIndex = 9;
-            NewRecipeButton.Text = "New";
             NewRecipeButton.UseVisualStyleBackColor = true;
             NewRecipeButton.Click += NewRecipeButton_Click;
             // 
             // RecipeInfoForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(360, 369);
             Controls.Add(NewRecipeButton);
             Controls.Add(IngredientsGroupBox);
             Controls.Add(ToolsGroupBox);
             Controls.Add(RecipeGroupBox);
             Controls.Add(RecipeList);
             Name = "RecipeInfoForm";
-            Text = "RecipeInfoForm";
             FormClosing += RecipeInfoForm_FormClosing;
             RecipeGroupBox.ResumeLayout(false);
             RecipeGroupBox.PerformLayout();

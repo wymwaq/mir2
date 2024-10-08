@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DropsLoaded" xml:space="preserve">
+    <value>掉落数据已加载。</value>
+  </data>
+  <data name="BuffsLoaded" xml:space="preserve">
+    <value>已加载 {0} 个增益效果。</value>
+  </data>
+  <data name="NetworkStarted" xml:space="preserve">
+    <value>网络已启动。</value>
+  </data>
+  <data name="DragonLoaded" xml:space="preserve">
+    <value>龙已加载。</value>
+  </data>
+  <data name="EnvirStarted" xml:space="preserve">
+    <value>环境已启动。</value>
+  </data>
+  <data name="RecipesLoaded" xml:space="preserve">
+    <value>已加载 {0} 个配方。</value>
+  </data>
+  <data name="MapsLoaded" xml:space="preserve">
+    <value>已加载 {0} 张地图。</value>
+  </data>
+  <data name="PlayerArchivedDue1" xml:space="preserve">
+    <value>玩家 {0} 因删除了 {1} 个月，已被存档。</value>
+  </data>
+  <data name="PlayerArchivedDue2" xml:space="preserve">
+    <value>玩家 {0} 因 {1} 个月未登录而被存档。</value>
+  </data>
+  <data name="PlayerArchivedDue3" xml:space="preserve">
+    <value>玩家 {0} 因 {1} 个月不活跃而被存档。</value>
+  </data>
+  <data name="CouldNotLoadDrop" xml:space="preserve">
+    <value>无法加载掉落：{0}，第 {1} 行</value>
+  </data>
+  <data name="FileNotFoundQuest" xml:space="preserve">
+    <value>文件未找到：{0}，任务：{1}</value>
+  </data>
+  <data name="CouldNotFindItem1" xml:space="preserve">
+    <value>无法找到物品：{0}</value>
+  </data>
+  <data name="CouldNotFindTool" xml:space="preserve">
+    <value>无法找到工具：{0}，配方：{1}</value>
+  </data>
+  <data name="CouldNotFindIngredient" xml:space="preserve">
+    <value>无法找到配料：{0}，配方：{1}</value>
+  </data>
+  <data name="CouldNotParseOption" xml:space="preserve">
+    <value>无法解析选项：{0}，值：{1}</value>
+  </data>
+  <data name="FailedToLoadDragonMonster" xml:space="preserve">
+    <value>加载龙失败（怪物名称无效）：{0}</value>
+  </data>
+  <data name="FailedToLoadDragonMapName" xml:space="preserve">
+    <value>加载龙失败（地图名称无效）：{0}</value>
+  </data>
+  <data name="FailedToLoadDragonMapXY" xml:space="preserve">
+    <value>加载龙失败（地图 XY 无效）：{0}</value>
+  </data>
+  <data name="FailedToLoadDragon" xml:space="preserve">
+    <value>加载龙失败</value>
+  </data>
+  <data name="WorkloopError_Inner" xml:space="preserve">
+    <value>[内部工作循环错误。行 {0}] {1}</value>
+  </data>
+  <data name="WorkloopError_Outer" xml:space="preserve">
+    <value>[外部工作循环错误。行 {0}] {1}</value>
+  </data>
+  <data name="ThreadloopError" xml:space="preserve">
+    <value>[线程循环错误] {0}</value>
+  </data>
+  <data name="CannotLoadDatabaseMinVersion" xml:space="preserve">
+    <value>无法加载数据库版本 {0}。最低支持版本是 {1}。</value>
+  </data>
+  <data name="CannotLoadDatabaseMaxVersion" xml:space="preserve">
+    <value>无法加载数据库版本 {0}。最高支持版本是 {1}。</value>
+  </data>
+  <data name="ServerRebooting" xml:space="preserve">
+    <value>服务器正在重启...</value>
+  </data>
+  <data name="NetworkStopped" xml:space="preserve">
+    <value>网络已停止。</value>
+  </data>
+  <data name="EnvirStopped" xml:space="preserve">
+    <value>环境已停止。</value>
+  </data>
+  <data name="TooManyConnections" xml:space="preserve">
+    <value>{0} 已断开连接，连接过多。</value>
+  </data>
+  <data name="UserLoggedIn" xml:space="preserve">
+    <value>{0}, {1}，用户已登录。</value>
+  </data>
+  <data name="GameshopPurchaseLogsCleared" xml:space="preserve">
+    <value>游戏商店购买记录已清除。</value>
+  </data>
+  <data name="NPCScriptsReloaded" xml:space="preserve">
+    <value>NPC 脚本已重新加载...</value>
+  </data>
+  <data name="LineMessagesReloaded" xml:space="preserve">
+    <value>LineMessages 已重新加载。</value>
+  </data>
+  <data name="GuildWillBeDeleted" xml:space="preserve">
+    <value>{0} 公会将被服务器删除。</value>
+  </data>
+  <data name="FailedToLoadMap" xml:space="preserve">
+    <value>加载地图失败：{0}</value>
+  </data>
+  <data name="MapFileName" xml:space="preserve">
+    <value>文件名：{0}</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>{0}，已连接。</value>
+  </data>
+  <data name="DisconnectedInvalidPacket" xml:space="preserve">
+    <value>{0} 断开连接，数据包无效。</value>
+  </data>
+  <data name="DisconnectedLargePackets" xml:space="preserve">
+    <value>{0} 断开连接，数据包过多。最后的数据包: {1}。</value>
+  </data>
+  <data name="InvalidPacketReceived" xml:space="preserve">
+    <value>收到无效数据包。索引: {0}</value>
+  </data>
+  <data name="DisconnectedWrongClientVersion" xml:space="preserve">
+    <value>{0}，断开连接 - 客户端版本错误。</value>
+  </data>
+  <data name="ClientVersionMatched" xml:space="preserve">
+    <value>{0}, {1}, 客户端版本匹配。</value>
+  </data>
+  <data name="NewAccountBeingCreated" xml:space="preserve">
+    <value>{0}, {1}, 正在创建新账户。</value>
+  </data>
+  <data name="PasswordBeingChanged" xml:space="preserve">
+    <value>{0}, {1}, 正在更改密码。</value>
+  </data>
+  <data name="UserLoggingIn" xml:space="preserve">
+    <value>{0}, {1}, 用户正在登录。</value>
+  </data>
+  <data name="ScriptNotFound" xml:space="preserve">
+    <value>脚本未找到：{0}</value>
+  </data>
+  <data name="InsertScriptNotFound" xml:space="preserve">
+    <value>INSERT脚本未找到：{0}</value>
+  </data>
+  <data name="IncludeScriptNotFound" xml:space="preserve">
+    <value>INCLUDE脚本未找到：{0}</value>
+  </data>
+  <data name="CouldNotFindItem2" xml:space="preserve">
+    <value>无法找到物品：{0}，文件：{1}</value>
+  </data>
+  <data name="CouldNotFindRecipe" xml:space="preserve">
+    <value>无法找到配方：{0}，文件：{1}</value>
+  </data>
+  <data name="CouldNotFindIngredients" xml:space="preserve">
+    <value>无法找到成分：{0}，文件：{1}</value>
+  </data>
+  <data name="PlayerPreventedAccess" xml:space="preserve">
+    <value>玩家：{0} 被阻止访问 NPC 键：'{1}'</value>
+  </data>
+  <data name="IncorrectOperator" xml:space="preserve">
+    <value>操作符不正确：{0}，页面：{1}</value>
+  </data>
+  <data name="FailedToGetItemInfo" xml:space="preserve">
+    <value>获取 ItemInfo 失败：{0}，页面：{1}</value>
+  </data>
+  <data name="FailedToCreateUserItem" xml:space="preserve">
+    <value>创建 UserItem 失败：{0}，页面：{1}</value>
+  </data>
+  <data name="WarStarted" xml:space="preserve">
+    <value>{0} 战争开始。</value>
+  </data>
+  <data name="WarStopped" xml:space="preserve">
+    <value>{0} 战争结束。</value>
+  </data>
+  <data name="RandomTextFileNotExist" xml:space="preserve">
+    <value>随机文本文件：{0} 不存在。</value>
+  </data>
+  <data name="NonGMPlayerConquestRepairAll" xml:space="preserve">
+    <value>非GM玩家调用GM命令@CONQUESTREPAIRALL：{0}</value>
+  </data>
+  <data name="GMConquestRepairAll" xml:space="preserve">
+    <value>GM调用@CONQUESTREPAIRALL：{0}，账户索引：{1}</value>
+  </data>
+  <data name="ConquestInfoName" xml:space="preserve">
+    <value>征服：{0}</value>
+  </data>
+  <data name="ConquestOwner" xml:space="preserve">
+    <value>拥有者：{0}</value>
+  </data>
+  <data name="NoCurrentOwner" xml:space="preserve">
+    <value>当前没有拥有者。</value>
+  </data>
+  <data name="ArchersRepaired" xml:space="preserve">
+    <value>弓箭手修复：{0}/{1}</value>
+  </data>
+  <data name="GatesRepaired" xml:space="preserve">
+    <value>大门修复：{0}/{1}</value>
+  </data>
+  <data name="WallsRepaired" xml:space="preserve">
+    <value>墙壁修复：{0}/{1}</value>
+  </data>
+  <data name="SiegesRepaired" xml:space="preserve">
+    <value>攻城器修复：{0}/{1}</value>
+  </data>
+  <data name="PlayerIsNowAGM" xml:space="preserve">
+    <value>{0} 现在是 GM</value>
+  </data>
+  <data name="HttpServiceStarted" xml:space="preserve">
+    <value>HttpService 已启动。</value>
+  </data>
+  <data name="HttpServiceStartFailed" xml:space="preserve">
+    <value>HttpService 启动失败！错误：{0}</value>
+  </data>
+  <data name="UserConnected" xml:space="preserve">
+    <value>{0} 已连接。</value>
+  </data>
+  <data name="GMAttempt" xml:space="preserve">
+    <value>{0} 尝试进行 GM 登录</value>
+  </data>
+  <data name="PlayerChangedGender" xml:space="preserve">
+    <value>玩家 {0} 的性别已被更改为 {1}，操作者：{2}</value>
+  </data>
+  <data name="PlayerLevelChanged" xml:space="preserve">
+    <value>玩家 {0} 的等级已被更改：{1} -&gt; {2}，操作者：{3}</value>
+  </data>
+  <data name="PlayerLevelChangedCurrent" xml:space="preserve">
+    <value>玩家 {0} 的等级已更改：{1} -&gt; {2}，操作者：{3}</value>
+  </data>
+  <data name="PlayerHeroLevelChanged" xml:space="preserve">
+    <value>玩家 {0} 的英雄等级已被更改：{1} -&gt; {2}，操作者：{3}</value>
+  </data>
+  <data name="PlayerHeroLevelChangedCurrent" xml:space="preserve">
+    <value>玩家 {0} 的英雄等级已更改：{1} -&gt; {2}，操作者：{3}</value>
+  </data>
+  <data name="PlayerCreateAttempt" xml:space="preserve">
+    <value>玩家 {0} 尝试创建 {1} x{2}</value>
+  </data>
+  <data name="PlayerBackedUp" xml:space="preserve">
+    <value>玩家 {0} 已被 {1} 备份</value>
+  </data>
+  <data name="PlayerArchived" xml:space="preserve">
+    <value>玩家 {0} 已被 {1} 存档</value>
+  </data>
+  <data name="PlayerLoaded" xml:space="preserve">
+    <value>玩家 {0} 已被 {1} 加载</value>
+  </data>
+  <data name="PlayerRestored" xml:space="preserve">
+    <value>玩家 {0} 已被 {1} 恢复</value>
+  </data>
+  <data name="PlayerGivenCredit" xml:space="preserve">
+    <value>玩家 {0} 已获得 {1} 积分</value>
+  </data>
+  <data name="PlayerChangedClass" xml:space="preserve">
+    <value>玩家 {0} 已被 {2} 改为 {1}</value>
+  </data>
+  <data name="AuctionSoldExpired" xml:space="preserve">
+    <value>拍卖品已售出和过期 {0}</value>
+  </data>
+  <data name="LoggedOutServerClosed" xml:space="preserve">
+    <value>{0}已注销。原因：服务器已关闭</value>
+  </data>
+  <data name="LoggedOutDoubleLogin" xml:space="preserve">
+    <value>{0}已注销。原因：双重登录</value>
+  </data>
+  <data name="LoggedOutChatMesLong" xml:space="preserve">
+    <value>{0}已注销。原因：聊天消息太长</value>
+  </data>
+  <data name="LoggedOutServerCrashed" xml:space="preserve">
+    <value>{0}已注销。原因：服务器崩溃</value>
+  </data>
+  <data name="LoggedOutKickedByAdmin" xml:space="preserve">
+    <value>{0}已注销。原因：被管理员踢了</value>
+  </data>
+  <data name="LoggedOutMaxConnect" xml:space="preserve">
+    <value>{0}已注销。原因：已达到最大连接数</value>
+  </data>
+  <data name="LoggedOutAccountBanned" xml:space="preserve">
+    <value>{0}已注销。原因：帐户已被禁止！</value>
+  </data>
+  <data name="LoggedOutWrongClientVers" xml:space="preserve">
+    <value>{0}已注销。原因：客户端版本错误</value>
+  </data>
+  <data name="LoggedOutUserDisConnect" xml:space="preserve">
+    <value>{0}已注销。原因：用户丢失/断开连接</value>
+  </data>
+  <data name="LoggedOutConnectTimeOut" xml:space="preserve">
+    <value>{0}已注销。原因：连接超时</value>
+  </data>
+  <data name="LoggedOutUserClose" xml:space="preserve">
+    <value>{0}已注销。原因：用户关闭游戏</value>
+  </data>
+  <data name="LoggedOutUserSelectChar" xml:space="preserve">
+    <value>{0}已注销。原因：用户返回选择角色</value>
+  </data>
+  <data name="LoggedOutBeganObserving" xml:space="preserve">
+    <value>{0}已注销。原因：开始观察</value>
+  </data>
+  <data name="LoggeedOutUnknown" xml:space="preserve">
+    <value>{0}已注销。原因：未知</value>
+  </data>
+  <data name="YouGetSecondLife" xml:space="preserve">
+    <value>你得到了第二次生命的机会</value>
+  </data>
+  <data name="YouProtectedByLaw" xml:space="preserve">
+    <value>你受到了法律的保护</value>
+  </data>
+  <data name="YouHaveMurdered" xml:space="preserve">
+    <value>你谋杀了{0}</value>
+  </data>
+  <data name="YouHaveBeenMurderedBy" xml:space="preserve">
+    <value>你被{0}谋杀了</value>
+  </data>
+  <data name="YourWeaponCursed" xml:space="preserve">
+    <value>你的武器被诅咒了。</value>
+  </data>
+  <data name="ShatteredUponDeath" xml:space="preserve">
+    <value>你的{0}在死亡时破碎了。</value>
+  </data>
+  <data name="YouDiedAndReturn" xml:space="preserve">
+    <value>你已死亡，{0}已归还给其所有者。</value>
+  </data>
+  <data name="HasDropped" xml:space="preserve">
+    <value>{0}已掉落{1}。</value>
+  </data>
+  <data name="GameCurTest" xml:space="preserve">
+    <value>游戏目前处于测试模式。</value>
+  </data>
+  <data name="YourBeenRemoveFromGuild" xml:space="preserve">
+    <value>你已被从公会中除名。</value>
+  </data>
+  <data name="MailboxOverflowing" xml:space="preserve">
+    <value>您的邮箱已满。</value>
+  </data>
+  <data name="YouMadeGM" xml:space="preserve">
+    <value>你被任命为GM</value>
+  </data>
+  <data name="IncorrectLoginPassword" xml:space="preserve">
+    <value>登录密码不正确</value>
+  </data>
+  <data name="YouCurChatBanned" xml:space="preserve">
+    <value>你当前被禁止聊天。</value>
+  </data>
+  <data name="YouChatBanned5Min" xml:space="preserve">
+    <value>你已被禁止聊天5分钟。</value>
+  </data>
+  <data name="CouldNotFind" xml:space="preserve">
+    <value>找不到{0}。</value>
+  </data>
+  <data name="PlayerNotAcceptYourMes" xml:space="preserve">
+    <value>玩家不接受你的消息。</value>
+  </data>
+  <data name="CannotMesBlacklist" xml:space="preserve">
+    <value>当玩家在您的黑名单上时，无法向他们发送消息。</value>
+  </data>
+  <data name="YouCannotShoutSeconds" xml:space="preserve">
+    <value>你在接下来的{0}秒内无法再喊话。</value>
+  </data>
+  <data name="YouLevel8Shout" xml:space="preserve">
+    <value>你需要达到8级才能喊话。</value>
+  </data>
+  <data name="IsntOnline" xml:space="preserve">
+    <value>{0}不在线上。</value>
+  </data>
+  <data name="PleaseTypeGMPassword" xml:space="preserve">
+    <value>请键入GM密码</value>
+  </data>
+  <data name="KilledByGM" xml:space="preserve">
+    <value>{0}被GM彻底杀死：{1}</value>
+  </data>
+  <data name="PlayerBeenChangedTo" xml:space="preserve">
+    <value>玩家{0}已更改为{1}</value>
+  </data>
+  <data name="GenderChangeByGM" xml:space="preserve">
+    <value>GM：{2}将{0}的性别更改为{1}</value>
+  </data>
+  <data name="PlayerHasBeenLevelled" xml:space="preserve">
+    <value>玩家{0}已升级{1}-&gt;{2}。</value>
+  </data>
+  <data name="PlayerHasBeenLevelledByGM" xml:space="preserve">
+    <value>玩家{0}已被GM:{3}升级：{1}-&gt;{2}</value>
+  </data>
+  <data name="CouldNotLevelPlayer" xml:space="preserve">
+    <value>无法升级玩家</value>
+  </data>
+  <data name="NoArmour" xml:space="preserve">
+    <value>没有盔甲</value>
+  </data>
+  <data name="NoWeapon" xml:space="preserve">
+    <value>没有武器</value>
+  </data>
+  <data name="NoRing" xml:space="preserve">
+    <value>没有戒指</value>
+  </data>
+  <data name="NoBracelet" xml:space="preserve">
+    <value>没有手镯</value>
+  </data>
+  <data name="NoNecklace" xml:space="preserve">
+    <value>没有项链</value>
+  </data>
+  <data name="NoBelt" xml:space="preserve">
+    <value>没有腰带</value>
+  </data>
+  <data name="NoBoots" xml:space="preserve">
+    <value>没有靴子</value>
+  </data>
+  <data name="NoHelmet" xml:space="preserve">
+    <value>没有头盔</value>
+  </data>
+  <data name="NoAmulet" xml:space="preserve">
+    <value>没有护身符</value>
+  </data>
+  <data name="NoStone" xml:space="preserve">
+    <value>没有石头</value>
+  </data>
+  <data name="NoTorch" xml:space="preserve">
+    <value>没有火炬</value>
+  </data>
+  <data name="NoGuild" xml:space="preserve">
+    <value>没有行会</value>
+  </data>
+  <data name="GuildText" xml:space="preserve">
+    <value>行会</value>
+  </data>
+  <data name="YouAreNotGM1" xml:space="preserve">
+    <value>你不是GM，此命令未为你启用。</value>
+  </data>
+</root>

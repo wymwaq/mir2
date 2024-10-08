@@ -6,6 +6,9 @@ using Server.MirEnvir;
 using Server.MirForms.Systems;
 using Server.MirObjects;
 using Server.Systems;
+using System.Globalization;
+using System.Resources;
+using System.Windows.Forms;
 
 namespace Server
 {
@@ -65,12 +68,12 @@ namespace Server
         {
             try
             {
-                Text = $"Total: {Envir.LastCount}, Real: {Envir.LastRealCount}";
-                PlayersLabel.Text = $"Players: {Envir.Players.Count}";
-                MonsterLabel.Text = $"Monsters: {Envir.MonsterCount}";
-                ConnectionsLabel.Text = $"Connections: {Envir.Connections.Count}";
-                BlockedIPsLabel.Text = $"Blocked IPs: {Envir.IPBlocks.Count(x => x.Value > Envir.Now)}";
-                UpTimeLabel.Text = $"Uptime: {Envir.Stopwatch.ElapsedMilliseconds / 1000 / 60 / 60 / 24}d:{Envir.Stopwatch.ElapsedMilliseconds / 1000 / 60 / 60 % 24}h:{Envir.Stopwatch.ElapsedMilliseconds / 1000 / 60 % 60}m:{Envir.Stopwatch.ElapsedMilliseconds / 1000 % 60}s";
+                Text = string.Format(ServerResources.TotalLabelFormat, Envir.LastCount, Envir.LastRealCount);
+                PlayersLabel.Text = string.Format(ServerResources.PlayersLabelFormat, Envir.Players.Count);
+                MonsterLabel.Text = string.Format(ServerResources.MonsterLabelFormat, Envir.MonsterCount);
+                ConnectionsLabel.Text = string.Format(ServerResources.ConnectionsLabelFormat, Envir.Connections.Count);
+                BlockedIPsLabel.Text = string.Format(ServerResources.BlockedIPsLabelFormat, Envir.IPBlocks.Count(x => x.Value > Envir.Now));
+                UpTimeLabel.Text = string.Format(ServerResources.UptimeFormat, Envir.Stopwatch.ElapsedMilliseconds / 1000 / 60 / 60 / 24, Envir.Stopwatch.ElapsedMilliseconds / 1000 / 60 / 60 % 24, Envir.Stopwatch.ElapsedMilliseconds / 1000 / 60 % 60, Envir.Stopwatch.ElapsedMilliseconds / 1000 % 60);
 
                 if (Settings.Multithreaded && (Envir.MobThreads != null))
                 {

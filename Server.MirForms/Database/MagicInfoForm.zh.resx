@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblSelected.Text" xml:space="preserve">
+    <value>选择的技能：</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>技能名称：</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>书籍：</value>
+  </data>
+  <data name="lblDamageExample.Text" xml:space="preserve">
+    <value>伤害示例</value>
+  </data>
+  <data name="lblDamageExplained.Text" xml:space="preserve">
+    <value>伤害：</value>
+  </data>
+  <data name="txtDmgMultBoost.ToolTip" xml:space="preserve">
+    <value>每个技能等级应用的额外倍数</value>
+  </data>
+  <data name="txtDmgMultBase.ToolTip" xml:space="preserve">
+    <value>总技能伤害应用的倍数</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>技能等级/伤害倍数提升</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>技能伤害倍数基础</value>
+  </data>
+  <data name="txtDmgBonusMax.ToolTip" xml:space="preserve">
+    <value>技能等级'4'的伤害加成</value>
+  </data>
+  <data name="txtDmgBonusMin.ToolTip" xml:space="preserve">
+    <value>技能等级'4'的伤害加成
+每个技能等级将获得此加成的1/4
+注意游戏中的等级0 = 1个加成，因此等级3 = 最大加成（4）</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>技能等级3的最大伤害</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>技能等级3的最小伤害：</value>
+  </data>
+  <data name="txtDmgBaseMax.ToolTip" xml:space="preserve">
+    <value>技能等级0的伤害</value>
+  </data>
+  <data name="txtDmgBaseMin.ToolTip" xml:space="preserve">
+    <value>技能等级0的伤害</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>最大基础伤害</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>最小基础伤害：</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>伤害设置</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>范围（0 无限制）</value>
+  </data>
+  <data name="txtDelayReduction.ToolTip" xml:space="preserve">
+    <value>延迟 = &lt;基础延迟&gt; - （技能等级 * &lt;减少量&gt;）</value>
+  </data>
+  <data name="txtDelayBase.ToolTip" xml:space="preserve">
+    <value>延迟 = &lt;基础延迟&gt; - （技能等级 * &lt;减少量&gt;）</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>每技能等级减少量</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>基础延迟</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>延迟（以毫秒为单位！）</value>
+  </data>
+  <data name="panel3.ToolTip" xml:space="preserve">
+    <value>延迟 = &lt;基础延迟&gt; - （技能等级 * &lt;减少量&gt;）</value>
+  </data>
+  <data name="txtMPIncrease.ToolTip" xml:space="preserve">
+    <value>每级额外消耗的MP量</value>
+  </data>
+  <data name="txtMPBase.ToolTip" xml:space="preserve">
+    <value>技能等级0时的MP消耗</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>每级MP增加量</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>基础MP消耗</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>MP消耗</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>技能点</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>技能点</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>技能点</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>等级3</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>等级2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>等级1</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>技能等级提升要求</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>技能图标：</value>
+  </data>
+  <data name="lblBookValid.Text" xml:space="preserve">
+    <value>搜索书籍</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>基础</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>魔法设置</value>
+  </data>
+</root>

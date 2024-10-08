@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DropsLoaded" xml:space="preserve">
+    <value>Drops Loaded.</value>
+  </data>
+  <data name="BuffsLoaded" xml:space="preserve">
+    <value>{0} Buffs Loaded.</value>
+  </data>
+  <data name="NetworkStarted" xml:space="preserve">
+    <value>Network Started.</value>
+  </data>
+  <data name="DragonLoaded" xml:space="preserve">
+    <value>Dragon Loaded.</value>
+  </data>
+  <data name="EnvirStarted" xml:space="preserve">
+    <value>Envir Started.</value>
+  </data>
+  <data name="RecipesLoaded" xml:space="preserve">
+    <value>{0} Recipes Loaded.</value>
+  </data>
+  <data name="MapsLoaded" xml:space="preserve">
+    <value>{0} Maps Loaded.</value>
+  </data>
+  <data name="PlayerArchivedDue1" xml:space="preserve">
+    <value>Player {0} has been archived due to {1} month deletion.</value>
+  </data>
+  <data name="PlayerArchivedDue2" xml:space="preserve">
+    <value>Player {0} has been archived due to no login after {1} months.</value>
+  </data>
+  <data name="PlayerArchivedDue3" xml:space="preserve">
+    <value>Player {0} has been archived due to {1} months inactivity.</value>
+  </data>
+  <data name="CouldNotLoadDrop" xml:space="preserve">
+    <value>Could not load Drop: {0}, Line {1}</value>
+  </data>
+  <data name="FileNotFoundQuest" xml:space="preserve">
+    <value>File Not Found: {0}, Quest: {1}</value>
+  </data>
+  <data name="CouldNotFindItem1" xml:space="preserve">
+    <value>Could not find Item: {0}</value>
+  </data>
+  <data name="CouldNotFindTool" xml:space="preserve">
+    <value>Could not find Tool: {0}, Recipe: {1}</value>
+  </data>
+  <data name="CouldNotFindIngredient" xml:space="preserve">
+    <value>Could not find Ingredient: {0}, Recipe: {1}</value>
+  </data>
+  <data name="CouldNotParseOption" xml:space="preserve">
+    <value>Could not parse option: {0}, Value: {1}</value>
+  </data>
+  <data name="FailedToLoadDragonMonster" xml:space="preserve">
+    <value>Failed to load Dragon (bad monster name): {0}</value>
+  </data>
+  <data name="FailedToLoadDragonMapName" xml:space="preserve">
+    <value>Failed to load Dragon (bad map name): {0}</value>
+  </data>
+  <data name="FailedToLoadDragonMapXY" xml:space="preserve">
+    <value>Failed to load Dragon (bad map XY): {0}</value>
+  </data>
+  <data name="FailedToLoadDragon" xml:space="preserve">
+    <value>Failed to load Dragon</value>
+  </data>
+  <data name="WorkloopError_Inner" xml:space="preserve">
+    <value>[inner workloop error. Line {0}] {1}</value>
+  </data>
+  <data name="WorkloopError_Outer" xml:space="preserve">
+    <value>[outer workloop error. Line {0}] {1}</value>
+  </data>
+  <data name="ThreadloopError" xml:space="preserve">
+    <value>[threadloop error] {0}</value>
+  </data>
+  <data name="CannotLoadDatabaseMinVersion" xml:space="preserve">
+    <value>Cannot load a database version {0}. Minimum supported is {1}.</value>
+  </data>
+  <data name="CannotLoadDatabaseMaxVersion" xml:space="preserve">
+    <value>Cannot load a database version {0}. Maximum supported is {1}.</value>
+  </data>
+  <data name="ServerRebooting" xml:space="preserve">
+    <value>Server rebooting...</value>
+  </data>
+  <data name="NetworkStopped" xml:space="preserve">
+    <value>Network Stopped.</value>
+  </data>
+  <data name="EnvirStopped" xml:space="preserve">
+    <value>Envir Stopped.</value>
+  </data>
+  <data name="TooManyConnections" xml:space="preserve">
+    <value>{0} Disconnected, Too many connections.</value>
+  </data>
+  <data name="UserLoggedIn" xml:space="preserve">
+    <value>{0}, {1}, User logged in.</value>
+  </data>
+  <data name="GameshopPurchaseLogsCleared" xml:space="preserve">
+    <value>Gameshop Purchase Logs Cleared.</value>
+  </data>
+  <data name="NPCScriptsReloaded" xml:space="preserve">
+    <value>NPC Scripts reloaded...</value>
+  </data>
+  <data name="LineMessagesReloaded" xml:space="preserve">
+    <value>LineMessages reloaded.</value>
+  </data>
+  <data name="GuildWillBeDeleted" xml:space="preserve">
+    <value>{0} guild will be deleted from the server.</value>
+  </data>
+  <data name="FailedToLoadMap" xml:space="preserve">
+    <value>Failed to Load Map: {0}</value>
+  </data>
+  <data name="MapFileName" xml:space="preserve">
+    <value>Filename: {0}</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>{0}, Connected.</value>
+  </data>
+  <data name="DisconnectedInvalidPacket" xml:space="preserve">
+    <value>{0} Disconnected, Invalid packet.</value>
+  </data>
+  <data name="DisconnectedLargePackets" xml:space="preserve">
+    <value>{0} Disconnected, Large amount of Packets. LastPackets: {1}.</value>
+  </data>
+  <data name="InvalidPacketReceived" xml:space="preserve">
+    <value>Invalid packet received. Index: {0}</value>
+  </data>
+  <data name="DisconnectedWrongClientVersion" xml:space="preserve">
+    <value>{0}, Disconnected - Wrong Client Version.</value>
+  </data>
+  <data name="ClientVersionMatched" xml:space="preserve">
+    <value>{0}, {1}, Client version matched.</value>
+  </data>
+  <data name="NewAccountBeingCreated" xml:space="preserve">
+    <value>{0}, {1}, New account being created.</value>
+  </data>
+  <data name="PasswordBeingChanged" xml:space="preserve">
+    <value>{0}, {1}, Password being changed.</value>
+  </data>
+  <data name="UserLoggingIn" xml:space="preserve">
+    <value>{0}, {1}, User logging in.</value>
+  </data>
+  <data name="ScriptNotFound" xml:space="preserve">
+    <value>Script Not Found: {0}</value>
+  </data>
+  <data name="InsertScriptNotFound" xml:space="preserve">
+    <value>INSERT Script Not Found: {0}</value>
+  </data>
+  <data name="IncludeScriptNotFound" xml:space="preserve">
+    <value>INCLUDE Script Not Found: {0}</value>
+  </data>
+  <data name="CouldNotFindItem2" xml:space="preserve">
+    <value>Could not find Item: {0}, File: {1}</value>
+  </data>
+  <data name="CouldNotFindRecipe" xml:space="preserve">
+    <value>Could not find recipe: {0}, File: {1}</value>
+  </data>
+  <data name="CouldNotFindIngredients" xml:space="preserve">
+    <value>Could not find ingredients: {0}, File: {1}</value>
+  </data>
+  <data name="PlayerPreventedAccess" xml:space="preserve">
+    <value>Player: {0} was prevented access to NPC key: '{1}'</value>
+  </data>
+  <data name="IncorrectOperator" xml:space="preserve">
+    <value>Incorrect operator: {0}, Page: {1}</value>
+  </data>
+  <data name="FailedToGetItemInfo" xml:space="preserve">
+    <value>Failed to get ItemInfo: {0}, Page: {1}</value>
+  </data>
+  <data name="FailedToCreateUserItem" xml:space="preserve">
+    <value>Failed to create UserItem: {0}, Page: {1}</value>
+  </data>
+  <data name="WarStarted" xml:space="preserve">
+    <value>{0} War Started.</value>
+  </data>
+  <data name="WarStopped" xml:space="preserve">
+    <value>{0} War Stopped.</value>
+  </data>
+  <data name="RandomTextFileNotExist" xml:space="preserve">
+    <value>the randomTextFile: {0} does not exist.</value>
+  </data>
+  <data name="NonGMPlayerConquestRepairAll" xml:space="preserve">
+    <value>GM Command @CONQUESTREPAIRALL invoked by non-GM player: {0}</value>
+  </data>
+  <data name="GMConquestRepairAll" xml:space="preserve">
+    <value>@CONQUESTREPAIRALL invoked by GM: {0} on account index: {1}</value>
+  </data>
+  <data name="ConquestInfoName" xml:space="preserve">
+    <value>Conquest: {0}</value>
+  </data>
+  <data name="ConquestOwner" xml:space="preserve">
+    <value>Owner: {0}</value>
+  </data>
+  <data name="NoCurrentOwner" xml:space="preserve">
+    <value>No current owner.</value>
+  </data>
+  <data name="ArchersRepaired" xml:space="preserve">
+    <value>Archers repaired: {0}/{1}</value>
+  </data>
+  <data name="GatesRepaired" xml:space="preserve">
+    <value>Gates repaired: {0}/{1}</value>
+  </data>
+  <data name="WallsRepaired" xml:space="preserve">
+    <value>Walls repaired: {0}/{1}</value>
+  </data>
+  <data name="SiegesRepaired" xml:space="preserve">
+    <value>Sieges repaired: {0}/{1}</value>
+  </data>
+  <data name="PlayerIsNowAGM" xml:space="preserve">
+    <value>{0} is now a GM</value>
+  </data>
+  <data name="HttpServiceStarted" xml:space="preserve">
+    <value>HttpService started.</value>
+  </data>
+  <data name="HttpServiceStartFailed" xml:space="preserve">
+    <value>HttpService start failed! Error: {0}</value>
+  </data>
+  <data name="UserConnected" xml:space="preserve">
+    <value>{0} has connected.</value>
+  </data>
+  <data name="GMAttempt" xml:space="preserve">
+    <value>{0} attempted a GM login</value>
+  </data>
+  <data name="PlayerChangedGender" xml:space="preserve">
+    <value>Player {0} has been changed to {1} by {2}</value>
+  </data>
+  <data name="PlayerLevelChanged" xml:space="preserve">
+    <value>Player {0} has been Levelled {1} -&gt; {2} by {3}</value>
+  </data>
+  <data name="PlayerLevelChangedCurrent" xml:space="preserve">
+    <value>Player {0} has been Leveled {1} -&gt; {2} by {3}</value>
+  </data>
+  <data name="PlayerHeroLevelChanged" xml:space="preserve">
+    <value>Player {0}'s hero has been Levelled {1} -&gt; {2} by {3}</value>
+  </data>
+  <data name="PlayerHeroLevelChangedCurrent" xml:space="preserve">
+    <value>Player {0}'s hero has been Leveled {1} -&gt; {2} by {3}</value>
+  </data>
+  <data name="PlayerCreateAttempt" xml:space="preserve">
+    <value>Player {0} has attempted to Create {1} x{2}</value>
+  </data>
+  <data name="PlayerBackedUp" xml:space="preserve">
+    <value>Player {0} has been backed up by {1}</value>
+  </data>
+  <data name="PlayerArchived" xml:space="preserve">
+    <value>Player {0} has been archived by {1}</value>
+  </data>
+  <data name="PlayerLoaded" xml:space="preserve">
+    <value>Player {0} has been loaded by {1}</value>
+  </data>
+  <data name="PlayerRestored" xml:space="preserve">
+    <value>Player {0} has been restored by {1}</value>
+  </data>
+  <data name="PlayerGivenCredit" xml:space="preserve">
+    <value>Player {0} has been given {1} credit</value>
+  </data>
+  <data name="PlayerChangedClass" xml:space="preserve">
+    <value>Player {0} has been changed to {1} by {2}</value>
+  </data>
+  <data name="AuctionSoldExpired" xml:space="preserve">
+    <value>Auction both sold and Expired {0}</value>
+  </data>
+  <data name="LoggedOutServerClosed" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Server closed</value>
+  </data>
+  <data name="LoggedOutDoubleLogin" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Double login</value>
+  </data>
+  <data name="LoggedOutChatMesLong" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Chat message too long</value>
+  </data>
+  <data name="LoggedOutServerCrashed" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Server crashed</value>
+  </data>
+  <data name="LoggedOutKickedByAdmin" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Kicked by admin</value>
+  </data>
+  <data name="LoggedOutMaxConnect" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Maximum connections reached</value>
+  </data>
+  <data name="LoggedOutAccountBanned" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Account has been Banned!</value>
+  </data>
+  <data name="LoggedOutWrongClientVers" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Wrong client version</value>
+  </data>
+  <data name="LoggedOutUserDisConnect" xml:space="preserve">
+    <value>{0} Has logged out. Reason: User gone missing / disconnected</value>
+  </data>
+  <data name="LoggedOutConnectTimeOut" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Connection timed out</value>
+  </data>
+  <data name="LoggedOutUserClose" xml:space="preserve">
+    <value>{0} Has logged out. Reason: User closed game</value>
+  </data>
+  <data name="LoggedOutUserSelectChar" xml:space="preserve">
+    <value>{0} Has logged out. Reason: User returned to select char</value>
+  </data>
+  <data name="LoggedOutBeganObserving" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Began observing</value>
+  </data>
+  <data name="LoggeedOutUnknown" xml:space="preserve">
+    <value>{0} Has logged out. Reason: Unknown</value>
+  </data>
+  <data name="YouGetSecondLife" xml:space="preserve">
+    <value>You have been given a second chance at life</value>
+  </data>
+  <data name="YouProtectedByLaw" xml:space="preserve">
+    <value>You've been protected by the law</value>
+  </data>
+  <data name="YouHaveMurdered" xml:space="preserve">
+    <value>You have murdered {0}</value>
+  </data>
+  <data name="YouHaveBeenMurderedBy" xml:space="preserve">
+    <value>You have been murdered by {0}</value>
+  </data>
+  <data name="YourWeaponCursed" xml:space="preserve">
+    <value>Your weapon has been cursed.</value>
+  </data>
+  <data name="ShatteredUponDeath" xml:space="preserve">
+    <value>Your {0} shattered upon death.</value>
+  </data>
+  <data name="YouDiedAndReturn" xml:space="preserve">
+    <value>You died and {0} has been returned to it's owner.</value>
+  </data>
+  <data name="HasDropped" xml:space="preserve">
+    <value>{0} has dropped {1}.</value>
+  </data>
+  <data name="GameCurTest" xml:space="preserve">
+    <value>Game is currently in test mode.</value>
+  </data>
+  <data name="YourBeenRemoveFromGuild" xml:space="preserve">
+    <value>You have been removed from the guild.</value>
+  </data>
+  <data name="MailboxOverflowing" xml:space="preserve">
+    <value>Your mailbox is overflowing.</value>
+  </data>
+  <data name="YouMadeGM" xml:space="preserve">
+    <value>You have been made a GM</value>
+  </data>
+  <data name="IncorrectLoginPassword" xml:space="preserve">
+    <value>Incorrect login password</value>
+  </data>
+  <data name="YouCurChatBanned" xml:space="preserve">
+    <value>You are currently banned from chatting.</value>
+  </data>
+  <data name="YouChatBanned5Min" xml:space="preserve">
+    <value>You have been banned from chatting for 5 minutes.</value>
+  </data>
+  <data name="CouldNotFind" xml:space="preserve">
+    <value>Could not find {0}.</value>
+  </data>
+  <data name="PlayerNotAcceptYourMes" xml:space="preserve">
+    <value>Player is not accepting your messages.</value>
+  </data>
+  <data name="CannotMesBlacklist" xml:space="preserve">
+    <value>Cannot message player whilst they are on your blacklist.</value>
+  </data>
+  <data name="YouCannotShoutSeconds" xml:space="preserve">
+    <value>You cannot shout for another {0} seconds.</value>
+  </data>
+  <data name="YouLevel8Shout" xml:space="preserve">
+    <value>You need to be level 8 before you can shout.</value>
+  </data>
+  <data name="IsntOnline" xml:space="preserve">
+    <value>{0} isn't online.</value>
+  </data>
+  <data name="PleaseTypeGMPassword" xml:space="preserve">
+    <value>Please type the GM Password</value>
+  </data>
+  <data name="KilledByGM" xml:space="preserve">
+    <value>{0} was totally killed by GM: {1}</value>
+  </data>
+  <data name="PlayerBeenChangedTo" xml:space="preserve">
+    <value>Player {0} has been changed to {1}</value>
+  </data>
+  <data name="GenderChangeByGM" xml:space="preserve">
+    <value>{0} had gender change to {1} by GM: {2}</value>
+  </data>
+  <data name="PlayerHasBeenLevelled" xml:space="preserve">
+    <value>Player {0} has been Levelled {1} -&gt; {2}.</value>
+  </data>
+  <data name="PlayerHasBeenLevelledByGM" xml:space="preserve">
+    <value>Player {0} has been Levelled: {1} -&gt; {2} by GM: {3}</value>
+  </data>
+  <data name="CouldNotLevelPlayer" xml:space="preserve">
+    <value>Could not level player</value>
+  </data>
+  <data name="NoArmour" xml:space="preserve">
+    <value>No Armour</value>
+  </data>
+  <data name="NoWeapon" xml:space="preserve">
+    <value>No Weapon</value>
+  </data>
+  <data name="NoRing" xml:space="preserve">
+    <value>No Ring</value>
+  </data>
+  <data name="NoBracelet" xml:space="preserve">
+    <value>No Bracelet</value>
+  </data>
+  <data name="NoNecklace" xml:space="preserve">
+    <value>No Necklace</value>
+  </data>
+  <data name="NoBelt" xml:space="preserve">
+    <value>No Belt</value>
+  </data>
+  <data name="NoBoots" xml:space="preserve">
+    <value>No Boots</value>
+  </data>
+  <data name="NoHelmet" xml:space="preserve">
+    <value>No Helmet</value>
+  </data>
+  <data name="NoAmulet" xml:space="preserve">
+    <value>No Amulet</value>
+  </data>
+  <data name="NoStone" xml:space="preserve">
+    <value>No Stone</value>
+  </data>
+  <data name="NoTorch" xml:space="preserve">
+    <value>No Torch</value>
+  </data>
+  <data name="NoGuild" xml:space="preserve">
+    <value>No Guild</value>
+  </data>
+  <data name="GuildText" xml:space="preserve">
+    <value>Guild</value>
+  </data>
+  <data name="YouAreNotGM1" xml:space="preserve">
+    <value>You are not a GM and this command is not enabled for you.</value>
+  </data>
+</root>

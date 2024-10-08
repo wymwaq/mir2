@@ -8,7 +8,8 @@ namespace Client.MirControls
     public class MirControl : IDisposable
     {
         public static MirControl ActiveControl, MouseControl;
-        
+        public string Wq_ID = String.Empty;
+
         public virtual Point DisplayLocation { get { return Parent == null ? Location : Parent.DisplayLocation.Add(Location); } }
         public Rectangle DisplayRectangle { get { return new Rectangle(DisplayLocation, Size); } }
 

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -120,25 +120,66 @@
   <metadata name="Tool.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>133, 17</value>
   </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Tool.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Tool.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 17</value>
+  </data>
+  <data name="toolStripLabel1.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="EndFocus.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="EndFocus.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALxSURBVEhL7VRLTxNhFP18VKgVhbbYRkrL9Ju2MDB9TUMD
-        iV0ZXLsyMZIYMSxMWCgLYzAhYhQVBfHRUiCiYER5iIEQiIZIZONC1IUmJLJw4U8gaiLMeM84LhCKATYm
-        epKbSee7c879zr237D/+TnSVlTlaOG9u9npbOkSRG69XQGNsSxvnBy8JQkeLKNYMSNIO4ygz0opiahPF
-        8aFYTB0qL1e7i4vnkz6f1zhehiucVz8LhRaQOyNJi9c4P2EcZUZSlvMelZZ+SodCaioYVIficV0kJYqS
-        kaJXTjes7vF4vj+IRPS8QUVRLwtC2kjJjEbGtlJlydlYTJsKhbRuEhqurFTvlZTMQUS3xec79iIcXnit
-        KHpOL4lMStKXW2SXQbM2RhVlZ5vXOzobj2v36eOZSER7kkiovXSTpqKixpeRyMJwRYX+/lU0qk2TPegB
-        xA2KPwMiN0RxANU/jEbVfoqnVVUqiCGG3/AelYPc+Gx96BPF3e0+38DbREKDHbANPcETQiBv5bx2XZX/
-        Dt0uQXgD4k7qx91wWEVjUX2TIFzYFLk+LXT9CfKYxlEblWXtpiyrY/SEbZ2BwLLpWhdATnNdO0420MRo
-        40T6nERADDGMJvqQ5nyufSMiFwWhBuQ9ZMlkMKhBhASWrnL+DpMDuyD0mOb/jt8/35phGVfFOUE4SuSL
-        2IEkVQrfR4LBr/Uu18l6h8Ny3uMZRPUQwTl6ApEGt1swKDLjuM2Wk/L732OB4DU2uk+Wvx2y208FGbNQ
-        ijmfMWddQcEI9mCCboe+QOSM230di/qTaRUojJnMjO2jlf8AS4zGLh2wWhvo2ElhpbAhshjz1rlcU8i7
-        TQKw8rDdnqKzPPDQc+V0Uafwb2iTLJYj9F8zR4v2cX9u7ll656awU+yiwC1yKPZSckm109nfFQh8Pl1Y
-        OG03mYib2QyB1QERKjHHajYX5GVnu/cwlusiW+hoGwWq+hXbHSRGSrb8rCxOqg58tyb5JrDxZfvXwdgP
-        LMMwhR1/4+oAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALxSURBVEhL7VTNSxRxGP71sem2Wbq7tkuuu87+Znd1dGY/
+        ZnFRaE9h505BJESGh8BDeYgwkIyysvyodP0KRQtrjQRDFEOSvHTI6lAg5KFDf4JUkM70PtN0MF1DvQT1
+        wMuw83vned7f877vsv/4O9FXVuZq4by52e9v6RZFbr5eA52xHW2cH70mCN0toliTlqQ95lFm9KiqpU0U
+        J9LxuJYuL9f6i4sXuwIBv3m8Cjc4r54Oh5eQOydJy7c4P2MeZUaXLOc9Ki39lAqHtU5F0dKJhCGSEkXJ
+        TDEqpxtWD/h834eiUSPvsapq1wWhx0zJjEbGdlJlXfPxuD4TDuu9JDRaWakNlpQsQMSwJRA49SISWXqt
+        qkbOIIlMSdKXu2SXSbMxxlV1b5vfPz6fSOgD9PFcNKo/SSa1IbpJU1FR48todGm0osJ4/yoW02fJHvQA
+        4ibFnwGRdlFMo/oHsZj2kOJpVZUGYojhN7xH5SA3P9schkVxf0cgkH6bTOqwA7ahJ3hCCOStnNduqvLf
+        YdglCG9A3E396I9ENDQW1TcJwpVtkRvTQtefJI9pHPVxWdbbZVl7Rk/Y1hsKrZquTQHkNNe1E2QDTYw+
+        QaTPSQTEEMNoog89nC90bEXkqiDUgPw+WTKlKDpESGDlJufvMDmwC0IjNP+dweBia4ZlXBeXBOEkkS9j
+        B+5RpfB9TFG+1ns8Z+tdLttln28U1UME58aykUiD1yuYFJlx2uHISQWD77FA8BobPSzL3445necUxmyU
+        Ys1nzF1XUDCGPZik26EvELng9d7Gov5kWgcqYxYrY4do5T/AErOxK0fs9gY6dlPYKRyILMb8dR7PDPLu
+        kACsPO50pugsDzz0XDtd1Cn8Gzokm+0E/dcs0KJ9PJybe5HeeSmcFPsocIscioOUXFLtdo/0hUKfzxcW
+        zjotFuJmDlNgfUCESsyxW60FednZ3gOM5XrIFjraRYGqfsVuF4mRkiM/K4uTqgvfbUi+DWx92f51MPYD
+        SE8wIXsb0tcAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="EndFocus.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="EndFocus.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="EndFocus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="EndFocus.Text" xml:space="preserve">
+    <value>End Focus</value>
+  </data>
+  <data name="EndFocus.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FocusBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 6</value>
+  </data>
+  <data name="FocusBreak.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SelectButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="SelectButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -156,6 +197,24 @@
         +JbBXdiE3XV4b8fR7pdKurB+lUplKZFITGLeA3rArjIGM6S0UVRmy3/sKGCthoAPHAbcsOUxdwujloBZ
         8OiUOAHr1dRbew0u4EJKSct2sBpc3OB//KN403FW/QV0cHS32eVkWQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="SelectButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="SelectButton.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="SelectButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="SelectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="SelectButton.Text" xml:space="preserve">
+    <value>Select Region</value>
+  </data>
+  <data name="AddButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="AddButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -178,6 +237,24 @@
         TkSuQmCC
 </value>
   </data>
+  <data name="AddButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="AddButton.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="AddButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="AddButton.Text" xml:space="preserve">
+    <value>Add Region</value>
+  </data>
+  <data name="MoveButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="MoveButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -191,6 +268,21 @@
         XGEvx6WFDZkacI89YXKc6ciySJ2ABonvcekcH4PVgOvF/SW/1/G8krCBE3BvaQw6z/5DKwsbMECMluZZ
         Ise12h+i0wrG7aRA3AAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="MoveButton.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MoveButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MoveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="MoveButton.Text" xml:space="preserve">
+    <value>Move Region</value>
+  </data>
+  <data name="ResizeButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="ResizeButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -209,9 +301,211 @@
         RU5ErkJggg==
 </value>
   </data>
+  <data name="ResizeButton.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ResizeButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="ResizeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="ResizeButton.Text" xml:space="preserve">
+    <value>Resize Region</value>
+  </data>
+  <data name="Tool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Tool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 619</value>
+  </data>
+  <data name="Tool.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Tool.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;Tool.Name" xml:space="preserve">
+    <value>Tool</value>
+  </data>
+  <data name="&gt;&gt;Tool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tool.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Tool.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="splitter1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="splitter1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>803, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitter1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="splitter1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 619</value>
+  </data>
+  <data name="splitter1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Name" xml:space="preserve">
+    <value>splitter1</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Splitter, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitter1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="toolStrip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>873, 17</value>
   </metadata>
+  <metadata name="RespawnTools.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>313, 17</value>
+  </metadata>
+  <data name="&gt;&gt;RespawnPanel.Name" xml:space="preserve">
+    <value>RespawnPanel</value>
+  </data>
+  <data name="&gt;&gt;RespawnPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnPanel.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;RespawnPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;toolStrip3.Name" xml:space="preserve">
+    <value>toolStrip3</value>
+  </data>
+  <data name="&gt;&gt;toolStrip3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip3.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;RespawnsFilter.Name" xml:space="preserve">
+    <value>RespawnsFilter</value>
+  </data>
+  <data name="&gt;&gt;RespawnsFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnsFilter.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;RespawnsFilter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;RespawnTools.Name" xml:space="preserve">
+    <value>RespawnTools</value>
+  </data>
+  <data name="&gt;&gt;RespawnTools.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnTools.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;RespawnTools.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="tabPage2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 589</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Respawns</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>RegionTabs</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RespawnPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RespawnPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="RespawnPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="RespawnPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="RespawnPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 514</value>
+  </data>
+  <data name="RespawnPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;RespawnPanel.Name" xml:space="preserve">
+    <value>RespawnPanel</value>
+  </data>
+  <data name="&gt;&gt;RespawnPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnPanel.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;RespawnPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="toolStrip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>873, 17</value>
+  </metadata>
+  <data name="toolStrip3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="toolStrip3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 564</value>
+  </data>
+  <data name="toolStrip3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 25</value>
+  </data>
+  <data name="toolStrip3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="toolStrip3.Text" xml:space="preserve">
+    <value>toolStrip3</value>
+  </data>
+  <data name="&gt;&gt;toolStrip3.Name" xml:space="preserve">
+    <value>toolStrip3</value>
+  </data>
+  <data name="&gt;&gt;toolStrip3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip3.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="RespawnsRemoveSelected.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -228,6 +522,15 @@
         Z4nsXGVlZRmXy73I4XAulZeXc0mdP9yEaWMoKfkJdCyTYl98DUQAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="RespawnsRemoveSelected.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="RespawnsRemoveSelected.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="RespawnsRemoveSelected.Text" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
   <data name="ResapwnsHideRegion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -240,6 +543,15 @@
         lvlBQa/Xu82f+/wTK6AoSR3+E7zUGHs+Z6xzydgjMBk7c3qLdcrDY02jeeA7kcU65m864OF54DuRPxNj
         n9zNDEMHyL8JAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="ResapwnsHideRegion.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="ResapwnsHideRegion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="ResapwnsHideRegion.Text" xml:space="preserve">
+    <value>Hide Region</value>
   </data>
   <data name="ResapwnsShowRegion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -255,6 +567,18 @@
         AAAASUVORK5CYII=
 </value>
   </data>
+  <data name="ResapwnsShowRegion.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="ResapwnsShowRegion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="ResapwnsShowRegion.Text" xml:space="preserve">
+    <value>Show Region</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
   <data name="ResapwnsFocusRegion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -267,9 +591,69 @@
         wD7XUmRm0f+ZTSj0BQoq7hKHIEm9AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="ResapwnsFocusRegion.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="ResapwnsFocusRegion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="ResapwnsFocusRegion.Text" xml:space="preserve">
+    <value>Focus Region</value>
+  </data>
+  <data name="RespawnsFilter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="RespawnsFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="RespawnsFilter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="RespawnsFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 25</value>
+  </data>
+  <data name="RespawnsFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;RespawnsFilter.Name" xml:space="preserve">
+    <value>RespawnsFilter</value>
+  </data>
+  <data name="&gt;&gt;RespawnsFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnsFilter.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;RespawnsFilter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="RespawnTools.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>313, 17</value>
   </metadata>
+  <data name="RespawnTools.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RespawnTools.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 25</value>
+  </data>
+  <data name="RespawnTools.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="RespawnTools.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;RespawnTools.Name" xml:space="preserve">
+    <value>RespawnTools</value>
+  </data>
+  <data name="&gt;&gt;RespawnTools.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnTools.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;RespawnTools.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="RespawnsSelectAll.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -280,6 +664,15 @@
         iWEYr1mWfV9/13Hj7+AZOjisS3Rdf1JV9axp2te9oIPD+mOgKD+PfhFtj0vEBQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="RespawnsSelectAll.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="RespawnsSelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="RespawnsSelectAll.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
   <data name="RespawnsSelectNone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -289,6 +682,15 @@
         55IgCF5t21JVVerg0HAu8X3/Wpbld/8u8Tru4NBwLnFd92TbduI4zlsbHBrOj4Fl/QBr0SNeThH2IgAA
         AABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="RespawnsSelectNone.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="RespawnsSelectNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="RespawnsSelectNone.Text" xml:space="preserve">
+    <value>Select None</value>
   </data>
   <data name="RespawnsInvertSelection.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -308,9 +710,180 @@
         rkJggg==
 </value>
   </data>
+  <data name="RespawnsInvertSelection.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="RespawnsInvertSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="RespawnsInvertSelection.Text" xml:space="preserve">
+    <value>Invert Selection</value>
+  </data>
   <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>547, 17</value>
   </metadata>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>652, 17</value>
+  </metadata>
+  <data name="&gt;&gt;MiningPanel.Name" xml:space="preserve">
+    <value>MiningPanel</value>
+  </data>
+  <data name="&gt;&gt;MiningPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningPanel.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;MiningPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MiningFilter.Name" xml:space="preserve">
+    <value>MiningFilter</value>
+  </data>
+  <data name="&gt;&gt;MiningFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningFilter.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;MiningFilter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Name" xml:space="preserve">
+    <value>toolStrip2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="tabPage4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 589</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Mining</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>RegionTabs</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MiningPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MiningPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="MiningPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="MiningPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="MiningPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 514</value>
+  </data>
+  <data name="MiningPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;MiningPanel.Name" xml:space="preserve">
+    <value>MiningPanel</value>
+  </data>
+  <data name="&gt;&gt;MiningPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningPanel.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;MiningPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MiningFilter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="MiningFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="MiningFilter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="MiningFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 25</value>
+  </data>
+  <data name="MiningFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;MiningFilter.Name" xml:space="preserve">
+    <value>MiningFilter</value>
+  </data>
+  <data name="&gt;&gt;MiningFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningFilter.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;MiningFilter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>547, 17</value>
+  </metadata>
+  <data name="toolStrip2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStrip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 25</value>
+  </data>
+  <data name="toolStrip2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="toolStrip2.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Name" xml:space="preserve">
+    <value>toolStrip2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="MiningSelectAll.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -321,6 +894,15 @@
         iWEYr1mWfV9/13Hj7+AZOjisS3Rdf1JV9axp2te9oIPD+mOgKD+PfhFtj0vEBQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="MiningSelectAll.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MiningSelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="MiningSelectAll.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
   <data name="MiningSelectNone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -330,6 +912,15 @@
         55IgCF5t21JVVerg0HAu8X3/Wpbld/8u8Tru4NBwLnFd92TbduI4zlsbHBrOj4Fl/QBr0SNeThH2IgAA
         AABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="MiningSelectNone.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MiningSelectNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="MiningSelectNone.Text" xml:space="preserve">
+    <value>Select None</value>
   </data>
   <data name="MiningInvertSelection.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -349,9 +940,45 @@
         rkJggg==
 </value>
   </data>
+  <data name="MiningInvertSelection.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MiningInvertSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="MiningInvertSelection.Text" xml:space="preserve">
+    <value>Invert Selection</value>
+  </data>
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>652, 17</value>
   </metadata>
+  <data name="toolStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 564</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 25</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="MiningRemoveSelected.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -368,6 +995,15 @@
         Z4nsXGVlZRmXy73I4XAulZeXc0mdP9yEaWMoKfkJdCyTYl98DUQAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="MiningRemoveSelected.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MiningRemoveSelected.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="MiningRemoveSelected.Text" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
   <data name="MiningHideRegion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -380,6 +1016,15 @@
         lvlBQa/Xu82f+/wTK6AoSR3+E7zUGHs+Z6xzydgjMBk7c3qLdcrDY02jeeA7kcU65m864OF54DuRPxNj
         n9zNDEMHyL8JAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="MiningHideRegion.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MiningHideRegion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="MiningHideRegion.Text" xml:space="preserve">
+    <value>Hide Region</value>
   </data>
   <data name="MiningShowRegion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -395,6 +1040,18 @@
         AAAASUVORK5CYII=
 </value>
   </data>
+  <data name="MiningShowRegion.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MiningShowRegion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="MiningShowRegion.Text" xml:space="preserve">
+    <value>Show Region</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
   <data name="MiningFocusRegion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -407,7 +1064,313 @@
         wD7XUmRm0f+ZTSj0BQoq7hKHIEm9AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="MiningFocusRegion.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MiningFocusRegion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="MiningFocusRegion.Text" xml:space="preserve">
+    <value>Focus Region</value>
+  </data>
+  <data name="RegionTabs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="RegionTabs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>809, 0</value>
+  </data>
+  <data name="RegionTabs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="RegionTabs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 619</value>
+  </data>
+  <data name="RegionTabs.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;RegionTabs.Name" xml:space="preserve">
+    <value>RegionTabs</value>
+  </data>
+  <data name="&gt;&gt;RegionTabs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RegionTabs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RegionTabs.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>757, 17</value>
   </metadata>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 619</value>
+  </data>
+  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 16, 0</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1101, 26</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="MapDetailsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 21</value>
+  </data>
+  <data name="MapDetailsLabel.Text" xml:space="preserve">
+    <value>Map Name: {0}   Width: {1}   Height: {2}</value>
+  </data>
+  <data name="mapContainer1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;MapImage.Name" xml:space="preserve">
+    <value>MapImage</value>
+  </data>
+  <data name="&gt;&gt;MapImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MapImage.Parent" xml:space="preserve">
+    <value>mapContainer1</value>
+  </data>
+  <data name="&gt;&gt;MapImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mapContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mapContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 0</value>
+  </data>
+  <data name="mapContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mapContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 619</value>
+  </data>
+  <data name="mapContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;mapContainer1.Name" xml:space="preserve">
+    <value>mapContainer1</value>
+  </data>
+  <data name="&gt;&gt;mapContainer1.Type" xml:space="preserve">
+    <value>Server.MirForms.Control.MapContainer, Server, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mapContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mapContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MapImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MapImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="MapImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MapImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="MapImage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MapImage.Name" xml:space="preserve">
+    <value>MapImage</value>
+  </data>
+  <data name="&gt;&gt;MapImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MapImage.Parent" xml:space="preserve">
+    <value>mapContainer1</value>
+  </data>
+  <data name="&gt;&gt;MapImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>zh</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1101, 645</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Visualizer</value>
+  </data>
+  <data name="&gt;&gt;toolStripLabel1.Name" xml:space="preserve">
+    <value>toolStripLabel1</value>
+  </data>
+  <data name="&gt;&gt;toolStripLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EndFocus.Name" xml:space="preserve">
+    <value>EndFocus</value>
+  </data>
+  <data name="&gt;&gt;EndFocus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FocusBreak.Name" xml:space="preserve">
+    <value>FocusBreak</value>
+  </data>
+  <data name="&gt;&gt;FocusBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SelectButton.Name" xml:space="preserve">
+    <value>SelectButton</value>
+  </data>
+  <data name="&gt;&gt;SelectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Name" xml:space="preserve">
+    <value>AddButton</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MoveButton.Name" xml:space="preserve">
+    <value>MoveButton</value>
+  </data>
+  <data name="&gt;&gt;MoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ResizeButton.Name" xml:space="preserve">
+    <value>ResizeButton</value>
+  </data>
+  <data name="&gt;&gt;ResizeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnsRemoveSelected.Name" xml:space="preserve">
+    <value>RespawnsRemoveSelected</value>
+  </data>
+  <data name="&gt;&gt;RespawnsRemoveSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ResapwnsHideRegion.Name" xml:space="preserve">
+    <value>ResapwnsHideRegion</value>
+  </data>
+  <data name="&gt;&gt;ResapwnsHideRegion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ResapwnsShowRegion.Name" xml:space="preserve">
+    <value>ResapwnsShowRegion</value>
+  </data>
+  <data name="&gt;&gt;ResapwnsShowRegion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ResapwnsFocusRegion.Name" xml:space="preserve">
+    <value>ResapwnsFocusRegion</value>
+  </data>
+  <data name="&gt;&gt;ResapwnsFocusRegion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnsSelectAll.Name" xml:space="preserve">
+    <value>RespawnsSelectAll</value>
+  </data>
+  <data name="&gt;&gt;RespawnsSelectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnsSelectNone.Name" xml:space="preserve">
+    <value>RespawnsSelectNone</value>
+  </data>
+  <data name="&gt;&gt;RespawnsSelectNone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RespawnsInvertSelection.Name" xml:space="preserve">
+    <value>RespawnsInvertSelection</value>
+  </data>
+  <data name="&gt;&gt;RespawnsInvertSelection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningSelectAll.Name" xml:space="preserve">
+    <value>MiningSelectAll</value>
+  </data>
+  <data name="&gt;&gt;MiningSelectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningSelectNone.Name" xml:space="preserve">
+    <value>MiningSelectNone</value>
+  </data>
+  <data name="&gt;&gt;MiningSelectNone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningInvertSelection.Name" xml:space="preserve">
+    <value>MiningInvertSelection</value>
+  </data>
+  <data name="&gt;&gt;MiningInvertSelection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningRemoveSelected.Name" xml:space="preserve">
+    <value>MiningRemoveSelected</value>
+  </data>
+  <data name="&gt;&gt;MiningRemoveSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningHideRegion.Name" xml:space="preserve">
+    <value>MiningHideRegion</value>
+  </data>
+  <data name="&gt;&gt;MiningHideRegion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningShowRegion.Name" xml:space="preserve">
+    <value>MiningShowRegion</value>
+  </data>
+  <data name="&gt;&gt;MiningShowRegion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MiningFocusRegion.Name" xml:space="preserve">
+    <value>MiningFocusRegion</value>
+  </data>
+  <data name="&gt;&gt;MiningFocusRegion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MapDetailsLabel.Name" xml:space="preserve">
+    <value>MapDetailsLabel</value>
+  </data>
+  <data name="&gt;&gt;MapDetailsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>VForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuildItemForm));
             GuildItemListView = new ListView();
             indexHeader = new ColumnHeader();
             PlaceHeader = new ColumnHeader();
@@ -44,80 +45,64 @@
             // 
             GuildItemListView.Columns.AddRange(new ColumnHeader[] { indexHeader, PlaceHeader, nameHeader, countHeader, DuraHeader });
             GuildItemListView.GridLines = true;
-            GuildItemListView.Location = new Point(1, 0);
+            resources.ApplyResources(GuildItemListView, "GuildItemListView");
             GuildItemListView.Name = "GuildItemListView";
-            GuildItemListView.Size = new Size(520, 414);
-            GuildItemListView.TabIndex = 0;
             GuildItemListView.UseCompatibleStateImageBehavior = false;
             GuildItemListView.View = View.Details;
             // 
             // indexHeader
             // 
-            indexHeader.Text = "UID";
-            indexHeader.Width = 70;
+            resources.ApplyResources(indexHeader, "indexHeader");
             // 
             // PlaceHeader
             // 
-            PlaceHeader.Text = "Stored By";
-            PlaceHeader.Width = 130;
+            resources.ApplyResources(PlaceHeader, "PlaceHeader");
             // 
             // nameHeader
             // 
-            nameHeader.Text = "Name";
-            nameHeader.Width = 115;
+            resources.ApplyResources(nameHeader, "nameHeader");
             // 
             // countHeader
             // 
-            countHeader.Text = "Count";
-            countHeader.Width = 95;
+            resources.ApplyResources(countHeader, "countHeader");
             // 
             // DuraHeader
             // 
-            DuraHeader.Text = "Dura";
-            DuraHeader.Width = 155;
+            resources.ApplyResources(DuraHeader, "DuraHeader");
             // 
             // MemberListView
             // 
             MemberListView.Columns.AddRange(new ColumnHeader[] { Members, Rank });
             MemberListView.GridLines = true;
-            MemberListView.Location = new Point(547, 12);
+            resources.ApplyResources(MemberListView, "MemberListView");
             MemberListView.Name = "MemberListView";
             MemberListView.Scrollable = false;
-            MemberListView.Size = new Size(291, 323);
-            MemberListView.TabIndex = 1;
             MemberListView.UseCompatibleStateImageBehavior = false;
             MemberListView.View = View.Details;
             // 
             // Members
             // 
-            Members.Text = "Members";
-            Members.Width = 195;
+            resources.ApplyResources(Members, "Members");
             // 
             // Rank
             // 
-            Rank.Text = "Ranks";
-            Rank.Width = 180;
+            resources.ApplyResources(Rank, "Rank");
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(654, 356);
+            resources.ApplyResources(DeleteButton, "DeleteButton");
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(75, 32);
-            DeleteButton.TabIndex = 2;
-            DeleteButton.Text = "Delete";
             DeleteButton.UseVisualStyleBackColor = true;
             DeleteButton.Click += DeleteButton_Click;
             // 
             // GuildItemForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(854, 450);
             Controls.Add(DeleteButton);
             Controls.Add(MemberListView);
             Controls.Add(GuildItemListView);
             Name = "GuildItemForm";
-            Text = "GuildItemForm";
             ResumeLayout(false);
         }
 

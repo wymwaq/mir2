@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CharacterInfoForm));
             CharactersList = new ListView();
             IndexHeader = new ColumnHeader();
             NameHeader = new ColumnHeader();
@@ -46,94 +47,65 @@
             CharactersList.Columns.AddRange(new ColumnHeader[] { IndexHeader, NameHeader, AccountNameHeader });
             CharactersList.FullRowSelect = true;
             CharactersList.GridLines = true;
-            CharactersList.Location = new Point(0, 95);
+            resources.ApplyResources(CharactersList, "CharactersList");
             CharactersList.Name = "CharactersList";
-            CharactersList.Size = new Size(382, 464);
-            CharactersList.TabIndex = 0;
             CharactersList.UseCompatibleStateImageBehavior = false;
             CharactersList.View = View.Details;
             // 
             // IndexHeader
             // 
-            IndexHeader.Text = "Index";
-            IndexHeader.Width = 80;
+            resources.ApplyResources(IndexHeader, "IndexHeader");
             // 
             // NameHeader
             // 
-            NameHeader.Text = "Player";
-            NameHeader.Width = 145;
+            resources.ApplyResources(NameHeader, "NameHeader");
             // 
             // AccountNameHeader
             // 
-            AccountNameHeader.Text = "Account";
-            AccountNameHeader.Width = 145;
+            resources.ApplyResources(AccountNameHeader, "AccountNameHeader");
             // 
             // CharacterCountLabel
             // 
-            CharacterCountLabel.AutoSize = true;
-            CharacterCountLabel.Location = new Point(12, 9);
+            resources.ApplyResources(CharacterCountLabel, "CharacterCountLabel");
             CharacterCountLabel.Name = "CharacterCountLabel";
-            CharacterCountLabel.Size = new Size(103, 15);
-            CharacterCountLabel.TabIndex = 1;
-            CharacterCountLabel.Text = "Characters count :";
             // 
             // RefreshButton
             // 
-            RefreshButton.Location = new Point(180, 61);
+            resources.ApplyResources(RefreshButton, "RefreshButton");
             RefreshButton.Name = "RefreshButton";
-            RefreshButton.Size = new Size(75, 23);
-            RefreshButton.TabIndex = 2;
-            RefreshButton.Text = "Refresh";
             RefreshButton.UseVisualStyleBackColor = true;
             RefreshButton.Click += RefreshButton_Click;
             // 
             // FindPlayerLabel
             // 
-            FindPlayerLabel.AutoSize = true;
-            FindPlayerLabel.Location = new Point(180, 9);
+            resources.ApplyResources(FindPlayerLabel, "FindPlayerLabel");
             FindPlayerLabel.Name = "FindPlayerLabel";
-            FindPlayerLabel.Size = new Size(74, 15);
-            FindPlayerLabel.TabIndex = 3;
-            FindPlayerLabel.Text = "Find Player : ";
             // 
             // FilterPlayerTextBox
             // 
-            FilterPlayerTextBox.Location = new Point(257, 6);
+            resources.ApplyResources(FilterPlayerTextBox, "FilterPlayerTextBox");
             FilterPlayerTextBox.Name = "FilterPlayerTextBox";
-            FilterPlayerTextBox.Size = new Size(122, 23);
-            FilterPlayerTextBox.TabIndex = 4;
             // 
             // FilterItemTextBox
             // 
-            FilterItemTextBox.Location = new Point(257, 32);
+            resources.ApplyResources(FilterItemTextBox, "FilterItemTextBox");
             FilterItemTextBox.Name = "FilterItemTextBox";
-            FilterItemTextBox.Size = new Size(122, 23);
-            FilterItemTextBox.TabIndex = 6;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(122, 35);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(133, 15);
-            label1.TabIndex = 5;
-            label1.Text = "Find Item (Name/UID) : ";
             // 
             // MatchFilterCheckBox
             // 
-            MatchFilterCheckBox.AutoSize = true;
-            MatchFilterCheckBox.Location = new Point(273, 63);
+            resources.ApplyResources(MatchFilterCheckBox, "MatchFilterCheckBox");
             MatchFilterCheckBox.Name = "MatchFilterCheckBox";
-            MatchFilterCheckBox.Size = new Size(89, 19);
-            MatchFilterCheckBox.TabIndex = 7;
-            MatchFilterCheckBox.Text = "Match Filter";
             MatchFilterCheckBox.UseVisualStyleBackColor = true;
             // 
             // CharacterInfoForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(382, 561);
             Controls.Add(MatchFilterCheckBox);
             Controls.Add(FilterItemTextBox);
             Controls.Add(label1);
@@ -143,7 +115,6 @@
             Controls.Add(CharacterCountLabel);
             Controls.Add(CharactersList);
             Name = "CharacterInfoForm";
-            Text = "Characters";
             ResumeLayout(false);
             PerformLayout();
         }

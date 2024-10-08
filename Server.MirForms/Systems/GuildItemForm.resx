@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema 
+    Microsoft ResX Schema
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -117,4 +117,177 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="GuildItemListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 0</value>
+  </data>
+  <data name="GuildItemListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 469</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GuildItemListView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GuildItemListView.Name" xml:space="preserve">
+    <value>GuildItemListView</value>
+  </data>
+  <data name="&gt;&gt;GuildItemListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GuildItemListView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GuildItemListView.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="indexHeader.Text" xml:space="preserve">
+    <value>UID</value>
+  </data>
+  <data name="indexHeader.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="PlaceHeader.Text" xml:space="preserve">
+    <value>Stored By</value>
+  </data>
+  <data name="PlaceHeader.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="nameHeader.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="nameHeader.Width" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="countHeader.Text" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="countHeader.Width" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="DuraHeader.Text" xml:space="preserve">
+    <value>Dura</value>
+  </data>
+  <data name="DuraHeader.Width" type="System.Int32, mscorlib">
+    <value>155</value>
+  </data>
+  <data name="MemberListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>547, 14</value>
+  </data>
+  <data name="MemberListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 366</value>
+  </data>
+  <data name="MemberListView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MemberListView.Name" xml:space="preserve">
+    <value>MemberListView</value>
+  </data>
+  <data name="&gt;&gt;MemberListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MemberListView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MemberListView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Members.Text" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="Members.Width" type="System.Int32, mscorlib">
+    <value>195</value>
+  </data>
+  <data name="Rank.Text" xml:space="preserve">
+    <value>Ranks</value>
+  </data>
+  <data name="Rank.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="DeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 403</value>
+  </data>
+  <data name="DeleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 36</value>
+  </data>
+  <data name="DeleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="DeleteButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;DeleteButton.Name" xml:space="preserve">
+    <value>DeleteButton</value>
+  </data>
+  <data name="&gt;&gt;DeleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DeleteButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DeleteButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>zh</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>854, 510</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>GuildItemForm</value>
+  </data>
+  <data name="&gt;&gt;indexHeader.Name" xml:space="preserve">
+    <value>indexHeader</value>
+  </data>
+  <data name="&gt;&gt;indexHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlaceHeader.Name" xml:space="preserve">
+    <value>PlaceHeader</value>
+  </data>
+  <data name="&gt;&gt;PlaceHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameHeader.Name" xml:space="preserve">
+    <value>nameHeader</value>
+  </data>
+  <data name="&gt;&gt;nameHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;countHeader.Name" xml:space="preserve">
+    <value>countHeader</value>
+  </data>
+  <data name="&gt;&gt;countHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DuraHeader.Name" xml:space="preserve">
+    <value>DuraHeader</value>
+  </data>
+  <data name="&gt;&gt;DuraHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Members.Name" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="&gt;&gt;Members.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Rank.Name" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="&gt;&gt;Rank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GuildItemForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

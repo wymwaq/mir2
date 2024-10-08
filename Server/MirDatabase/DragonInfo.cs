@@ -1,5 +1,6 @@
 using System.Drawing;
-﻿using Server.MirEnvir;
+using Server.MirEnvir;
+using Server.Library;
 
 namespace Server.MirDatabase
 {
@@ -29,7 +30,7 @@ namespace Server.MirDatabase
             //Default values
             Enabled = false;
             MapFileName = "D2083";
-            MonsterName = "Evil Mir";
+            MonsterName = "EvilMir";
             BodyName = "00";
             Location = new Point(82, 44);
             DropAreaTop = new Point(75, 45);
@@ -120,7 +121,7 @@ namespace Server.MirDatabase
                 DropInfo drop = DropInfo.FromLine(lines[i]);
                 if (drop == null)
                 {
-                    MessageQueue.Enqueue(string.Format("Could not load Drop: DragonItem, Line {0}", lines[i]));
+                    MessageQueue.Enqueue(string.Format(ServerLibraryResources.CouldNotLoadDrop, "DragonItem", lines[i]));
                     continue;
                 }
 
