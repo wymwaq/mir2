@@ -600,4 +600,25 @@
   <data name="PriceText" xml:space="preserve">
     <value>价格</value>
   </data>
+  <data name="ModeText" xml:space="preserve">
+    <value>模式</value>
+  </data>
+  <data name="NewMovementStyle" xml:space="preserve">
+    <value>新版移动风格</value>
+  </data>
+  <data name="OldMovementStyle" xml:space="preserve">
+    <value>旧版移动风格</value>
+  </data>
+  <data name="SkillModeText" xml:space="preserve">
+    <value>技能模式</value>
+  </data>
+  <data name="AutoRunText" xml:space="preserve">
+    <value>自动奔跑</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>开</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>关</value>
+  </data>
 </root>

@@ -142,6 +142,15 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 AutoRun 的本地化字符串。
+        /// </summary>
+        internal static string AutoRunText {
+            get {
+                return ResourceManager.GetString("AutoRunText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Awakening already at maximum level. 的本地化字符串。
         /// </summary>
         internal static string AwakeningAtMaxLevel {
@@ -1015,6 +1024,24 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 Mode 的本地化字符串。
+        /// </summary>
+        internal static string ModeText {
+            get {
+                return ResourceManager.GetString("ModeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 New Movement Style 的本地化字符串。
+        /// </summary>
+        internal static string NewMovementStyle {
+            get {
+                return ResourceManager.GetString("NewMovementStyle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 No bag space. 的本地化字符串。
         /// </summary>
         internal static string NoBagSpace {
@@ -1056,6 +1083,33 @@ namespace Client {
         internal static string NothingFound {
             get {
                 return ResourceManager.GetString("NothingFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Off 的本地化字符串。
+        /// </summary>
+        internal static string OffText {
+            get {
+                return ResourceManager.GetString("OffText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Old Movement Style 的本地化字符串。
+        /// </summary>
+        internal static string OldMovementStyle {
+            get {
+                return ResourceManager.GetString("OldMovementStyle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 On 的本地化字符串。
+        /// </summary>
+        internal static string OnText {
+            get {
+                return ResourceManager.GetString("OnText", resourceCulture);
             }
         }
         
@@ -1317,6 +1371,15 @@ namespace Client {
         internal static string SellingPriceText {
             get {
                 return ResourceManager.GetString("SellingPriceText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 SkillMode 的本地化字符串。
+        /// </summary>
+        internal static string SkillModeText {
+            get {
+                return ResourceManager.GetString("SkillModeText", resourceCulture);
             }
         }
         

@@ -5,6 +5,7 @@ using Server.MirNetwork;
 using Server.MirObjects.Monsters;
 using System.Numerics;
 using S = ServerPackets;
+using WqSr = Server.Library.ServerLibraryResources;
 
 namespace Server.MirObjects
 {
@@ -4560,7 +4561,7 @@ namespace Server.MirObjects
                     Show = true,
                     CurrentMap = CurrentMap,
                 };
-                Packet p = new S.Chat { Message = string.Format("{0} is attempting to revive {1}", Name, target.Name), Type = ChatType.Shout };
+                Packet p = new S.Chat { Message = string.Format(WqSr.AttemptToRevive, Name, target.Name), Type = ChatType.Shout };
 
                 for (int i = 0; i < CurrentMap.Players.Count; i++)
                 {

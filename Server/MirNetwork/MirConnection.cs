@@ -8,6 +8,7 @@ using S = ServerPackets;
 using System.Text.RegularExpressions;
 using Server.Utils;
 using Server.Library;
+using WqSr = Server.Library.ServerLibraryResources;
 
 namespace Server.MirNetwork
 {
@@ -1574,17 +1575,17 @@ namespace Server.MirNetwork
             {
                 Player.AllowMarriage = !Player.AllowMarriage;
                 if (Player.AllowMarriage)
-                    Player.ReceiveChat("You're now allowing marriage requests.", ChatType.Hint);
+                    Player.ReceiveChat(WqSr.AllowMarriageRequests, ChatType.Hint);
                 else
-                    Player.ReceiveChat("You're now blocking marriage requests.", ChatType.Hint);
+                    Player.ReceiveChat(WqSr.BlockMarriageRequests, ChatType.Hint);
             }
             else
             {
                 Player.AllowLoverRecall = !Player.AllowLoverRecall;
                 if (Player.AllowLoverRecall)
-                    Player.ReceiveChat("You're now allowing recall from lover.", ChatType.Hint);
+                    Player.ReceiveChat(WqSr.AllowRecallFromLover, ChatType.Hint);
                 else
-                    Player.ReceiveChat("You're now blocking recall from lover.", ChatType.Hint);
+                    Player.ReceiveChat(WqSr.BlockRecallFromLover, ChatType.Hint);
             }
         }
 

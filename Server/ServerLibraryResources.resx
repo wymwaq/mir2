@@ -520,4 +520,43 @@
   <data name="YouAreNotGM1" xml:space="preserve">
     <value>You are not a GM and this command is not enabled for you.</value>
   </data>
+  <data name="AttemptToRevive" xml:space="preserve">
+    <value>{0} is attempting to revive {1}</value>
+  </data>
+  <data name="WonForGold" xml:space="preserve">
+    <value>You won {0} for {1:#,##0} Gold.</value>
+  </data>
+  <data name="BoughtForGold" xml:space="preserve">
+    <value>You bought {0} for {1:#,##0} Gold</value>
+  </data>
+  <data name="SoldForGold" xml:space="preserve">
+    <value>You sold {0} for {1:#,##0} Gold</value>
+  </data>
+  <data name="JustExpiredFromYourInventory" xml:space="preserve">
+    <value>{0} has just expired from your inventory.</value>
+  </data>
+  <data name="AllowMarriageRequests" xml:space="preserve">
+    <value>You're now allowing marriage requests.</value>
+  </data>
+  <data name="BlockMarriageRequests" xml:space="preserve">
+    <value>You're now blocking marriage requests.</value>
+  </data>
+  <data name="AllowRecallFromLover" xml:space="preserve">
+    <value>You're now allowing recall from lover.</value>
+  </data>
+  <data name="BlockRecallFromLover" xml:space="preserve">
+    <value>You're now blocking recall from lover.</value>
+  </data>
+  <data name="AlreadyUnequipCursedItem" xml:space="preserve">
+    <value>You can already unequip a cursed item.</value>
+  </data>
+  <data name="NowUnequipCursedItem" xml:space="preserve">
+    <value>You can now unequip a cursed item.</value>
+  </data>
+  <data name="HeroWeaponPartiallyRepaired" xml:space="preserve">
+    <value>Hero's weapon has been partially repaired</value>
+  </data>
+  <data name="HeroWeaponCompletelyRepaired" xml:space="preserve">
+    <value>Hero's weapon has been completely repaired</value>
+  </data>
 </root>

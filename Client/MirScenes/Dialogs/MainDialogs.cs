@@ -7,6 +7,7 @@ using Client.MirSounds;
 using SlimDX;
 using Font = System.Drawing.Font;
 using C = ClientPackets;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirScenes.Dialogs
 {
@@ -2667,7 +2668,7 @@ namespace Client.MirScenes.Dialogs
             HPViewOn.Click += (o, e) =>
             {
                 Settings.HPView = true;
-                GameScene.Scene.ChatDialog.ReceiveChat("[HP/MP Mode 1]", ChatType.Hint);
+                GameScene.Scene.ChatDialog.ReceiveChat($"[HP/MP {WqCr.ModeText} 1]", ChatType.Hint);
             };
 
             HPViewOff = new MirButton
@@ -2682,7 +2683,7 @@ namespace Client.MirScenes.Dialogs
             HPViewOff.Click += (o, e) =>
             {
                 Settings.HPView = false;
-                GameScene.Scene.ChatDialog.ReceiveChat("[HP/MP Mode 2]", ChatType.Hint);
+                GameScene.Scene.ChatDialog.ReceiveChat($"[HP/MP {WqCr.ModeText} 2]", ChatType.Hint);
             };
 
             SoundBar = new MirImageControl
@@ -2739,7 +2740,7 @@ namespace Client.MirScenes.Dialogs
             NewMoveOn.Click += (o, e) =>
             {
                 Settings.NewMove = true;
-                GameScene.Scene.ChatDialog.ReceiveChat("[New Movement Style]", ChatType.Hint);
+                GameScene.Scene.ChatDialog.ReceiveChat($"[{WqCr.NewMovementStyle}]", ChatType.Hint);
             };
 
             NewMoveOff = new MirButton
@@ -2754,7 +2755,7 @@ namespace Client.MirScenes.Dialogs
             NewMoveOff.Click += (o, e) =>
             {
                 Settings.NewMove = false;
-                GameScene.Scene.ChatDialog.ReceiveChat("[Old Movement Style]", ChatType.Hint);
+                GameScene.Scene.ChatDialog.ReceiveChat($"[{WqCr.OldMovementStyle}]", ChatType.Hint);
             };
 
             ObserveOn = new MirButton

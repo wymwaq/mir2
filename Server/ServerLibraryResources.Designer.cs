@@ -61,6 +61,33 @@ namespace Server.Library {
         }
         
         /// <summary>
+        ///   查找类似 You&apos;re now allowing marriage requests. 的本地化字符串。
+        /// </summary>
+        internal static string AllowMarriageRequests {
+            get {
+                return ResourceManager.GetString("AllowMarriageRequests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You&apos;re now allowing recall from lover. 的本地化字符串。
+        /// </summary>
+        internal static string AllowRecallFromLover {
+            get {
+                return ResourceManager.GetString("AllowRecallFromLover", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You can already unequip a cursed item. 的本地化字符串。
+        /// </summary>
+        internal static string AlreadyUnequipCursedItem {
+            get {
+                return ResourceManager.GetString("AlreadyUnequipCursedItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Archers repaired: {0}/{1} 的本地化字符串。
         /// </summary>
         internal static string ArchersRepaired {
@@ -70,11 +97,47 @@ namespace Server.Library {
         }
         
         /// <summary>
+        ///   查找类似 {0} is attempting to revive {1} 的本地化字符串。
+        /// </summary>
+        internal static string AttemptToRevive {
+            get {
+                return ResourceManager.GetString("AttemptToRevive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Auction both sold and Expired {0} 的本地化字符串。
         /// </summary>
         internal static string AuctionSoldExpired {
             get {
                 return ResourceManager.GetString("AuctionSoldExpired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You&apos;re now blocking marriage requests. 的本地化字符串。
+        /// </summary>
+        internal static string BlockMarriageRequests {
+            get {
+                return ResourceManager.GetString("BlockMarriageRequests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You&apos;re now blocking recall from lover. 的本地化字符串。
+        /// </summary>
+        internal static string BlockRecallFromLover {
+            get {
+                return ResourceManager.GetString("BlockRecallFromLover", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You bought {0} for {1:#,##0} Gold 的本地化字符串。
+        /// </summary>
+        internal static string BoughtForGold {
+            get {
+                return ResourceManager.GetString("BoughtForGold", resourceCulture);
             }
         }
         
@@ -457,6 +520,24 @@ namespace Server.Library {
         }
         
         /// <summary>
+        ///   查找类似 Hero&apos;s weapon has been completely repaired 的本地化字符串。
+        /// </summary>
+        internal static string HeroWeaponCompletelyRepaired {
+            get {
+                return ResourceManager.GetString("HeroWeaponCompletelyRepaired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hero&apos;s weapon has been partially repaired 的本地化字符串。
+        /// </summary>
+        internal static string HeroWeaponPartiallyRepaired {
+            get {
+                return ResourceManager.GetString("HeroWeaponPartiallyRepaired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 HttpService started. 的本地化字符串。
         /// </summary>
         internal static string HttpServiceStarted {
@@ -525,6 +606,15 @@ namespace Server.Library {
         internal static string IsntOnline {
             get {
                 return ResourceManager.GetString("IsntOnline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} has just expired from your inventory. 的本地化字符串。
+        /// </summary>
+        internal static string JustExpiredFromYourInventory {
+            get {
+                return ResourceManager.GetString("JustExpiredFromYourInventory", resourceCulture);
             }
         }
         
@@ -853,6 +943,15 @@ namespace Server.Library {
         }
         
         /// <summary>
+        ///   查找类似 You can now unequip a cursed item. 的本地化字符串。
+        /// </summary>
+        internal static string NowUnequipCursedItem {
+            get {
+                return ResourceManager.GetString("NowUnequipCursedItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 NPC Scripts reloaded... 的本地化字符串。
         /// </summary>
         internal static string NPCScriptsReloaded {
@@ -1123,6 +1222,15 @@ namespace Server.Library {
         }
         
         /// <summary>
+        ///   查找类似 You sold {0} for {1:#,##0} Gold 的本地化字符串。
+        /// </summary>
+        internal static string SoldForGold {
+            get {
+                return ResourceManager.GetString("SoldForGold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 [threadloop error] {0} 的本地化字符串。
         /// </summary>
         internal static string ThreadloopError {
@@ -1191,6 +1299,15 @@ namespace Server.Library {
         internal static string WarStopped {
             get {
                 return ResourceManager.GetString("WarStopped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You won {0} for {1:#,##0} Gold. 的本地化字符串。
+        /// </summary>
+        internal static string WonForGold {
+            get {
+                return ResourceManager.GetString("WonForGold", resourceCulture);
             }
         }
         

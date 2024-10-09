@@ -580,4 +580,25 @@
   <data name="PriceText" xml:space="preserve">
     <value>Price</value>
   </data>
+  <data name="ModeText" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="NewMovementStyle" xml:space="preserve">
+    <value>New Movement Style</value>
+  </data>
+  <data name="OldMovementStyle" xml:space="preserve">
+    <value>Old Movement Style</value>
+  </data>
+  <data name="SkillModeText" xml:space="preserve">
+    <value>SkillMode</value>
+  </data>
+  <data name="AutoRunText" xml:space="preserve">
+    <value>AutoRun</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>Off</value>
+  </data>
 </root>

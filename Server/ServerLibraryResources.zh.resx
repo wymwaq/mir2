@@ -295,7 +295,7 @@
     <value>非GM玩家调用GM命令@CONQUESTREPAIRALL：{0}</value>
   </data>
   <data name="GMConquestRepairAll" xml:space="preserve">
-    <value>GM调用@CONQUESTREPAIRALL：{0}，账户索引：{1}</value>
+    <value>@CONQUESTREPAIRALL 由GM：{0}在账户索引：{1}上调用</value>
   </data>
   <data name="ConquestInfoName" xml:space="preserve">
     <value>征服：{0}</value>
@@ -539,5 +539,44 @@
   </data>
   <data name="YouAreNotGM1" xml:space="preserve">
     <value>你不是GM，此命令未为你启用。</value>
+  </data>
+  <data name="AttemptToRevive" xml:space="preserve">
+    <value>{0}正在尝试复活{1}</value>
+  </data>
+  <data name="WonForGold" xml:space="preserve">
+    <value>你以{1:#,##0}金币赢得了{0}。</value>
+  </data>
+  <data name="BoughtForGold" xml:space="preserve">
+    <value>你以{1:#,##0}金币购买了{0}</value>
+  </data>
+  <data name="SoldForGold" xml:space="preserve">
+    <value>你以{1:#,##0}金币出售了{0}</value>
+  </data>
+  <data name="JustExpiredFromYourInventory" xml:space="preserve">
+    <value>{0}刚刚从你的库存中过期。</value>
+  </data>
+  <data name="AllowMarriageRequests" xml:space="preserve">
+    <value>你正允许结婚请求。</value>
+  </data>
+  <data name="BlockMarriageRequests" xml:space="preserve">
+    <value>你正禁止结婚请求。</value>
+  </data>
+  <data name="AllowRecallFromLover" xml:space="preserve">
+    <value>你正允许从爱人处召回。</value>
+  </data>
+  <data name="BlockRecallFromLover" xml:space="preserve">
+    <value>你正禁止从爱人处召回。</value>
+  </data>
+  <data name="AlreadyUnequipCursedItem" xml:space="preserve">
+    <value>你已经可以卸下被诅咒的装备了。</value>
+  </data>
+  <data name="NowUnequipCursedItem" xml:space="preserve">
+    <value>你现在可以卸下被诅咒的装备。</value>
+  </data>
+  <data name="HeroWeaponPartiallyRepaired" xml:space="preserve">
+    <value>英雄的武器已部分修复</value>
+  </data>
+  <data name="HeroWeaponCompletelyRepaired" xml:space="preserve">
+    <value>英雄的武器已经完全修复</value>
   </data>
 </root>
