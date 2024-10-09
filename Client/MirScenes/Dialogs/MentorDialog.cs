@@ -3,6 +3,7 @@ using Client.MirGraphics;
 using Client.MirNetwork;
 using Client.MirSounds;
 using C = ClientPackets;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirScenes.Dialogs
 {
@@ -93,7 +94,7 @@ namespace Client.MirScenes.Dialogs
             {
                 if (MentorLevel != 0)
                 {
-                    GameScene.Scene.ChatDialog.ReceiveChat("You already have a Mentor.", ChatType.System);
+                    GameScene.Scene.ChatDialog.ReceiveChat(WqCr.AlreadyHaveMentor, ChatType.System);
                     return;
                 }
 

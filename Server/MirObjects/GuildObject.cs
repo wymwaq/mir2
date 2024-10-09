@@ -1,5 +1,6 @@
 ﻿using Server.MirEnvir;
 using Server.MirDatabase;
+using WqSr = Server.Library.ServerLibraryResources;
 
 namespace Server.MirObjects
 {
@@ -216,7 +217,7 @@ namespace Server.MirObjects
             if (Character == null) return false;
             if ((rankIndex == 0) && (Character.Level < Settings.Guild_RequiredLevel))
             {
-                self.ReceiveChat(String.Format("A guild leader needs to be at least level {0}", Settings.Guild_RequiredLevel), ChatType.System);
+                self.ReceiveChat(String.Format(WqSr.GuildLeaderNeedsLevel, Settings.Guild_RequiredLevel), ChatType.System);
                 return false;
             }
 
@@ -225,7 +226,7 @@ namespace Server.MirObjects
             {
                 if (MemberRank.Members.Count <= 2)
                 {
-                    self.ReceiveChat("A guild needs at least 2 leaders.", ChatType.System);
+                    self.ReceiveChat(WqSr.GuildNeeds2Leaders, ChatType.System);
                     return false;
                 }
                 for (int i = 0; i < MemberRank.Members.Count; i++)
@@ -233,7 +234,7 @@ namespace Server.MirObjects
                     if ((MemberRank.Members[i].Player != null) && (MemberRank.Members[i] != Member))
                         goto AllOk;
                 }
-                self.ReceiveChat("You need at least 1 leader online.", ChatType.System);
+                self.ReceiveChat(WqSr.Need1LeaderOnline, ChatType.System);
                 return false;
             }
 
@@ -407,7 +408,7 @@ namespace Server.MirObjects
                     if (MemberRank.Members.Count > 1) //Allows other leaders to leave without another leader online.
                         goto AllOk;
                 }
-                Kicker.ReceiveChat("You need to be the last leading member of the guild to disband the guild.", ChatType.System);
+                Kicker.ReceiveChat(WqSr.NeedLastLeadingToDisband, ChatType.System);
                 return false;
             }
 
@@ -439,7 +440,7 @@ namespace Server.MirObjects
             MemberRank.Members.Remove(Member);
 
             Envir.DeleteGuild(this);
-            Kicker.ReceiveChat("You have disbanded the guild", ChatType.System);
+            Kicker.ReceiveChat(WqSr.DisbandedGuild, ChatType.System);
 
             return true;
         }

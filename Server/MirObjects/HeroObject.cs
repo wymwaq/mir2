@@ -454,7 +454,7 @@ namespace Server.MirObjects
                         case 6: //ResurrectionScroll
                             if (CurrentMap.Info.NoReincarnation)
                             {
-                                ReceiveChat(string.Format("Cannot use on this map"), ChatType.System);
+                                ReceiveChat(string.Format(WqSr.CannotUseOnMap), ChatType.System);
                                 Owner.Enqueue(p);
                                 return;
                             }
@@ -467,12 +467,12 @@ namespace Server.MirObjects
                         case 15: //Increase Hero inventory
                             if (Info.Inventory.Length >= 42)
                             {
-                                ReceiveChat(string.Format("Hero Inventory is already at Maximum"), ChatType.System);
+                                ReceiveChat(string.Format(WqSr.HeroInventoryAlreadyMaximum), ChatType.System);
                                 Owner.Enqueue(p);
                                 return;
                             }
                             Enqueue(new S.ResizeInventory { Size = Info.ResizeInventory() });
-                            ReceiveChat(string.Format("Hero Inventory Increased"), ChatType.System);
+                            ReceiveChat(string.Format(WqSr.HeroInventoryIncreased), ChatType.System);
                             Owner.Enqueue(p);
                             break;
                     }
@@ -612,7 +612,7 @@ namespace Server.MirObjects
                     item.CurrentDura = (ushort)(item.CurrentDura - 1000);
                     Enqueue(new S.DuraChanged { UniqueID = item.UniqueID, CurrentDura = item.CurrentDura });
                     RefreshStats();
-                    ReceiveChat("Hero has been given a second chance at life", ChatType.System);
+                    ReceiveChat(WqSr.HeroSecondChanceLife, ChatType.System);
                     return;
                 }
             }

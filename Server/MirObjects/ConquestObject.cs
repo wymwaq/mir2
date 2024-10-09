@@ -1,6 +1,7 @@
 using System.Drawing;
 ﻿using Server.MirEnvir;
 using Server.MirDatabase;
+using WqSr = Server.Library.ServerLibraryResources;
 
 namespace Server.MirObjects
 {
@@ -791,7 +792,7 @@ namespace Server.MirObjects
 
                                     for (int j = 0; j < ConquestMap.Players.Count; j++)
                                     {
-                                        ConquestMap.Players[j].ReceiveChat(string.Format("{0} has captured {1} at {2}", tempWinning.Name, controlFlag.Info.Name, Info.Name), ChatType.System);
+                                        ConquestMap.Players[j].ReceiveChat(string.Format(WqSr.CapturedAt, tempWinning.Name, controlFlag.Info.Name, Info.Name), ChatType.System);
                                     }
                                 }
                             }
@@ -864,7 +865,7 @@ namespace Server.MirObjects
 
                                 for (int j = 0; j < ConquestMap.Players.Count; j++)
                                 {
-                                    ConquestMap.Players[j].ReceiveChat(string.Format("{0} has captured the hill", tempWinning.Name), ChatType.System);
+                                    ConquestMap.Players[j].ReceiveChat(string.Format(WqSr.CapturedHill, tempWinning.Name), ChatType.System);
                                 }
                             }
                         }

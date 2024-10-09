@@ -579,4 +579,184 @@
   <data name="HeroWeaponCompletelyRepaired" xml:space="preserve">
     <value>英雄的武器已经完全修复</value>
   </data>
+  <data name="CapturedAt" xml:space="preserve">
+    <value>{0}在{2}处占领了{1}</value>
+  </data>
+  <data name="CapturedHill" xml:space="preserve">
+    <value>{0}已经占领了山丘</value>
+  </data>
+  <data name="GuildLeaderNeedsLevel" xml:space="preserve">
+    <value>行会会长至少需要达到{0}级</value>
+  </data>
+  <data name="GuildNeeds2Leaders" xml:space="preserve">
+    <value>一个行会至少需要两个会长。</value>
+  </data>
+  <data name="Need1LeaderOnline" xml:space="preserve">
+    <value>你至少需要一个会长在线。</value>
+  </data>
+  <data name="NeedLastLeadingToDisband" xml:space="preserve">
+    <value>你需要成为行会的最后一名会长成员才能解散行会。</value>
+  </data>
+  <data name="DisbandedGuild" xml:space="preserve">
+    <value>你已经解散了行会</value>
+  </data>
+  <data name="CannotUseOnMap" xml:space="preserve">
+    <value>无法在此地图上使用</value>
+  </data>
+  <data name="HeroInventoryAlreadyMaximum" xml:space="preserve">
+    <value>英雄库存已达到最大值</value>
+  </data>
+  <data name="HeroInventoryIncreased" xml:space="preserve">
+    <value>英雄库存增加</value>
+  </data>
+  <data name="HeroSecondChanceLife" xml:space="preserve">
+    <value>英雄获得了第二次生命机会</value>
+  </data>
+  <data name="WarriorsCannotUse" xml:space="preserve">
+    <value>战士不能使用此物品。</value>
+  </data>
+  <data name="WizardsCannotUse" xml:space="preserve">
+    <value>法师不能使用此物品。</value>
+  </data>
+  <data name="TaoistsCannotUse" xml:space="preserve">
+    <value>道士不能使用此物品。</value>
+  </data>
+  <data name="AssassinsCannotUse" xml:space="preserve">
+    <value>刺客不能使用此物品。</value>
+  </data>
+  <data name="ArchersCannotUse" xml:space="preserve">
+    <value>弓箭手不能使用此物品。</value>
+  </data>
+  <data name="DoNotHaveEnoughAC" xml:space="preserve">
+    <value>你没有足够的防御力。</value>
+  </data>
+  <data name="DoNotHaveEnoughMAC" xml:space="preserve">
+    <value>你没有足够的魔法防御力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseAC" xml:space="preserve">
+    <value>你没有足够的基础防御力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseMAC" xml:space="preserve">
+    <value>你没有足够的基础魔法防御力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseDC" xml:space="preserve">
+    <value>你没有足够的基础攻击力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseMC" xml:space="preserve">
+    <value>你没有足够的基础魔法力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseSC" xml:space="preserve">
+    <value>你没有足够的基础道术力。</value>
+  </data>
+  <data name="ExceededMaximumLevel" xml:space="preserve">
+    <value>您已超过最大级别。</value>
+  </data>
+  <data name="CannotUsePotionsHere" xml:space="preserve">
+    <value>你不能在这里使用药水</value>
+  </data>
+  <data name="CanOnlyUsedWithMount" xml:space="preserve">
+    <value>只能与坐骑一起使用</value>
+  </data>
+  <data name="CanOnlyUsedWithFishingRod" xml:space="preserve">
+    <value>只能与钓竿一起使用</value>
+  </data>
+  <data name="CanOnlyUsedWithCreatureSummoned" xml:space="preserve">
+    <value>只能与被召唤的生物一起使用</value>
+  </data>
+  <data name="IsNotHungry" xml:space="preserve">
+    <value>不饿</value>
+  </data>
+  <data name="DoesNotNeedVitalized" xml:space="preserve">
+    <value>不需要被激活</value>
+  </data>
+  <data name="SkillRequiresMeditation" xml:space="preserve">
+    <value>技能需要冥想。</value>
+  </data>
+  <data name="NoPushingInTheSafezone" xml:space="preserve">
+    <value>禁止在安全区内推搡。啧啧。</value>
+  </data>
+  <data name="NotEnoughPushingPower" xml:space="preserve">
+    <value>没有足够的推动力。</value>
+  </data>
+  <data name="NotEnoughJumpingPower" xml:space="preserve">
+    <value>没有足够的跳跃力。</value>
+  </data>
+  <data name="CannotTeleportThisMap" xml:space="preserve">
+    <value>您无法在此地图上传送</value>
+  </data>
+  <data name="YouAreWalkingExplosive" xml:space="preserve">
+    <value>你是一个行走的爆炸物。</value>
+  </data>
+  <data name="YouMustHaveSaddleToRide" xml:space="preserve">
+    <value>你必须有马鞍才能骑马</value>
+  </data>
+  <data name="CannotRideThisMap" xml:space="preserve">
+    <value>你不能在这张地图上骑行</value>
+  </data>
+  <data name="CannotRideHereWithoutBridle" xml:space="preserve">
+    <value>没有缰绳，你不能在这里骑行</value>
+  </data>
+  <data name="DoNotHaveMountEquiped" xml:space="preserve">
+    <value>你没有装备坐骑。</value>
+  </data>
+  <data name="CannotCarryAnymore" xml:space="preserve">
+    <value>你不能携带更多。</value>
+  </data>
+  <data name="NothingWasFound" xml:space="preserve">
+    <value>什么也没找到。</value>
+  </data>
+  <data name="AlreadyRefiningItem" xml:space="preserve">
+    <value>精炼你已经在精炼一个物品了。</value>
+  </data>
+  <data name="AtLeastLevelCreateGuild" xml:space="preserve">
+    <value>您必须至少达到{0}级才能创建行会。</value>
+  </data>
+  <data name="AlreadyPartOfGuild" xml:space="preserve">
+    <value>你已经是行会的一员了。</value>
+  </data>
+  <data name="MustLeaderToRequestWar" xml:space="preserve">
+    <value>你必须是会长才能请求行会战。</value>
+  </data>
+  <data name="AtLeastLevelCreateHero" xml:space="preserve">
+    <value>您必须至少达到{0}级才能创建英雄。</value>
+  </data>
+  <data name="CraftingAttemptFailed" xml:space="preserve">
+    <value>制作尝试失败。</value>
+  </data>
+  <data name="ExpandedStorageExpired" xml:space="preserve">
+    <value>仓库扩展已过期。</value>
+  </data>
+  <data name="PlayerHeroLevelled" xml:space="preserve">
+    <value>玩家{0}的英雄已升级{1}-&gt;{2}。</value>
+  </data>
+  <data name="HasBeenCreated" xml:space="preserve">
+    <value>已创建。</value>
+  </data>
+  <data name="CannotRecallThisMap" xml:space="preserve">
+    <value>您无法在此地图上召回人员</value>
+  </data>
+  <data name="CannotRecallAnotherSeconds" xml:space="preserve">
+    <value>您在接下来的{0}秒内无法召回</value>
+  </data>
+  <data name="RecallAttemptedWithoutYourPermission" xml:space="preserve">
+    <value>未经您的许可，试图进行召回</value>
+  </data>
+  <data name="YouAreNotGroupLeader" xml:space="preserve">
+    <value>你不是行会会长。</value>
+  </data>
+  <data name="CannotRecallWhenDead" xml:space="preserve">
+    <value>你不能在死亡的时候召回。</value>
+  </data>
+  <data name="PlayerCouldNotBeFound" xml:space="preserve">
+    <value>找不到玩家{0}</value>
+  </data>
+  <data name="IsBlockingGrouprecall" xml:space="preserve">
+    <value>{0}正在阻止组召回</value>
+  </data>
+  <data name="YouNotMarried" xml:space="preserve">
+    <value>你还没结婚。</value>
+  </data>
+  <data name="YouNeedWeddingRingRecall" xml:space="preserve">
+    <value>你需要佩戴结婚戒指才能召唤。</value>
+  </data>
 </root>

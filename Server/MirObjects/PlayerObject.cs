@@ -484,7 +484,7 @@ namespace Server.MirObjects
             if (Account.HasExpandedStorage && Envir.Now > Account.ExpandedStorageExpiryDate)
             {
                 Account.HasExpandedStorage = false;
-                ReceiveChat("Expanded storage has expired.", ChatType.System);
+                ReceiveChat(WqSr.ExpandedStorageExpired, ChatType.System);
                 Enqueue(new S.ResizeStorage { Size = Account.Storage.Length, HasExpandedStorage = Account.HasExpandedStorage, ExpiryTime = Account.ExpandedStorageExpiryDate });
             }
 
@@ -1885,7 +1885,7 @@ namespace Server.MirObjects
 
                 if (player == null)
                 {
-                    ReceiveChat(string.Format("{0} isn't online.", Mentor.Name), ChatType.System);
+                    ReceiveChat(string.Format(WqSr.IsntOnline, Mentor.Name), ChatType.System);
                     return;
                 }
 
@@ -2167,7 +2167,7 @@ namespace Server.MirObjects
                                 hero.Level = level;
                                 hero.LevelUp();
 
-                                ReceiveChat(string.Format("Player {0}'s hero has been Levelled {1} -> {2}.", player.Name, old, hero.Level), ChatType.System);
+                                ReceiveChat(string.Format(WqSr.PlayerHeroLevelled, player.Name, old, hero.Level), ChatType.System);
                                 MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerHeroLevelChanged, player.Name, old, hero.Level, Name));
                                 Helpers.ChatSystem.SystemMessage(chatMessage: $"Player {player.Name}'s hero has been Levelled: {old} -> {hero.Level} by GM: {Name}");
                                 return;
@@ -2196,7 +2196,7 @@ namespace Server.MirObjects
                             }
                         }
 
-                        ReceiveChat("Could not level player", ChatType.System);
+                        ReceiveChat(WqSr.CouldNotLevelPlayer, ChatType.System);
                         break;
 
                     case "MAKE":
@@ -2244,7 +2244,7 @@ namespace Server.MirObjects
                                 GainItem(item);
                             }
 
-                            ReceiveChat(string.Format("{0} x{1} has been created.", iInfo.FriendlyName, tempCount), ChatType.System);
+                            ReceiveChat(string.Format("{0} x{1} {2}", iInfo.FriendlyName, tempCount, WqSr.HasBeenCreated), ChatType.System);
                             MessageQueue.Enqueue(string.Format(ServerLibraryResources.PlayerCreateAttempt, Name, iInfo.Name, tempCount));
                         }
                         break;
@@ -2339,13 +2339,13 @@ namespace Server.MirObjects
 
                         if (CurrentMap.Info.NoRecall)
                         {
-                            ReceiveChat("You cannot recall people on this map", ChatType.System);
+                            ReceiveChat(WqSr.CannotRecallThisMap, ChatType.System);
                             return;
                         }
 
                         if (Envir.Time < LastRecallTime)
                         {
-                            ReceiveChat(string.Format("You cannot recall for another {0} seconds", (LastRecallTime - Envir.Time) / 1000), ChatType.System);
+                            ReceiveChat(string.Format(WqSr.CannotRecallAnotherSeconds, (LastRecallTime - Envir.Time) / 1000), ChatType.System);
                             return;
                         }
 
@@ -2357,7 +2357,7 @@ namespace Server.MirObjects
                                 if (GroupMembers[i].EnableGroupRecall)
                                     GroupMembers[i].Teleport(CurrentMap, CurrentLocation);
                                 else
-                                    GroupMembers[i].ReceiveChat("A recall was attempted without your permission",
+                                    GroupMembers[i].ReceiveChat(WqSr.RecallAttemptedWithoutYourPermission,
                                         ChatType.System);
                             }
                         }
@@ -2365,25 +2365,25 @@ namespace Server.MirObjects
                     case "RECALLMEMBER":
                         if (GroupMembers == null || GroupMembers[0] != this)
                         {
-                            ReceiveChat("You are not a group leader.", ChatType.System);
+                            ReceiveChat(WqSr.YouAreNotGroupLeader, ChatType.System);
                             return;
                         }
 
                         if (Dead)
                         {
-                            ReceiveChat("You cannot recall when you are dead.", ChatType.System);
+                            ReceiveChat(WqSr.CannotRecallWhenDead, ChatType.System);
                             return;
                         }
 
                         if (CurrentMap.Info.NoRecall)
                         {
-                            ReceiveChat("You cannot recall people on this map", ChatType.System);
+                            ReceiveChat(WqSr.CannotRecallThisMap, ChatType.System);
                             return;
                         }
 
                         if (Envir.Time < LastRecallTime)
                         {
-                            ReceiveChat(string.Format("You cannot recall for another {0} seconds", (LastRecallTime - Envir.Time) / 1000), ChatType.System);
+                            ReceiveChat(string.Format(WqSr.CannotRecallAnotherSeconds, (LastRecallTime - Envir.Time) / 1000), ChatType.System);
                             return;
                         }
                         if (ItemSets.Any(set => set.Set == ItemSet.Recall && set.SetComplete))
@@ -2393,14 +2393,14 @@ namespace Server.MirObjects
 
                             if (player == null || !IsMember(player) || this == player)
                             {
-                                ReceiveChat((string.Format("Player {0} could not be found", parts[1])), ChatType.System);
+                                ReceiveChat((string.Format(WqSr.PlayerCouldNotBeFound, parts[1])), ChatType.System);
                                 return;
                             }
                             if (!player.EnableGroupRecall)
                             {
-                                player.ReceiveChat("A recall was attempted without your permission",
+                                player.ReceiveChat(WqSr.RecallAttemptedWithoutYourPermission,
                                         ChatType.System);
-                                ReceiveChat((string.Format("{0} is blocking grouprecall", player.Name)), ChatType.System);
+                                ReceiveChat((string.Format(WqSr.IsBlockingGrouprecall, player.Name)), ChatType.System);
                                 return;
                             }
                             LastRecallTime = Envir.Time + 60000;
@@ -2418,25 +2418,25 @@ namespace Server.MirObjects
                     case "RECALLLOVER":
                         if (Info.Married == 0)
                         {
-                            ReceiveChat("You're not married.", ChatType.System);
+                            ReceiveChat(WqSr.YouNotMarried, ChatType.System);
                             return;
                         }
 
                         if (Dead)
                         {
-                            ReceiveChat("You can't recall when you are dead.", ChatType.System);
+                            ReceiveChat(WqSr.CannotRecallWhenDead, ChatType.System);
                             return;
                         }
 
                         if (CurrentMap.Info.NoRecall)
                         {
-                            ReceiveChat("You cannot recall people on this map", ChatType.System);
+                            ReceiveChat(WqSr.CannotRecallThisMap, ChatType.System);
                             return;
                         }
 
                         if (Info.Equipment[(int)EquipmentSlot.RingL] == null)
                         {
-                            ReceiveChat("You need to be wearing a Wedding Ring for recall.", ChatType.System);
+                            ReceiveChat(WqSr.YouNeedWeddingRingRecall, ChatType.System);
                             return;
                         }
 

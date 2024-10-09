@@ -6,6 +6,7 @@ using Client.MirSounds;
 using SlimDX;
 using Font = System.Drawing.Font;
 using C = ClientPackets;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirScenes.Dialogs
 {
@@ -618,7 +619,7 @@ namespace Client.MirScenes.Dialogs
 
             if (path == null || path.Count == 0)
             {
-                GameScene.Scene.ChatDialog.ReceiveChat("Could not find suitable path.", ChatType.System);
+                GameScene.Scene.ChatDialog.ReceiveChat(WqCr.CouldNotFindSuitablePath, ChatType.System);
             }
             else
             {

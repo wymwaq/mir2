@@ -3,6 +3,7 @@ using Client.MirGraphics;
 using Client.MirNetwork;
 using Client.MirSounds;
 using C = ClientPackets;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirScenes.Dialogs
 {
@@ -240,7 +241,7 @@ namespace Client.MirScenes.Dialogs
 
                 if (!SelectedFriend.Online)
                 {
-                    GameScene.Scene.ChatDialog.ReceiveChat("Player is not online", ChatType.System);
+                    GameScene.Scene.ChatDialog.ReceiveChat(WqCr.PlayerIsNotOnline, ChatType.System);
                     return;
                 }
 

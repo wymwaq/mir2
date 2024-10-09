@@ -559,4 +559,184 @@
   <data name="HeroWeaponCompletelyRepaired" xml:space="preserve">
     <value>Hero's weapon has been completely repaired</value>
   </data>
+  <data name="CapturedAt" xml:space="preserve">
+    <value>{0} has captured {1} at {2}</value>
+  </data>
+  <data name="CapturedHill" xml:space="preserve">
+    <value>{0} has captured the hill</value>
+  </data>
+  <data name="GuildLeaderNeedsLevel" xml:space="preserve">
+    <value>A guild leader needs to be at least level {0}</value>
+  </data>
+  <data name="GuildNeeds2Leaders" xml:space="preserve">
+    <value>A guild needs at least 2 leaders.</value>
+  </data>
+  <data name="Need1LeaderOnline" xml:space="preserve">
+    <value>You need at least 1 leader online.</value>
+  </data>
+  <data name="NeedLastLeadingToDisband" xml:space="preserve">
+    <value>You need to be the last leading member of the guild to disband the guild.</value>
+  </data>
+  <data name="DisbandedGuild" xml:space="preserve">
+    <value>You have disbanded the guild</value>
+  </data>
+  <data name="CannotUseOnMap" xml:space="preserve">
+    <value>Cannot use on this map</value>
+  </data>
+  <data name="HeroInventoryAlreadyMaximum" xml:space="preserve">
+    <value>Hero Inventory is already at Maximum</value>
+  </data>
+  <data name="HeroInventoryIncreased" xml:space="preserve">
+    <value>Hero Inventory Increased</value>
+  </data>
+  <data name="HeroSecondChanceLife" xml:space="preserve">
+    <value>Hero has been given a second chance at life</value>
+  </data>
+  <data name="WarriorsCannotUse" xml:space="preserve">
+    <value>Warriors cannot use this item.</value>
+  </data>
+  <data name="WizardsCannotUse" xml:space="preserve">
+    <value>Wizards cannot use this item.</value>
+  </data>
+  <data name="TaoistsCannotUse" xml:space="preserve">
+    <value>Taoists cannot use this item.</value>
+  </data>
+  <data name="AssassinsCannotUse" xml:space="preserve">
+    <value>Assassins cannot use this item.</value>
+  </data>
+  <data name="ArchersCannotUse" xml:space="preserve">
+    <value>Archers cannot use this item.</value>
+  </data>
+  <data name="DoNotHaveEnoughAC" xml:space="preserve">
+    <value>You do not have enough AC.</value>
+  </data>
+  <data name="DoNotHaveEnoughMAC" xml:space="preserve">
+    <value>You do not have enough MAC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseAC" xml:space="preserve">
+    <value>You do not have enough Base AC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseMAC" xml:space="preserve">
+    <value>You do not have enough Base MAC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseDC" xml:space="preserve">
+    <value>You do not have enough Base DC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseMC" xml:space="preserve">
+    <value>You do not have enough Base MC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseSC" xml:space="preserve">
+    <value>You do not have enough Base SC.</value>
+  </data>
+  <data name="ExceededMaximumLevel" xml:space="preserve">
+    <value>You have exceeded the maximum level.</value>
+  </data>
+  <data name="CannotUsePotionsHere" xml:space="preserve">
+    <value>You cannot use Potions here</value>
+  </data>
+  <data name="CanOnlyUsedWithMount" xml:space="preserve">
+    <value>Can only be used with a mount</value>
+  </data>
+  <data name="CanOnlyUsedWithFishingRod" xml:space="preserve">
+    <value>Can only be used with a fishing rod</value>
+  </data>
+  <data name="CanOnlyUsedWithCreatureSummoned" xml:space="preserve">
+    <value>Can only be used with a creature summoned</value>
+  </data>
+  <data name="IsNotHungry" xml:space="preserve">
+    <value>is not hungry</value>
+  </data>
+  <data name="DoesNotNeedVitalized" xml:space="preserve">
+    <value>does not need to be vitalized</value>
+  </data>
+  <data name="SkillRequiresMeditation" xml:space="preserve">
+    <value>Skill requires meditation.</value>
+  </data>
+  <data name="NoPushingInTheSafezone" xml:space="preserve">
+    <value>No pushing in the safezone. tut tut.</value>
+  </data>
+  <data name="NotEnoughPushingPower" xml:space="preserve">
+    <value>Not enough pushing Power.</value>
+  </data>
+  <data name="NotEnoughJumpingPower" xml:space="preserve">
+    <value>Not enough jumping power.</value>
+  </data>
+  <data name="CannotTeleportThisMap" xml:space="preserve">
+    <value>You cannot teleport on this map</value>
+  </data>
+  <data name="YouAreWalkingExplosive" xml:space="preserve">
+    <value>You are a walking explosive.</value>
+  </data>
+  <data name="YouMustHaveSaddleToRide" xml:space="preserve">
+    <value>You must have a saddle to ride your mount</value>
+  </data>
+  <data name="CannotRideThisMap" xml:space="preserve">
+    <value>You cannot ride on this map</value>
+  </data>
+  <data name="CannotRideHereWithoutBridle" xml:space="preserve">
+    <value>You cannot ride here without a bridle</value>
+  </data>
+  <data name="DoNotHaveMountEquiped" xml:space="preserve">
+    <value>You do not have a mount equiped.</value>
+  </data>
+  <data name="CannotCarryAnymore" xml:space="preserve">
+    <value>You cannot carry anymore.</value>
+  </data>
+  <data name="NothingWasFound" xml:space="preserve">
+    <value>Nothing was found.</value>
+  </data>
+  <data name="AlreadyRefiningItem" xml:space="preserve">
+    <value>You're already refining an item.</value>
+  </data>
+  <data name="AtLeastLevelCreateGuild" xml:space="preserve">
+    <value>You have to be at least level {0} to create a guild.</value>
+  </data>
+  <data name="AlreadyPartOfGuild" xml:space="preserve">
+    <value>You are already part of a guild.</value>
+  </data>
+  <data name="MustLeaderToRequestWar" xml:space="preserve">
+    <value>You must be the leader to request a war.</value>
+  </data>
+  <data name="AtLeastLevelCreateHero" xml:space="preserve">
+    <value>You have to be at least level {0} to create a hero.</value>
+  </data>
+  <data name="CraftingAttemptFailed" xml:space="preserve">
+    <value>Crafting attempt failed.</value>
+  </data>
+  <data name="ExpandedStorageExpired" xml:space="preserve">
+    <value>Expanded storage has expired.</value>
+  </data>
+  <data name="PlayerHeroLevelled" xml:space="preserve">
+    <value>Player {0}'s hero has been Levelled {1} -&gt; {2}.</value>
+  </data>
+  <data name="HasBeenCreated" xml:space="preserve">
+    <value>has been created.</value>
+  </data>
+  <data name="CannotRecallThisMap" xml:space="preserve">
+    <value>You cannot recall people on this map</value>
+  </data>
+  <data name="CannotRecallAnotherSeconds" xml:space="preserve">
+    <value>You cannot recall for another {0} seconds</value>
+  </data>
+  <data name="RecallAttemptedWithoutYourPermission" xml:space="preserve">
+    <value>A recall was attempted without your permission</value>
+  </data>
+  <data name="YouAreNotGroupLeader" xml:space="preserve">
+    <value>You are not a group leader.</value>
+  </data>
+  <data name="CannotRecallWhenDead" xml:space="preserve">
+    <value>You cannot recall when you are dead.</value>
+  </data>
+  <data name="PlayerCouldNotBeFound" xml:space="preserve">
+    <value>Player {0} could not be found</value>
+  </data>
+  <data name="IsBlockingGrouprecall" xml:space="preserve">
+    <value>{0} is blocking grouprecall</value>
+  </data>
+  <data name="YouNotMarried" xml:space="preserve">
+    <value>You're not married.</value>
+  </data>
+  <data name="YouNeedWeddingRingRecall" xml:space="preserve">
+    <value>You need to be wearing a Wedding Ring for recall.</value>
+  </data>
 </root>

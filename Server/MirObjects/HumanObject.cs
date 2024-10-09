@@ -1044,35 +1044,35 @@ namespace Server.MirObjects
                 case MirClass.Warrior:
                     if (!item.Info.RequiredClass.HasFlag(RequiredClass.Warrior))
                     {
-                        ReceiveChat("Warriors cannot use this item.", ChatType.System);
+                        ReceiveChat(WqSr.WarriorsCannotUse, ChatType.System);
                         return false;
                     }
                     break;
                 case MirClass.Wizard:
                     if (!item.Info.RequiredClass.HasFlag(RequiredClass.Wizard))
                     {
-                        ReceiveChat("Wizards cannot use this item.", ChatType.System);
+                        ReceiveChat(WqSr.WizardsCannotUse, ChatType.System);
                         return false;
                     }
                     break;
                 case MirClass.Taoist:
                     if (!item.Info.RequiredClass.HasFlag(RequiredClass.Taoist))
                     {
-                        ReceiveChat("Taoists cannot use this item.", ChatType.System);
+                        ReceiveChat(WqSr.TaoistsCannotUse, ChatType.System);
                         return false;
                     }
                     break;
                 case MirClass.Assassin:
                     if (!item.Info.RequiredClass.HasFlag(RequiredClass.Assassin))
                     {
-                        ReceiveChat("Assassins cannot use this item.", ChatType.System);
+                        ReceiveChat(WqSr.AssassinsCannotUse, ChatType.System);
                         return false;
                     }
                     break;
                 case MirClass.Archer:
                     if (!item.Info.RequiredClass.HasFlag(RequiredClass.Archer))
                     {
-                        ReceiveChat("Archers cannot use this item.", ChatType.System);
+                        ReceiveChat(WqSr.ArchersCannotUse, ChatType.System);
                         return false;
                     } 
                     break;
@@ -1090,14 +1090,14 @@ namespace Server.MirObjects
                 case RequiredType.MaxAC:
                     if (Stats[Stat.MaxAC] < item.Info.RequiredAmount)
                     {
-                        ReceiveChat("You do not have enough AC.", ChatType.System);
+                        ReceiveChat(WqSr.DoNotHaveEnoughAC, ChatType.System);
                         return false;
                     }
                     break;
                 case RequiredType.MaxMAC:
                     if (Stats[Stat.MaxMAC] < item.Info.RequiredAmount)
                     {
-                        ReceiveChat("You do not have enough MAC.", ChatType.System);
+                        ReceiveChat(WqSr.DoNotHaveEnoughMAC, ChatType.System);
                         return false;
                     }
                     break;
@@ -1125,42 +1125,42 @@ namespace Server.MirObjects
                 case RequiredType.MaxLevel:
                     if (Level > item.Info.RequiredAmount)
                     {
-                        ReceiveChat("You have exceeded the maximum level.", ChatType.System);
+                        ReceiveChat(WqSr.ExceededMaximumLevel, ChatType.System);
                         return false;
                     }
                     break;
                 case RequiredType.MinAC:
                     if (Stats[Stat.MinAC] < item.Info.RequiredAmount)
                     {
-                        ReceiveChat("You do not have enough Base AC.", ChatType.System);
+                        ReceiveChat(WqSr.DoNotHaveEnoughBaseAC, ChatType.System);
                         return false;
                     }
                     break;
                 case RequiredType.MinMAC:
                     if (Stats[Stat.MinMAC] < item.Info.RequiredAmount)
                     {
-                        ReceiveChat("You do not have enough Base MAC.", ChatType.System);
+                        ReceiveChat(WqSr.DoNotHaveEnoughBaseMAC, ChatType.System);
                         return false;
                     }
                     break;
                 case RequiredType.MinDC:
                     if (Stats[Stat.MinDC] < item.Info.RequiredAmount)
                     {
-                        ReceiveChat("You do not have enough Base DC.", ChatType.System);
+                        ReceiveChat(WqSr.DoNotHaveEnoughBaseDC, ChatType.System);
                         return false;
                     }
                     break;
                 case RequiredType.MinMC:
                     if (Stats[Stat.MinMC] < item.Info.RequiredAmount)
                     {
-                        ReceiveChat("You do not have enough Base MC.", ChatType.System);
+                        ReceiveChat(WqSr.DoNotHaveEnoughBaseMC, ChatType.System);
                         return false;
                     }
                     break;
                 case RequiredType.MinSC:
                     if (Stats[Stat.MinSC] < item.Info.RequiredAmount)
                     {
-                        ReceiveChat("You do not have enough Base SC.", ChatType.System);
+                        ReceiveChat(WqSr.DoNotHaveEnoughBaseSC, ChatType.System);
                         return false;
                     }
                     break;
@@ -1229,7 +1229,7 @@ namespace Server.MirObjects
                 case ItemType.Potion:
                     if (CurrentMap.Info.NoDrug)
                     {
-                        ReceiveChat("You cannot use Potions here", ChatType.System);
+                        ReceiveChat(WqSr.CannotUsePotionsHere, ChatType.System);
                         return false;
                     }
                     break;
@@ -1247,7 +1247,7 @@ namespace Server.MirObjects
                 case ItemType.Reins:
                     if (Info.Equipment[(int)EquipmentSlot.Mount] == null)
                     {
-                        ReceiveChat("Can only be used with a mount", ChatType.System);
+                        ReceiveChat(WqSr.CanOnlyUsedWithMount, ChatType.System);
                         return false;
                     }
                     break;
@@ -1258,7 +1258,7 @@ namespace Server.MirObjects
                 case ItemType.Reel:
                     if (Info.Equipment[(int)EquipmentSlot.Weapon] == null || !Info.Equipment[(int)EquipmentSlot.Weapon].Info.IsFishingRod)
                     {
-                        ReceiveChat("Can only be used with a fishing rod", ChatType.System);
+                        ReceiveChat(WqSr.CanOnlyUsedWithFishingRod, ChatType.System);
                         return false;
                     }
                     break;
@@ -1275,14 +1275,14 @@ namespace Server.MirObjects
                         case 22://nuts maintain food levels
                             if (!CreatureSummoned)
                             {
-                                ReceiveChat("Can only be used with a creature summoned", ChatType.System);
+                                ReceiveChat(WqSr.CanOnlyUsedWithCreatureSummoned, ChatType.System);
                                 return false;
                             }
                             break;
                         case 23://basic creature food
                             if (!CreatureSummoned)
                             {
-                                ReceiveChat("Can only be used with a creature summoned", ChatType.System);
+                                ReceiveChat(WqSr.CanOnlyUsedWithCreatureSummoned, ChatType.System);
                                 return false;
                             }
                             else
@@ -1295,7 +1295,7 @@ namespace Server.MirObjects
                                     if (pet.PetType != SummonedCreatureType) continue;
                                     if (pet.Fullness > 9900)
                                     {
-                                        ReceiveChat(pet.Name + " is not hungry", ChatType.System);
+                                        ReceiveChat(pet.Name + " " + WqSr.IsNotHungry, ChatType.System);
                                         return false;
                                     }
                                     return true;
@@ -1305,7 +1305,7 @@ namespace Server.MirObjects
                         case 24://wonderpill vitalize creature
                             if (!CreatureSummoned)
                             {
-                                ReceiveChat("Can only be used with a creature summoned", ChatType.System);
+                                ReceiveChat(WqSr.CanOnlyUsedWithCreatureSummoned, ChatType.System);
                                 return false;
                             }
                             else
@@ -1318,7 +1318,7 @@ namespace Server.MirObjects
                                     if (pet.PetType != SummonedCreatureType) continue;
                                     if (pet.Fullness > 0)
                                     {
-                                        ReceiveChat(pet.Name + " does not need to be vitalized", ChatType.System);
+                                        ReceiveChat(pet.Name + " " + WqSr.DoesNotNeedVitalized, ChatType.System);
                                         return false;
                                     }
                                     return true;
@@ -3836,7 +3836,7 @@ namespace Server.MirObjects
 
             if (spell == null)
             {
-                ReceiveChat("Skill requires meditation.", ChatType.System);
+                ReceiveChat(WqSr.SkillRequiresMeditation, ChatType.System);
                 return;
             }
 
@@ -5009,11 +5009,11 @@ namespace Server.MirObjects
 
                 if (InSafeZone)
                 {
-                    ReceiveChat("No pushing in the safezone. tut tut.", ChatType.System);
+                    ReceiveChat(WqSr.NoPushingInTheSafezone, ChatType.System);
                 }
                 else
                 {
-                    ReceiveChat("Not enough pushing Power.", ChatType.System);
+                    ReceiveChat(WqSr.NotEnoughPushingPower, ChatType.System);
                 }
             }
             else
@@ -5486,7 +5486,7 @@ namespace Server.MirObjects
             else
             {
                 Broadcast(new S.ObjectBackStep { ObjectID = ObjectID, Direction = Direction, Location = CurrentLocation, Distance = jumpDistance });
-                ReceiveChat("Not enough jumping power.", ChatType.System);
+                ReceiveChat(WqSr.NotEnoughJumpingPower, ChatType.System);
             }
 
             magic.CastTime = Envir.Time;
@@ -5947,7 +5947,7 @@ namespace Server.MirObjects
                     location = (Point)data[1];
                     if (CurrentMap.Info.NoTeleport)
                     {
-                        ReceiveChat(("You cannot teleport on this map"), ChatType.System);
+                        ReceiveChat((WqSr.CannotTeleportThisMap), ChatType.System);
                         return;
                     }
                     if (!CurrentMap.ValidPoint(location) || Envir.Random.Next(4) >= magic.Level + 1 || !Teleport(CurrentMap, location, false)) return;
@@ -5962,7 +5962,7 @@ namespace Server.MirObjects
                 case Spell.Teleport:                                 
                     if (CurrentMap.Info.NoTeleport)
                     {
-                        ReceiveChat(("You cannot teleport on this map"), ChatType.System);
+                        ReceiveChat((WqSr.CannotTeleportThisMap), ChatType.System);
                         return;
                     }
 
@@ -5982,7 +5982,7 @@ namespace Server.MirObjects
                         location = (Point)data[1];
                         if (CurrentMap.Info.NoTeleport)
                         {
-                            ReceiveChat(("You cannot teleport on this map"), ChatType.System);
+                            ReceiveChat((WqSr.CannotTeleportThisMap), ChatType.System);
                             return;
                         }
                         if (Functions.InRange(CurrentLocation, location, magic.Info.Range) == false) return;
@@ -7289,7 +7289,7 @@ namespace Server.MirObjects
                         ExplosionInflictedTime = Envir.Time + 4000;
                         Enqueue(new S.ObjectEffect { ObjectID = ObjectID, Effect = SpellEffect.DelayedExplosion });
                         Broadcast(new S.ObjectEffect { ObjectID = ObjectID, Effect = SpellEffect.DelayedExplosion });
-                        ReceiveChat("You are a walking explosive.", ChatType.System);
+                        ReceiveChat(WqSr.YouAreWalkingExplosive, ChatType.System);
                     }
                     break;
                 case PoisonType.Dazed:
@@ -8465,17 +8465,17 @@ namespace Server.MirObjects
                 else if (!Mount.CanRide)
                 {
                     RidingMount = false;
-                    ReceiveChat("You must have a saddle to ride your mount", ChatType.System);
+                    ReceiveChat(WqSr.YouMustHaveSaddleToRide, ChatType.System);
                 }
                 else if (!Mount.CanMapRide)
                 {
                     RidingMount = false;
-                    ReceiveChat("You cannot ride on this map", ChatType.System);
+                    ReceiveChat(WqSr.CannotRideThisMap, ChatType.System);
                 }
                 else if (!Mount.CanDungeonRide)
                 {
                     RidingMount = false;
-                    ReceiveChat("You cannot ride here without a bridle", ChatType.System);
+                    ReceiveChat(WqSr.CannotRideHereWithoutBridle, ChatType.System);
                 }
             }
             else
@@ -8525,7 +8525,7 @@ namespace Server.MirObjects
                 RefreshMount();
             }
             else
-                ReceiveChat("You do not have a mount equiped.", ChatType.System);
+                ReceiveChat(WqSr.DoNotHaveMountEquiped, ChatType.System);
         }
 
         #endregion

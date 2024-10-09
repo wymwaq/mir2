@@ -4,6 +4,7 @@ using Server.MirEnvir;
 using System.Text.RegularExpressions;
 using S = ServerPackets;
 using Server.Library;
+using WqSr = Server.Library.ServerLibraryResources;
 
 namespace Server.MirObjects
 {
@@ -981,7 +982,7 @@ namespace Server.MirObjects
                 case RefineKey:
                     if (player.Info.CurrentRefine != null)
                     {
-                        player.ReceiveChat("You're already refining an item.", ChatType.System);
+                        player.ReceiveChat(WqSr.AlreadyRefiningItem, ChatType.System);
                         player.Enqueue(new S.NPCRefine { Rate = (Settings.RefineCost), Refining = true });
                         break;
                     }
@@ -1047,7 +1048,7 @@ namespace Server.MirObjects
                 case GuildCreateKey:
                     if (player.Info.Level < Settings.Guild_RequiredLevel)
                     {
-                        player.ReceiveChat(String.Format("You have to be at least level {0} to create a guild.", Settings.Guild_RequiredLevel), ChatType.System);
+                        player.ReceiveChat(String.Format(WqSr.AtLeastLevelCreateGuild, Settings.Guild_RequiredLevel), ChatType.System);
                     }
                     else if (player.MyGuild == null)
                     {
@@ -1055,14 +1056,14 @@ namespace Server.MirObjects
                         player.Enqueue(new S.GuildNameRequest());
                     }
                     else
-                        player.ReceiveChat("You are already part of a guild.", ChatType.System);
+                        player.ReceiveChat(WqSr.AlreadyPartOfGuild, ChatType.System);
                     break;
                 case RequestWarKey:
                     if (player.MyGuild != null)
                     {
                         if (player.MyGuildRank != player.MyGuild.Ranks[0])
                         {
-                            player.ReceiveChat("You must be the leader to request a war.", ChatType.System);
+                            player.ReceiveChat(WqSr.MustLeaderToRequestWar, ChatType.System);
                             return;
                         }
                         player.Enqueue(new S.GuildRequestWar());
@@ -1114,7 +1115,7 @@ namespace Server.MirObjects
                 case HeroCreateKey:
                     if (player.Info.Level < Settings.Hero_RequiredLevel)
                     {
-                        player.ReceiveChat(String.Format("You have to be at least level {0} to create a hero.", Settings.Hero_RequiredLevel), ChatType.System);
+                        player.ReceiveChat(String.Format(WqSr.AtLeastLevelCreateHero, Settings.Hero_RequiredLevel), ChatType.System);
                         break;
                     }
                     player.CanCreateHero = true;
@@ -1436,7 +1437,7 @@ namespace Server.MirObjects
 
             if (Envir.Random.Next(100) >= recipe.Chance + player.Stats[Stat.CraftRatePercent])
             {
-                player.ReceiveChat("Crafting attempt failed.", ChatType.System);
+                player.ReceiveChat(WqSr.CraftingAttemptFailed, ChatType.System);
             }
             else
             {

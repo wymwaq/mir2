@@ -621,4 +621,115 @@
   <data name="OffText" xml:space="preserve">
     <value>关</value>
   </data>
+  <data name="SelectPaymentType" xml:space="preserve">
+    <value>您必须选择付款类型！</value>
+  </data>
+  <data name="CantAffordItem" xml:space="preserve">
+    <value>您买不起所选的物品。</value>
+  </data>
+  <data name="NoRoomSplitStack" xml:space="preserve">
+    <value>没有足够空间去拆分。</value>
+  </data>
+  <data name="CannotSwapItems" xml:space="preserve">
+    <value>您不能交换物品。</value>
+  </data>
+  <data name="InsufficientRightsRetrieve" xml:space="preserve">
+    <value>权限不足，无法检索项目。</value>
+  </data>
+  <data name="InsufficientRightsStore" xml:space="preserve">
+    <value>权限不足，无法存储项目。</value>
+  </data>
+  <data name="UnableRemoveLockedItem" xml:space="preserve">
+    <value>无法删除锁定的项，请取消租赁项目，然后重试。</value>
+  </data>
+  <data name="CannotMail" xml:space="preserve">
+    <value>您无法邮寄此项。</value>
+  </data>
+  <data name="TooHeavyTransfer" xml:space="preserve">
+    <value>太重了，无法移动。</value>
+  </data>
+  <data name="WarriorsCannotUse" xml:space="preserve">
+    <value>战士不能使用此物品。</value>
+  </data>
+  <data name="WizardsCannotUse" xml:space="preserve">
+    <value>法师不能使用此物品。</value>
+  </data>
+  <data name="TaoistsCannotUse" xml:space="preserve">
+    <value>道士不能使用此物品。</value>
+  </data>
+  <data name="AssassinsCannotUse" xml:space="preserve">
+    <value>刺客不能使用此物品。</value>
+  </data>
+  <data name="ArchersCannotUse" xml:space="preserve">
+    <value>弓箭手不能使用此物品。</value>
+  </data>
+  <data name="DoNotHaveEnoughAC" xml:space="preserve">
+    <value>你没有足够的防御力。</value>
+  </data>
+  <data name="DoNotHaveEnoughMAC" xml:space="preserve">
+    <value>你没有足够的魔法防御力。</value>
+  </data>
+  <data name="ExceededMaximumLevel" xml:space="preserve">
+    <value>您已超过最大级别。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseAC" xml:space="preserve">
+    <value>你没有足够的基础防御力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseMAC" xml:space="preserve">
+    <value>你没有足够的基础魔法防御力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseDC" xml:space="preserve">
+    <value>你没有足够的基础攻击力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseMC" xml:space="preserve">
+    <value>你没有足够的基础魔法力。</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseSC" xml:space="preserve">
+    <value>你没有足够的基础道术力。</value>
+  </data>
+  <data name="DoNotHaveMountEquipped" xml:space="preserve">
+    <value>你没有装备坐骑。</value>
+  </data>
+  <data name="DoNotHaveFishingRodEquipped" xml:space="preserve">
+    <value>你没有配备钓竿。</value>
+  </data>
+  <data name="TooHeavyToWear" xml:space="preserve">
+    <value>它太重了，不能穿。</value>
+  </data>
+  <data name="CouldNotFindSuitablePath" xml:space="preserve">
+    <value>找不到合适的路线。</value>
+  </data>
+  <data name="PlayerIsNotOnline" xml:space="preserve">
+    <value>玩家不在线</value>
+  </data>
+  <data name="GroupMaximumMembers" xml:space="preserve">
+    <value>您的组已达到最大成员数。</value>
+  </data>
+  <data name="YouNotLeader" xml:space="preserve">
+    <value>你不是所在组的领队。</value>
+  </data>
+  <data name="VerificationFailed" xml:space="preserve">
+    <value>验证失败！！</value>
+  </data>
+  <data name="AlreadyHaveMentor" xml:space="preserve">
+    <value>你已经有一个导师了。</value>
+  </data>
+  <data name="DoNotHaveEnoughPearls" xml:space="preserve">
+    <value>你没有足够的珍珠。</value>
+  </data>
+  <data name="DoNotHaveEnoughGold" xml:space="preserve">
+    <value>你没有足够的金币。</value>
+  </data>
+  <data name="DoNotHaveRequiredToolsIngredients" xml:space="preserve">
+    <value>你没有所需的工具或材料。</value>
+  </data>
+  <data name="YouAlreadyMarried" xml:space="preserve">
+    <value>你已经结婚了。</value>
+  </data>
+  <data name="YouNotMarried" xml:space="preserve">
+    <value>你还没结婚。</value>
+  </data>
+  <data name="LoverNotOnline" xml:space="preserve">
+    <value>爱人不在线</value>
+  </data>
 </root>

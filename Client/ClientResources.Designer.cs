@@ -124,11 +124,38 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 You already have a Mentor. 的本地化字符串。
+        /// </summary>
+        internal static string AlreadyHaveMentor {
+            get {
+                return ResourceManager.GetString("AlreadyHaveMentor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Archers cannot use this item. 的本地化字符串。
+        /// </summary>
+        internal static string ArchersCannotUse {
+            get {
+                return ResourceManager.GetString("ArchersCannotUse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 A.Speed 的本地化字符串。
         /// </summary>
         internal static string ASpeedText {
             get {
                 return ResourceManager.GetString("ASpeedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Assassins cannot use this item. 的本地化字符串。
+        /// </summary>
+        internal static string AssassinsCannotUse {
+            get {
+                return ResourceManager.GetString("AssassinsCannotUse", resourceCulture);
             }
         }
         
@@ -259,6 +286,15 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 You cannot mail this item. 的本地化字符串。
+        /// </summary>
+        internal static string CannotMail {
+            get {
+                return ResourceManager.GetString("CannotMail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Cannot repair this item. 的本地化字符串。
         /// </summary>
         internal static string CannotRepairItem {
@@ -273,6 +309,24 @@ namespace Client {
         internal static string CannotSellItem {
             get {
                 return ResourceManager.GetString("CannotSellItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You cannot swap items. 的本地化字符串。
+        /// </summary>
+        internal static string CannotSwapItems {
+            get {
+                return ResourceManager.GetString("CannotSwapItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You can&apos;t afford the selected item. 的本地化字符串。
+        /// </summary>
+        internal static string CantAffordItem {
+            get {
+                return ResourceManager.GetString("CantAffordItem", resourceCulture);
             }
         }
         
@@ -403,6 +457,15 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 Could not find suitable path. 的本地化字符串。
+        /// </summary>
+        internal static string CouldNotFindSuitablePath {
+            get {
+                return ResourceManager.GetString("CouldNotFindSuitablePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Created by Game Master 的本地化字符串。
         /// </summary>
         internal static string CreatedByGameMaster {
@@ -498,6 +561,114 @@ namespace Client {
         internal static string DivorceRequest {
             get {
                 return ResourceManager.GetString("DivorceRequest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough AC. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughAC {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughAC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough Base AC. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughBaseAC {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughBaseAC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough Base DC. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughBaseDC {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughBaseDC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough Base MAC. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughBaseMAC {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughBaseMAC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough Base MC. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughBaseMC {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughBaseMC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough Base SC. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughBaseSC {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughBaseSC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough gold. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughGold {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughGold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough MAC. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughMAC {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughMAC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have enough Pearls. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveEnoughPearls {
+            get {
+                return ResourceManager.GetString("DoNotHaveEnoughPearls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have a fishing rod equipped. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveFishingRodEquipped {
+            get {
+                return ResourceManager.GetString("DoNotHaveFishingRodEquipped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have a mount equipped. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveMountEquipped {
+            get {
+                return ResourceManager.GetString("DoNotHaveMountEquipped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You do not have the required tools or ingredients. 的本地化字符串。
+        /// </summary>
+        internal static string DoNotHaveRequiredToolsIngredients {
+            get {
+                return ResourceManager.GetString("DoNotHaveRequiredToolsIngredients", resourceCulture);
             }
         }
         
@@ -628,6 +799,15 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 You have exceeded the maximum level. 的本地化字符串。
+        /// </summary>
+        internal static string ExceededMaximumLevel {
+            get {
+                return ResourceManager.GetString("ExceededMaximumLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Exp Rate 的本地化字符串。
         /// </summary>
         internal static string ExpRateText {
@@ -705,6 +885,15 @@ namespace Client {
         internal static string GroupInviteMessage {
             get {
                 return ResourceManager.GetString("GroupInviteMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your group already has the maximum number of members. 的本地化字符串。
+        /// </summary>
+        internal static string GroupMaximumMembers {
+            get {
+                return ResourceManager.GetString("GroupMaximumMembers", resourceCulture);
             }
         }
         
@@ -799,6 +988,24 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 Insufficient rights to retrieve items. 的本地化字符串。
+        /// </summary>
+        internal static string InsufficientRightsRetrieve {
+            get {
+                return ResourceManager.GetString("InsufficientRightsRetrieve", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Insufficient rights to store items. 的本地化字符串。
+        /// </summary>
+        internal static string InsufficientRightsStore {
+            get {
+                return ResourceManager.GetString("InsufficientRightsStore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You do not have enough weight or space spare to buy this item. 的本地化字符串。
         /// </summary>
         internal static string InsufficientWeight {
@@ -876,6 +1083,15 @@ namespace Client {
         internal static string LeftGroupMessage {
             get {
                 return ResourceManager.GetString("LeftGroupMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Lover is not online 的本地化字符串。
+        /// </summary>
+        internal static string LoverNotOnline {
+            get {
+                return ResourceManager.GetString("LoverNotOnline", resourceCulture);
             }
         }
         
@@ -1069,6 +1285,15 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 No room to split stack. 的本地化字符串。
+        /// </summary>
+        internal static string NoRoomSplitStack {
+            get {
+                return ResourceManager.GetString("NoRoomSplitStack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You have not supplied enough materials. 的本地化字符串。
         /// </summary>
         internal static string NotEnoughMaterials {
@@ -1119,6 +1344,15 @@ namespace Client {
         internal static string PlayerDonatedGold {
             get {
                 return ResourceManager.GetString("PlayerDonatedGold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Player is not online 的本地化字符串。
+        /// </summary>
+        internal static string PlayerIsNotOnline {
+            get {
+                return ResourceManager.GetString("PlayerIsNotOnline", resourceCulture);
             }
         }
         
@@ -1366,6 +1600,15 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 You MUST select a payment type! 的本地化字符串。
+        /// </summary>
+        internal static string SelectPaymentType {
+            get {
+                return ResourceManager.GetString("SelectPaymentType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Selling Price 的本地化字符串。
         /// </summary>
         internal static string SellingPriceText {
@@ -1429,6 +1672,15 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 Taoists cannot use this item. 的本地化字符串。
+        /// </summary>
+        internal static string TaoistsCannotUse {
+            get {
+                return ResourceManager.GetString("TaoistsCannotUse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Target is too far. 的本地化字符串。
         /// </summary>
         internal static string TargetTooFar {
@@ -1452,6 +1704,24 @@ namespace Client {
         internal static string TooFarFromMerchant {
             get {
                 return ResourceManager.GetString("TooFarFromMerchant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 It is too heavy to wear. 的本地化字符串。
+        /// </summary>
+        internal static string TooHeavyToWear {
+            get {
+                return ResourceManager.GetString("TooHeavyToWear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Too heavy to transfer. 的本地化字符串。
+        /// </summary>
+        internal static string TooHeavyTransfer {
+            get {
+                return ResourceManager.GetString("TooHeavyTransfer", resourceCulture);
             }
         }
         
@@ -1488,6 +1758,15 @@ namespace Client {
         internal static string TrustMerchantNoUse {
             get {
                 return ResourceManager.GetString("TrustMerchantNoUse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Unable to remove locked item, cancel item rental and try again. 的本地化字符串。
+        /// </summary>
+        internal static string UnableRemoveLockedItem {
+            get {
+                return ResourceManager.GetString("UnableRemoveLockedItem", resourceCulture);
             }
         }
         
@@ -1564,11 +1843,65 @@ namespace Client {
         }
         
         /// <summary>
+        ///   查找类似 Verification Failed!! 的本地化字符串。
+        /// </summary>
+        internal static string VerificationFailed {
+            get {
+                return ResourceManager.GetString("VerificationFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Warriors cannot use this item. 的本地化字符串。
+        /// </summary>
+        internal static string WarriorsCannotUse {
+            get {
+                return ResourceManager.GetString("WarriorsCannotUse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Wear Weight 的本地化字符串。
         /// </summary>
         internal static string WearWeightText {
             get {
                 return ResourceManager.GetString("WearWeightText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wizards cannot use this item. 的本地化字符串。
+        /// </summary>
+        internal static string WizardsCannotUse {
+            get {
+                return ResourceManager.GetString("WizardsCannotUse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You&apos;re already married. 的本地化字符串。
+        /// </summary>
+        internal static string YouAlreadyMarried {
+            get {
+                return ResourceManager.GetString("YouAlreadyMarried", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You are not the leader of your group. 的本地化字符串。
+        /// </summary>
+        internal static string YouNotLeader {
+            get {
+                return ResourceManager.GetString("YouNotLeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You&apos;re not married. 的本地化字符串。
+        /// </summary>
+        internal static string YouNotMarried {
+            get {
+                return ResourceManager.GetString("YouNotMarried", resourceCulture);
             }
         }
     }

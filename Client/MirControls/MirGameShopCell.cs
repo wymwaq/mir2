@@ -3,6 +3,7 @@ using Client.MirNetwork;
 using Client.MirScenes;
 using Client.MirSounds;
 using C = ClientPackets;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirControls
 {
@@ -202,7 +203,7 @@ namespace Client.MirControls
             }
             if (pType == -1)
             {
-                GameScene.Scene.ChatDialog.ReceiveChat("You MUST select a payment type!", ChatType.System);
+                GameScene.Scene.ChatDialog.ReceiveChat(WqCr.SelectPaymentType, ChatType.System);
                 return;
             }
             switch (pType)
@@ -217,7 +218,7 @@ namespace Client.MirControls
                         messageBox.Show();
                     }
                     else
-                        GameScene.Scene.ChatDialog.ReceiveChat("You can't afford the selected item.", ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(WqCr.CantAffordItem, ChatType.System);
                     break;
                 case 1: //  Gold
                     if (Item.GoldPrice * Quantity <= GameScene.Gold)
@@ -229,7 +230,7 @@ namespace Client.MirControls
                         messageBox.Show();
                     }
                     else
-                        GameScene.Scene.ChatDialog.ReceiveChat("You can't afford the selected item.", ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(WqCr.CantAffordItem, ChatType.System);
                     break;
                 default:
 

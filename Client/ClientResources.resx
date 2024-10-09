@@ -601,4 +601,115 @@
   <data name="OffText" xml:space="preserve">
     <value>Off</value>
   </data>
+  <data name="SelectPaymentType" xml:space="preserve">
+    <value>You MUST select a payment type!</value>
+  </data>
+  <data name="CantAffordItem" xml:space="preserve">
+    <value>You can't afford the selected item.</value>
+  </data>
+  <data name="NoRoomSplitStack" xml:space="preserve">
+    <value>No room to split stack.</value>
+  </data>
+  <data name="CannotSwapItems" xml:space="preserve">
+    <value>You cannot swap items.</value>
+  </data>
+  <data name="InsufficientRightsRetrieve" xml:space="preserve">
+    <value>Insufficient rights to retrieve items.</value>
+  </data>
+  <data name="InsufficientRightsStore" xml:space="preserve">
+    <value>Insufficient rights to store items.</value>
+  </data>
+  <data name="UnableRemoveLockedItem" xml:space="preserve">
+    <value>Unable to remove locked item, cancel item rental and try again.</value>
+  </data>
+  <data name="CannotMail" xml:space="preserve">
+    <value>You cannot mail this item.</value>
+  </data>
+  <data name="TooHeavyTransfer" xml:space="preserve">
+    <value>Too heavy to transfer.</value>
+  </data>
+  <data name="WarriorsCannotUse" xml:space="preserve">
+    <value>Warriors cannot use this item.</value>
+  </data>
+  <data name="WizardsCannotUse" xml:space="preserve">
+    <value>Wizards cannot use this item.</value>
+  </data>
+  <data name="TaoistsCannotUse" xml:space="preserve">
+    <value>Taoists cannot use this item.</value>
+  </data>
+  <data name="AssassinsCannotUse" xml:space="preserve">
+    <value>Assassins cannot use this item.</value>
+  </data>
+  <data name="ArchersCannotUse" xml:space="preserve">
+    <value>Archers cannot use this item.</value>
+  </data>
+  <data name="DoNotHaveEnoughAC" xml:space="preserve">
+    <value>You do not have enough AC.</value>
+  </data>
+  <data name="DoNotHaveEnoughMAC" xml:space="preserve">
+    <value>You do not have enough MAC.</value>
+  </data>
+  <data name="ExceededMaximumLevel" xml:space="preserve">
+    <value>You have exceeded the maximum level.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseAC" xml:space="preserve">
+    <value>You do not have enough Base AC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseMAC" xml:space="preserve">
+    <value>You do not have enough Base MAC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseDC" xml:space="preserve">
+    <value>You do not have enough Base DC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseMC" xml:space="preserve">
+    <value>You do not have enough Base MC.</value>
+  </data>
+  <data name="DoNotHaveEnoughBaseSC" xml:space="preserve">
+    <value>You do not have enough Base SC.</value>
+  </data>
+  <data name="DoNotHaveMountEquipped" xml:space="preserve">
+    <value>You do not have a mount equipped.</value>
+  </data>
+  <data name="DoNotHaveFishingRodEquipped" xml:space="preserve">
+    <value>You do not have a fishing rod equipped.</value>
+  </data>
+  <data name="TooHeavyToWear" xml:space="preserve">
+    <value>It is too heavy to wear.</value>
+  </data>
+  <data name="CouldNotFindSuitablePath" xml:space="preserve">
+    <value>Could not find suitable path.</value>
+  </data>
+  <data name="PlayerIsNotOnline" xml:space="preserve">
+    <value>Player is not online</value>
+  </data>
+  <data name="GroupMaximumMembers" xml:space="preserve">
+    <value>Your group already has the maximum number of members.</value>
+  </data>
+  <data name="YouNotLeader" xml:space="preserve">
+    <value>You are not the leader of your group.</value>
+  </data>
+  <data name="VerificationFailed" xml:space="preserve">
+    <value>Verification Failed!!</value>
+  </data>
+  <data name="AlreadyHaveMentor" xml:space="preserve">
+    <value>You already have a Mentor.</value>
+  </data>
+  <data name="DoNotHaveEnoughPearls" xml:space="preserve">
+    <value>You do not have enough Pearls.</value>
+  </data>
+  <data name="DoNotHaveEnoughGold" xml:space="preserve">
+    <value>You do not have enough gold.</value>
+  </data>
+  <data name="DoNotHaveRequiredToolsIngredients" xml:space="preserve">
+    <value>You do not have the required tools or ingredients.</value>
+  </data>
+  <data name="YouAlreadyMarried" xml:space="preserve">
+    <value>You're already married.</value>
+  </data>
+  <data name="YouNotMarried" xml:space="preserve">
+    <value>You're not married.</value>
+  </data>
+  <data name="LoverNotOnline" xml:space="preserve">
+    <value>Lover is not online</value>
+  </data>
 </root>

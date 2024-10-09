@@ -689,7 +689,7 @@ namespace Client.MirScenes.Dialogs
                         maxQuantity = Math.Min(ushort.MaxValue, (ushort)(GameScene.Gold / (SelectedItem.Price() / SelectedItem.Count)));
                         if (maxQuantity == 0)
                         {
-                            GameScene.Scene.ChatDialog.ReceiveChat("You do not have enough Pearls.", ChatType.System);
+                            GameScene.Scene.ChatDialog.ReceiveChat(WqCr.DoNotHaveEnoughPearls, ChatType.System);
                             return;
                         }
                     }
@@ -1994,7 +1994,7 @@ namespace Client.MirScenes.Dialogs
             {
                 if (Recipe.Gold > GameScene.Gold)
                 {
-                    GameScene.Scene.ChatDialog.ReceiveChat("You do not have enough gold.", ChatType.System);
+                    GameScene.Scene.ChatDialog.ReceiveChat(WqCr.DoNotHaveEnoughGold, ChatType.System);
                     return;
                 }
 
@@ -2010,13 +2010,13 @@ namespace Client.MirScenes.Dialogs
                     {
                         if (!HasCraftItems((ushort)amountBox.Amount))
                         {
-                            GameScene.Scene.ChatDialog.ReceiveChat("You do not have the required tools or ingredients.", ChatType.System);
+                            GameScene.Scene.ChatDialog.ReceiveChat(WqCr.DoNotHaveRequiredToolsIngredients, ChatType.System);
                             return;
                         }
                         
                         if ((Recipe.Gold * amountBox.Amount) > GameScene.Gold)
                         {
-                            GameScene.Scene.ChatDialog.ReceiveChat("You do not have enough gold.", ChatType.System);
+                            GameScene.Scene.ChatDialog.ReceiveChat(WqCr.DoNotHaveEnoughGold, ChatType.System);
                             return;
                         }
 

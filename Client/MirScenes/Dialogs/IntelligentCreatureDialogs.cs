@@ -4,6 +4,7 @@ using Client.MirNetwork;
 using Client.MirSounds;
 using System.Text.RegularExpressions;
 using C = ClientPackets;
+using WqCr = Client.ClientResources;
 
 namespace Client.MirScenes.Dialogs
 {
@@ -498,7 +499,7 @@ namespace Client.MirScenes.Dialogs
                 {
                     if (String.Compare(verificationBox.InputTextBox.Text, GameScene.User.IntelligentCreatures[selectedCreature].CustomName, StringComparison.OrdinalIgnoreCase) != 0)
                     {
-                        GameScene.Scene.ChatDialog.ReceiveChat("Verification Failed!!", ChatType.System);
+                        GameScene.Scene.ChatDialog.ReceiveChat(WqCr.VerificationFailed, ChatType.System);
                     }
                     else
                     {
