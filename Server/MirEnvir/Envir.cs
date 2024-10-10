@@ -10,6 +10,7 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Numerics;
+using System.Reflection.PortableExecutable;
 using System.Text.RegularExpressions;
 using S = ServerPackets;
 using WqSr = Server.Library.ServerLibraryResources;
@@ -929,19 +930,47 @@ namespace Server.MirEnvir
 
                 writer.Write(MapInfoList.Count);
                 for (var i = 0; i < MapInfoList.Count; i++)
-                    MapInfoList[i].Save(writer);
+                {
+                    MapInfo tempMap = MapInfoList[i];
+                    if (Wq.LanMgr.opensave)
+                    {
+                        tempMap.Title = Wq.LanMgr.Ins.ToEN(tempMap.FileName, Wq.TYPE.MAP);
+                    }
+                    tempMap.Save(writer); 
+                }
 
                 writer.Write(ItemInfoList.Count);
                 for (var i = 0; i < ItemInfoList.Count; i++)
-                    ItemInfoList[i].Save(writer);
+                {
+                    ItemInfo tempItem = ItemInfoList[i];
+                    if (Wq.LanMgr.opensave)
+                    {
+                        tempItem.Name = Wq.LanMgr.Ins.ToEN((uint)tempItem.Index, Wq.TYPE.ITEM);
+                    }
+                    tempItem.Save(writer); 
+                }
 
                 writer.Write(MonsterInfoList.Count);
                 for (var i = 0; i < MonsterInfoList.Count; i++)
-                    MonsterInfoList[i].Save(writer);
+                {
+                    MonsterInfo tempMonster = MonsterInfoList[i];
+                    if (Wq.LanMgr.opensave)
+                    {
+                        tempMonster.Name = Wq.LanMgr.Ins.ToEN((uint)tempMonster.Index, Wq.TYPE.MONSTER);
+                    }
+                    tempMonster.Save(writer); 
+                }
 
                 writer.Write(NPCInfoList.Count);
                 for (var i = 0; i < NPCInfoList.Count; i++)
-                    NPCInfoList[i].Save(writer);
+                {
+                    NPCInfo tempNPC = NPCInfoList[i];
+                    if (Wq.LanMgr.opensave)
+                    {
+                        tempNPC.Name = Wq.LanMgr.Ins.ToEN(tempNPC.Name, Wq.TYPE.NPC);
+                    }
+                    tempNPC.Save(writer); 
+                }
 
                 writer.Write(QuestInfoList.Count);
                 for (var i = 0; i < QuestInfoList.Count; i++)
@@ -950,7 +979,14 @@ namespace Server.MirEnvir
                 DragonInfo.Save(writer);
                 writer.Write(MagicInfoList.Count);
                 for (var i = 0; i < MagicInfoList.Count; i++)
-                    MagicInfoList[i].Save(writer);
+                {
+                    MagicInfo tempMagic = MagicInfoList[i];
+                    if (Wq.LanMgr.opensave)
+                    {
+                        tempMagic.Name = Wq.LanMgr.Ins.ToEN(tempMagic.Name, Wq.TYPE.MAGIC);
+                    }
+                    tempMagic.Save(writer); 
+                }
 
                 writer.Write(GameShopList.Count);
                 for (var i = 0; i < GameShopList.Count; i++)
@@ -1321,13 +1357,25 @@ namespace Server.MirEnvir
                     var count = reader.ReadInt32();
                     MapInfoList.Clear();
                     for (var i = 0; i < count; i++)
-                        MapInfoList.Add(new MapInfo(reader));
+                    {
+                        MapInfo tempMap = new MapInfo(reader);
+                        if (Wq.LanMgr.openload)
+                        {
+                            tempMap.Title = Wq.LanMgr.Ins.ToCN(tempMap.FileName, Wq.TYPE.MAP);
+                        }
+                        MapInfoList.Add(tempMap); 
+                    }
 
                     count = reader.ReadInt32();
                     ItemInfoList.Clear();
                     for (var i = 0; i < count; i++)
                     {
-                        ItemInfoList.Add(new ItemInfo(reader, LoadVersion, LoadCustomVersion));
+                        ItemInfo tempItem = new ItemInfo(reader, LoadVersion, LoadCustomVersion);
+                        if (Wq.LanMgr.openload)
+                        {
+                            tempItem.Name = Wq.LanMgr.Ins.ToCN((uint)tempItem.Index, Wq.TYPE.ITEM);
+                        }
+                        ItemInfoList.Add(tempItem);
                         if (ItemInfoList[i] != null && ItemInfoList[i].RandomStatsId < Settings.RandomItemStatsList.Count)
                         {
                             ItemInfoList[i].RandomStats = Settings.RandomItemStatsList[ItemInfoList[i].RandomStatsId];
@@ -1336,12 +1384,26 @@ namespace Server.MirEnvir
                     count = reader.ReadInt32();
                     MonsterInfoList.Clear();
                     for (var i = 0; i < count; i++)
-                        MonsterInfoList.Add(new MonsterInfo(reader));
+                    {
+                        MonsterInfo tempMonster = new MonsterInfo(reader);
+                        if (Wq.LanMgr.openload)
+                        {
+                            tempMonster.Name = Wq.LanMgr.Ins.ToCN((uint)tempMonster.Index, Wq.TYPE.MONSTER);
+                        }
+                        MonsterInfoList.Add(tempMonster); 
+                    }
 
                     count = reader.ReadInt32();
                     NPCInfoList.Clear();
                     for (var i = 0; i < count; i++)
-                        NPCInfoList.Add(new NPCInfo(reader));
+                    {
+                        NPCInfo tempNPC = new NPCInfo(reader);
+                        if (Wq.LanMgr.openload)
+                        {
+                            tempNPC.Name = Wq.LanMgr.Ins.ToCN(tempNPC.Name, Wq.TYPE.NPC);
+                        }
+                        NPCInfoList.Add(tempNPC); 
+                    }
 
                     count = reader.ReadInt32();
                     QuestInfoList.Clear();
@@ -1352,9 +1414,13 @@ namespace Server.MirEnvir
                     count = reader.ReadInt32();
                     for (var i = 0; i < count; i++)
                     {
-                        var m = new MagicInfo(reader, LoadVersion, LoadCustomVersion);
-                        if (!MagicExists(m.Spell))
-                            MagicInfoList.Add(m);
+                        MagicInfo tempMagic = new MagicInfo(reader, LoadVersion, LoadCustomVersion);
+                        if (Wq.LanMgr.openload)
+                        {
+                            tempMagic.Name = Wq.LanMgr.Ins.ToCN(tempMagic.Name, Wq.TYPE.MAGIC);
+                        }
+                        if (!MagicExists(tempMagic.Spell))
+                            MagicInfoList.Add(tempMagic);
                     }
 
                     FillMagicInfoList();

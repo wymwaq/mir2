@@ -105,6 +105,9 @@
     <EmbeddedResource Update="Database\ItemInfoForm.zh.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Update="Database\MapInfoForm.zh.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="Database\MonsterInfoForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -115,6 +118,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="Systems\MonsterTunerForm.zh.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="VisualMapInfo\VForm.zh.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

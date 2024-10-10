@@ -18,6 +18,10 @@ namespace Wq
 
         private static LanMgr _ins = null;
         private static readonly object _insLock = new object();
+
+        public static bool openload = false; // 将英文转为中文
+        public static bool opensave = false;
+
         public static LanMgr Ins
         {
             get
@@ -93,75 +97,73 @@ namespace Wq
             return temp;
         }
 
-        // 暂时用不到
-        //public string ToEN(uint id, TYPE type)
-        //{
-        //    Dictionary<uint, string[]> v2k = type switch
-        //    {
-        //        TYPE.ITEM => id_V2K_item,
-        //        TYPE.MONSTER => id_V2K_monster,
-        //        _ => null
-        //    };
-        //    if (v2k == null)
-        //    {
-        //        return "无效的类型";
-        //    }
-        //    if (v2k.TryGetValue(id, out string[] values))
-        //    {
-        //        return values[0]; // 返回EN值
-        //    }
-        //    else
-        //    {
-        //        return $"未找到ID为 {id} 的EN值";
-        //    }
-        //}
-
-        // 方法返回 CN 值
-        public string ToCN(uint id, TYPE type)
+        public string GetValue<T>(T id, TYPE type, int languageIndex, Dictionary<T, string[]> dic, string language)
         {
-            Dictionary<uint, string[]> v2k = type switch
+            if (dic == null)
+            {
+                Logger.Error($"id = {id} , type = {type} 无效的类型");
+                return "无效的类型";
+            }
+            if (dic.TryGetValue(id, out string[] values))
+            {
+                if (values[languageIndex] == "" || values[languageIndex].IndexOf("WQ_TODO") > -1)
+                {
+                    return values[0];
+                }
+                return values[languageIndex]; // 返回指定语言值
+            }
+            else
+            {
+                Logger.Error($"id = {id} , type = {type} 未找到的{language}值");
+                return values[0];
+            }
+        }
+
+        public string ToEN(uint id, TYPE type)
+        {
+            var dic = type switch
             {
                 TYPE.ITEM => id_V2K_item,
                 TYPE.MONSTER => id_V2K_monster,
                 _ => null
             };
-            if (v2k == null)
-            {
-                return "无效的类型";
-            }
-            if (v2k.TryGetValue(id, out string[] values))
-            {
-                return values[1]; // 返回CN值
-            }
-            else
-            {
-                return $"未找到ID为 {id} 的EN值";
-            }
+            return GetValue(id, type, 0, dic, "EN");
         }
 
-        public string ToCN(string id, TYPE type)
+        public string ToEN(string id, TYPE type)
         {
-            Dictionary<string, string[]> v2k = type switch
+            var dic = type switch
             {
                 TYPE.MAP => id_V2K_map,
                 TYPE.MAGIC => id_V2K_magic,
                 TYPE.NPC => id_V2K_npc,
                 _ => null
             };
-            if (v2k == null)
-            {
-                Logger.Error($"id = {id} , type = {type} 无效的类型");
-                return null; // "无效的类型";
-            }
-            if (v2k.TryGetValue(id, out string[] values))
-            {
-                return values[1]; // 返回CN值
-            }
-            else
-            {
-                Logger.Error($"id = {id} , type = {type} 未找到的EN值");
-                return null;
-            }
+            return GetValue(id, type, 0, dic, "EN");
         }
+
+        public string ToCN(uint id, TYPE type)
+        {
+            var dic = type switch
+            {
+                TYPE.ITEM => id_V2K_item,
+                TYPE.MONSTER => id_V2K_monster,
+                _ => null
+            };
+            return GetValue(id, type, 1, dic, "CN");
+        }
+
+        public string ToCN(string id, TYPE type)
+        {
+            var dic = type switch
+            {
+                TYPE.MAP => id_V2K_map,
+                TYPE.MAGIC => id_V2K_magic,
+                TYPE.NPC => id_V2K_npc,
+                _ => null
+            };
+            return GetValue(id, type, 1, dic, "CN");
+        }
+
     }
 }

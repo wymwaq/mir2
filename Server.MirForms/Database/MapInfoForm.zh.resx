@@ -283,7 +283,7 @@
     <value>X：</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
-    <value>重生</value>
+    <value>刷怪</value>
   </data>
   <data name="RemoveMButton.Text" xml:space="preserve">
     <value>移除</value>
@@ -364,10 +364,10 @@
     <value>导出地图信息</value>
   </data>
   <data name="ImportMongenButton.Text" xml:space="preserve">
-    <value>导入重生点</value>
+    <value>导入刷怪点</value>
   </data>
   <data name="ExportMongenButton.Text" xml:space="preserve">
-    <value>导出重生点</value>
+    <value>导出刷怪点</value>
   </data>
   <data name="VisualizerButton.Text" xml:space="preserve">
     <value>可视化</value>
