@@ -186,7 +186,7 @@ namespace Client.MirScenes.Dialogs
         {
             if (GroupList.Count >= Globals.MaxGroup)
             {
-                GameScene.Scene.ChatDialog.ReceiveChat(WqCr.GroupMaximumMembers,, ChatType.System);
+                GameScene.Scene.ChatDialog.ReceiveChat(WqCr.GroupMaximumMembers, ChatType.System);
                 return;
             }
             if (GroupList.Count > 0 && GroupList[0] != MapObject.User.Name)

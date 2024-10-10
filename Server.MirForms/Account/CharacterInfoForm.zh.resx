@@ -133,10 +133,10 @@
     <value>刷新</value>
   </data>
   <data name="FindPlayerLabel.Text" xml:space="preserve">
-    <value>查找玩家：</value>
+    <value>查找玩家： </value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>查找物品（名称/UID）：</value>
+    <value>查找物品（名称/UID）： </value>
   </data>
   <data name="MatchFilterCheckBox.Text" xml:space="preserve">
     <value>匹配过滤器</value>
