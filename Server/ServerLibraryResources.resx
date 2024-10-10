@@ -721,7 +721,7 @@
   <data name="RecallAttemptedWithoutYourPermission" xml:space="preserve">
     <value>A recall was attempted without your permission</value>
   </data>
-  <data name="YouAreNotGroupLeader" xml:space="preserve">
+  <data name="YouAreNotAGroupLeader" xml:space="preserve">
     <value>You are not a group leader.</value>
   </data>
   <data name="CannotRecallWhenDead" xml:space="preserve">
@@ -738,5 +738,398 @@
   </data>
   <data name="YouNeedWeddingRingRecall" xml:space="preserve">
     <value>You need to be wearing a Wedding Ring for recall.</value>
+  </data>
+  <data name="TeleportationWeddingRingDisabled" xml:space="preserve">
+    <value>Teleportation via Wedding Ring is disabled.</value>
+  </data>
+  <data name="CantRecallDeadPlayer" xml:space="preserve">
+    <value>You can't recall a dead player.</value>
+  </data>
+  <data name="NeedWearWeddingRingRecall" xml:space="preserve">
+    <value>You need to wear a Wedding Ring for recall.</value>
+  </data>
+  <data name="IsntWearingWeddingRing" xml:space="preserve">
+    <value>{0} Isn't wearing a Wedding Ring.</value>
+  </data>
+  <data name="NeedWearWeddingRingLeftFingerRecall" xml:space="preserve">
+    <value>You need to wear a Wedding Ring on your left finger for recall.</value>
+  </data>
+  <data name="IsBlockingLoverRecall" xml:space="preserve">
+    <value>{0} is blocking Lover Recall.</value>
+  </data>
+  <data name="CannotRecallLoverWithoutWearingWeddingRing" xml:space="preserve">
+    <value>You cannot recall your lover without wearing a wedding ring</value>
+  </data>
+  <data name="TheTimeIs" xml:space="preserve">
+    <value>The time is : {0}</value>
+  </data>
+  <data name="CurrentlyInMapID" xml:space="preserve">
+    <value>You are currently in {0}. Map ID: {1}</value>
+  </data>
+  <data name="PlayerNotFound" xml:space="preserve">
+    <value>Player {0} was not found</value>
+  </data>
+  <data name="PlayerBeenBackedUp" xml:space="preserve">
+    <value>Player {0} has been backed up</value>
+  </data>
+  <data name="CannotArchivePlayerYouOn" xml:space="preserve">
+    <value>Cannot archive the player you are on</value>
+  </data>
+  <data name="PlayerNotFoundInAnyAccount" xml:space="preserve">
+    <value>Player {0} was not found in any account</value>
+  </data>
+  <data name="PlayerBeenArchived" xml:space="preserve">
+    <value>Player {0} has been archived</value>
+  </data>
+  <data name="PlayerCouldNotLoaded1" xml:space="preserve">
+    <value>Player {0} could not be loaded. Try specifying the full archive filename</value>
+  </data>
+  <data name="CannotLoadPlayerID" xml:space="preserve">
+    <value>Cannot load this player due to mismatching ID's</value>
+  </data>
+  <data name="PlayerBeenLoaded" xml:space="preserve">
+    <value>Player {0} has been loaded</value>
+  </data>
+  <data name="AccountNotFound" xml:space="preserve">
+    <value>Account {0} was not found</value>
+  </data>
+  <data name="AccountAlreadyHasCharacters" xml:space="preserve">
+    <value>Account {0} already has {1} characters</value>
+  </data>
+  <data name="PlayerCouldNotRestored1" xml:space="preserve">
+    <value>Player {0} could not be restored. Try specifying the full archive filename</value>
+  </data>
+  <data name="PlayerBeenRestoredBy" xml:space="preserve">
+    <value>Player {0} has been restored by</value>
+  </data>
+  <data name="CannotPositionMoveMap" xml:space="preserve">
+    <value>You cannot position move on this map</value>
+  </data>
+  <data name="CannotTeleportAnotherSeconds" xml:space="preserve">
+    <value>You cannot teleport for another {0} seconds</value>
+  </data>
+  <data name="MapNotFound" xml:space="preserve">
+    <value>Map {0}:[{1}] could not be found</value>
+  </data>
+  <data name="MovedToMap1" xml:space="preserve">
+    <value>Moved to Map {0}</value>
+  </data>
+  <data name="MovedToMap2" xml:space="preserve">
+    <value>Moved to Map {0}:[{1}]</value>
+  </data>
+  <data name="MovedToMap3" xml:space="preserve">
+    <value>Moved to Map {0} at {1}:{2}</value>
+  </data>
+  <data name="MovedToMap4" xml:space="preserve">
+    <value>Moved to Map {0}:[{1}] at {2}:{3}</value>
+  </data>
+  <data name="FailedMovementToMap1" xml:space="preserve">
+    <value>Failed movement to Map {0}</value>
+  </data>
+  <data name="FailedMovementToMap2" xml:space="preserve">
+    <value>Failed movement to Map {0}:[{1}]</value>
+  </data>
+  <data name="FailedMovementToMap3" xml:space="preserve">
+    <value>Failed movement to Map {0} at {1}:{2}</value>
+  </data>
+  <data name="FailedMovementToMap4" xml:space="preserve">
+    <value>Failed movement to Map {0}:[{1}] at {2}:{3}</value>
+  </data>
+  <data name="NotEnoughParamSpawnMonster" xml:space="preserve">
+    <value>Not enough parameters to spawn monster</value>
+  </data>
+  <data name="MonsterNotExist" xml:space="preserve">
+    <value>Monster {0} does not exist</value>
+  </data>
+  <data name="MonsterBeenSpawned" xml:space="preserve">
+    <value>Monster {0} x{1} has been spawned.</value>
+  </data>
+  <data name="PetBeenRecalled" xml:space="preserve">
+    <value>Pet {0} x{1} has been recalled.</value>
+  </data>
+  <data name="PlayerBeenGivenGoldByGM" xml:space="preserve">
+    <value>Player {0} has been given {1} gold by GM: {2}</value>
+  </data>
+  <data name="PlayerBeenGiven1PearlByGM" xml:space="preserve">
+    <value>Player {0} has been given 1 pearl by GM: {1}</value>
+  </data>
+  <data name="PlayerBeenGivenPearlsByGM" xml:space="preserve">
+    <value>Player {0} has been given {1} pearls by GM: {2}</value>
+  </data>
+  <data name="CannotSearchAnotherSeconds" xml:space="preserve">
+    <value>You cannot search for another {0} seconds</value>
+  </data>
+  <data name="IsNotOnline" xml:space="preserve">
+    <value>is not online</value>
+  </data>
+  <data name="IsLocatedAt" xml:space="preserve">
+    <value>{0} is located at {1} ({2},{3})</value>
+  </data>
+  <data name="CannotLeaveGuildAtWar" xml:space="preserve">
+    <value>Cannot leave guild whilst at war.</value>
+  </data>
+  <data name="PlayerAlreadyInGuild" xml:space="preserve">
+    <value>Player {0} is already in a guild.</value>
+  </data>
+  <data name="GuildnameRestrictedCharacters" xml:space="preserve">
+    <value>Guildname is restricted to 3-20 characters.</value>
+  </data>
+  <data name="GuildAlreadyExists" xml:space="preserve">
+    <value>Guild {0} already exists.</value>
+  </data>
+  <data name="SuccessfullyCreatedGuild" xml:space="preserve">
+    <value>Successfully created guild {0}</value>
+  </data>
+  <data name="FailedCreateGuild" xml:space="preserve">
+    <value>Failed to create guild</value>
+  </data>
+  <data name="NowAllowingTrade" xml:space="preserve">
+    <value>You are now allowing trade</value>
+  </data>
+  <data name="NoLongerAllowingTrade" xml:space="preserve">
+    <value>You are no longer allowing trade</value>
+  </data>
+  <data name="PlayerChangedTo" xml:space="preserve">
+    <value>Player {0} has been changed to {1}</value>
+  </data>
+  <data name="ClassChangedbyGM" xml:space="preserve">
+    <value>{0} class changed to {1} by GM: {2}</value>
+  </data>
+  <data name="ConditionError" xml:space="preserve">
+    <value>Condition Error</value>
+  </data>
+  <data name="UpgradeFailed" xml:space="preserve">
+    <value>Upgrade Failed</value>
+  </data>
+  <data name="YouMustALeaderToStartWar" xml:space="preserve">
+    <value>You must be a leader to start a war.</value>
+  </data>
+  <data name="CouldNotFindGuild" xml:space="preserve">
+    <value>Could not find guild {0}.</value>
+  </data>
+  <data name="CannotWarYourOwnGuild" xml:space="preserve">
+    <value>Cannot go to war with your own guild.</value>
+  </data>
+  <data name="CannotWarNewPlayersGuild" xml:space="preserve">
+    <value>Cannot go to war with new players guild.</value>
+  </data>
+  <data name="AlreadyWarThisGuild" xml:space="preserve">
+    <value>Already at war with this guild.</value>
+  </data>
+  <data name="StartedWarWith" xml:space="preserve">
+    <value>You started a war with {0}.</value>
+  </data>
+  <data name="StartedWar" xml:space="preserve">
+    <value>{0} has started a war</value>
+  </data>
+  <data name="YouNeedInGuildToStartWar" xml:space="preserve">
+    <value>You need to be in a guild to start a War</value>
+  </data>
+  <data name="HasBeenReset" xml:space="preserve">
+    <value>{0} has been reset.</value>
+  </data>
+  <data name="DontHaveAccessControlGates" xml:space="preserve">
+    <value>You don't have access to control any gates at the moment.</value>
+  </data>
+  <data name="GatesBeenClosed" xml:space="preserve">
+    <value>The gates at {0} have been closed.</value>
+  </data>
+  <data name="GatesBeenOpened" xml:space="preserve">
+    <value>The gates at {0} have been opened.</value>
+  </data>
+  <data name="DontHaveAccessChangeFlags" xml:space="preserve">
+    <value>You don't have access to change any flags at the moment.</value>
+  </data>
+  <data name="DoNotOwnNearbyCarcasses" xml:space="preserve">
+    <value>You do not own any nearby carcasses.</value>
+  </data>
+  <data name="ItemMoveError1" xml:space="preserve">
+    <value>Item Move Error - Please report the item you tried to move and the time</value>
+  </data>
+  <data name="TooHeavyTransfer" xml:space="preserve">
+    <value>Too heavy to transfer.</value>
+  </data>
+  <data name="CanNotPickUpNotOwn" xml:space="preserve">
+    <value>Can not pick up, You do not own this item.</value>
+  </data>
+  <data name="CannotCarryAnymoreQuestItems" xml:space="preserve">
+    <value>You cannot carry anymore quest items.</value>
+  </data>
+  <data name="YouCannotSellItemHere" xml:space="preserve">
+    <value>You cannot sell this item here.</value>
+  </data>
+  <data name="YouCannotRepairThisItem" xml:space="preserve">
+    <value>You cannot Repair this item.</value>
+  </data>
+  <data name="YouCannotRepairThisItemHere" xml:space="preserve">
+    <value>You cannot Repair this item here.</value>
+  </data>
+  <data name="UnableDowngradeAsBelongs" xml:space="preserve">
+    <value>Unable to downgrade {0} as it belongs to {1}</value>
+  </data>
+  <data name="UnableDisassemble" xml:space="preserve">
+    <value>Unable to disassemble {0}</value>
+  </data>
+  <data name="UnableDisassembleAsBelongs" xml:space="preserve">
+    <value>Unable to disassemble {0} as it belongs to {1}</value>
+  </data>
+  <data name="UnableResetAsBelongs" xml:space="preserve">
+    <value>Unable to reset {0} as it belongs to {1}</value>
+  </data>
+  <data name="YouAreNotTheGroupLeader" xml:space="preserve">
+    <value>You are not the group leader.</value>
+  </data>
+  <data name="YourGroupAlreadyMaximumMembers" xml:space="preserve">
+    <value>Your group already has the maximum number of members.</value>
+  </data>
+  <data name="CouldNotBeFound" xml:space="preserve">
+    <value>could not be found.</value>
+  </data>
+  <data name="CannotGroupYourself" xml:space="preserve">
+    <value>You cannot group yourself.</value>
+  </data>
+  <data name="IsNotAllowingGroup" xml:space="preserve">
+    <value>is not allowing group.</value>
+  </data>
+  <data name="IsAlreadyInAnotherGroup" xml:space="preserve">
+    <value>is already in another group.</value>
+  </data>
+  <data name="IsAlreadyReceivingInviteFromAnother" xml:space="preserve">
+    <value>is already receiving an invite from another player.</value>
+  </data>
+  <data name="NotInAGroup" xml:space="preserve">
+    <value>You are not in a group.</value>
+  </data>
+  <data name="IsNotInYourGroup" xml:space="preserve">
+    <value>is not in your group.</value>
+  </data>
+  <data name="HaveNotBeenInvitedToAGroup" xml:space="preserve">
+    <value>You have not been invited to a group.</value>
+  </data>
+  <data name="DeclinedYourGroupInvite" xml:space="preserve">
+    <value>has declined your group invite.</value>
+  </data>
+  <data name="NoLongerJoinGroup" xml:space="preserve">
+    <value>You can no longer join {0}'s group</value>
+  </data>
+  <data name="NoLongerGroupLeader" xml:space="preserve">
+    <value>is no longer the group leader.</value>
+  </data>
+  <data name="GroupAlreadyMaximumMembers" xml:space="preserve">
+    <value>'s group already has the maximum number of members.</value>
+  </data>
+  <data name="IsNotOnAllowGroup" xml:space="preserve">
+    <value>is not on allow group.</value>
+  </data>
+  <data name="NoLongerOnline" xml:space="preserve">
+    <value>no longer online.</value>
+  </data>
+  <data name="LevelNotHighEnoughCreateGuild" xml:space="preserve">
+    <value>Your level is not high enough to create a guild, required: {0}</value>
+  </data>
+  <data name="CannotMakeNewbieGuild" xml:space="preserve">
+    <value>You cannot make the newbie guild. Nice try mortal.</value>
+  </data>
+  <data name="InsufficientGoldCreatingGuild" xml:space="preserve">
+    <value>Insufficient gold. Creating a guild requires {0} gold.</value>
+  </data>
+  <data name="IsRequiredToCreateGuild1" xml:space="preserve">
+    <value>{0} is required to create a guild.</value>
+  </data>
+  <data name="IsRequiredToCreateGuild2" xml:space="preserve">
+    <value>{0} with purity {1} is required to create a guild.</value>
+  </data>
+  <data name="InsufficientCreateGuild" xml:space="preserve">
+    <value>Insufficient {0}, you need {1} to create a guild.</value>
+  </data>
+  <data name="YouNotAllowedRecruitNewMembers" xml:space="preserve">
+    <value>You are not allowed to recruit new members!</value>
+  </data>
+  <data name="IsAlreadyInGuild" xml:space="preserve">
+    <value>{0} is already in a guild!</value>
+  </data>
+  <data name="IsDisablingGuildInvites" xml:space="preserve">
+    <value>{0} is disabling guild invites!</value>
+  </data>
+  <data name="AlreadyHasGuildInvitePending" xml:space="preserve">
+    <value>{0} already has a guild invite pending.</value>
+  </data>
+  <data name="CannotRecuitMembersAtWar" xml:space="preserve">
+    <value>Cannot recuit members whilst at war.</value>
+  </data>
+  <data name="YouNotAllowedRemoveMembers" xml:space="preserve">
+    <value>You are not allowed to remove members!</value>
+  </data>
+  <data name="YouNotAllowedChangeMembersRank" xml:space="preserve">
+    <value>You are not allowed to change other members rank!</value>
+  </data>
+  <data name="YouNotAllowedChangeRanks" xml:space="preserve">
+    <value>You are not allowed to change ranks!</value>
+  </data>
+  <data name="YouNotAllowedChangeGuildNotice" xml:space="preserve">
+    <value>You are not allowed to change the guild notice!</value>
+  </data>
+  <data name="GuildNoticeCanNotLonger200Lines" xml:space="preserve">
+    <value>Guild notice can not be longer then 200 lines!</value>
+  </data>
+  <data name="YouNotBeenInvitedGuild" xml:space="preserve">
+    <value>You have not been invited to a guild.</value>
+  </data>
+  <data name="IsFull" xml:space="preserve">
+    <value>{0} is full.</value>
+  </data>
+  <data name="GuildNameTooLong" xml:space="preserve">
+    <value>Guild name too long.</value>
+  </data>
+  <data name="YouNotPartOfGuild" xml:space="preserve">
+    <value>You are not part of a guild.</value>
+  </data>
+  <data name="CannotUseGuildStorageOutsideSafezones" xml:space="preserve">
+    <value>You cannot use guild storage outside safezones.</value>
+  </data>
+  <data name="InsufficientGold" xml:space="preserve">
+    <value>Insufficient gold.</value>
+  </data>
+  <data name="GuildGoldLimitReached" xml:space="preserve">
+    <value>Guild gold limit reached.</value>
+  </data>
+  <data name="GoldLimitReached" xml:space="preserve">
+    <value>Gold limit reached.</value>
+  </data>
+  <data name="YouNotPermissionStoreItemsInGuildStorage" xml:space="preserve">
+    <value>You do not have permission to store items in guild storage.</value>
+  </data>
+  <data name="TargetSlotNotEmpty" xml:space="preserve">
+    <value>Target slot not empty.</value>
+  </data>
+  <data name="YouNotPermissionRetrieveItemsFromGuildStorage" xml:space="preserve">
+    <value>You do not have permission to retrieve items from guild storage.</value>
+  </data>
+  <data name="YouNotPermissionMoveItemsInGuildStorage" xml:space="preserve">
+    <value>You do not have permission to move items in guild storage.</value>
+  </data>
+  <data name="NotEnoughFundsInGuildBank" xml:space="preserve">
+    <value>Not enough funds in guild bank.</value>
+  </data>
+  <data name="YouNotHaveCorrectGuildRank" xml:space="preserve">
+    <value>You do not have the correct guild rank.</value>
+  </data>
+  <data name="YouAlreadyTrading" xml:space="preserve">
+    <value>You are already trading.</value>
+  </data>
+  <data name="CannotTradeWithYourself" xml:space="preserve">
+    <value>You cannot trade with your self.</value>
+  </data>
+  <data name="CannotTradeWhenDead" xml:space="preserve">
+    <value>Cannot trade when dead</value>
+  </data>
+  <data name="YouHaveLeftGuild" xml:space="preserve">
+    <value>You have left your guild.</value>
+  </data>
+  <data name="YouHaveBeenRemovedFromGuild" xml:space="preserve">
+    <value>You have been removed from your guild.</value>
+  </data>
+  <data name="WarEndedWith" xml:space="preserve">
+    <value>War ended with {0}.</value>
   </data>
 </root>

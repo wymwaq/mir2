@@ -493,7 +493,7 @@ namespace Server.MirObjects
                 formerMember.Info.GuildIndex = -1;
                 formerMember.MyGuild = null;
                 formerMember.MyGuildRank = null;
-                formerMember.ReceiveChat(kickSelf ? "You have left your guild." : "You have been removed from your guild.", ChatType.Guild);
+                formerMember.ReceiveChat(kickSelf ? WqSr.YouHaveLeftGuild : WqSr.YouHaveBeenRemovedFromGuild, ChatType.Guild);
                 formerMember.RefreshStats();
                 formerMember.Enqueue(new ServerPackets.GuildStatus() { GuildName = "", GuildRankName = "", MyOptions = (GuildRankOptions)0 });
                 formerMember.BroadcastInfo();
@@ -889,8 +889,8 @@ namespace Server.MirObjects
             GuildA.WarringGuilds.Remove(GuildB);
             GuildB.WarringGuilds.Remove(GuildA);
 
-            GuildA.SendMessage(string.Format("War ended with {0}.", GuildB.Name), ChatType.Guild);
-            GuildB.SendMessage(string.Format("War ended with {0}.", GuildA.Name), ChatType.Guild);
+            GuildA.SendMessage(string.Format(WqSr.WarEndedWith, GuildB.Name), ChatType.Guild);
+            GuildB.SendMessage(string.Format(WqSr.WarEndedWith, GuildA.Name), ChatType.Guild);
             GuildA.UpdatePlayersColours();
             GuildB.UpdatePlayersColours();
         }

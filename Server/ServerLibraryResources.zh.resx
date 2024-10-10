@@ -283,10 +283,10 @@
     <value>创建 UserItem 失败：{0}，页面：{1}</value>
   </data>
   <data name="WarStarted" xml:space="preserve">
-    <value>{0} 战争开始。</value>
+    <value>{0}战争开始。</value>
   </data>
   <data name="WarStopped" xml:space="preserve">
-    <value>{0} 战争结束。</value>
+    <value>{0}战争结束。</value>
   </data>
   <data name="RandomTextFileNotExist" xml:space="preserve">
     <value>随机文本文件：{0} 不存在。</value>
@@ -741,8 +741,8 @@
   <data name="RecallAttemptedWithoutYourPermission" xml:space="preserve">
     <value>未经您的许可，试图进行召回</value>
   </data>
-  <data name="YouAreNotGroupLeader" xml:space="preserve">
-    <value>你不是行会会长。</value>
+  <data name="YouAreNotAGroupLeader" xml:space="preserve">
+    <value>你不是一个组长。</value>
   </data>
   <data name="CannotRecallWhenDead" xml:space="preserve">
     <value>你不能在死亡的时候召回。</value>
@@ -758,5 +758,398 @@
   </data>
   <data name="YouNeedWeddingRingRecall" xml:space="preserve">
     <value>你需要佩戴结婚戒指才能召唤。</value>
+  </data>
+  <data name="TeleportationWeddingRingDisabled" xml:space="preserve">
+    <value>无法通过结婚戒指进行传送。</value>
+  </data>
+  <data name="CantRecallDeadPlayer" xml:space="preserve">
+    <value>你不能召回死亡的玩家。</value>
+  </data>
+  <data name="NeedWearWeddingRingRecall" xml:space="preserve">
+    <value>你需要戴一枚结婚戒指用以召唤。</value>
+  </data>
+  <data name="IsntWearingWeddingRing" xml:space="preserve">
+    <value>{0}未佩戴结婚戒指。</value>
+  </data>
+  <data name="NeedWearWeddingRingLeftFingerRecall" xml:space="preserve">
+    <value>你需要在左手手指上戴一枚结婚戒指用以召唤。</value>
+  </data>
+  <data name="IsBlockingLoverRecall" xml:space="preserve">
+    <value>{0}正在阻止爱人召唤。</value>
+  </data>
+  <data name="CannotRecallLoverWithoutWearingWeddingRing" xml:space="preserve">
+    <value>不佩戴结婚戒指，你无法召唤你的爱人</value>
+  </data>
+  <data name="TheTimeIs" xml:space="preserve">
+    <value>现在时间是：{0}</value>
+  </data>
+  <data name="CurrentlyInMapID" xml:space="preserve">
+    <value>您当前位于{0}中。地图ID：{1}</value>
+  </data>
+  <data name="PlayerNotFound" xml:space="preserve">
+    <value>找不到玩家{0}</value>
+  </data>
+  <data name="PlayerBeenBackedUp" xml:space="preserve">
+    <value>玩家{0}已备份</value>
+  </data>
+  <data name="CannotArchivePlayerYouOn" xml:space="preserve">
+    <value>无法归档您所在的玩家</value>
+  </data>
+  <data name="PlayerNotFoundInAnyAccount" xml:space="preserve">
+    <value>在任何帐户中都找不到玩家{0}</value>
+  </data>
+  <data name="PlayerBeenArchived" xml:space="preserve">
+    <value>玩家{0}已归档</value>
+  </data>
+  <data name="PlayerCouldNotLoaded1" xml:space="preserve">
+    <value>玩家{0}无法加载。请尝试指定完整的归档文件名</value>
+  </data>
+  <data name="CannotLoadPlayerID" xml:space="preserve">
+    <value>由于ID不匹配，无法加载此玩家</value>
+  </data>
+  <data name="PlayerBeenLoaded" xml:space="preserve">
+    <value>玩家{0}已加载</value>
+  </data>
+  <data name="AccountNotFound" xml:space="preserve">
+    <value>找不到账号{0}</value>
+  </data>
+  <data name="AccountAlreadyHasCharacters" xml:space="preserve">
+    <value>帐户{0}已经有{1}个人物</value>
+  </data>
+  <data name="PlayerCouldNotRestored1" xml:space="preserve">
+    <value>玩家{0}无法恢复。请尝试指定完整的归档文件名</value>
+  </data>
+  <data name="PlayerBeenRestoredBy" xml:space="preserve">
+    <value>玩家{0}已被恢复</value>
+  </data>
+  <data name="CannotPositionMoveMap" xml:space="preserve">
+    <value>你不能在这张地图上定位移动</value>
+  </data>
+  <data name="CannotTeleportAnotherSeconds" xml:space="preserve">
+    <value>在{0}秒内无法传送</value>
+  </data>
+  <data name="MapNotFound" xml:space="preserve">
+    <value>地图{0}：[{1}]找不到</value>
+  </data>
+  <data name="MovedToMap1" xml:space="preserve">
+    <value>移动到地图{0}</value>
+  </data>
+  <data name="MovedToMap2" xml:space="preserve">
+    <value>移动到地图{0}：[{1}]</value>
+  </data>
+  <data name="MovedToMap3" xml:space="preserve">
+    <value>移动到地图{0} {1}：{2}处</value>
+  </data>
+  <data name="MovedToMap4" xml:space="preserve">
+    <value>移动到地图{0}：[{1}] {2}：{3}处</value>
+  </data>
+  <data name="FailedMovementToMap1" xml:space="preserve">
+    <value>移动到地图{0}失败</value>
+  </data>
+  <data name="FailedMovementToMap2" xml:space="preserve">
+    <value>移动到地图{0}：[{1}]失败</value>
+  </data>
+  <data name="FailedMovementToMap3" xml:space="preserve">
+    <value>移动到地图{0} {1}：{2}处失败</value>
+  </data>
+  <data name="FailedMovementToMap4" xml:space="preserve">
+    <value>移动到地图{0}：[{1}] {2}：{3}处失败</value>
+  </data>
+  <data name="NotEnoughParamSpawnMonster" xml:space="preserve">
+    <value>没有足够的参数来生成怪物</value>
+  </data>
+  <data name="MonsterNotExist" xml:space="preserve">
+    <value>怪物{0}不存在</value>
+  </data>
+  <data name="MonsterBeenSpawned" xml:space="preserve">
+    <value>怪物{0}x{1}已经生成。</value>
+  </data>
+  <data name="PetBeenRecalled" xml:space="preserve">
+    <value>宠物{0}x{1}已被召回。</value>
+  </data>
+  <data name="PlayerBeenGivenGoldByGM" xml:space="preserve">
+    <value>玩家{0}被GM：{2}给予{1}金币</value>
+  </data>
+  <data name="PlayerBeenGiven1PearlByGM" xml:space="preserve">
+    <value>玩家{0}被GM：{1}给予1珍珠</value>
+  </data>
+  <data name="PlayerBeenGivenPearlsByGM" xml:space="preserve">
+    <value>玩家{0}被GM：{2}给予{1}珍珠</value>
+  </data>
+  <data name="CannotSearchAnotherSeconds" xml:space="preserve">
+    <value>你不能在{0}秒内再搜索</value>
+  </data>
+  <data name="IsNotOnline" xml:space="preserve">
+    <value>不在线</value>
+  </data>
+  <data name="IsLocatedAt" xml:space="preserve">
+    <value>{0}正位于{1} ({2}，{3})</value>
+  </data>
+  <data name="CannotLeaveGuildAtWar" xml:space="preserve">
+    <value>战争期间不能离开行会。</value>
+  </data>
+  <data name="PlayerAlreadyInGuild" xml:space="preserve">
+    <value>玩家{0}已加入行会。</value>
+  </data>
+  <data name="GuildnameRestrictedCharacters" xml:space="preserve">
+    <value>行会名称限制为3-20个字符。</value>
+  </data>
+  <data name="GuildAlreadyExists" xml:space="preserve">
+    <value>行会{0}已存在。</value>
+  </data>
+  <data name="SuccessfullyCreatedGuild" xml:space="preserve">
+    <value>成功创建行会{0}</value>
+  </data>
+  <data name="FailedCreateGuild" xml:space="preserve">
+    <value>创建行会失败</value>
+  </data>
+  <data name="NowAllowingTrade" xml:space="preserve">
+    <value>你现在允许交易</value>
+  </data>
+  <data name="NoLongerAllowingTrade" xml:space="preserve">
+    <value>你不再允许交易了</value>
+  </data>
+  <data name="PlayerChangedTo" xml:space="preserve">
+    <value>玩家{0}已更改为{1}</value>
+  </data>
+  <data name="ClassChangedbyGM" xml:space="preserve">
+    <value>{0}职业被GM：{2}更改为{1}</value>
+  </data>
+  <data name="ConditionError" xml:space="preserve">
+    <value>条件错误</value>
+  </data>
+  <data name="UpgradeFailed" xml:space="preserve">
+    <value>升级失败</value>
+  </data>
+  <data name="YouMustALeaderToStartWar" xml:space="preserve">
+    <value>你必须是领导者才能发动战争。</value>
+  </data>
+  <data name="CouldNotFindGuild" xml:space="preserve">
+    <value>找不到行会{0}。</value>
+  </data>
+  <data name="CannotWarYourOwnGuild" xml:space="preserve">
+    <value>不能和自己的行会开战。</value>
+  </data>
+  <data name="CannotWarNewPlayersGuild" xml:space="preserve">
+    <value>不能和新玩家行会开战。</value>
+  </data>
+  <data name="AlreadyWarThisGuild" xml:space="preserve">
+    <value>已经和这个行会开战了。</value>
+  </data>
+  <data name="StartedWarWith" xml:space="preserve">
+    <value>你和{0}开战了。</value>
+  </data>
+  <data name="StartedWar" xml:space="preserve">
+    <value>{0}发动了一场战争</value>
+  </data>
+  <data name="YouNeedInGuildToStartWar" xml:space="preserve">
+    <value>你需要加入行会才能发动战争</value>
+  </data>
+  <data name="HasBeenReset" xml:space="preserve">
+    <value>{0}已重置。</value>
+  </data>
+  <data name="DontHaveAccessControlGates" xml:space="preserve">
+    <value>你目前没有权限控制任何门。</value>
+  </data>
+  <data name="GatesBeenClosed" xml:space="preserve">
+    <value>{0}的大门已关闭。</value>
+  </data>
+  <data name="GatesBeenOpened" xml:space="preserve">
+    <value>{0}的大门已打开。</value>
+  </data>
+  <data name="DontHaveAccessChangeFlags" xml:space="preserve">
+    <value>您目前没有权限更改任何标志。</value>
+  </data>
+  <data name="DoNotOwnNearbyCarcasses" xml:space="preserve">
+    <value>你不拥有任何附近的尸体。</value>
+  </data>
+  <data name="ItemMoveError1" xml:space="preserve">
+    <value>物品移动错误 - 请报告您试图移动的物品和时间</value>
+  </data>
+  <data name="TooHeavyTransfer" xml:space="preserve">
+    <value>太重了，无法移动。</value>
+  </data>
+  <data name="CanNotPickUpNotOwn" xml:space="preserve">
+    <value>不能捡起，你不拥有这个物品。</value>
+  </data>
+  <data name="CannotCarryAnymoreQuestItems" xml:space="preserve">
+    <value>你不能携带更多的任务道具。</value>
+  </data>
+  <data name="YouCannotSellItemHere" xml:space="preserve">
+    <value>你不能在这里出售这个东西。</value>
+  </data>
+  <data name="YouCannotRepairThisItem" xml:space="preserve">
+    <value>你不能修复此物品。</value>
+  </data>
+  <data name="YouCannotRepairThisItemHere" xml:space="preserve">
+    <value>你不能在这里修复此物品。</value>
+  </data>
+  <data name="UnableDowngradeAsBelongs" xml:space="preserve">
+    <value>无法降级{0}，因为它属于{1}</value>
+  </data>
+  <data name="UnableDisassemble" xml:space="preserve">
+    <value>无法拆卸{0}</value>
+  </data>
+  <data name="UnableDisassembleAsBelongs" xml:space="preserve">
+    <value>无法拆卸{0}，因为它属于{1}</value>
+  </data>
+  <data name="UnableResetAsBelongs" xml:space="preserve">
+    <value>无法重置{0}，因为它属于{1}</value>
+  </data>
+  <data name="YouAreNotTheGroupLeader" xml:space="preserve">
+    <value>你不是组长。</value>
+  </data>
+  <data name="YourGroupAlreadyMaximumMembers" xml:space="preserve">
+    <value>您的小组已达到最大成员数。</value>
+  </data>
+  <data name="CouldNotBeFound" xml:space="preserve">
+    <value>找不到。</value>
+  </data>
+  <data name="CannotGroupYourself" xml:space="preserve">
+    <value>你不能组自己。</value>
+  </data>
+  <data name="IsNotAllowingGroup" xml:space="preserve">
+    <value>不允许组队。</value>
+  </data>
+  <data name="IsAlreadyInAnotherGroup" xml:space="preserve">
+    <value>已经在另一小组了。</value>
+  </data>
+  <data name="IsAlreadyReceivingInviteFromAnother" xml:space="preserve">
+    <value>已经收到其他玩家的邀请。</value>
+  </data>
+  <data name="NotInAGroup" xml:space="preserve">
+    <value>你不在一个小组里。</value>
+  </data>
+  <data name="IsNotInYourGroup" xml:space="preserve">
+    <value>不在你的小组里。</value>
+  </data>
+  <data name="HaveNotBeenInvitedToAGroup" xml:space="preserve">
+    <value>你没有被邀请到一个小组。</value>
+  </data>
+  <data name="DeclinedYourGroupInvite" xml:space="preserve">
+    <value>已拒绝您的群组邀请。</value>
+  </data>
+  <data name="NoLongerJoinGroup" xml:space="preserve">
+    <value>你不再加入{0}的小组</value>
+  </data>
+  <data name="NoLongerGroupLeader" xml:space="preserve">
+    <value>不再是组长了。</value>
+  </data>
+  <data name="GroupAlreadyMaximumMembers" xml:space="preserve">
+    <value>的小组已达到最大成员数。</value>
+  </data>
+  <data name="IsNotOnAllowGroup" xml:space="preserve">
+    <value>不允许组队。</value>
+  </data>
+  <data name="NoLongerOnline" xml:space="preserve">
+    <value>不再在线。</value>
+  </data>
+  <data name="LevelNotHighEnoughCreateGuild" xml:space="preserve">
+    <value>你的等级不足以创建行会，需要：{0}</value>
+  </data>
+  <data name="CannotMakeNewbieGuild" xml:space="preserve">
+    <value>你不能创建新手行会。</value>
+  </data>
+  <data name="InsufficientGoldCreatingGuild" xml:space="preserve">
+    <value>金币不足。创建行会需要{0}金币。</value>
+  </data>
+  <data name="IsRequiredToCreateGuild1" xml:space="preserve">
+    <value>创建行会需要{0}。</value>
+  </data>
+  <data name="IsRequiredToCreateGuild2" xml:space="preserve">
+    <value>纯度{1}的{0}是创建行会所必需的。</value>
+  </data>
+  <data name="InsufficientCreateGuild" xml:space="preserve">
+    <value>{0}不足，你需要{1}来创建行会。</value>
+  </data>
+  <data name="YouNotAllowedRecruitNewMembers" xml:space="preserve">
+    <value>你不允许招募新成员!</value>
+  </data>
+  <data name="IsAlreadyInGuild" xml:space="preserve">
+    <value>{0}已加入行会!</value>
+  </data>
+  <data name="IsDisablingGuildInvites" xml:space="preserve">
+    <value>{0}正禁止行会邀请!</value>
+  </data>
+  <data name="AlreadyHasGuildInvitePending" xml:space="preserve">
+    <value>{0}已有一个待定的行会邀请。</value>
+  </data>
+  <data name="CannotRecuitMembersAtWar" xml:space="preserve">
+    <value>在战争期间不能招募成员。</value>
+  </data>
+  <data name="YouNotAllowedRemoveMembers" xml:space="preserve">
+    <value>你不允许删除成员!</value>
+  </data>
+  <data name="YouNotAllowedChangeMembersRank" xml:space="preserve">
+    <value>你不允许更改其他成员的排名!</value>
+  </data>
+  <data name="YouNotAllowedChangeRanks" xml:space="preserve">
+    <value>你不允许更改排名!</value>
+  </data>
+  <data name="YouNotAllowedChangeGuildNotice" xml:space="preserve">
+    <value>你不允许更改行会公告!</value>
+  </data>
+  <data name="GuildNoticeCanNotLonger200Lines" xml:space="preserve">
+    <value>行会公告不能超过200行!</value>
+  </data>
+  <data name="YouNotBeenInvitedGuild" xml:space="preserve">
+    <value>你没有被邀请加入行会。</value>
+  </data>
+  <data name="IsFull" xml:space="preserve">
+    <value>{0}已满。</value>
+  </data>
+  <data name="GuildNameTooLong" xml:space="preserve">
+    <value>行会名称太长。</value>
+  </data>
+  <data name="YouNotPartOfGuild" xml:space="preserve">
+    <value>你不是行会的一员。</value>
+  </data>
+  <data name="CannotUseGuildStorageOutsideSafezones" xml:space="preserve">
+    <value>你不能在安全区外使用行会仓库。</value>
+  </data>
+  <data name="InsufficientGold" xml:space="preserve">
+    <value>金币不足。</value>
+  </data>
+  <data name="GuildGoldLimitReached" xml:space="preserve">
+    <value>达到行会金币限额。</value>
+  </data>
+  <data name="GoldLimitReached" xml:space="preserve">
+    <value>达到金币限额。</value>
+  </data>
+  <data name="YouNotPermissionStoreItemsInGuildStorage" xml:space="preserve">
+    <value>你没有权限在行会仓库存放物品。</value>
+  </data>
+  <data name="TargetSlotNotEmpty" xml:space="preserve">
+    <value>目标槽不是空的。</value>
+  </data>
+  <data name="YouNotPermissionRetrieveItemsFromGuildStorage" xml:space="preserve">
+    <value>你没有权限在行会仓库取回物品。</value>
+  </data>
+  <data name="YouNotPermissionMoveItemsInGuildStorage" xml:space="preserve">
+    <value>你没有权限在行会仓库移动物品。</value>
+  </data>
+  <data name="NotEnoughFundsInGuildBank" xml:space="preserve">
+    <value>行会银行没有足够的资金。</value>
+  </data>
+  <data name="YouNotHaveCorrectGuildRank" xml:space="preserve">
+    <value>你没有正确的行会称号。</value>
+  </data>
+  <data name="YouAlreadyTrading" xml:space="preserve">
+    <value>你已经在交易了。</value>
+  </data>
+  <data name="CannotTradeWithYourself" xml:space="preserve">
+    <value>你不能和自己交易。</value>
+  </data>
+  <data name="CannotTradeWhenDead" xml:space="preserve">
+    <value>死亡时不能交易</value>
+  </data>
+  <data name="YouHaveLeftGuild" xml:space="preserve">
+    <value>你已经离开了你的行会。</value>
+  </data>
+  <data name="YouHaveBeenRemovedFromGuild" xml:space="preserve">
+    <value>你已经被你的公会开除了。</value>
+  </data>
+  <data name="WarEndedWith" xml:space="preserve">
+    <value>战争以{0}结束。</value>
   </data>
 </root>
