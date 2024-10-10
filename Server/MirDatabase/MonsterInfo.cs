@@ -139,9 +139,9 @@ namespace Server.MirDatabase
         public string GameName
         {
             get {
-                //return Regex.Replace(Name, @"[\d-]", string.Empty); 
-                string Wq_Name = Wq.LanMgr.Ins.ToCN((uint)Index, Wq.TYPE.MONSTER);
-                return Regex.Replace(Wq_Name, @"[\d-]", string.Empty);
+                return Regex.Replace(Name, @"[\d-]", string.Empty);
+                //string Wq_Name = Wq.LanMgr.Ins.ToCN((uint)Index, Wq.TYPE.MONSTER);
+                //return Regex.Replace(Wq_Name, @"[\d-]", string.Empty);
             }
         }
 

@@ -2058,8 +2058,8 @@ namespace Client.MirScenes.Dialogs
             MapControl map = GameScene.Scene.MapControl;
             if (map == null) return;
 
-            //MapNameLabel.Text = map.Title;
-            MapNameLabel.Text = Wq.LanMgr.Ins.ToCN(map.Wq_ID, Wq.TYPE.MAP);
+            MapNameLabel.Text = map.Title;
+            //MapNameLabel.Text = Wq.LanMgr.Ins.ToCN(map.Wq_ID, Wq.TYPE.MAP);
             LocationLabel.Text = Functions.PointToString(MapObject.User.CurrentLocation);
 
             GameScene.Scene.MainDialog.SModeLabel.Location = new Point((GameScene.Scene.MiniMapDialog.Location.X - 3) - GameScene.Scene.MainDialog.Location.X,
