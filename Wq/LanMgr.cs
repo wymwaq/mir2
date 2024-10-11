@@ -19,6 +19,8 @@ namespace Wq
         private static LanMgr _ins = null;
         private static readonly object _insLock = new object();
 
+        // 2个都为true：load的时候将EN转为CN，save的时候还原为EN
+        // openload=true,opensave=false：load的时候将英文转为中文，并在save时用CN保存（替换了原来的EN）
         public static bool openload = false; // 将英文转为中文
         public static bool opensave = false;
 

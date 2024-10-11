@@ -127,20 +127,20 @@ namespace Server
             // 
             // MainTabs
             // 
+            resources.ApplyResources(MainTabs, "MainTabs");
             MainTabs.Controls.Add(tabPage1);
             MainTabs.Controls.Add(tabPage2);
             MainTabs.Controls.Add(tabPage3);
             MainTabs.Controls.Add(tabPage4);
             MainTabs.Controls.Add(tabPage5);
-            resources.ApplyResources(MainTabs, "MainTabs");
             MainTabs.Name = "MainTabs";
             MainTabs.SelectedIndex = 0;
             MainTabs.SelectedIndexChanged += MainTabs_SelectedIndexChanged;
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(LogTextBox);
             resources.ApplyResources(tabPage1, "tabPage1");
+            tabPage1.Controls.Add(LogTextBox);
             tabPage1.Name = "tabPage1";
             tabPage1.UseVisualStyleBackColor = true;
             // 
@@ -152,8 +152,8 @@ namespace Server
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(DebugLogTextBox);
             resources.ApplyResources(tabPage2, "tabPage2");
+            tabPage2.Controls.Add(DebugLogTextBox);
             tabPage2.Name = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
             // 
@@ -165,17 +165,17 @@ namespace Server
             // 
             // tabPage3
             // 
+            resources.ApplyResources(tabPage3, "tabPage3");
             tabPage3.Controls.Add(groupBox1);
             tabPage3.Controls.Add(ChatLogTextBox);
-            resources.ApplyResources(tabPage3, "tabPage3");
             tabPage3.Name = "tabPage3";
             tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            resources.ApplyResources(groupBox1, "groupBox1");
             groupBox1.Controls.Add(GlobalMessageButton);
             groupBox1.Controls.Add(GlobalMessageTextBox);
-            resources.ApplyResources(groupBox1, "groupBox1");
             groupBox1.Name = "groupBox1";
             groupBox1.TabStop = false;
             // 
@@ -199,17 +199,17 @@ namespace Server
             // 
             // tabPage4
             // 
+            resources.ApplyResources(tabPage4, "tabPage4");
             tabPage4.BackColor = SystemColors.Control;
             tabPage4.Controls.Add(PlayersOnlineListView);
-            resources.ApplyResources(tabPage4, "tabPage4");
             tabPage4.Name = "tabPage4";
             // 
             // PlayersOnlineListView
             // 
+            resources.ApplyResources(PlayersOnlineListView, "PlayersOnlineListView");
             PlayersOnlineListView.Activation = ItemActivation.OneClick;
             PlayersOnlineListView.BackColor = SystemColors.Window;
             PlayersOnlineListView.Columns.AddRange(new ColumnHeader[] { indexHeader, nameHeader, levelHeader, classHeader, genderHeader });
-            resources.ApplyResources(PlayersOnlineListView, "PlayersOnlineListView");
             PlayersOnlineListView.FullRowSelect = true;
             PlayersOnlineListView.GridLines = true;
             PlayersOnlineListView.Name = "PlayersOnlineListView";
@@ -241,16 +241,16 @@ namespace Server
             // 
             // tabPage5
             // 
-            tabPage5.Controls.Add(GuildListView);
             resources.ApplyResources(tabPage5, "tabPage5");
+            tabPage5.Controls.Add(GuildListView);
             tabPage5.Name = "tabPage5";
             tabPage5.UseVisualStyleBackColor = true;
             // 
             // GuildListView
             // 
+            resources.ApplyResources(GuildListView, "GuildListView");
             GuildListView.Activation = ItemActivation.OneClick;
             GuildListView.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
-            resources.ApplyResources(GuildListView, "GuildListView");
             GuildListView.FullRowSelect = true;
             GuildListView.GridLines = true;
             GuildListView.Name = "GuildListView";
@@ -284,317 +284,317 @@ namespace Server
             // 
             // StatusBar
             // 
-            StatusBar.Items.AddRange(new ToolStripItem[] { PlayersLabel, MonsterLabel, ConnectionsLabel, BlockedIPsLabel, CycleDelayLabel });
             resources.ApplyResources(StatusBar, "StatusBar");
+            StatusBar.Items.AddRange(new ToolStripItem[] { PlayersLabel, MonsterLabel, ConnectionsLabel, BlockedIPsLabel, CycleDelayLabel });
             StatusBar.Name = "StatusBar";
             StatusBar.SizingGrip = false;
             // 
             // PlayersLabel
             // 
+            resources.ApplyResources(PlayersLabel, "PlayersLabel");
             PlayersLabel.BorderSides = ToolStripStatusLabelBorderSides.Left | ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
             PlayersLabel.Name = "PlayersLabel";
-            resources.ApplyResources(PlayersLabel, "PlayersLabel");
             // 
             // MonsterLabel
             // 
+            resources.ApplyResources(MonsterLabel, "MonsterLabel");
             MonsterLabel.BorderSides = ToolStripStatusLabelBorderSides.Left | ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
             MonsterLabel.Name = "MonsterLabel";
-            resources.ApplyResources(MonsterLabel, "MonsterLabel");
             // 
             // ConnectionsLabel
             // 
+            resources.ApplyResources(ConnectionsLabel, "ConnectionsLabel");
             ConnectionsLabel.BorderSides = ToolStripStatusLabelBorderSides.Left | ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
             ConnectionsLabel.Name = "ConnectionsLabel";
-            resources.ApplyResources(ConnectionsLabel, "ConnectionsLabel");
             // 
             // BlockedIPsLabel
             // 
+            resources.ApplyResources(BlockedIPsLabel, "BlockedIPsLabel");
             BlockedIPsLabel.BorderSides = ToolStripStatusLabelBorderSides.Left | ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
             BlockedIPsLabel.Name = "BlockedIPsLabel";
-            resources.ApplyResources(BlockedIPsLabel, "BlockedIPsLabel");
             // 
             // CycleDelayLabel
             // 
+            resources.ApplyResources(CycleDelayLabel, "CycleDelayLabel");
             CycleDelayLabel.BorderSides = ToolStripStatusLabelBorderSides.Left | ToolStripStatusLabelBorderSides.Top | ToolStripStatusLabelBorderSides.Right | ToolStripStatusLabelBorderSides.Bottom;
             CycleDelayLabel.Name = "CycleDelayLabel";
-            resources.ApplyResources(CycleDelayLabel, "CycleDelayLabel");
             // 
             // MainMenu
             // 
+            resources.ApplyResources(MainMenu, "MainMenu");
             MainMenu.BackColor = Color.Transparent;
             MainMenu.Items.AddRange(new ToolStripItem[] { controlToolStripMenuItem, accountToolStripMenuItem, databaseFormsToolStripMenuItem, configToolStripMenuItem1, CharacterToolStripMenuItem, UpTimeLabel });
-            resources.ApplyResources(MainMenu, "MainMenu");
             MainMenu.Name = "MainMenu";
             // 
             // controlToolStripMenuItem
             // 
+            resources.ApplyResources(controlToolStripMenuItem, "controlToolStripMenuItem");
             controlToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { startServerToolStripMenuItem, stopServerToolStripMenuItem, rebootServerToolStripMenuItem, clearBlockedIPsToolStripMenuItem, toolStripMenuItem1, toolStripSeparator1, closeServerToolStripMenuItem, reloadToolStripMenuItem });
             controlToolStripMenuItem.Name = "controlToolStripMenuItem";
-            resources.ApplyResources(controlToolStripMenuItem, "controlToolStripMenuItem");
             // 
             // startServerToolStripMenuItem
             // 
-            startServerToolStripMenuItem.Name = "startServerToolStripMenuItem";
             resources.ApplyResources(startServerToolStripMenuItem, "startServerToolStripMenuItem");
+            startServerToolStripMenuItem.Name = "startServerToolStripMenuItem";
             startServerToolStripMenuItem.Click += startServerToolStripMenuItem_Click;
             // 
             // stopServerToolStripMenuItem
             // 
-            stopServerToolStripMenuItem.Name = "stopServerToolStripMenuItem";
             resources.ApplyResources(stopServerToolStripMenuItem, "stopServerToolStripMenuItem");
+            stopServerToolStripMenuItem.Name = "stopServerToolStripMenuItem";
             stopServerToolStripMenuItem.Click += stopServerToolStripMenuItem_Click;
             // 
             // rebootServerToolStripMenuItem
             // 
-            rebootServerToolStripMenuItem.Name = "rebootServerToolStripMenuItem";
             resources.ApplyResources(rebootServerToolStripMenuItem, "rebootServerToolStripMenuItem");
+            rebootServerToolStripMenuItem.Name = "rebootServerToolStripMenuItem";
             rebootServerToolStripMenuItem.Click += rebootServerToolStripMenuItem_Click;
             // 
             // clearBlockedIPsToolStripMenuItem
             // 
-            clearBlockedIPsToolStripMenuItem.Name = "clearBlockedIPsToolStripMenuItem";
             resources.ApplyResources(clearBlockedIPsToolStripMenuItem, "clearBlockedIPsToolStripMenuItem");
+            clearBlockedIPsToolStripMenuItem.Name = "clearBlockedIPsToolStripMenuItem";
             clearBlockedIPsToolStripMenuItem.Click += clearBlockedIPsToolStripMenuItem_Click;
             // 
             // toolStripMenuItem1
             // 
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
             resources.ApplyResources(toolStripMenuItem1, "toolStripMenuItem1");
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
             // 
             // toolStripSeparator1
             // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(toolStripSeparator1, "toolStripSeparator1");
+            toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // closeServerToolStripMenuItem
             // 
-            closeServerToolStripMenuItem.Name = "closeServerToolStripMenuItem";
             resources.ApplyResources(closeServerToolStripMenuItem, "closeServerToolStripMenuItem");
+            closeServerToolStripMenuItem.Name = "closeServerToolStripMenuItem";
             closeServerToolStripMenuItem.Click += closeServerToolStripMenuItem_Click;
             // 
             // reloadToolStripMenuItem
             // 
+            resources.ApplyResources(reloadToolStripMenuItem, "reloadToolStripMenuItem");
             reloadToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nPCsToolStripMenuItem, dropsToolStripMenuItem, lineMessageToolStripMenuItem });
             reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
-            resources.ApplyResources(reloadToolStripMenuItem, "reloadToolStripMenuItem");
             // 
             // nPCsToolStripMenuItem
             // 
-            nPCsToolStripMenuItem.Name = "nPCsToolStripMenuItem";
             resources.ApplyResources(nPCsToolStripMenuItem, "nPCsToolStripMenuItem");
+            nPCsToolStripMenuItem.Name = "nPCsToolStripMenuItem";
             nPCsToolStripMenuItem.Click += nPCsToolStripMenuItem_Click;
             // 
             // dropsToolStripMenuItem
             // 
-            dropsToolStripMenuItem.Name = "dropsToolStripMenuItem";
             resources.ApplyResources(dropsToolStripMenuItem, "dropsToolStripMenuItem");
+            dropsToolStripMenuItem.Name = "dropsToolStripMenuItem";
             dropsToolStripMenuItem.Click += dropsToolStripMenuItem_Click;
             // 
             // lineMessageToolStripMenuItem
             // 
-            lineMessageToolStripMenuItem.Name = "lineMessageToolStripMenuItem";
             resources.ApplyResources(lineMessageToolStripMenuItem, "lineMessageToolStripMenuItem");
+            lineMessageToolStripMenuItem.Name = "lineMessageToolStripMenuItem";
             lineMessageToolStripMenuItem.Click += lineMessageToolStripMenuItem_Click;
             // 
             // accountToolStripMenuItem
             // 
-            accountToolStripMenuItem.Name = "accountToolStripMenuItem";
             resources.ApplyResources(accountToolStripMenuItem, "accountToolStripMenuItem");
+            accountToolStripMenuItem.Name = "accountToolStripMenuItem";
             accountToolStripMenuItem.Click += accountToolStripMenuItem_Click;
             // 
             // databaseFormsToolStripMenuItem
             // 
+            resources.ApplyResources(databaseFormsToolStripMenuItem, "databaseFormsToolStripMenuItem");
             databaseFormsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mapInfoToolStripMenuItem, itemInfoToolStripMenuItem, monsterInfoToolStripMenuItem, itemNEWToolStripMenuItem, monsterExperimentalToolStripMenuItem, nPCInfoToolStripMenuItem, questInfoToolStripMenuItem, magicInfoToolStripMenuItem, gameshopToolStripMenuItem, recipeToolStripMenuItem });
             databaseFormsToolStripMenuItem.Name = "databaseFormsToolStripMenuItem";
-            resources.ApplyResources(databaseFormsToolStripMenuItem, "databaseFormsToolStripMenuItem");
             // 
             // mapInfoToolStripMenuItem
             // 
-            mapInfoToolStripMenuItem.Name = "mapInfoToolStripMenuItem";
             resources.ApplyResources(mapInfoToolStripMenuItem, "mapInfoToolStripMenuItem");
+            mapInfoToolStripMenuItem.Name = "mapInfoToolStripMenuItem";
             mapInfoToolStripMenuItem.Click += mapInfoToolStripMenuItem_Click;
             // 
             // itemInfoToolStripMenuItem
             // 
-            itemInfoToolStripMenuItem.Name = "itemInfoToolStripMenuItem";
             resources.ApplyResources(itemInfoToolStripMenuItem, "itemInfoToolStripMenuItem");
+            itemInfoToolStripMenuItem.Name = "itemInfoToolStripMenuItem";
             itemInfoToolStripMenuItem.Click += itemInfoToolStripMenuItem_Click;
             // 
             // monsterInfoToolStripMenuItem
             // 
-            monsterInfoToolStripMenuItem.Name = "monsterInfoToolStripMenuItem";
             resources.ApplyResources(monsterInfoToolStripMenuItem, "monsterInfoToolStripMenuItem");
+            monsterInfoToolStripMenuItem.Name = "monsterInfoToolStripMenuItem";
             monsterInfoToolStripMenuItem.Click += monsterInfoToolStripMenuItem_Click;
             // 
             // itemNEWToolStripMenuItem
             // 
-            itemNEWToolStripMenuItem.Name = "itemNEWToolStripMenuItem";
             resources.ApplyResources(itemNEWToolStripMenuItem, "itemNEWToolStripMenuItem");
+            itemNEWToolStripMenuItem.Name = "itemNEWToolStripMenuItem";
             itemNEWToolStripMenuItem.Click += itemNEWToolStripMenuItem_Click;
             // 
             // monsterExperimentalToolStripMenuItem
             // 
-            monsterExperimentalToolStripMenuItem.Name = "monsterExperimentalToolStripMenuItem";
             resources.ApplyResources(monsterExperimentalToolStripMenuItem, "monsterExperimentalToolStripMenuItem");
+            monsterExperimentalToolStripMenuItem.Name = "monsterExperimentalToolStripMenuItem";
             monsterExperimentalToolStripMenuItem.Click += monsterExperimentalToolStripMenuItem_Click;
             // 
             // nPCInfoToolStripMenuItem
             // 
-            nPCInfoToolStripMenuItem.Name = "nPCInfoToolStripMenuItem";
             resources.ApplyResources(nPCInfoToolStripMenuItem, "nPCInfoToolStripMenuItem");
+            nPCInfoToolStripMenuItem.Name = "nPCInfoToolStripMenuItem";
             nPCInfoToolStripMenuItem.Click += nPCInfoToolStripMenuItem_Click;
             // 
             // questInfoToolStripMenuItem
             // 
-            questInfoToolStripMenuItem.Name = "questInfoToolStripMenuItem";
             resources.ApplyResources(questInfoToolStripMenuItem, "questInfoToolStripMenuItem");
+            questInfoToolStripMenuItem.Name = "questInfoToolStripMenuItem";
             questInfoToolStripMenuItem.Click += questInfoToolStripMenuItem_Click;
             // 
             // magicInfoToolStripMenuItem
             // 
-            magicInfoToolStripMenuItem.Name = "magicInfoToolStripMenuItem";
             resources.ApplyResources(magicInfoToolStripMenuItem, "magicInfoToolStripMenuItem");
+            magicInfoToolStripMenuItem.Name = "magicInfoToolStripMenuItem";
             magicInfoToolStripMenuItem.Click += magicInfoToolStripMenuItem_Click;
             // 
             // gameshopToolStripMenuItem
             // 
-            gameshopToolStripMenuItem.Name = "gameshopToolStripMenuItem";
             resources.ApplyResources(gameshopToolStripMenuItem, "gameshopToolStripMenuItem");
+            gameshopToolStripMenuItem.Name = "gameshopToolStripMenuItem";
             gameshopToolStripMenuItem.Click += gameshopToolStripMenuItem_Click;
             // 
             // recipeToolStripMenuItem
             // 
-            recipeToolStripMenuItem.Name = "recipeToolStripMenuItem";
             resources.ApplyResources(recipeToolStripMenuItem, "recipeToolStripMenuItem");
+            recipeToolStripMenuItem.Name = "recipeToolStripMenuItem";
             recipeToolStripMenuItem.Click += recipeToolStripMenuItem_Click;
             // 
             // configToolStripMenuItem1
             // 
+            resources.ApplyResources(configToolStripMenuItem1, "configToolStripMenuItem1");
             configToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { serverToolStripMenuItem, balanceToolStripMenuItem, systemToolStripMenuItem, monsterTunerToolStripMenuItem, dropBuilderToolStripMenuItem });
             configToolStripMenuItem1.Name = "configToolStripMenuItem1";
-            resources.ApplyResources(configToolStripMenuItem1, "configToolStripMenuItem1");
             // 
             // serverToolStripMenuItem
             // 
-            serverToolStripMenuItem.Name = "serverToolStripMenuItem";
             resources.ApplyResources(serverToolStripMenuItem, "serverToolStripMenuItem");
+            serverToolStripMenuItem.Name = "serverToolStripMenuItem";
             serverToolStripMenuItem.Click += serverToolStripMenuItem_Click;
             // 
             // balanceToolStripMenuItem
             // 
-            balanceToolStripMenuItem.Name = "balanceToolStripMenuItem";
             resources.ApplyResources(balanceToolStripMenuItem, "balanceToolStripMenuItem");
+            balanceToolStripMenuItem.Name = "balanceToolStripMenuItem";
             balanceToolStripMenuItem.Click += balanceToolStripMenuItem_Click;
             // 
             // systemToolStripMenuItem
             // 
+            resources.ApplyResources(systemToolStripMenuItem, "systemToolStripMenuItem");
             systemToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dragonSystemToolStripMenuItem, miningToolStripMenuItem, guildsToolStripMenuItem, fishingToolStripMenuItem, mailToolStripMenuItem, goodsToolStripMenuItem, refiningToolStripMenuItem, relationshipToolStripMenuItem, mentorToolStripMenuItem, gemToolStripMenuItem, conquestToolStripMenuItem, respawnsToolStripMenuItem, heroesToolStripMenuItem });
             systemToolStripMenuItem.Name = "systemToolStripMenuItem";
-            resources.ApplyResources(systemToolStripMenuItem, "systemToolStripMenuItem");
             // 
             // dragonSystemToolStripMenuItem
             // 
-            dragonSystemToolStripMenuItem.Name = "dragonSystemToolStripMenuItem";
             resources.ApplyResources(dragonSystemToolStripMenuItem, "dragonSystemToolStripMenuItem");
+            dragonSystemToolStripMenuItem.Name = "dragonSystemToolStripMenuItem";
             dragonSystemToolStripMenuItem.Click += dragonSystemToolStripMenuItem_Click;
             // 
             // miningToolStripMenuItem
             // 
-            miningToolStripMenuItem.Name = "miningToolStripMenuItem";
             resources.ApplyResources(miningToolStripMenuItem, "miningToolStripMenuItem");
+            miningToolStripMenuItem.Name = "miningToolStripMenuItem";
             miningToolStripMenuItem.Click += miningToolStripMenuItem_Click;
             // 
             // guildsToolStripMenuItem
             // 
-            guildsToolStripMenuItem.Name = "guildsToolStripMenuItem";
             resources.ApplyResources(guildsToolStripMenuItem, "guildsToolStripMenuItem");
+            guildsToolStripMenuItem.Name = "guildsToolStripMenuItem";
             guildsToolStripMenuItem.Click += guildsToolStripMenuItem_Click;
             // 
             // fishingToolStripMenuItem
             // 
-            fishingToolStripMenuItem.Name = "fishingToolStripMenuItem";
             resources.ApplyResources(fishingToolStripMenuItem, "fishingToolStripMenuItem");
+            fishingToolStripMenuItem.Name = "fishingToolStripMenuItem";
             fishingToolStripMenuItem.Click += fishingToolStripMenuItem_Click;
             // 
             // mailToolStripMenuItem
             // 
-            mailToolStripMenuItem.Name = "mailToolStripMenuItem";
             resources.ApplyResources(mailToolStripMenuItem, "mailToolStripMenuItem");
+            mailToolStripMenuItem.Name = "mailToolStripMenuItem";
             mailToolStripMenuItem.Click += mailToolStripMenuItem_Click;
             // 
             // goodsToolStripMenuItem
             // 
-            goodsToolStripMenuItem.Name = "goodsToolStripMenuItem";
             resources.ApplyResources(goodsToolStripMenuItem, "goodsToolStripMenuItem");
+            goodsToolStripMenuItem.Name = "goodsToolStripMenuItem";
             goodsToolStripMenuItem.Click += goodsToolStripMenuItem_Click;
             // 
             // refiningToolStripMenuItem
             // 
-            refiningToolStripMenuItem.Name = "refiningToolStripMenuItem";
             resources.ApplyResources(refiningToolStripMenuItem, "refiningToolStripMenuItem");
+            refiningToolStripMenuItem.Name = "refiningToolStripMenuItem";
             refiningToolStripMenuItem.Click += refiningToolStripMenuItem_Click;
             // 
             // relationshipToolStripMenuItem
             // 
-            relationshipToolStripMenuItem.Name = "relationshipToolStripMenuItem";
             resources.ApplyResources(relationshipToolStripMenuItem, "relationshipToolStripMenuItem");
+            relationshipToolStripMenuItem.Name = "relationshipToolStripMenuItem";
             relationshipToolStripMenuItem.Click += relationshipToolStripMenuItem_Click;
             // 
             // mentorToolStripMenuItem
             // 
-            mentorToolStripMenuItem.Name = "mentorToolStripMenuItem";
             resources.ApplyResources(mentorToolStripMenuItem, "mentorToolStripMenuItem");
+            mentorToolStripMenuItem.Name = "mentorToolStripMenuItem";
             mentorToolStripMenuItem.Click += mentorToolStripMenuItem_Click;
             // 
             // gemToolStripMenuItem
             // 
-            gemToolStripMenuItem.Name = "gemToolStripMenuItem";
             resources.ApplyResources(gemToolStripMenuItem, "gemToolStripMenuItem");
+            gemToolStripMenuItem.Name = "gemToolStripMenuItem";
             gemToolStripMenuItem.Click += gemToolStripMenuItem_Click;
             // 
             // conquestToolStripMenuItem
             // 
-            conquestToolStripMenuItem.Name = "conquestToolStripMenuItem";
             resources.ApplyResources(conquestToolStripMenuItem, "conquestToolStripMenuItem");
+            conquestToolStripMenuItem.Name = "conquestToolStripMenuItem";
             conquestToolStripMenuItem.Click += conquestToolStripMenuItem_Click;
             // 
             // respawnsToolStripMenuItem
             // 
-            respawnsToolStripMenuItem.Name = "respawnsToolStripMenuItem";
             resources.ApplyResources(respawnsToolStripMenuItem, "respawnsToolStripMenuItem");
+            respawnsToolStripMenuItem.Name = "respawnsToolStripMenuItem";
             respawnsToolStripMenuItem.Click += respawnsToolStripMenuItem_Click;
             // 
             // heroesToolStripMenuItem
             // 
-            heroesToolStripMenuItem.Name = "heroesToolStripMenuItem";
             resources.ApplyResources(heroesToolStripMenuItem, "heroesToolStripMenuItem");
+            heroesToolStripMenuItem.Name = "heroesToolStripMenuItem";
             heroesToolStripMenuItem.Click += heroesToolStripMenuItem_Click;
             // 
             // monsterTunerToolStripMenuItem
             // 
-            monsterTunerToolStripMenuItem.Name = "monsterTunerToolStripMenuItem";
             resources.ApplyResources(monsterTunerToolStripMenuItem, "monsterTunerToolStripMenuItem");
+            monsterTunerToolStripMenuItem.Name = "monsterTunerToolStripMenuItem";
             monsterTunerToolStripMenuItem.Click += monsterTunerToolStripMenuItem_Click;
             // 
             // dropBuilderToolStripMenuItem
             // 
-            dropBuilderToolStripMenuItem.Name = "dropBuilderToolStripMenuItem";
             resources.ApplyResources(dropBuilderToolStripMenuItem, "dropBuilderToolStripMenuItem");
+            dropBuilderToolStripMenuItem.Name = "dropBuilderToolStripMenuItem";
             dropBuilderToolStripMenuItem.Click += dropBuilderToolStripMenuItem_Click;
             // 
             // CharacterToolStripMenuItem
             // 
-            CharacterToolStripMenuItem.Name = "CharacterToolStripMenuItem";
             resources.ApplyResources(CharacterToolStripMenuItem, "CharacterToolStripMenuItem");
+            CharacterToolStripMenuItem.Name = "CharacterToolStripMenuItem";
             CharacterToolStripMenuItem.Click += CharacterToolStripMenuItem_Click;
             // 
             // UpTimeLabel
             // 
+            resources.ApplyResources(UpTimeLabel, "UpTimeLabel");
             UpTimeLabel.Alignment = ToolStripItemAlignment.Right;
             UpTimeLabel.BorderStyle = BorderStyle.None;
             UpTimeLabel.Name = "UpTimeLabel";
             UpTimeLabel.ReadOnly = true;
-            resources.ApplyResources(UpTimeLabel, "UpTimeLabel");
             // 
             // InterfaceTimer
             // 

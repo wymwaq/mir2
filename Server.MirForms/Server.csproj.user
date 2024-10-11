@@ -99,6 +99,12 @@
     <EmbeddedResource Update="Account\PlayerInfoForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Update="ConfigForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ConfigForm.zh.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="Database\ItemInfoForm.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -112,6 +118,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="Database\MonsterInfoForm.zh.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ServerResources.zh.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="Systems\GuildInfoForm.zh.resx">

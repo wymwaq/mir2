@@ -2,6 +2,7 @@
 using System.Data;
 using System.Text;
 using Microsoft.VisualBasic;
+using WqSr = Server.ServerResources;
 
 namespace Server.Database
 {
@@ -704,7 +705,7 @@ namespace Server.Database
                                     if (dataColumn == null)
                                     {
                                         fileError = true;
-                                        MessageBox.Show($"Column {column} was not found.");
+                                        MessageBox.Show(string.Format(WqSr.ColumnNotFound, column));
                                         break;
                                     }
 

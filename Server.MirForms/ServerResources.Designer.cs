@@ -70,6 +70,15 @@ namespace Server {
         }
         
         /// <summary>
+        ///   查找类似 Column {0} was not found. 的本地化字符串。
+        /// </summary>
+        internal static string ColumnNotFound {
+            get {
+                return ResourceManager.GetString("ColumnNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Connections: {0} 的本地化字符串。
         /// </summary>
         internal static string ConnectionsLabelFormat {

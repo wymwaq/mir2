@@ -115,4 +115,7 @@
   <data name="MonsterLabelFormat" xml:space="preserve">
     <value>怪物数: {0}</value>
   </data>
+  <data name="ColumnNotFound" xml:space="preserve">
+    <value>找不到列{0}。</value>
+  </data>
 </root>

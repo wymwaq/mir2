@@ -967,7 +967,7 @@ namespace Server.MirEnvir
                     NPCInfo tempNPC = NPCInfoList[i];
                     if (Wq.LanMgr.opensave)
                     {
-                        tempNPC.Name = Wq.LanMgr.Ins.ToEN(tempNPC.Name, Wq.TYPE.NPC);
+                        tempNPC.Name = Wq.LanMgr.Ins.ToEN(tempNPC.FileName, Wq.TYPE.NPC);
                     }
                     tempNPC.Save(writer); 
                 }
@@ -981,10 +981,6 @@ namespace Server.MirEnvir
                 for (var i = 0; i < MagicInfoList.Count; i++)
                 {
                     MagicInfo tempMagic = MagicInfoList[i];
-                    if (Wq.LanMgr.opensave)
-                    {
-                        tempMagic.Name = Wq.LanMgr.Ins.ToEN(tempMagic.Name, Wq.TYPE.MAGIC);
-                    }
                     tempMagic.Save(writer); 
                 }
 
@@ -1400,7 +1396,7 @@ namespace Server.MirEnvir
                         NPCInfo tempNPC = new NPCInfo(reader);
                         if (Wq.LanMgr.openload)
                         {
-                            tempNPC.Name = Wq.LanMgr.Ins.ToCN(tempNPC.Name, Wq.TYPE.NPC);
+                            tempNPC.Name = Wq.LanMgr.Ins.ToCN(tempNPC.FileName, Wq.TYPE.NPC);
                         }
                         NPCInfoList.Add(tempNPC); 
                     }
@@ -1415,10 +1411,6 @@ namespace Server.MirEnvir
                     for (var i = 0; i < count; i++)
                     {
                         MagicInfo tempMagic = new MagicInfo(reader, LoadVersion, LoadCustomVersion);
-                        if (Wq.LanMgr.openload)
-                        {
-                            tempMagic.Name = Wq.LanMgr.Ins.ToCN(tempMagic.Name, Wq.TYPE.MAGIC);
-                        }
                         if (!MagicExists(tempMagic.Spell))
                             MagicInfoList.Add(tempMagic);
                     }
